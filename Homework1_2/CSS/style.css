@@ -15,8 +15,10 @@ body{
     padding-bottom: 70px;
 }
 header{
+    width: 405px;
     margin: 0 auto;
     text-align: center;
+    border-bottom: 1px solid #94a295;
 }
 img{
     margin-top: 25px;
@@ -26,24 +28,33 @@ img{
 header p{
     margin-top: 0;
     margin-bottom: 20px;
+    text-align: left;
+    margin-left: 20px;
 }
-hr{
+main .list {
+    width: 405px;
+    border-bottom: 1px solid #94a295;
     margin: 0 auto;
-    width: 413px;
 }
 main .list p{
-    margin-top: 27px;
-    margin-bottom: 36px;
-    margin-left: 60px;
+    margin: 27px 0px 30px 25px;
 }
 main .list ul{
     padding: 0;
-    margin-left: 85px;
+    margin-left: 40px;
     margin-bottom: 20px;
+
+}
+.number{
+    width: 385px;
+    border-bottom: 1px solid #94a295;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 .number,
 footer{
-    margin-left: 62px;
+    margin-left: 51px;
+    padding-left: 20px;
 }
 .number{
     padding-top:28px;
@@ -53,5 +64,5 @@ footer{
     margin-bottom: 20px;
 }
 footer{
-    padding-top: 29px;
+    padding-top: 15px;
 }
