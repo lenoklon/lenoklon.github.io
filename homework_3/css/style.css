@@ -1,0 +1,114 @@
+
+@import url(reset.css);
+
+@font-face {
+    font-family:OpenSans;
+    src: url(../fonts/opensans.ttf);
+}
+
+body{
+    font: 13px 'opensans', sans-serif;
+}
+.wrapper{
+    width: 1060px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    padding-bottom: 50px;
+}
+.logo{
+    padding-top: 50px;
+    padding-left: 46px;
+}
+
+header .menu{
+    margin-top: 40px;
+    margin-left: 46px;
+    width: 966px;
+    background: #565555;
+}
+ header .menu ul li {
+    display: inline-block;
+}
+.menu ul li a{
+    display: block;
+    color:#fff;
+    font: 14px 'opensans', sans-serif;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0 30px;
+}
+.menu ul li a:hover{
+    background: -webkit-linear-gradient(30deg, rgb(61, 61, 61) 26%, rgb(173, 173, 173) 91%);
+}
+
+nav{
+    margin-top: 40px;
+    margin-left: 46px;
+    width: 240px;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    float: left;
+    margin-right: 45px;
+}
+
+nav li a{
+    display: block;
+    text-decoration: none;
+    color:grey;
+    line-height: 42px;
+    padding: 0 25px;
+}
+nav li{
+    border-bottom: 1px solid grey;
+}
+nav li a:hover{
+    background: #f6f6f6;
+    padding-left: 35px;
+}
+
+.bike{
+    margin-top: 40px;
+    width: 670px;
+    float: right;
+    margin-right: 50px;
+}
+
+main .bike .figure img{
+    padding: 46px 100px 46px 70px;
+    border:1px solid grey;
+}
+main .bike p{
+    margin: 40px 25px 63px 25px;
+    text-align: justify;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+footer{
+    width: 966px;
+    background: #e1e1e1;
+    margin-left: 45px;
+    line-height: 40px;
+}
+footer ul li{
+    display: inline-block;
+}
+footer .list{
+    float: left;
+}
+footer .list ul li a{
+    padding: 0 30px;
+    text-decoration: none;
+    color:black;
+    font: 14px 'opensans', sans-serif;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+footer .rights{
+    float: right;
+    margin-right: 25px;
+}
