@@ -1,0 +1,62 @@
+@import url(reset.css);
+
+.wrapper{
+	width: 960px;
+	height: 883px;
+	background: url(../img/background.png);
+	margin: 0 auto;
+	position: relative;
+}
+header{
+	/*height: 200px;*/
+}
+header .logo{
+	background: url(../img/logo.png) no-repeat  70px 16px;
+	height: 147px;
+	width: 366px;
+	float: left;
+}
+header .contacts{
+	float: right;
+	color: #eee;
+	font:10px Tahoma;
+	margin-right: 85px;
+	margin-top: 90px;
+}
+
+.clearfix:after {
+     content: '';
+     display: table;
+     clear: both;
+}
+main{
+	width: 818px;
+	margin: 0 auto;
+	color: #eee;
+	font:15px Tahoma;
+}
+main .first{
+	float: left;
+	width: 270px;
+	text-align: center;
+}
+main .second{
+	float: left;
+	width: 270px;
+	text-align: center;
+}
+main .third{
+	float: left;
+	width: 270px;
+	text-align: center;
+}
+
+.layout2{
+	padding-top: 259px;
+}
+footer p{
+	text-align: center;
+	color: #eee;
+	font:10px Tahoma;
+	padding-top: 200px;
+}
