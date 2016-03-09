@@ -1,0 +1,158 @@
+@import url(reset.css);   
+
+.wrapper{
+    margin: 0 auto;
+    width: 1280px;
+    background-image: url(../img/background.png);
+  }
+
+  .content{
+  	width: 1018px;
+  	margin: 0 auto;
+  	background: #f9f9f9;
+  	margin-top: -3px;
+  	border-bottom: 2px solid #424c43;
+  }
+
+  	/*HEADER*/
+ 
+  header{
+  	position: relative;
+  }
+
+   header .logo_figure{
+   	position: absolute;
+  	top:11x;
+  	left:37px;
+  }
+  header p{
+  	font: 12px Tahoma;
+    color: #128aa7;
+  }
+	header .logo_item{
+		position: absolute;
+		top:111px;
+	    left:101px;
+	}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.contacts{
+	float: right;
+	margin-top: 11px;
+	margin-right: 32px;
+	line-height: 20px;
+
+}
+.contacts p:first-child{
+	font-size:14px;
+}
+
+.country_list{
+	position: absolute;
+	right: 35px;
+	top: 107px;
+}
+.country_list ul li{
+	display: inline-block;
+	margin-right: 5px;
+	padding: 0 5px;
+	text-align: center;
+
+}
+.country_list ul li a{
+	font-size: 10px;
+    color: #128aa7;
+}
+
+header .maldives img{
+	width: 1019px;
+	margin-top: 105px;
+}
+		/*/HEADER*/
+
+		/*NAV*/
+.menu{
+	background: #323232;
+	margin-top: -3px;
+	border-bottom: 2px solid black;
+
+}
+.menu > li{
+	position: relative;
+	display: inline-block;
+	padding:6px 0 6px 65px;
+	font-family: Tahoma;
+}
+
+.menu a{
+	display: block;
+	text-decoration: none;
+	color:#eee;
+	font-size: 14px;
+}
+.menu .sub-menu{
+	position: absolute;
+	left: 55px;
+	background: #323232;
+	width: 130px;
+	line-height: 15px;
+	color:#eee;
+	display: none;
+}
+.menu .sub-menu a{
+	padding:6px 10px 6px 10px;	
+}
+.menu >li:hover .sub-menu{
+	display: block;
+}
+
+		/*MAIN*/
+main{
+	font-family: Tahoma;
+}
+
+main .left-column{
+	width: 209px;
+	height: 550px;
+	float: left;
+	outline: 1px solid grey;
+	background: #edeef0;
+	text-align: center;
+	line-height: 22px;
+	font-size: 14px;
+}
+main .central-column{
+	float: left;
+	width: 600px;
+	height: 550px;
+	outline: 1px solid grey;
+}
+main .right-column{
+	float: right;
+	width: 209px;
+	outline: 1px solid grey;
+	background: #edeef0;
+	text-align: center;
+	line-height: 22px;
+	height: 550px;
+	font-size: 14px;
+}
+main h3{
+	font-size: 18px;
+	margin:10px 0;
+}
+
+footer{
+	color: #eee;
+	text-align: center;
+	font:12px Tahoma;
+	padding: 5px;
+}
+
+
+
+
+
