@@ -95,12 +95,12 @@ footer{
 }
 footer ul li{
     display: inline-block;
+    padding: 0 30px;
 }
 footer .list{
     float: left;
 }
 footer .list ul li a{
-    padding: 0 30px;
     text-decoration: none;
     color:black;
     font: 14px 'opensans', sans-serif;
