@@ -96,6 +96,7 @@ header .maldives img{
 .menu .sub-menu{
 	position: absolute;
 	left: 55px;
+        top:27px;
 	background: #323232;
 	width: 130px;
 	line-height: 15px;
