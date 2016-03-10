@@ -1,0 +1,126 @@
+@import url(reset.css);
+@import url(jquery.fancybox.css);
+body{
+	background: #f9f9f9;
+	font-family: Tahoma, Arial, Sans-serif;
+}
+.wrapper{
+	width: 968px; /*с вычитанием обоих падингов*/
+	margin: 0 auto;
+	padding:0 46px;
+	background: #ffffff;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(153,153,153,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(153,153,153,1);
+	box-shadow: 0px 0px 5px 0px rgba(153,153,153,1);
+}
+/*HEADER*/
+
+header{
+	padding-top: 50px;
+	margin-bottom: 40px;
+}
+
+.menu{
+	margin-top: 40px;
+	position: relative;
+	overflow: hidden;
+	background: -webkit-linear-gradient(30deg, rgb(61, 61, 61) 26%, rgb(173, 173, 173) 91%);
+}
+.menu li{
+	float: left;
+}
+.menu a{
+	color: #eee;
+	font-size:15px;
+	line-height: 40px;
+	text-decoration: none;
+	display: block;
+	padding: 0 40px;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+}
+.menu a:hover{
+	background: #565555;
+	border-right: 1px solid #838383;
+	border-left: 1px solid #838383;
+
+}
+/*MAIN*/
+main{
+	position: relative;
+	overflow: hidden;
+}
+.sidebar{
+	float: left;
+	width: 240px;
+
+}
+.side-menu{
+	border: 1px solid #c8c8c8;
+
+}
+.side-menu li{
+	border-top: 1px solid #c8c8c8;
+}
+.side-menu li:first-child{
+	border-top: none;
+}
+.side-menu a{
+	line-height: 37px;
+	color: #656363;
+	text-decoration: none;
+	padding-left: 20px; 
+	display: block;
+	transition:1s all;
+}
+.side-menu a:hover{
+	color: #2c2c2c;
+	/*background: #e8e5e5;*/
+	background: red;
+	padding-left: 35px;
+
+}
+.product{
+	float: right;
+	width: 680px;
+} 
+.product-image{
+	border: 1px solid #c8c8c8;
+	text-align: center;
+	padding: 40px 0;
+}
+.description{
+	padding: 30px 22px 0 22px;
+	line-height: 20px;
+	color: #2c2c2c;
+	font-size: 13px;
+
+}
+/*FOOTER*/
+footer{
+	padding: 50px 0;
+}
+.footer-menu{
+	position: relative;
+	overflow: hidden;
+	background: #e1e1e1;
+}
+.footer-menu li{
+	float: left;
+	line-height: 40px;
+
+}
+.footer-menu a{
+	
+	display: block;
+	font-size: 13px;
+	color: #2c2c2c;
+	padding: 0 50px;
+	text-decoration: none;
+
+}
+.footer-menu .copyright{
+	float: right;
+	padding-right: 36px;
+	font-size: 13px;
+}
