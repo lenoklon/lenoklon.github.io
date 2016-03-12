@@ -1,0 +1,207 @@
+@import url(reset.css);  
+
+body{
+	background: url(../img/background.png) repeat;
+	font-family: Tahoma;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 100;
+    
+  }
+ .content{
+  	width: 1018px;
+  	margin: 0 auto;
+  	background: #f9f9f9;
+  	border-bottom: 2px solid #424c43;
+  	-webkit-box-shadow: 0px 0px 5px 0px rgba(153,153,153,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(153,153,153,1);
+	box-shadow: 0px 0px 5px 0px rgba(153,153,153,1);
+
+  }
+  	/*HEADER*/
+
+   header .logo{
+ 	position: relative;
+  	top:49px;
+  	left:37px;
+  	float: left;
+	width: 330px;
+  }
+
+header .logo_text{
+		position: absolute;
+		top:102px;
+	    left:72px;
+	    font: 12px Tahoma;
+    	color: #128aa7;
+	}
+
+.right_menu{
+	float: right;
+	margin-right: 35px;
+}
+.right_menu .contacts{
+	position: relative;
+	left: 230px;
+}
+.contacts{
+	font-size: 13px;
+    color: #128aa7;
+    line-height: 20px;
+    margin-top: 46px;
+    padding-right: -40px;
+    text-align: left;
+}
+
+.contacts p:first-child{
+	font-size:14px;
+}
+
+.country_list{
+	margin-top: 23px;
+	margin-bottom: 10px;
+}
+.country_list ul li{
+	display: inline-block;
+	margin-right: 5px;
+	padding: 0 5px;
+	text-align: center;
+
+}
+.country_list ul li a{
+	font-size: 10px;
+    color: #128aa7;
+}
+
+header .maldives{
+	clear: both;
+
+}
+.maldives img{
+	width: 1019px;
+}
+
+		/*/HEADER*/
+
+		/*NAV*/
+.menu{
+	/*background: #323232 url(../img/pointer.png) no-repeat 276px 11px;*/
+	background: #323232;
+	margin-top: -3px;
+	border-bottom: 2px solid black;
+
+}
+.arrow1:after{
+	content: "\25BC";
+	color: #eee;
+	position: absolute;
+	top:6px;
+	left: 153px;
+}
+.arrow2:after{
+	content: "\25BC";
+	color: #eee;
+	position: absolute;
+	top:6px;
+	left: 113px;
+}
+.arrow3:after{
+	content: "\25BC";
+	color: #eee;
+	position: absolute;
+	top:6px;
+	left: 139px;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+	font-family: Tahoma;
+
+}
+
+.menu a{
+	display: block;
+	text-decoration: none;
+	color:#eee;
+	font-size: 14px;
+	padding:6px 0 6px 65px;
+}
+.menu .sub-menu{
+	position: absolute;
+	left: 55px;
+	top:27px;
+	background: #323232;
+	width: 100%;
+	line-height: 10px;
+	color:#eee;
+	display: none;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(153,153,153,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(153,153,153,1);
+	box-shadow: 0px 0px 5px 0px rgba(153,153,153,1);
+
+}
+.menu .sub-menu a{
+	padding:6px 10px;	
+}
+.menu >li:hover .sub-menu{
+	display: block;
+}
+
+		/*MAIN*/
+main{
+	font-family: Tahoma;
+}
+
+main .left-column{
+	width: 209px;
+	height: 550px;
+	float: left;
+	border-right: 1px solid grey;
+	border-left: 1px solid grey;
+	background: #edeef0;
+	text-align: center;
+	line-height: 22px;
+	font-size: 14px;
+}
+main .central-column{
+	float: left;
+	width: 590px;
+	height: 550px;
+}
+main .right-column{
+	float: right;
+	width: 209px;
+	border-right: 1px solid grey;
+	border-left: 1px solid grey;
+	background: #edeef0;
+	text-align: center;
+	line-height: 22px;
+	height: 550px;
+	font-size: 14px;
+}
+main h3{
+	font-size: 18px;
+	margin:10px 0;
+}
+
+footer{
+	color: #eee;
+	text-align: center;
+	font:12px Tahoma;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #0c739f;
+
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+
