@@ -1,0 +1,182 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family: "Helvetica Neue";
+	 background: url(../img/bg.jpg) no-repeat top center;
+}
+.wrapper{
+	width: 1215px;
+	height: 1080px;
+	margin: 0 auto;
+	position: relative;
+}
+header{
+	background: url(../img/nav.png);
+	width: 100%;
+}
+.first{
+	float: left;
+	margin-left: 450px;
+}
+.second{
+	float: right;
+	width: 370px;
+
+}
+.first li,
+.second li{
+	float: left;
+}
+header a{
+	text-decoration: none;
+	font-size: 14px; 
+	color: rgb(96, 181, 237);
+	display: block;
+	padding: 10px 13px;
+} 
+.second li:nth-child(1){
+	padding-top: 6px;
+	padding-left: 18px;
+}
+header a:hover{
+	background: #449cd3;
+	color: #eee;
+}
+.second{
+	border-left: 1px solid #449cd3;
+}
+header span{
+	border-bottom: 1px solid #449cd3;
+}
+main{
+	width: 560px;
+	height: 613px;
+	background-color: rgba(0, 0, 0, 0.63);
+	position: absolute;
+	top:245px;
+	left: 350px;
+}
+
+main .top p{
+	font-size:24px;
+	color: #ffffff;
+	text-align: center;
+	border-bottom: 3px solid #bac2b5;
+	margin-top: 22px;
+	padding-bottom: 22px;
+}
+
+.button{
+	width: 276px;
+	height: 35px;
+	background: url(../img/button.png) no-repeat;
+	opacity: 1;
+	margin: 35px auto;
+	border-radius: 5px;
+}
+
+.OU{
+	width: 276px;
+	color: #666;
+	font-size: 14px;
+	margin: 0 auto;
+
+
+}
+.OU .left_line{
+	float: left;
+	width: 43%;
+	height: 1px;
+	background: #666;
+	border-bottom: 1px solid black;
+	position: relative;
+	top: 6px;
+	left: 0;
+}
+.OU .text{
+	float: left;
+	margin-left: 10px;
+
+}
+
+.OU .right_line{
+	float: right;
+	width: 43%;
+	height: 1px;
+	background: #666;
+	border-bottom: 1px solid black;
+	position: relative;
+	top: 6px;
+	left: 0;
+	
+}
+.form{
+	width: 276px;
+	margin: 0 auto;
+	margin-top: 35px;
+}
+.form input{
+	width: 100%;
+	height: 35px;
+	background: black;
+	border: 1px solid black;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #666;
+	padding-left: 20px;
+}
+
+.form input:focus{
+	background: #1b4d7f;
+	border:1px solid #689bcd;
+	-webkit-box-shadow: 0px 0px 5px 3px rgba(62,109,141,1);
+	-moz-box-shadow: 0px 0px 5px 3px rgba(62,109,141,1);
+	box-shadow: 0px 0px 5px 3px rgba(62,109,141,1);
+} 
+.checkbox{
+	width: 276px;
+	color: #eee;
+	font-size: 14px;
+	margin: 0 auto;
+}
+
+
+.clearfix:after {
+     content: '';
+     display: table;
+     clear: both;
+}
+.create_account{
+	width: 560px;
+	margin: 0 auto;	
+	margin-bottom: 20px;
+	margin-top: 25px;
+}
+.create_account input[type="button"]{
+	border: 1px solid transparent;
+	width: 150px;
+	height: 35px;
+	background: #4aa5d7;
+	color: #eee;
+	font-size: 14px;
+	margin-left: 208px;
+}
+.confirm{
+	width: 276px;
+	color: #eee;
+	font-size: 11px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
