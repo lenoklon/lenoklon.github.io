@@ -35,17 +35,7 @@ main{
 	color: #eee;
 	font:15px Tahoma;
 }
-main .first{
-	float: left;
-	width: 270px;
-	text-align: center;
-}
-main .second{
-	float: left;
-	width: 270px;
-	text-align: center;
-}
-main .third{
+main .country{
 	float: left;
 	width: 270px;
 	text-align: center;
