@@ -27,16 +27,17 @@ header{
 	background: url(../img/nav.png);
 	/*width: 100%;*/
 }
-.menu_left{
-	float: left;
-	margin-left: 610px;
-}
 .menu_right{
 	float: right;
 	width: 370px;
 	border-left: 1px solid #449cd3;
 
 }
+.menu_left{
+	float: right;
+	/*margin-left: 610px;*/
+}
+
 .menu_left li,
 .menu_right li{
 	float: left;
@@ -61,17 +62,24 @@ header a:hover{
 header span{
 	border-bottom: 1px solid #449cd3;
 }
+header li{
+	position: relative;
+}
+header .flag:before{
+	content: url(../img/flag.png);
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
 main{
 	width: 560px;
 	height: 613px;
 	background-color: rgba(0, 0, 0, 0.63);
 	position: absolute;
 	top: 50%;
-	margin-top:-307px;
 	left:50%;
-	margin-left: -280px;
-	/*top:245px;
-	left: 350px;*/
+	transform: translate(-50%,-50%);
 }
 
 main .top p{
@@ -147,7 +155,7 @@ main .top p{
 	cursor: pointer;
 } 
 
-.form input[type="button"]{
+.form input[type="submit"]{
 	border: 1px solid transparent;
 	width: 150px;
 	height: 35px;
@@ -162,6 +170,12 @@ main .top p{
 
 }
 
+.form input[type="submit"]:hover{
+	background-image: -moz-linear-gradient(top, #4169E1 28%, #FFA500 88%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.28, #4169E1), color-stop(0.88, #FFA500));
+	color:#000;
+
+}
 .confirm{
 	width: 276px;
 	color: #a6a59e;
