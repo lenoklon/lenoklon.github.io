@@ -131,9 +131,8 @@ main .top p{
 .facebook a:after{
 	content: url(../img/arrow.png);
 	position: absolute;
-	top: 0px;
-	right: 4px;
-	padding: 10px 25px;
+	top: 10px;
+	right: 30px;
 }
 
 
