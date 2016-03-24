@@ -1,0 +1,400 @@
+@import url(reset.css);
+
+@font-face{
+	font-family: "Lucida-Sans-Unicode";
+    src: url('../fonts/Lucida Sans Unicode Regular.ttf');
+ }
+body{
+	background: #ffffff;
+	font-family: "Lucida-Sans-Unicode";
+}
+
+.wrapper{
+	width: 910px;
+	height: 1310px;
+	margin: 0 auto;
+	background:#eee;
+}
+header{
+	position: relative;
+	padding-top: 17px;
+}
+.numbers{
+	color:#5e696d;
+	float: left;
+	width: 287px;
+	font-size: 18px;
+	padding-top: 8px;
+	margin-left: 32px;
+}
+
+.numbers:before{
+	content: url(../img/phone.png);
+	position: absolute;
+	left: 6px;
+	top: 21px;
+}
+
+.registration{
+	width: 495px;
+	background: #175274;
+	float: left;
+	border-radius: 5px;
+	margin-left: -4px;
+	position: relative;
+	padding-top:3px;
+	padding-bottom: 4px;
+	font-size:10px;
+
+}
+.registration input{
+	width: 112px;
+}
+.registration input[type="text"]{
+	margin-left: 23px;
+}
+.registration form{
+	float: left;
+}
+.registration form:before{
+	content: url(../img/person.png);
+	position: absolute;
+	top: 6px; 
+	left: 4px;
+}
+.registration ul li{
+	float: left;
+	font-size: 12px;
+  	color: rgb(255, 255, 255);
+}
+
+.registration li:nth-child(1){
+	padding: 6px 5px 0 5px;
+
+}
+.registration li:nth-child(2){
+	padding: 6px 0 0 8px;
+}
+.registration li:nth-child(3){
+	padding: 6px 0 0 15px;
+}
+.registration .border a:after{
+	content: "";
+	border-right: 1px groove white;
+	height: 10px;
+	right: 195px;
+	top: 10px;
+	position: absolute;
+}
+.registration a{
+	color: #eee;
+	text-decoration: none;
+
+}
+.registration a span{
+	font-size: 12px;
+	color: rgb(191, 191, 191);
+	text-decoration: underline;
+}
+.sprites{
+	margin-top: 4px;
+	margin-bottom: 6px;
+	float: left;
+	width: 75px;
+	border-radius: 5px;
+	background: #eee;
+	margin-left: 18px;
+}
+.sprites li{
+	display: inline-block;
+	padding-left: 6px;
+}
+
+figure{
+	margin: 8px auto;
+	margin-bottom: 3px;
+}
+
+nav{
+	width: 100%;
+	background: #121415;
+	border-radius: 5px;
+}
+nav ul li{
+	display: inline-block;
+	color: #70787b;
+	line-height: 32px;
+}
+nav .menu{
+	float: left;
+	margin-left: 125px;
+	font-size: 13px;
+	}
+nav .menu li a{
+	padding-right: 18px;
+	padding-left: 18px;
+}
+
+nav .basket{
+	float: right;
+	font-size: 11px;
+	margin-right: 76px;
+
+}
+nav li a:hover{
+	background: #154b6d;
+	color: #eee;
+	border-radius: 25px;
+}
+nav a{
+	display: block;
+	text-decoration: none;
+	color: #70787b;
+}
+nav .basket li{
+	position: relative;
+	padding-left: 25px;
+
+}
+
+nav .first_basket:before{
+	content: url(../img/basket.png);
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+nav .first_basket:after{
+	content: "0";
+	font-size: 12px;
+	font-family: Arial;
+	color: #0d5a8f;
+	position: absolute;
+	top:0;
+	left: 78px;
+}
+nav .second_basket:after{
+	content: "0,00грн.";
+	font-size: 12px;
+	font-family: Arial;
+	color: #0d5a8f;
+	position: absolute;
+	top:0;
+	left: 78px;
+}
+   /*SECTION*/
+.auto_searching{
+	width: 416px;
+	float: left;
+	border:2px solid #999999;
+	border-radius: 23px;
+	margin-top: 13px;
+	margin-left: 3px;
+	box-sizing: border-box;
+	font-size:10px;
+	padding-left: 18px;
+	padding-right: 14px;
+}
+section span{
+	color:#8d999d;
+	font-family:"Arial Regular";
+	display: block;
+}
+
+.auto_searching h2{
+	color: #154467;
+	text-align: center;
+	font:12px "Arial Black";
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.auto_searching .discs{
+	width: 180px;
+	float: left;
+}
+.auto_searching .wheels{
+	width: 180px;
+	float: right;
+	margin-right: -2px;
+	margin-top: 4px;
+}
+.auto_searching .discs h2{
+	text-align: left;
+	font:10px "Arial Black";
+	 font-weight: bold;
+	 margin-top: -19px;
+	 margin-left: 2px;
+	 margin-bottom: 10px;	
+}
+.auto_searching .wheels h2{
+	text-align: right;
+	font:10px "Arial Black";
+	 font-weight: bold;
+	 margin-right: 10px;
+	 margin-top: -25px;
+	 margin-bottom: 10px;
+}
+.auto_searching .left_column{
+	width: 71px;
+	float: left;
+}
+
+.auto_searching .left_column ul li:first-child{
+	margin-bottom: 6px;
+
+}
+.auto_searching .left_column ul li:nth-child(2){
+	margin-bottom: -8px;
+}
+.auto_searching .left_column ul li:nth-child(3){
+	margin-top: 10px;
+}
+.auto_searching .left_column ul li:nth-child(4){
+	margin-top: 6px;
+}
+
+.auto_searching span{
+	display: block;
+}
+.auto_searching ul li span:nth-child(1){
+	display: inline-block;
+	font-size: 8px;
+}
+
+.auto_searching ul li span:nth-child(2){
+	font-size: 9px;
+	margin-top:-5px;
+	margin-bottom: 5px;
+
+}
+.auto_searching ul li span:nth-child(3){
+	font-size: 9px;
+}
+
+.auto_searching .select{
+	float: right;
+	margin-top: -7px;
+}
+.auto_searching select{
+	border: none;
+	border-left: 1px solid grey;
+	border-top: 1px solid grey;
+	margin-bottom: 6px;	
+	width: 101px;
+}
+.wheel_searching{
+	width: 194px;
+	float: left;
+	border:2px solid #999999;
+	border-radius: 23px;
+	margin-top: 13px;
+	margin-left: 13px;
+	box-sizing: border-box;
+	font-size:10px;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-bottom: 9px;
+	overflow: hidden;
+
+}
+.wheel_searching h2{
+	color: #154467;
+	text-align: left;
+	font:12px "Arial Black";
+	font-weight: bold;
+	margin-bottom: 9px;
+
+}
+.wheel_searching .wheel_description{
+	width: 36px;
+	float: left;
+	line-height: 21px;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+
+}
+.wheel_searching select{
+	width: 50px;
+	border: none;
+	border-left: 1px solid grey;
+	border-top: 1px solid grey;
+	
+
+}
+	.auto_searching select{
+	border: none;
+	border-left: 1px solid grey;
+	border-top: 1px solid grey;
+	margin-bottom: 6px;	
+	width: 101px;
+}
+	
+}
+.wheel_searching .wheel_select{
+	width: 118px;
+	float: right;
+	margin-left: 9px;
+	margin-top: 6px;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+}
+
+
+.disc_searching{
+	float: left;
+	width: 269px;
+	border:2px solid #999999;
+	border-radius: 17px;
+	margin-top: 13px;
+	margin-left: 9px;
+	box-sizing: border-box;
+	font-size:10px;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-bottom: 9px;
+	height: 137px;
+}
+.disc_searching h2{
+	color: #154467;
+	text-align: left;
+	font:12px "Arial Black";
+	font-weight: bold;
+	margin-bottom: 7px;
+}
+.disc_searching .left_block{
+	float: left;
+}
+
+.disc_searching .right_block{
+	float: right;
+}
+.disc_searching .left_description{
+	float: left;
+}
+.disc_searching .left_select{
+	float: left;
+}
+section .clear{
+	clear: both;
+	font:14px Arial;
+	font-style:italic; 
+	color: #60778d;
+	text-align: right;
+	margin-bottom: 6px;
+
+}
+section .clear a{
+	padding-right: 10px;	
+
+}
+.clearfix:after {
+     content: '';
+     display: table;
+     clear: both;
+}
+
+
+	
+	
+
+
+	
