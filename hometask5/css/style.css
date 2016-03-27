@@ -97,10 +97,10 @@ main .top p{
 	margin-top: 35px;
 	margin-bottom: 35px;
 	border-radius: 5px;
-	background: -webkit-linear-gradient(top, #28539B, #193F7B); / для webkit-браузеров /
- background: -moz-linear-gradient(top, #28539B, #193F7B); / для firefox 3.6+ / 
- background: -o-linear-gradient(top, #28539B, #193F7B); / для Opera 11.10+ /
- background: -ms-linear-gradient(top, #28539B, #193F7B); / для IE10+ /
+	background: -webkit-linear-gradient(to top, #28539B, #193F7B); / для webkit-браузеров /
+ background: -moz-linear-gradient(to top, #28539B, #193F7B); / для firefox 3.6+ / 
+ background: -o-linear-gradient(to top, #28539B, #193F7B); / для Opera 11.10+ /
+ background: -ms-linear-gradient(to top, #28539B, #193F7B); / для IE10+ /
  background: linear-gradient(to bottom, #28539B, #193F7B);
 }
 .facebook a{
