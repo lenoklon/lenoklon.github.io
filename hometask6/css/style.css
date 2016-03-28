@@ -17,7 +17,7 @@ body{
 }
 header{
 	position: relative;
-	padding-top: 17px;
+	padding-top: 15px;
 }
 .numbers{
 	color:#5e696d;
@@ -37,15 +37,12 @@ header{
 
 .registration{
 	width: 496px;
-	height: 24px;
-	background-image: -moz-linear-gradient(top, #1f6585, #0d365a 56%);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #1f6585), color-stop(0.56, #0d365a));
+	height: 20px;
 	float: left;
-	border-radius: 5px;
-	margin-left: -4px;
+	margin-left: -7px;
 	position: relative;
 	padding-top:3px;
-	/*padding-bottom: 4px;*/
+	padding-bottom:3px;
 	font-size:10px;
 	background-color: #b1bcc0;
 	background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
@@ -55,10 +52,18 @@ header{
 
 }
 .registration input{
-	width: 115px;
+	width: 111px;
+	height: 15px;
+	background-color: white;
+	border: 1px solid #9ba1a3;
+	color: #97a2a6;
+	font-family: "Lucida Sans Unicode";
+	font-size: 11px;
+	font-weight: 400;
+	padding-left: 2px;
 }
 .registration input[type="text"]{
-	margin-left: 23px;
+	margin-left: 26px;
 }
 .registration form{
 	float: left;
@@ -67,7 +72,7 @@ header{
 	content: url(../img/person.png);
 	position: absolute;
 	top: 6px; 
-	left: 4px;
+	left: 7px;
 }
 .registration ul li{
 	float: left;
@@ -76,14 +81,14 @@ header{
 }
 
 .registration li:nth-child(1){
-	padding: 6px 5px 0 5px;
+	padding: 4px 5px 0 8px;
 
 }
 .registration li:nth-child(2){
-	padding: 6px 0 0 8px;
+	padding: 4px 0 0 3px;
 }
 .registration li:nth-child(3){
-	padding: 6px 0 0 15px;
+	padding: 5px 0 0 12px;
 }
 .registration .border a:after{
 	content: "";
@@ -104,31 +109,44 @@ header{
 	text-decoration: underline;
 }
 .sprites{
-	margin-top: 4px;
-	margin-bottom: 6px;
-	float: left;
-	width: 75px;
-	border-radius: 5px;
-	background: #eee;
+	margin-top: 2px;
+	margin-bottom: 4px;
 	margin-left: 18px;
+	float: left;
+	border-radius: 19px;
+	background: #eee;
+	width: 73px;
+	height: 19px;
+	background-color: white;
+	border: 1px solid #bdc4c7;
 
 }
-.sprites li{
+.sprites li:nth-child(1){
 	display: inline-block;
-	padding-left: 6px;
+	padding-left: 7px;
+}
+
+.sprites li:nth-child(2){
+	display: inline-block;
+	padding-left: 3px;
+}
+.sprites li:nth-child(3){
+	display: inline-block;
+	padding-left: 4px;
 }
 
 figure{
 	margin: 8px auto;
-	margin-bottom: 3px;
+	margin-bottom: 4px;
 }
 
 nav{
-	width: 100%;
 	background-image: linear-gradient(to top, black 0%, #576068 100%);
 	border: 1px solid #0d1642;
 	border-radius: 5px;
 	box-shadow: 1.5px 2.6px 5px rgba(0, 0, 0, 0.75);
+	width: 908px;
+	height: 32px;
 }
 nav ul li{
 	display: inline-block;
@@ -148,7 +166,7 @@ nav .menu li a{
 nav .basket{
 	float: right;
 	font-size: 11px;
-	margin-right: 76px;
+	margin-right: 72px;
 
 }
 nav li a:hover{
@@ -224,7 +242,9 @@ aside a{
 	text-align: center;
 	font:12px "Arial Black";
 	font-weight: bold;
-	margin-bottom: 5px;
+	margin-bottom: 6px;
+	margin-top: -3px;
+	margin-left: -15px;
 
 }
 .auto_searching .discs{
@@ -242,14 +262,14 @@ aside a{
 	font:10px "Arial Black";
 	 font-weight: bold;
 	 margin-top: -19px;
-	 margin-left: 2px;
+	 margin-left: 3px;
 	 margin-bottom: 10px;	
 }
 .auto_searching .wheels h2{
 	text-align: right;
 	font:10px "Arial Black";
 	 font-weight: bold;
-	 margin-right: 10px;
+	 margin-right: 9px;
 	 margin-top: -25px;
 	 margin-bottom: 10px;
 }
@@ -290,10 +310,17 @@ aside a{
 	font-size: 9px;
 }
 
-.auto_searching .select{
+.auto_searching .discs .select{
 	float: right;
-	margin-top: -7px;
+	margin-top: -6px;
+	margin-right: 4px;
 }
+.auto_searching .wheels .select{
+	float: right;
+	margin-top: -6px;
+	margin-right: 2px;
+}
+
 .auto_searching select{
 	margin-bottom: 6px;	
 	width: 101px;
@@ -302,6 +329,10 @@ aside a{
 	background-color: white;
 	box-shadow: inset 0.5px 0.9px 1px rgba(0, 0, 0, 0.75);
 }
+.auto_searching select:last-child{
+	margin-bottom: 5px;
+}
+
 .auto_searching .year{
 	width: 57px;
 	background-color: white;
@@ -309,13 +340,13 @@ aside a{
 }
 .wheel_searching{
 	float: left;
-	margin-top: 13px;
+	margin-top: 11px;
 	margin-left: 13px;
 	width: 193px;
 	height: 134px;
 	background-color: white;
 	border: 1px solid #9c9c9d;
-	border-radius: 17px;
+	border-radius: 21px;
 	box-shadow: 2.6px 4.3px 5px rgba(150, 150, 150, 0.75);
 
 
@@ -325,7 +356,7 @@ aside a{
 	text-align: left;
 	font:12px "Arial Black";
 	font-weight: bold;
-	margin-left: 12px;
+	margin-left: 9px;
 
 }
 .wheel_searching span{
@@ -345,7 +376,8 @@ aside a{
 	font: 12px "Lucida-Sans-Unicode";
 	height: 85px;
 	float: right;
-	margin-right: 14px;
+	margin-right: 17px;
+	margin-top: 4px;
 
 }
 .wheel_searching select{
@@ -361,8 +393,8 @@ aside a{
 }
 
 .wheel_searching .size1{
-	width: 51px;
-	margin-bottom: 5px;
+	width: 52px;
+	margin-bottom: 6px;
 }
 .wheel_searching .size2{
 	width: 52px;
@@ -379,7 +411,7 @@ aside a{
 }
 .disc_searching{
 	float: left;
-	margin-top: 13px;
+	margin-top: 11px;
 	margin-left: 9px;
 	margin-right: 5px;
 	box-sizing: border-box;
@@ -487,11 +519,19 @@ section .clear{
 	font-style:italic; 
 	color: #154467;
 	text-align: right;
-	margin-bottom: 6px;
+	margin-bottom: 6px;	
 
 }
-section .clear a{
-	padding-right: 10px;
+section .auto_searching .clear a{
+	padding-right: 6px; 
+
+}
+section .wheel_searching .clear a{
+	padding-right: 10px; 
+	
+}
+section .disc_searching .clear a{
+	padding-right: 10px; 
 
 }
 aside{
@@ -584,7 +624,7 @@ aside .content{
 .content .wheel1{
 	width: 140px;
 	float: left;
-	margin-top: 15px;
+	margin-top: 8px;
 	margin-left: 22px;
 	text-align: center;
 	margin-bottom: 27px;
@@ -593,12 +633,18 @@ aside .content{
 	font:15px "Lucida Sans Unicode";
 	color: #206988;
 	font-weight: bold;
+	margin-top: 5px;
+	margin-left: 1px;
+	margin-bottom: -5px;
 }
 .content .wheel_description{
 	font-size: 13px;
 	color: #1f2528;
+	margin-left: 6px;
 }
-
+.content .price {
+	margin-left: 5px;
+}
 .content .price p{
 	color: #114165;
 	font-weight: 700;
@@ -613,15 +659,15 @@ aside .content{
 	width: 139px;
 	margin-left: 29px;
 	float: left;
-	margin-top: 15px;
+	margin-top: 8px;
 	margin-bottom: 27px;
 	text-align: center;
 }
 .content .wheel3{
-	width: 140px;
+	width: 141px;
 	margin-left: 29px;
 	float: left;
-	margin-top: 15px;
+	margin-top: 8px;
 	margin-bottom: 27px;
 	text-align: center;
 }
@@ -673,6 +719,7 @@ aside .content{
 .wheel2_2 .wheel_item,
 .wheel3_2 .wheel_item{
 	color: #206988;
+	margin-top: -5px;
 }
 .wheel1_2 .wheel_description,,
 .wheel2_2 .wheel_description,
@@ -688,6 +735,7 @@ aside .content{
 .wheel2_3 .wheel_item,
 .wheel3_3 .wheel_item{
 	color: #206988;
+	margin-top: -3px;
 }
 .wheel1_3 .wheel_description,,
 .wheel2_3 .wheel_description,
@@ -698,6 +746,7 @@ aside .content{
 .wheel2_3 .price,
 .wheel3_3 .price{
 	color: #114165;
+	margin-top: 3px;
 }
 .content .wheel3 .wheel_description{
 	letter-spacing: 1px;
@@ -731,15 +780,17 @@ aside .right_sidebar{
 footer .sponsors{
 	width: 100%;
 	height: 90px;
+	padding-left: 116px;
 }
 footer .sponsors ul li{
 	display: inline-block;
-	line-height: 90px;
-	margin-right: 11px;
+	margin-right: 8px;
 }
-footer .sponsors li:first-child{
-	margin-left: 116px;
+footer .sponsors ul li a{
+	display: block;
+	line-height: 117px;
 }
+
 footer .main_footer{
 	width: 910px;
 	height: 101px;
@@ -780,7 +831,8 @@ footer .copyright{
 	color: #7f4740;
 	font:10px Arial;
 	margin: 0 auto;
-	margin-top: 16px;
+	margin-top: 13px;
+
 	
 }
 .clearfix:after {
