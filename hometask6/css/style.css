@@ -238,8 +238,11 @@
 
 	section input[type="submit"]{
 		border: none;
-		background: #fff;
+		background:none;
 		color: #154467;
+		font-style: italic;
+    	font-size: 15px;
+    	cursor: pointer;
 	}
 	.auto_searching h2{
 		color: #154467;
@@ -627,10 +630,14 @@
 		margin-top: -9px;
 		margin-left: 46px;
 	}
-	.left_sidebar .catalog_list ul{
+	.left_sidebar .wheels_catalog_list ul,
+	.left_sidebar .discs_catalog_list ul,
+	.left_sidebar .bolts_catalog_list ul{
 		list-style-image: url(../img/light_marker.png);
 	}
-	.left_sidebar .catalog_list ul li:hover{
+	.left_sidebar .wheels_catalog_list ul li:hover,
+	.left_sidebar .discs_catalog_list ul li:hover,
+	.left_sidebar .bolts_catalog_list ul li:hover{
 		list-style-image: url(../img/hover_marker.png);
 		font:14px Arial;
 		font-weight: bold;
@@ -660,10 +667,10 @@
 	.content .wheel_item{
 		font:15px "Lucida Sans Unicode";
 		color: #206988;
-		font-weight: bold;
-		margin-top: 5px;
-		margin-left: 1px;
-		margin-bottom: -5px;
+		margin-top: 2px;
+    	margin-left: 1px;
+    	margin-bottom: -4px;
+
 	}
 	.content .wheel_description{
 		font-size: 13px;
