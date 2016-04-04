@@ -12,7 +12,7 @@
 		background:#fff;
 		height: 1310px;
 		margin: 0 auto;
-		width: 910px;
+		width: 913px;
 	}
 	header{
 		padding-top: 18px;
@@ -25,7 +25,7 @@
 		font-weight: 400;
 		height: 17px;
 		line-height: 25px;
-		margin-left: 5px;
+		margin-left: 4px;
 	}
 	.numbers .num li{
 		float: left;
@@ -47,7 +47,7 @@
 		background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
 		border-radius: 4px;
 		box-shadow: 1.5px 2.6px 3px rgba(150, 150, 150, 0.75);
-		height: 26px;
+		height: 25px;
 		position: relative;
 		float: left;
 		font:10px "Lucida-Sans-Unicode";
@@ -69,9 +69,11 @@
 	.registration input[type="password"]{
 		border: 1px solid #9ba1a3;
 		color:#97a2a6;
-		height: 18px;
+		height: 17px;
+		margin-right: 3px;
 		padding: 0 4px;
-		width: 115px;
+		width: 105px;
+
 	}
 
 	.registration input[type="submit"]{
@@ -113,7 +115,7 @@
 	.registration a.no_pass{
 		font:12px "Lucida-Sans-Unicode";
 		color: #bfbfbf;
-		line-height: 26px;     /*ЧОМЦ ЦІ ВЛАСТИВОСТІ НЕ ДІЮТЬ, ЯКЩО		 						   ЇХ ЗАДАТИ В ЗАГАЛЬНОМУ ДЛЯ ССИЛОК???*/
+		line-height: 25px;     /*ЧОМЦ ЦІ ВЛАСТИВОСТІ НЕ ДІЮТЬ, ЯКЩО		 						   ЇХ ЗАДАТИ В ЗАГАЛЬНОМУ ДЛЯ ССИЛОК???*/
 		vertical-align: middle;
 	}
 
@@ -220,7 +222,7 @@
 		padding-left: 18px;
 		padding-right: 14px;
 		width: 415px;
-		height: 134px;
+		height: 131px;
 		border: 1px solid #9c9c9d;
 		border-radius: 17px;
 		box-shadow: 2.6px 4.3px 5px rgba(104, 104, 104, 0.75);
@@ -470,6 +472,12 @@
 	.disc_searching .left_description{
 		float: left;
 	}
+	section .clear input{
+		text-decoration: underline;
+	}
+	section .clear input:hover{
+		text-decoration: none;
+	}
 	.disc_searching .left_select{
 		float: left;
 	}
@@ -551,54 +559,73 @@
 	.right_sidebar .catalog{
 		background: url(../img/catalog.png) no-repeat 6px 2px;
 		font-size: 12px;
-		border-radius: 5px;
-		width: 183px;
+		border-radius: 16px;
+		width: 179px;
 		height: 27px;
+		line-height: 27px;
 		background-color: white;
 		border: 1px solid #79878d;
 		box-shadow: 1.5px 2.6px 3px rgba(150, 150, 150, 0.75);
 
 	}
-	.left_sidebar .header,
-	.right_sidebar .header{
+	.left_sidebar .title,
+	.right_sidebar .title{
 		background: url(../img/circle.png) no-repeat 6px 2px;
 		font-size: 12px;
-		width: 150px;
-		border-radius: 5px;
+		width: 148px;
+		border-radius: 15px;
 		border: 1px solid #8c969a;
+		height: 27px;
+		line-height: 27px;
 		margin-top: 13px;
 		margin-bottom: 9px;
 
 	}
 	 .catalog h2,
-	.header h2{
+	.title h2{
 		color: #114165;
 		display: block;
 		margin-left: 28px;
-		padding: 7px;
+		padding: 1px 0 0 6px;
 		text-decoration: none;
 	}
-	.right_sidebar .header{
+	.right_sidebar .title{
 		width: 135px;
 		margin-left: 12px;
 		margin-right: 30px;
+		height: 26px;       
+		line-height: 26px;
 	}
 	.right_sidebar .catalog h2{
 		display: block;
 		text-decoration: none;
-		padding: 7px;
+		padding: 1px 0 0 6px;
 		margin-left: 31px;
 	}
 	.right_sidebar{
 		margin-right: 5px;
 	}
-	.left_sidebar .catalog_list{
-		margin-top: 8px;
-		margin-left: 35px;
+	.left_sidebar .wheels_catalog_list,
+	.left_sidebar .discs_catalog_list,
+	.left_sidebar .bolts_catalog_list{
 		color:#465961;
-		font-size: 13px;
+		font-size: 12.7px;
 		line-height: 24px;
 		letter-spacing: 1px;
+	}
+	.left_sidebar .wheels_catalog_list{
+		margin-top: -9px;
+		margin-left: 46px;
+		margin-bottom: -10px;
+	}
+	.left_sidebar .discs_catalog_list{
+		margin-top: -9px;
+		margin-left: 46px;
+		margin-bottom: -11px;
+	}
+	.left_sidebar .bolts_catalog_list{
+		margin-top: -9px;
+		margin-left: 46px;
 	}
 	.left_sidebar .catalog_list ul{
 		list-style-image: url(../img/light_marker.png);
@@ -759,17 +786,22 @@
 		float: right;
 	}
 	.right_sidebar .catalog_checkbox{
-		font:13px;
+		font-size:12.73px;
 		color: #465961;
 		line-height: 24px;
+		margin-left: 28px;
+		margin-top: -7px;
+	}
+	.right_sidebar .submit{
+		margin-top: 18px;
 		margin-left: 23px;
 	}
 	.right_sidebar .submit button{
+		font-size: 11px;
 		color: #eee;
-		margin-left: 23px;
+		
 		border-radius: 15px;
 		border:none;
-		margin-top: 21px;
 		width: 82px;
 		height: 26px;
 		background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
@@ -777,6 +809,9 @@
 		border-radius: 10px;
 		box-shadow: 1.5px 2.6px 3px rgba(150, 150, 150, 0.75);
 
+	}
+	main .submit button:hover{
+		text-decoration: underline;
 	}
 	footer .sponsors{
 		width: 100%;
