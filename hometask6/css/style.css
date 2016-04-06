@@ -14,6 +14,9 @@
 		margin: 0 auto;
 		width: 913px;
 	}
+	.wrapper input{
+		outline: none;
+	}
 	header{
 		padding-top: 18px;
 		position: relative;
@@ -253,6 +256,15 @@
     	font-size: 15px;
     	cursor: pointer;
 	}
+	section .clear{
+		clear: both;
+		font:14px Arial;
+		font-style:italic;
+		color: #154467;
+		text-align: right;
+		margin-bottom: 6px;
+
+	}
 	.auto_searching h2{
 		color: #154467;
 		text-align: center;
@@ -385,15 +397,15 @@
 		float: left;
 		width: 37px;
 		margin-left: 14px;
+		margin-top: -7px;
 		text-align: right;
-		line-height: 21px;
+		line-height: 23px;
 	}
 	.wheel_searching .float_right{
 		font: 12px "Lucida-Sans-Unicode";
 		height: 85px;
 		float: right;
 		margin-right: 17px;
-		margin-top: 4px;
 
 	}
 	.wheel_searching select{
@@ -428,21 +440,27 @@
 		font-size: 11px;
 	}
 	.disc_searching{
-		float: left;
-		margin-top: 11px;
-		margin-left: 9px;
-		margin-right: 5px;
-		box-sizing: border-box;
-		font-size:10px;
-		padding-left: 14px;
-		padding-right: 14px;
-		padding-bottom: 9px;
-		width: 268px;
-		height: 136px;
 		background-color: white;
 		border: 1px solid #9c9c9d;
 		border-radius: 14px;
 		box-shadow: 2.6px 4.3px 5px rgba(150, 150, 150, 0.75);
+		box-sizing: border-box;
+		height: 136px;
+		float: left;
+		font:10px "Lucida-Sans-Unicode";
+		line-height: 10px;
+		margin-top: 11px;
+		margin-left: 9px;
+		margin-right: 5px;
+		padding-left: 14px;
+		padding-right: 14px;
+		width: 268px;
+		
+
+	}
+	.disc_searching span{
+		font-family:"Lucida-Sans-Unicode";
+		line-height: 10px;
 	}
 	.disc_searching h2{
 		color: #154467;
@@ -451,7 +469,9 @@
 		font-weight: bold;
 		margin-bottom: 7px;
 	}
-
+	.disc_searching select{
+		background: none;
+	}
 	.disc_searching .left_block{
 		float: left;
 		position: relative;
@@ -522,8 +542,9 @@
 		font-size: 11px;
 	}
 	.disc_searching .right_block .first_right{
-		margin-bottom: 6px;
 		font-size: 8px;
+		margin-bottom: 6px;
+		margin-top: -5px;
 	}
 	.disc_searching .right_block .second_right{
 		margin-bottom: 8px;
@@ -534,19 +555,15 @@
 	}
 	.disc_searching .right_block .fourth_right{
 		margin-bottom: 0;
+		margin-top: -5px;
+	}
+	.disc_searching .third_right span{
+		font-size: 8px;
 	}
 	section .disc_searching .clear{
 		height: 12px;
 	}
-	section .clear{
-		clear: both;
-		font:14px Arial;
-		font-style:italic;
-		color: #154467;
-		text-align: right;
-		margin-bottom: 6px;
-
-	}
+	
 	section .auto_searching .clear input{
 		padding-right: 6px;     /*ЯК оПУСТИТИ КНОПКУ??*/
 
@@ -592,6 +609,7 @@
 	.right_sidebar .title{
 		background: url(../img/circle.png) no-repeat 6px 2px;
 		font-size: 12px;
+		font-weight: normal;
 		width: 148px;
 		border-radius: 15px;
 		border: 1px solid #8c969a;
