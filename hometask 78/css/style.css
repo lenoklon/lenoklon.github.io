@@ -20,131 +20,142 @@
          url('../fonts/opensans-light-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
-body{
+
+body {
 	background: #f9f9f9;
 	font-family: 'leagueGothicRegular';
 }
+
 .clearfix:after {
  	content:'';
  	clear: both;
  	display: block;
 }
-header{
+
+header {
 	background: url("../img/header_mountains.png") top center no-repeat;
 	background-size: cover;
 }
-.wrapper{
+
+.wrap {
 	max-width: 320px;
 	margin: 0 auto;
 }
-.header__logo{
+
+.header__logo {
 	color: white;
-	font-size: 48px;
+	font-size: 46px;
+	font-weight: normal;
 	padding: 18% 0 0 0;
 	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 	text-align: center;
 }
-.header__logo span{
+
+.header__logo span {
 	color: #654672;
 }
-nav{
+
+nav {
 	text-transform: uppercase;
 }
 
-.header_mobile a{
+.header_mobile a {
 	border-bottom:2px solid #edbfff;
-	display: block;
 	color:#fff;
+	display: block;
 	font-size: 24px;
+	margin:10% auto 0 auto;
 	padding-bottom: 1%;
 	text-decoration: none;
 	text-align: center;
 	width: 15%;
-	margin:10% auto 0 auto;
 }
 
-.header__menu{
-	display: none;
+.header__menu {
 	background-color: #36293e;
 	border: 1px solid #051116;
 	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+	display: none;
 	opacity: 0.9;
 	text-transform: uppercase;
 }
 
-
-.header__menu>li{
+.header__menu>li {
 	position: relative;
 }
 
-.header__menu a{
+.header__menu a {
 	color:#fff;
 	display: block;
-	text-decoration: underline;
 	font-size: 24px;
 	line-height: 42px;
 	padding: 5% 10% 5% 10%;
 	text-align: center;
+	text-decoration: underline;
 }
-.sub_menu{
+
+.sub_menu {
 	display: none;
 	position: absolute;
 }
-.header__slider{
+
+.header__slider {
 	margin:38% auto 0 auto;
 	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
-.slider__arrow{
+
+.slider__arrow {
 	float: left;
 	margin:4% 13% 0 0;
 }
-.right_arrow{
+
+.right_arrow {
 	margin-right: 0;
 }
-.slider__slogan{
+
+.slider__slogan {
 	float: left;
-	margin:0 16% 0 0;
-	
+	margin:0 10% 0 0;
 }
-.slider__slogan h3{
+
+.slider__slogan h2 {
 	color: #fefefe;
 	font-size: 36px;
 	font-weight: normal;
-	text-align: center;
 }
-.slider__slogan p{
+.slider__slogan p {
 	color: #edbfff;
 	font-size: 18px;
-	text-align: center;
-	margin: 1% 0 0 -2%;
+	margin: 2% 0 0 0;
+	text-transform: uppercase;
 }
-.slider__arrow:nth-child(2){
-	margin-right: 0;
-}
-.slider__button{
+
+.slider__button {
 	cursor: pointer;
 	font-weight: 400;
 	margin:25% 0 0 38%;
 	position: relative;
 	
 }
-.slider__button li{
+
+.slider__button li {
 	float: left;
 	margin:0 3% 33% 0;
-
 }
-.slider__button a{
+
+.slider__button a {
 	background: url(../img/slider.png) 0 0 no-repeat;
 	display: block;
 	height: 19px;
 	width: 17px;
 }
-.slider__button a:hover{
+
+.slider__button a:hover {
 	background-position: -23px 0;
 }
-.about{
+
+.about {
 	background: #6a4a77; /*for old browsers*/
 	background:  -moz-linear-gradient(to top, #322539 0%, #745083 100%);
 	background:  -moz-linear-gradient(to top, #322539 0%, #745083 100%); /* FF3.6-15 */
@@ -156,54 +167,53 @@ nav{
  	box-shadow: 0px 6px 8px 1px rgba(50,37,57,0.3);
  	border-top: 1px solid #000;
  	border-bottom: 1px solid #000;
- 	padding:0 0 3% 0;
- 	
-}
+ 	padding:0 0 40px 0;
+ }
 
-article h3{
+article h3 {
 	color: #fff;
 	font-size: 24px;
 	font-weight: normal;
 	text-shadow: 0.5px 0.9px 0 #0f1518;
 	margin-bottom: 1%;
 }
-article p{
-	text-shadow: 0.5px 0.9px 0 #0f1518;
+
+article p {
 	color: white;
 	font-family: 'Open_Sans_Light';
 	font-size: 16px;
-	line-height: 24px;
-	max-height: 77px;
+	line-height: 25px;
+	max-height: 71px;
 	overflow: hidden;
-
-}
-article{
-	overflow: hidden;
-	margin:0 2% 7% 9%; /*левый --точно */
+	text-shadow: 0.5px 0.9px 0 #0f1518;
 }
 
-article:nth-child(1){
+article {
+	margin:0 2% 7% 8%; /*левый --точно */
+}
+
+article:first-child {
 	margin-top: 22%;
 }
-article:nth-child(2){
+
+.second_article {
 	margin-bottom: 12%;
 }
 
-
-
-.sign{
+.sign {
 	float: left;
-	width: 9%;
+	width: 14%;
 	height: 30px;
-	background: url(../img/sprites.png) 0 0 no-repeat;
-	margin-right: 10%;
-}
-.block{
-	float: left;
-	width: 79%;
+	background: url(../img/sprites.png) 6px 1px no-repeat;
+	margin-right: 6%;
 }
 
-button{
+.block {
+	float: left;
+	width: 78%;
+}
+
+button {
 	background: none;
 	border:none;
 	clear:both;
@@ -211,89 +221,157 @@ button{
 	font-family: 'leagueGothicRegular';
 	font-size: 18px;
 	float: right;
+	margin:5% 0 0 0;
 	outline:none;
+	padding-top: 6px;
 	text-shadow: 0.5px 0.9px 0 #0f1518;
 	text-transform: uppercase;
-	margin:3% 0 0 0;
-	
 }
-button:hover{
-		margin-top: 1%;
-		text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-		color: white;
-		font-size: 18px;
-		margin:3% 0 0 0;
-	}
 
-.pingbuller_content{
+button:hover {
+		color: white;
+		margin-top: 1%;
+		margin:5% 0 0 0;
+		font-size: 18px;
+		text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+.second_article button {
+	margin:4% 0 0 0;
+}
+
+.third_article button {
+	margin:4% 0 0 0;
+}
+
+.pingbuller_content {
 	background-color: #f9f9f9;
 }
-.pingbuller{
-	position: relative;
-	width: 85%;
 
+.pingbuller {
+	box-sizing: border-box;
+	position: relative;
+	width: 86%;
 }
-.face{
+
+.face {
 	position: absolute;
 	top:18px;
-	left:-9px;
-	/*margin-right: 10%;*/
-
+	left:-5px;
 	width: 49px;
 	z-index:10;
 }
-.pingbuller h3{
+
+.pingbuller h3 {
 	color: #454545;
-	text-shadow: 0.5px 0.9px 0 white;
 	font-family: 'leagueGothicRegular';
 	font-size: 24px;
 	text-transform: uppercase;
-	
+	text-shadow: 0.5px 0.9px 0 #fff;
 }
 
-.pingbuller span{
+.pingbuller span {
 	color: #edbfff;
-	text-shadow: 0.5px 0.9px 0 white;
 	font-family: 'leagueGothicRegular';
 	font-size: 24px;
+	text-shadow: 0.5px 0.9px 0 white;
 	text-transform: uppercase;
 }
-.pingbuller p{
+
+.pingbuller p {
 	color: #454545;
 	font-size: 16px;
 	font-weight: 300;
-	line-height: 24px;
+	line-height: 25px;
 	max-height: 167px;
 	overflow: hidden;
-	text-shadow: 0.5px 0.9px 0 white;
+	text-shadow: 0.5px 0.9px 0 #fff;
+	width: 85%;
 }
-.button{
+
+.pingbuller .block {
+	float: right;
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); 
+	padding: 9% 1% 11% 14%;
+	z-index: 0;
+}
+
+.pingbuller_button {
 	cursor: pointer;
 	font-weight: 400;
-	margin:25% 0 0 38%;
+	margin: 6% 0 0 44%;
 	position: relative;
 	
 }
-.button li{
-	float: left;
-	margin:0 3% 33% 0;
 
-}
-.button a{
+.pingbuller_button a {
 	background: url(../img/slider2.png) 0 0 no-repeat;
 	display: block;
 	height: 19px;
 	width: 17px;
 }
-.button a:hover{
+
+.pingbuller_button a:hover {
 	background-position: -23px 0;
 }
 
-.pingbuller .block{
-	background: #fff;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-	float: right; 
-	padding: 9% 3% 10% 12%;
-	z-index: 0;
+.recent_updates {
+	font-family: 'Open_Sans_Light';
+	clear: both;
+	margin:5% 0 0 0;
 }
+
+.recent_updates h2 {
+	color: #454545;
+	font-family: 'leagueGothicRegular';
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 0 0 0 6%;
+	text-shadow: 0.5px 0.9px 0 #fff;
+	text-transform: uppercase;
+
+}
+
+.updates_icons {
+	float: left;
+	margin: 3% 0 0 6%;
+	width: 16%;
+}
+.updates_icons a {
+	display: block;
+	
+}
+.updates_icons a:first-child {
+	margin: 1% 0 25% 0;
+}
+
+.updates_icons a:last-child {
+	margin: 40% 0 0 0;
+}
+
+.updates_news {
+	color: #454545;
+	float: right;
+	font-size: 16px;
+	font-weight:bold;
+	line-height: 24px;
+	margin-right: 6%;
+	text-shadow: 0.5px 0.9px 0 #fff;
+	width: 68%;
+}
+.updates_news span{
+	font-weight: normal;
+}
+
+.update_block:first-child {
+	margin: 5% 0 8% 0;
+}
+
+.update_block:last-child {
+	margin: 12% 0 0 0;
+}
+
+
+
 
