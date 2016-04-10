@@ -218,6 +218,7 @@ button {
 	border:none;
 	clear:both;
 	color:#fff;
+	cursor: pointer;
 	font-family: 'leagueGothicRegular';
 	font-size: 18px;
 	float: right;
@@ -265,6 +266,7 @@ button:hover {
 	color: #454545;
 	font-family: 'leagueGothicRegular';
 	font-size: 24px;
+	margin: 0 0 1% -2%;
 	text-transform: uppercase;
 	text-shadow: 0.5px 0.9px 0 #fff;
 }
@@ -282,7 +284,7 @@ button:hover {
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 25px;
-	max-height: 167px;
+	max-height: 169px;
 	overflow: hidden;
 	text-shadow: 0.5px 0.9px 0 #fff;
 	width: 85%;
@@ -311,14 +313,21 @@ button:hover {
 	width: 17px;
 }
 
+.pingbuller_button li {
+	margin:0 3% 0 0;
+}
+
 .pingbuller_button a:hover {
 	background-position: -23px 0;
 }
 
 .recent_updates {
+	border-bottom: 2px solid #e6e6e6;
 	font-family: 'Open_Sans_Light';
 	clear: both;
-	margin:5% 0 0 0;
+	margin:6% 0 0 0;
+	padding: 0 0 5.8% 0;
+
 }
 
 .recent_updates h2 {
@@ -335,7 +344,7 @@ button:hover {
 
 .updates_icons {
 	float: left;
-	margin: 3% 0 0 6%;
+	margin: 6% 0 0 6%;
 	width: 16%;
 }
 .updates_icons a {
@@ -365,11 +374,75 @@ button:hover {
 }
 
 .update_block:first-child {
-	margin: 5% 0 8% 0;
+	margin: 9% 0 8% 0;
 }
 
 .update_block:last-child {
 	margin: 12% 0 0 0;
+}
+
+.recent_updates button {
+	clear: both;
+	float: right;
+	text-shadow: 0.5px 0.9px 0 #fff;
+	color: #454545;
+	font-family: 'leagueGothicRegular';
+	font-size: 18px;
+	font-weight: normal;
+	margin: 2% 6% 0 0;
+	text-transform: uppercase;
+}
+
+.logo {
+	    padding: 51px 0 73px 0; /* в відсотках не виходить встановити значення*/
+	border-top: 2px solid #fefefe;
+}
+.logo_item{
+	float: left;
+	/*width: 40%;*/
+}
+.logo_1 {
+	margin:0 0 0 19%;
+}
+
+.logo_2 {
+	margin:0 0 0 18%;
+}
+
+.logo_3 {
+	margin:18% 0 0 22%;
+}
+
+.logo_4 {
+	margin: 18% 0 0 21%;
+}
+
+.logo_5 {
+	margin: 19% 0 0 13%;
+	width: 50%;
+}
+
+.logo_6 {
+	margin: 13% 0 0 0;
+}
+
+.footer {
+	background: url(../img/footer.png) no-repeat;
+
+}
+
+.footer p {
+	color: #fff;
+	font-family: 'Open_Sans_Light';
+	font-size: 12px;
+	font-weight: 300;
+	text-align: center;
+	text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
+	padding: 3% 21% 10% 20%;
+}
+
+.footer span {
+	font-weight: 700;
 }
 
 
