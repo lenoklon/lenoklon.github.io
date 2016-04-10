@@ -428,7 +428,7 @@ button:hover {
 
 .footer {
 	background: url(../img/footer.png) no-repeat;
-
+	background-size: cover;
 }
 
 .footer p {
