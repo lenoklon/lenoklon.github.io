@@ -732,7 +732,7 @@
 	}
 
 	.left_sidebar .wheels_catalog_list ul li,
-	.left_sidebar .discs_catalog_list ul, li
+	.left_sidebar .discs_catalog_list ul li,
 	.left_sidebar .bolts_catalog_list ul li{
 		list-style-image: url(../img/light_marker.png);
 	/*	padding-left:5px;*/
