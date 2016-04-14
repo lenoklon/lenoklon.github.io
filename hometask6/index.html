@@ -65,20 +65,20 @@
 								<!--SECTION-->
 		<section class="clearfix">
 								<!--AUTO-SEARCHING-->
-		<form action="#" name="searching">        <!--  ---------ПОЧАТОК ЗАГАЛЬНОЇ ФОРМИ--------- -->
 			<div class="auto_searching clearfix">
-				<h2>поиск по автомобилю</h2>
-								<!--discs-->
-				<div class="discs clearfix">
-					<h2>Диски:</h2>
-					<div class="left_column">
-					<ul>
-						<li>Марка <span>авто:</span></li>
-						<li>Модель <span>автомобиля</span></li>
-						<li>Год выпуска <span>автомобиля</span></li>
-						<li>Комплектация:</li>
-					</ul>
-				</div>
+				<form action="#" name="auto_searching"> <!-- -----загальна перша форма----- -->
+					<h2>поиск по автомобилю</h2>
+									<!--discs-->
+					<div class="discs clearfix">
+						<h2>Диски:</h2>
+						<div class="left_column">
+							<ul>
+								<li>Марка <span>авто:</span></li>
+								<li>Модель <span>автомобиля</span></li>
+								<li>Год выпуска <span>автомобиля</span></li>
+								<li>Комплектация:</li>
+							</ul>
+						</div>
 								<!--SELECT-->
 					<div class="select">
 						<form name="discs_select" action="#">
@@ -149,10 +149,12 @@
 						<input type="submit" name="search" value="поиск...">
 					</form>	
 				</div>
+			</form>                      <!--  -----КІНЕЦЬ ПЕРШОЇ ЗАГАЛЬНОЇ ФОРМИ----- -->
 			</div>
 							<!--WHEEL SEARCHING-->
 			<div class="wheel_searching">
-				<h2>поиск шин</h2>
+				<form action="#" name="wheel_searching">
+					<h2>поиск шин</h2>
 					<div class="float_left">
 							<span>Размер:</span><br>
 							<span>R:</span><br>
@@ -185,10 +187,11 @@
 							<input type="submit" name="search" value="поиск...">
 						</form>
 					</div>
-
-				</div>
+				</form>
+			</div>
 
 			<div class="disc_searching clearfix">
+				<form action="#" name="disc_searching">
 					<h2>поиск дисков</h2>
 					<div class="left_block clearfix">
 						<div class="left_description">
@@ -264,11 +267,10 @@
 						</div>
 						<div class="clear">
 							<input type="submit" name="search" value="поиск...">
+						</div>
 					</div>
-					</div>
-					
-			</div>
-			</form>                <!-- ------КІНЕЦЬ ЗАГАЛЬНОЇ ФОРМИ----- -->
+				</form>
+			</div>         
 		</section>
 
 
