@@ -56,49 +56,67 @@ header {
 	color: #654672;
 }
 
-nav {
-	text-transform: uppercase;
+.header__menu {
+	/*background-color: #36293e;*/
+	border: 1px solid #051116;
+	/*border-radius: 7px 7px 0 0;*/
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	font-family: 'leagueGothicRegular';
+	line-height: 46px;
+	margin:6.6% auto 0 auto;
+	opacity: 0.5;
+	width: 76%;
+
 }
 
-.header_mobile a {
+.header__menu a {
 	border-bottom:2px solid #edbfff;
 	color:#fff;
 	display: block;
 	font-size: 24px;
-	margin:10% auto 0 auto;
-	padding-bottom: 1%;
-	text-decoration: none;
-	text-align: center;
-	width: 15%;
-}
-
-.header__menu {
-	background-color: #36293e;
-	border: 1px solid #051116;
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-	display: none;
-	opacity: 0.9;
+	/*padding: 13px 105px;*/
 	text-transform: uppercase;
+	text-align: center;
+	zoom: 1; /* для IE, что ы отступ был как во всех браузерах*/
+	
+
 }
 
 .header__menu>li {
 	position: relative;
 }
 
-.header__menu a {
-	color:#fff;
-	display: block;
-	font-size: 24px;
-	line-height: 42px;
-	padding: 5% 10% 5% 10%;
-	text-align: center;
-	text-decoration: underline;
+.header__menu li {
+	line-height:46px;
+	height:46px;
 }
 
 .sub_menu {
+	border: 1px solid #051116;
+	border-top: none;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+	background-color: #36293e;
+	box-sizing: border-box;
 	display: none;
 	position: absolute;
+	text-align: center;
+	left: 0;
+	top: 48px;
+	
+	width: 100%;
 }
+
+/*.sub_menu a{
+	padding: 13px 105px;
+}*/
+
+.header__menu>li:hover .sub_menu {
+	background-color: #36293e;
+	display: block;
+	opacity: 0.3;
+}
+
 
 .header__slider {
 	margin:38% auto 0 auto;
