@@ -66,9 +66,10 @@ for (i = 0; i < test.question.length; i++) {
 	}
 	
 }
-
+var divBtn = document.createElement('div');
+divBtn.classList.add('btn');
+form.appendChild(divBtn);
 var button = document.createElement('button');
-button.classList.add('btn');
 button.innerHTML = ('Проверить мои результаты');
-span12.appendChild(button);
+divBtn.appendChild(button);
 
