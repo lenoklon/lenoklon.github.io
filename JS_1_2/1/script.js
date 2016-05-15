@@ -1,10 +1,10 @@
 var x = +prompt('add the number', '');
-var n = +prompt ('add the extent', '');
+var n = +prompt('add the extent', '');
 
 function pow(x, n) {
 	var nAbs = Math.abs(n); //берем модуль числа n
 
-	if (n == 0) {
+	if (n === 0) {
 		return 1;
 	}
 
