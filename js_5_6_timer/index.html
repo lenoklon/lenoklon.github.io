@@ -2,16 +2,16 @@
   <head>
     <meta charset="utf-8">
     <title>JS_5-6_stopwatch</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> 
     <link rel="stylesheet" href="css/style.css">
-   <!--  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">  -->
   </head>
   <body>
       <h1 id="timer">00 : 00 : 000</h1>
       <div id="controls">
-          <button id="startPause" onclick = "startPause()">Start</button>
-          <button onclick = "reset()">Reset</button>
+          <button id="startPause" class = "btn-success" onclick = "startPause()">Start</button>
+          <button class = "btn-warning" onclick = "reset()">Reset</button>
       </div>
-   <!--  <script src="js/bootstrap.min.js"></script>  -->
+    <script src="js/bootstrap.min.js"></script> 
     <script src="js/script.js"></script>
   </body>
 </html>
