@@ -1,0 +1,24 @@
+body {
+	text-align: center;
+	margin-top: 200px;
+	background-color: #000;
+}
+
+#timer {
+	font-family: "Lato";
+	font-size: 100px;
+	font-weight: 300;
+	color:rgba(83, 170, 49, 1);
+	text-shadow:1px 1px 0 rgba(77, 249, 88, 1);
+	transition: all 500ms;
+}
+
+button {
+	width: 100px;
+	height: 35px;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color:rgba(83, 170, 49, 1);
+}
