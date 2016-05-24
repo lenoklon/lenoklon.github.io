@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	padding: 0;
+	font:1em sans-serif;
+	background: lightgreen;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 600px;
+}
+
+.tab {
+	cursor: pointer;
+	border:1px solid grey; 
+	padding: .5em 1em;
+}
+
+.tabs {
+	margin: 20px;
+	border-radius: 3px 3px 0 0;
+}
+
+.tab_item {
+	margin-left: 20px;
+	width: 500px;
+	border:1px solid grey;
+	border-radius: 10px;
+	padding: 0 1em;
+}
+
+.wrap .active {
+	color:red;
+	background: lime;
+}
+
+li {
+	display: inline-block;
+	cursor: pointer;
+	border:1px solid grey; 
+	padding: .5em 1em;
+}
+
+a {
+	text-decoration: none;
+	color:black;
+
+}
+
+ul {
+	list-style: none;
+
+}
+
+img {
+	width: 500px;
+	text-align: center;
+}
