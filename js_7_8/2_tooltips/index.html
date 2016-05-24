@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tooltips</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<h1>Tooltip</h1>
+		<p>Customizable, themeable tooltips, replacing native tooltips</p>
+
+		<form action="POST" name="tooltips">
+			<fieldset>
+				<div class="info">
+					<label for="name">Firstname:</label>
+					<input type="text" id="name">
+					<div class="tooltip">
+						Please provide your firstname
+					</div>
+				</div>
+				<div class="info">
+					<label for="lastname">Lastname:</label>
+					<input type="text" id="lastname">
+					<div class="tooltip">
+						Please provide your lastname
+					</div>
+				</div>
+				<div class="info">
+					<label for="address">Address:</label>
+					<input type="text" id="address">
+					<div class="tooltip">
+						Please provide your address here
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		<div class="button">
+			<input type="submit" value="show help">
+		</div>
+	</div>
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
