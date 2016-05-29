@@ -1,0 +1,77 @@
+@import url(reset.css);
+
+body {
+	font:14px 'Open Sans', Arial;
+
+}
+
+nav {
+	background-color: #000;
+}
+
+.wrap {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #000;
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav ul {
+	position: relative;
+}
+
+nav .submenu {
+	position: absolute;
+}
+
+
+nav li {
+	float: left;
+	width: 180px;
+	/*border-right: 1px solid #49F70F;*/
+	text-align: center;
+}
+
+nav a {
+	background-color: #000;
+	display: block;
+	padding: 13px 25px;
+	text-decoration: none;
+	color:#eee; 
+
+}
+
+nav li a:hover {
+	color:#000;*/
+}
+
+
+nav .submenu li{
+	border-bottom: 1px solid #60D426;
+	float: none;
+	position: relative;
+}
+
+.submenu a {
+	color: #60D426;
+}
+
+nav ul li:hover>ul {
+	display: block;
+}
+
+.inner_submenu {
+	position: absolute;
+	top: 0;
+	left:100%;
+}
+
+.clearfix:after {
+     content: '';
+     display: table;
+     clear: both;
+}
+
