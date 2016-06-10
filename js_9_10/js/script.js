@@ -10,23 +10,50 @@ $(function () {
 
 	);
 
-// ***$.color***используем функцию animate, например при наведении мыши
+$("ul.menu li a").hover(function(){
+    $(this).animate({color : "#000",
+					backgroundColor: "#66ff33"}, 100);
+  }, function(){
+    $(this).animate({color : "#66ff33",
+					backgroundColor: "#000"}, 100);
+  });
 
 
-$(".menu a").mouseenter(
-  function () {
-	$(this).animate({
-		color:"#03C",
-    }, 500 );
+$('.bxslider').bxSlider({
+	video: true,
+	useCSS:false,
+	auto: true, //автом пролистывание
+	// autoControls:true, // возм управления
+	// adaptiveHeight: true,  //какая картинка,такая высота
+	mode: 'fade',
+	captions:true 
 });
 
-$(".menu a").mouseleave(function() {
-	$(this).animate({
-		color:"#66ff33",
-    }, 500 );
-});
+ 	$('#t1').typeIt({
+     strings: ["Welcome to my dream!"],
+     speed: 125,
+     autoStart: false
+	});
 
 
+
+ 	// СКРЫТИЕ LOGIN
+	var delay = 500; 
+ 	$('.signIn form').hide();
+ 	var titel = $('.signIn h1');
+ 	$(titel).click(function(e) {
+ 		var parent = $(event.target).parent();
+ 		var form = parent.find('form');
+
+ 		if ($(form).is(':visible')) $(form).slideUp(delay);
+ 		else $(form).slideDown(delay);
+ 			
+	});
+
+	$('.select').fancySelect();
+	// $("#selectbox").selectbox();
+
+	// $("input[type='checkbox']").uniform();
 });
 
 // ****native JS **** doesn't work
