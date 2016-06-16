@@ -1,5 +1,5 @@
 (function(){ 
-var cache = {};
+var cache = {};
 
 this.tmpl = function tmpl(str, data){               // ф-я, которая принимает в себя строку(шаблон) и обьект, который нужно срендерить
 	// Figure out if we’re getting a template, or if we need to 
