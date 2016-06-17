@@ -1,0 +1,15 @@
+ 
+@media (max-width: 480px) {
+	.wrap {
+		max-width:480px;    
+	}
+
+	.menu {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+} 
+
