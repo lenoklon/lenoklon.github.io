@@ -1,14 +1,14 @@
 var delay = 500;
 
-$(function () {  
+$(function () {
 
 	$('.tab_item').not(':first').hide(); // прячем все tab_item в начале - кроме первого
 
-	$('.wrap .tab').click(function() { //вешаем событие на tab 
+	$('.wrap .tab').click(function() { //вешаем событие на tab
 
-		$('.wrap .tab').removeClass('active').eq($(this).index()).addClass('active');  // у текущего элемента добавляем .active - (у одного убирается, а у текущего добавляется)
-		
-		$('.tab_item').hide().eq($(this).index()).fadeIn()  // содержимое таба прячется кроме элемента у которого такой же индекс как вкладка на которую мы кликаем
+		$('.wrap  .tab').removeClass('active').eq($(this).index()).addClass('active');  // у текущего элемента добавляем .active - (у одного убирается, а у текущего добавляется)
+
+		$('.tab_item').hide().eq($(this).index()).fadeIn(); // содержимое таба прячется кроме элемента у которого такой же индекс как вкладка на которую мы кликаем
 	}).eq(0).addClass('active');    //у текущей вкладки появляется .active
 
 	$('.tab_content p').hide();
@@ -20,10 +20,9 @@ $(function () {
 		var p = parent.find('p');
 
 		if ($(p).is(':visible')) $(p).slideUp(delay);
-		
+
 		else $(p).slideDown(delay) ;
-		
+
 	});
 
 });
-

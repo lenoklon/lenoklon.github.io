@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	text-align: center;
+	color:red;
+}
+
+.content {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.buttons {
+	width: 200px;
+	margin: 20px auto;
+
+}
+
+#hours, #minutes, #seconds, #milliseconds {
+	font-size: 40px;
+}

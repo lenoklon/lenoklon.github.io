@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tooltips</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<form action="#">
+	<div class="wrap">		
+		<div class="box">
+			<label for="firstname" class="label">Firstname:</label>
+			<input type="text" id="firstname" name="firstname" class="input">
+			<p class="tooltip">Please provide your first name.</p>
+		</div>
+		<div class="box">
+			<label for="lastname" class="label">Lastname:</label>
+			<input type="text" id="lastname" class="input">
+			<p class="tooltip">Please provide your last name.</p>
+		</div>
+		<div class="box">
+			<label for="address" class="label">Address</label>
+			<input type="address" class="input" name="address">
+			<p class="tooltip">Please provide your address</p>
+		</div>
+	</div>
+	<button class="button">Show help</button>
+</form>
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

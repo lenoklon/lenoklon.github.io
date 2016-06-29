@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	margin: 50px;
+	margin-bottom: 0;
+	width: 550px;
+	padding: 15px 20px;
+	border:1px solid #ccc;
+	font-family: Georgia, serif;
+	font-size: 15px;
+	color: #777;
+}
+
+.label {
+	width: 90px;
+	display: inline-block;
+}
+
+.box {
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.input {
+	margin-right: 15px;
+}
+
+.tooltip {
+	width: 220px;
+	display: inline-block;
+	border:1px solid rgba(255, 150, 50, 0.5);
+	padding: 10px 20px;
+	border-radius: 10px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.show {
+	opacity: 1;
+	transition: 2s;
+}
+
+.button {
+	width: 150px;
+	margin-top: 10px;
+	margin-left: 50px;
+	padding: 10px;
+	border-radius: 8px;
+	cursor: pointer;
+	background: #eee;
+	color:#777;
+	outline: none;
+}
+
