@@ -1,0 +1,74 @@
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.panel_wrap {
+    height: 172px;
+}
+
+.panel {
+    height: 172px;
+    /*margin-top: 30px;*/
+    font-size: 16px;
+    color: #fff;
+    background: lime;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
+.panel h2 {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.panel p {
+    line-height: 1.2;
+}
+
+.btn-slide {
+    background: darkblue;
+    color:#fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+}
+
+.accordion {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.accordion a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    color:#fff;
+    background: coral;
+}
+
+.accordion p {
+    padding: 10px 15px;
+    display: none;
+    font-size: 14px;
+    line-height: 1.2;
+    background: seagreen;
+}
+
+.tooltip {
+    display: block;
+    padding: 10px 20px;
+    color:#000;
+    font-size: 18px;
+    background: orange;
+    border-radius: 5px;
+    border:none;
+    margin: 30px auto;
+    width: 100px;
+    text-align: center;
+}
