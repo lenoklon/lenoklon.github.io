@@ -1,0 +1,508 @@
+					/*- adjustment-*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;  /*переопределяем блочную модель*/
+}
+
+html {
+	width: 100%;	/*расстягиваем*/
+	height: 100%;
+}
+
+body {
+	background-color: #f0f0f0;
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	line-height: 1.42em; /*по дефолту обычно*/
+	font-family: Helvetica;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden; /* что б не появлялся гориз скрол*/
+	position: relative; /*что б точка отсчета - врапер*/
+}
+
+.empty {
+	height: 115px;   /*высота футера*/
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;   /*препроцессоры - все что внизу компилируется как вложеность*/
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.clearfix:after {
+ 	content:'';
+ 	clear: both;
+ 	display: block;
+}
+						/* HEADER*/
+
+.header {
+	height: 153px;
+	background: url(../img/header.png) no-repeat;
+	background-size: cover;
+	margin-bottom: 20px;
+}
+
+.header__top {
+	padding: 18px 0;
+}
+
+.header__logo, 
+.header__search,
+.header__menu {
+	float: left;
+}
+
+.header__logo {
+	width: 25%;
+}
+
+.logo__pic {
+	display: block;
+	max-width: 175px; /*что бы уберечь от замены логотипа на большую вел*/
+	max-height: 55px;
+}
+
+.logo {
+	display: inline-block;
+}
+
+.header__search {
+	width: 40%;
+}
+
+.search {
+	position: relative;
+}
+
+.search__input {
+	display: block;
+	width: 456px;
+	height: 37px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 14px;
+	border: none;
+	outline: none;
+	padding: 10px 40px 10px 35px;
+	position: relative;
+	color:#fff;
+}
+
+.search__input:-moz-placeholder {
+	color:#fff;		
+}
+
+.search__input::-moz-placeholder {  /*перебиваем прозрачность*/
+	color:#fff;
+}
+
+.search__input::-webkit-input-placeholder {
+	color:#fff;
+}
+
+
+.search__submit {
+	position: absolute;
+	background: url(../img/search__icon.png) 0 0 no-repeat;
+	width: 18px;
+	height: 18px;
+	display: block;
+	border: none;
+	right: 20px;
+	top: 50%;
+	margin-top: -9px;
+
+}
+
+.header__menu {
+	width: 35%;
+
+}
+
+.menu {
+	text-align: justify;
+}
+
+.menu:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 0;
+}
+
+.menu__item {
+	display: inline-block;
+}
+
+.menu__link {
+	display: block;
+	padding: 10px;
+	border-radius: 13px;
+	color: #fff;
+	font-family: Helvetica;
+	font-size: 13px;
+	font-weight: 400;
+	border:1px solid transparent;
+}
+
+.menu__link_active {
+	padding-right: 20px;
+	padding-left: 50px;
+	position: relative;
+}
+
+.menu__link-icon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 13px;
+	width: 30px;
+}
+
+.menu__link-icon-pic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	display: block;
+	max-width: 100%;   /*что б картинка никогда не выходила за границу*/
+	max-height: 100%;
+}
+
+.menu__link:hover {
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+						/*****END OF TOP-HEADER*****/
+
+						/*****NAV*****/
+.nav__list {
+	text-align: justify;
+}
+
+.nav__list:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 0;
+}
+
+.nav__item {
+	display: inline-block;
+}
+
+.nav__link:hover {
+	opacity: 0.7;
+}
+
+
+.nav__icon, .nav__title {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nav__icon {
+	margin-right: 12px;
+}
+
+.nav__title {
+	color:#fff;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	text-transform: uppercase;
+}					
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+						/****BREADCRUMBS****/
+.breadcrumbs__item {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.breadcrumbs {
+	margin-bottom: 13px;
+} 
+
+.breadcrumbs__link {
+	color: rgb(250, 63, 55);
+	font-size: 11px;
+	font-weight: 400;
+	vertical-align: middle;
+}
+
+.breadcrumbs__link:before {
+	content: "";
+	background:url(../img/way__arrow.png) no-repeat;
+	display: inline-block;
+	width: 16px;
+	height: 7px;
+	margin-right: 10px;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.breadcrumbs__item:first-child .breadcrumbs__link:before {
+	display: none;
+}
+
+.title {
+	color: rgb(46, 46, 46);
+	font-size: 24px;
+	font-weight: 300;
+	
+	margin-top: 0;
+	font-weight: normal;
+	margin-bottom: 30px;
+}
+
+			/****CONTAINER****/
+
+.content-wrapper .container {
+	background: #fff;
+}
+
+.sidebar {
+	float: left;
+	width: 25%;
+}
+
+.content {
+	float: left;
+	width: 75%;
+	border-left: 1px solid #e7e7e7;
+}
+
+.products__slideshow {
+	float: left;
+	width: 30%;
+	padding: 25px;
+}
+
+.slideshow__display {
+	height: 235px;
+	position: relative;
+}
+
+.slideshow__display img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	max-width: 95%;  /*ограничиваем - что б при замене она не развалила все*/
+	max-height: 95%;
+}
+
+.slideshow__thumbs-item {
+	float: left;
+	width: 25%;
+}
+
+.slideshow__thumbs-link {
+	display: block;
+	height: 54px;
+	position: relative;
+}
+
+.slideshow__thumbs-link img {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-height: 100%;
+	max-width: 100%;
+	margin:auto;
+}
+
+.products__desc {
+	float: left;
+	width: 45%;
+	padding:40px 25px;
+}
+
+.products__desc:before {
+	content: "";
+	display: block;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	width: 1px;
+	background: #e7e7e7;
+	left: 30%;
+}
+
+.products__title {
+	margin-top: 0;   /*что б сеошники там ничего не мутили*/
+	font-weight: normal;
+	margin-bottom: 25px;
+}
+
+.products__desc-content {
+	font-size: 14px;
+	color:#676767;
+}
+
+.products__desc-content li {
+	margin-bottom: 10px;
+}
+
+.products__price {
+	float: left;
+	width: 25%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;  /*таким иобразом мы задали ему жесткие размеры*/
+	height: 100%;
+	padding: 20px;
+}
+
+.products__item {
+	position: relative;  /*будем рассягивать относительно этих лишек*/
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.products__price-inner {
+	border:1px solid #e7e7e7;
+	height: 100%;
+	position: relative;
+	padding: 20px;
+}
+
+.products__price-amount {
+	color: rgb(46, 46, 46);
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.products__buy {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;		/*что б пригвоздить в низу*/
+	display: block;
+	padding: 10px 40px;
+	background-color: rgb(255, 142, 47);
+	border-radius: 20px;
+	color:#fff;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+		/****CATEGORIES****/
+
+.categories__item {
+	border-bottom: 1px solid #e7e7e7;
+	position: relative;
+}
+
+.categories__link {
+	font-size: 0;
+	display: block;
+	padding: 15px 20px;
+	padding-right: 50px;
+}
+
+.categories__icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 10%;
+}
+
+.categories__text {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 20px;
+	color: rgb(46, 46, 46);
+	font-size: 15px;
+	font-weight: 400;
+	width: 90%;
+}
+
+.categories__amount {
+	position: absolute;
+	display: inline-block;
+	margin-top: -8px;
+	top: 50%;
+	right: 10px;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+			/****PAGINATION****/
+
+.pagination {
+	text-align: center;
+}
+
+.pagination .container {
+	padding: 30px 0;
+	background: #fff;
+
+}
+
+.pagination__item {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.pagination__item:first-child {
+	margin-left: 10px;
+}
+
+.pagination__controll, .pagination__list {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.pagination-pic {
+	vertical-align: middle;
+}
+
+					/* FOOTER */	
+.footer {
+	color: rgb(46, 46, 46);
+	font-family: Helvetica;
+	font-size: 13px;
+	font-weight: 400;
+	margin-top: -115px;
+	position: relative;
+}
+
+.footer__address,
+.footer__copyright {
+	text-align: center;
+}
+
+.footer__address {
+	padding:40px 0 15px 0;
+}
+
+.footer__copyright {
+	padding-bottom: 40px;
+}
