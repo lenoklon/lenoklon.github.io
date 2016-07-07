@@ -1,5 +1,7 @@
 @import url(reset.css);
 
+                /****FONTS****/
+
 @font-face {
     font-family: 'LeagueGothic';
     src: url('../fonts/leaguegothic-regular-webfont.eot');
@@ -33,6 +35,7 @@
     font-weight: normal;
     font-style: normal;
 }
+                    /*****GENERAL*****/
 
 body {
 	background: #f9f9f9;
@@ -45,6 +48,7 @@ body {
  	display: block;
 }
 
+                    /*****HEADER*****/
 header {
 	background: url("../img/header_mountains.png") top center no-repeat;
 	background-size: cover;
@@ -523,6 +527,11 @@ button:hover {
 .logo_6 {
 	margin: 13% 0 0 0;
 }
+            /****PREFOOTER****/
+.prefooter {
+    display: none;
+}
+
 .footer {
 	background: #fff url("../img/footer.png") top center no-repeat;
 	background-size: cover;

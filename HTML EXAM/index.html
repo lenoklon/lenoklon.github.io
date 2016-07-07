@@ -17,7 +17,7 @@
 				<div class="current-page">
 					<a href="#" class="current-page__link">Home</a>
 				</div>
-				<ul class="menu menu--mobile">
+				<ul class="menu menu--mobile clearfix">
 					<li class="menu__item menu__item--current"><a href="#menu" class="menu__link">Home</a></li>
 					<li class="menu__item"><a href="#menu" class="menu__link">About</a></li>
 					<li class="menu__item"><a href="#menu" class="menu__link">Blog</a></li>
@@ -26,11 +26,21 @@
 					<li class="menu__item"><a href="#menu" class="menu__link">Dolor sit amet</a></li>
 				</ul>
 			</div>
-			<div class="slider">
+			<div class="slider clearfix">
 				<div class="slider__item">
-					<p class="slider__text1">Lorem Ipsum Dolor</p>
-					<p class="slider__text2">IT WILL MAKE ALL OF YOUR DREAMS COME </p>
+					<p class="slider__titleMain">Lorem Ipsum Dolor</p>
+					<p class="slider__subtitle">IT WILL MAKE ALL OF YOUR DREAMS COME </p>
+					<p class="slider__info">
+						Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper.
+					</p>
 				</div>
+				<div class="slider__iphone">
+					<img class="header__iphone" src="img/Iphone.png" alt="transparent_iphone">
+				</div>
+				<div class="slider__BigIphone">
+					<img  src="img/iPhone_big.png" alt="big_iphone">
+				</div>
+				
 				<ul class="slider__buttons">
 					<li></li>
 					<li class="current"></li>
@@ -41,9 +51,10 @@
 				<a href="#" class="slider__arrow slider__arrow--right"></a>
 			</div>
 		</div>
+			<div class="transparent"></div>
 	</header>
 				<!-- 	***ABOUT*** -->
-	<section class="about-section">
+	<section class="about-section clearfix">
 		<div class="wrap">
 			<div class="about about--setting" class="clearfix">
 				<h3 class="about__title">about our company</h3>
@@ -69,11 +80,11 @@
 		</div>
 	</section>
 						<!-- ***DESCRIPTION*** -->
-	<section class="description">
+	<section class="description clearfix">
 		<div class="wrap">
-			<div class="slider slider--content">
-				<div class="slider__item">
-					<img class="slider__image" src="img/avatar.png" alt="avatar">
+			<div class="slider slider--content clearfix">
+				<div class="slider__item slider--content-item">
+					<img class="slider__image slider--content-img" src="img/avatar.png" alt="avatar">
 					<h3 class="slider__title">Pingbuller<span>starts here</span></h3>
 					<p class="slider__text">
 						“Nunc turpis neque, feu-
@@ -100,23 +111,23 @@
 				<h3 class="updates__title">RECENT UPDATES</h3>
 				<div class="updates__item clearfix">
 					<img src="img/update_1.png" class="updates__image">
-					<h4 class="updates__subtitle">Nunc turpis neque</h4>
+					<h4 class="updates__subtitle">Nunc turpis neque feugiat eget </h4>
 					<p class="updates__info">
-						Posted by Admin on March 13
+						Posted by Admin on March 13 2012 
 					</p>
 				</div>
 				<div class="updates__item clearfix">
 					<img src="img/update_2.png" class="updates__image">
-					<h4 class="updates__subtitle">Nunc turpis neque</h4>
+					<h4 class="updates__subtitle">Nunc turpis neque feugiat eget </h4>
 					<p class="updates__info">
-						Posted by Admin on March 13
+						Posted by Admin on March 13 2012 
 					</p>
 				</div>
 				<div class="updates__item clearfix">
 					<img src="img/update_3.png" class="updates__image">
-					<h4 class="updates__subtitle">Nunc turpis neque</h4>
+					<h4 class="updates__subtitle">Nunc turpis neque feugiat eget </h4>
 					<p class="updates__info">
-						Posted by Admin on March 13
+						Posted by Admin on March 13 2012 
 					</p>
 				</div>
 				<a href="#" class="updates__link">MORE BLOG POSTS</a>
@@ -126,33 +137,36 @@
 								<!-- ***SPONSORS*** -->
 	<section class="sponsors">
 		<div class="wrap clearfix">
-			<a href="#" class="sponsor__item logo1"><img src="img/logo_1.png" alt=""></a>
-			<a href="#" class="sponsor__item logo2"><img src="img/logo_2.png" alt=""></a>
-			<a href="#" class="sponsor__item logo3"><img src="img/logo_3.png" alt=""></a>
-			<a href="#" class="sponsor__item logo4"><img src="img/logo_4.png" alt=""></a>
-			<a href="#" class="sponsor__item logo5"><img src="img/logo_5.png" alt=""></a>
-			<a href="#" class="sponsor__item logo6"><img src="img/logo_6.png" alt=""></a>
+			<a href="#" class="sponsor__item sponsor__item-logo1"><img src="img/logo_1.png" alt=""></a>
+			<a href="#" class="sponsor__item sponsor__item_logo2"><img src="img/logo_2.png" alt=""></a>
+			<a href="#" class="sponsor__item sponsor__item-logo3"><img src="img/logo_3.png" alt=""></a>
+			<a href="#" class="sponsor__item sponsor__item-logo4"><img src="img/logo_4.png" alt=""></a>
+			<a href="#" class="sponsor__item sponsor__item-logo5"><img src="img/logo_5.png" alt=""></a>
+			<a href="#" class="sponsor__item sponsor__item-logo6"><img src="img/logo_6.png" alt=""></a>
 		</div>
 	</section>
 						<!-- ***PREFOOTER*** -->
 	<section class="prefooter">
-		<div class="wrap">
+		<div class="wrap prefooter__wrap ">
 			<div class="category">
 				<h3 class="category__title">New's categories</h3>
 				<p class="category__text">
-					Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+					Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus<br>
+					 eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
 				</p>
 			</div>
 			<div class="category">
 				<h3 class="category__title">New's categories</h3>
 				<p class="category__text">
-					Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+					Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus<br>
+					 eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
 				</p>
 			</div>
 			<div class="category">
 				<h3 class="category__title">New's categories</h3>
 				<p class="category__text">
-					Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+					Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus<br>
+					 eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
 				</p>
 			</div>
 		</div>
@@ -160,13 +174,13 @@
 				<!-- ***FOOTER*** -->
 	<section class="footer">
 		<div class="wrap">
-			<ul class="menu menu--footer clearfix">
-				<li class="menu__item"><a href="#menu" class="menu__link">Home</a></li>
-				<li class="menu__item"><a href="#menu" class="menu__link">About</a></li>
-				<li class="menu__item"><a href="#menu" class="menu__link">Blog</a></li>
-				<li class="menu__item"><a href="#menu" class="menu__link">Products</a></li>
-				<li class="menu__item"><a href="#menu" class="menu__link">Lorem ipsum</a></li>
-				<li class="menu__item"><a href="#menu" class="menu__link">Dolor sit amet</a></li>
+			<ul class="menu menu__footer clearfix">
+				<li class="menu__item menu__footer_item"><a href="#menu" class="menu__link menu__footer_link">Home</a></li>
+				<li class="menu__item menu__footer_item"><a href="#menu" class="menu__link menu__footer_link">About</a></li>
+				<li class="menu__item menu__footer_item"><a href="#menu" class="menu__link menu__footer_link">Blog</a></li>
+				<li class="menu__item menu__footer_item"><a href="#menu" class="menu__link menu__footer_link">Products</a></li>
+				<li class="menu__item menu__footer_item"><a href="#menu" class="menu__link menu__footer_link">Lorem ipsum</a></li>
+				<li class="menu__item menu__footer_item"><a href="#menu" class="menu__link menu__footer_link">Dolor sit amet</a></li>
 			</ul>
 			<p class="copyrights">Designed by <a href="#" class="copyrights__link">Pingbull AS</a></p>
 		</div>

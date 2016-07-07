@@ -1,8 +1,10 @@
 /*это как рамки в которых будут наши стили работать*/
 /*разрешения под которые мы булем верстать*/
 
-@media screen and (min-width: 993px) and (max-width:1201px) {    /*ПК и многие планшеты в гор положении*/
-
+@media screen and (max-width:1201px) and (min-width: 993px) {    /*ПК и многие планшеты в гор положении*/
+	.container {
+		width: 970px; /*по бутстрапу*/
+	}
 }
 
 @media screen and (min-width: 769px) and (max-width:992px) {     /*планшеты*/
