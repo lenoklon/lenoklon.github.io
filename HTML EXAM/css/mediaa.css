@@ -28,21 +28,25 @@
     z-index: 2;
 }
 
-.slider__text1, .slider__text2 {
-	padding: 0;
+.slider__titleMain {
+    padding: 1px 0 0 1%;
+}
+
+.slider__subtitle {
+    padding: 2px 0 0 1%;
 }
 
 .slider__item {
 	 margin: 26% 0 0 8%;
-	 width: 43%;
+	 width: 50%;
 	 float: left;
 }
 
 .slider__iphone {
-	display: inherit;
-	float: left;
-	width: 38%;
-	margin: 24px 0px 0 11px;
+    display: inherit;
+    float: left;
+    width: 38%;
+    margin: 24px 0px 0 -22px;
 }
 
 .slider__arrow {
@@ -116,8 +120,11 @@
     padding: 24px 12% 6% 36px;
 }
 
+
 .slider--content .slider__text {
 	margin: 18px 0 0 8%;
+    width: 82%;
+    word-wrap: break-word;
 }
 
 .slider--content .slider__buttons {
@@ -156,7 +163,7 @@ p.updates__info {
 }
 
 .sponsors .wrap {
-    width: 29%;
+    width: 77%;
     text-align: center;
 }
 
@@ -188,8 +195,7 @@ p.updates__info {
 }
 
 .category {
-	padding-right: 2.1%;
-	margin:0 0 59px 0;
+    margin: 2px 0 59px 1%;
 }
 
 .category__text {
@@ -236,11 +242,15 @@ p.updates__info {
     letter-spacing: -0.1px;
 }
 
+.footer .menu {
+	width: 97%;
+}
+
 .copyrights {
     padding-top: 103px;
- }
-
-}								/****768****/
+    padding-right: 2%;
+}
+								/****768****/
 
 @media (min-width: 768px) {
 .wrap {
