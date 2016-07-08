@@ -37,7 +37,7 @@
 .wrap {
 	margin: 0 auto;
 	max-width:320px;
-	position: relative;  
+	position: relative;
 }
 									/***HEADER***/
 .header {
@@ -47,10 +47,10 @@
 	padding: 0 0 3px 0;
 }
 
-										/*LOGO*/	
+										/*LOGO*/
 
 .logo {
-	display:block; 
+	display:block;
 	margin: 0 auto;
 	padding:70px 0 0 0;
 	width:152px;
@@ -65,21 +65,23 @@
 	position: relative;
 	text-transform: uppercase;
 }
-															/*MENU*/
-.menu {
-	display:none;   
-	position: absolute;
-	top: 0;
-	left: 0; /*left i right что б расстягивалось по всей ширине*/
-	right: 0;
-	z-index: 31;
-	overflow: hidden;
+                                /*MENU*/
+    .menu {
+        width: 75%;
+        margin: 0 auto;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 31;
+        overflow: hidden;
 }
 
 .menu--mobile {
 	border: 1px solid #051116;
 	border-radius:8px;
-	background:rgba(54, 41, 62, 0.9); 
+	background:rgba(54, 41, 62, 0.9);
 	text-align:center;
 }
 
@@ -122,11 +124,11 @@
 	text-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }
 
-.menu-wrap:hover .menu{  
+.menu-wrap:hover .menu{
 	display:block;
 }
 
-.menu-wrap:hover .current-page { 
+.menu-wrap:hover .current-page {
 	opacity: 0;    /* что б не прыгало убираем прозрачность*/
 }
 
@@ -234,7 +236,7 @@
 	background:  -moz-linear-gradient(to top, #322539 0%, #745083 100%); /* FF3.6-15 */
 	background:  -webkit-linear-gradient(to top, #322539 0%, #745083 100%); /* Chrome10-25,Safari5.1-6 */
  	background: linear-gradient(to bottom,  rgba(116,80,131,1) 0%,rgba(50,37,57,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
- 
+
  	border-bottom: 1px solid #33253a;
  	border-bottom: 1px solid #000;
  	box-shadow: 0px 6px 8px 1px rgba(50,37,57,0.3);
@@ -318,208 +320,208 @@
 	background-position: -70px 0;
 }
 
-										/****DESCRIPTION****/
+                        /****DESCRIPTION****/
 
-.description {
-	background-color: #f9f9f9;
-	margin-top: 0;
-	padding:70px 0 90px 0;
-	border-bottom: 1px solid #e6e6e6;
-}
-										/****SLIDER****/
+    .description {
+        background-color: #f9f9f9;
+        margin-top: 0;
+        padding:70px 0 90px 0;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    /****SLIDER****/
 
-.slider--content {
-	padding: 0 20px;
-	margin:0;
-}
+    .slider--content {
+        padding: 0 20px;
+        margin:0;
+    }
 
-.slider--content .slider__image {
-    left: 6%;
-    top: 18px;
-	position: absolute;
-}
+    .slider--content .slider__image {
+        left: 6%;
+        top: 18px;
+        position: absolute;
+    }
 
-.slider--content .slider__buttons {
-    position: relative;
-    bottom: auto;
-    margin-top: 23px;
-    left: 15%;
-}
+    .slider--content .slider__buttons {
+        position: relative;
+        bottom: auto;
+        margin-top: 23px;
+        left: 15%;
+    }
 
-.slider--content .slider__buttons li {
-	background-color:#fff;
-	border: 1px solid #e6e6e6;
-	box-shadow: 1px 1.7px 0 white;
-}
+    .slider--content .slider__buttons li {
+        background-color:#fff;
+        border: 1px solid #e6e6e6;
+        box-shadow: 1px 1.7px 0 white;
+    }
 
-.slider--content .slider__buttons li.current:before {
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-	background-image: linear-gradient(to top, #454545 0%, #6a6a6a 100%);
-	border: 1px solid #454545;
-}
+    .slider--content .slider__buttons li.current:before {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+        background-image: linear-gradient(to top, #454545 0%, #6a6a6a 100%);
+        border: 1px solid #454545;
+    }
 
-.slider--content .slider__item {
-	margin:0 0 0 24px;
-	padding: 24px 12% 9.3% 36px;
-	background: #fff;
-}
+    .slider--content .slider__item {
+        margin:0 0 0 24px;
+        padding: 24px 12% 9.3% 36px;
+        background: #fff;
+    }
 
-.slider__title {
-	font-size: 24px;
-	font-weight: normal;
-	font-family: "League Gothic Regular", Tahoma, Arial, Sans-Serif;
-	color: #454545;
-	line-height: 24px;
-	text-transform: uppercase;
-	text-shadow: 0.5px 0.9px 0 #fff;
-}
+    .slider__title {
+        font-size: 24px;
+        font-weight: normal;
+        font-family: "League Gothic Regular", Tahoma, Arial, Sans-Serif;
+        color: #454545;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-shadow: 0.5px 0.9px 0 #fff;
+    }
 
-.slider__title span {
-	display: block;
-	color: #edbfff;
-}
+    .slider__title span {
+        display: block;
+        color: #edbfff;
+    }
 
-.slider--content .slider__text {
-    width: 98%;
-	max-height: 169px;
-	overflow: hidden;
-	color: #454545;
-	font-family: "Open Sans Light", Tahoma, Arial, sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 24px;
-	margin-top: 5px;
-}
+    .slider--content .slider__text {
+        width: 98%;
+        max-height: 169px;
+        overflow: hidden;
+        color: #454545;
+        font-family: "Open Sans Light", Tahoma, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        margin-top: 5px;
+    }
 
-.updates {
-    margin:47px 0 -4px 6%;
-    font-size: 16px;
-    font-family: "Open Sans Light", Tahoma, Arial, sans-serif;
-}
-
-.updates__item {
-	margin:0 0 18px 0;
-}
-.updates__title {
-	color: #454545;
-	font-family: "League Gothic Regular", Tahoma, Arial, Sans-Serif;
-	font-size: 30px;
-	font-weight: 400;
-	line-height: 24px;
-	margin-bottom: 21px;
-	text-shadow: 0.5px 0.9px 0 #fff;
-}
-
-.updates__image {
-	float: left;
-	margin:0 5.3% 0 0;
-}
-
-.updates__subtitle {
-    font-weight: bold;
-    padding: 0 0 11px 0;
-}
-
-.updates__link {
-	color: #454545;
-	float: right;
-	font-family: "League Gothic Regular", Tahoma, Arial, Sans-Serif;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 24px;
-	margin: -4px 7.8% 0 0;
-	text-shadow: 0.5px 0.9px 0 white;
-	text-decoration: none;
-}
-								/****SPONSORS****/
-.sponsors {
-	background-color: #f9f9f9;
-	padding:50px 0 73px 0;
-	border-top: 1px solid #fefefe;
-	font-size: 0;
-}
-
-.sponsors .wrap {
-	width: 240px;
-}
-.sponsor__item {
-	display: block;
-	margin-bottom: 60px;
-	width: 50%;
-	text-align: center;
-	display: inline-block;
-}
-
-.sponsor__item-logo3,
-.sponsor__item-logo4 {
-	margin:0 0 43px 0;
-}
-
-.sponsor__item-logo5 {
-	margin:0 0 0 -3%;
-}
-
-.sponsor__item-logo6 {
-	text-align: right;
-	margin-bottom: 0;
-}
-							/****PREFOOTER****/
-
-.prefooter {
-	background-color: #ececec;
-	padding: 100px 0 90px;
-	display: none;
-}
-
-.category {
-	margin:0 0 54px 0;
-}
-
-.category__title {
-	font-family: "League Gothic Regular", Tahoma, Arial, Sans-Serif;
-	font-size: 24px;
-	font-weight: normal;
-	text-transform: uppercase;
-	color:#454545;
-	margin:0 0 10px 0;
-	text-shadow: 0.5px 0.9px 0 white;
-}
-
-.category__text {
-	font-family: "Open Sans Light", Tahoma, Arial, sans-serif;
-	font-size: 16px;
-	color:#787878;
-	text-shadow: 0.5px 0.9px 0 white;
-	max-height: 154px;
-	overflow: hidden;
-}
-
- 								/*	***FOOTER****/
-
-.footer {
-	height: 200px;
-	background:url(../img/bg_footer.jpg) top center no-repeat;
-	background-size: cover;
-}
-
-.menu__footer {
-	display: none;
-}
-
-.copyrights {
-	padding-top: 42px;
-	color:#fff;
-	font-size: 12px;
-	font-family: "Open Sans Light", Tahoma, Arial, sans-serif;
-	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-	text-align: center;
-}
-
-.copyrights__link {
-	text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
-	color:#fff;
-	font-weight: bold;
-	text-decoration: none;
-}
+    .updates {
+        margin:47px 0 -4px 6%;
+        font-size: 16px;
+        font-family: "Open Sans Light", Tahoma, Arial, sans-serif;
+    }
 
 
+    .updates__item {
+        margin: 0 0 8px 0;
+    }
+
+    .updates__title {
+        color: #454545;
+        font-family: "League Gothic Regular", Tahoma, Arial, Sans-Serif;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 21px;
+        text-shadow: 0.5px 0.9px 0 #fff;
+    }
+
+    .updates__image {
+        float: left;
+        margin:0 5.3% 0 0;
+    }
+
+    .updates__subtitle {
+        font-weight: bold;
+        padding: 0 0 11px 0;
+    }
+
+    .updates__link {
+        color: #454545;
+        float: right;
+        font-family: "League Gothic Regular", Tahoma, Arial, Sans-Serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: -4px 7.8% 0 0;
+        text-shadow: 0.5px 0.9px 0 white;
+        text-decoration: none;
+    }
+    /****SPONSORS****/
+    .sponsors {
+        background-color: #f9f9f9;
+        padding:50px 0 73px 0;
+        border-top: 1px solid #fefefe;
+        font-size: 0;
+    }
+
+    .sponsors .wrap {
+        width: 240px;
+    }
+    .sponsor__item {
+        display: block;
+        margin-bottom: 60px;
+        width: 50%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .sponsor__item-logo3,
+    .sponsor__item-logo4 {
+        margin:0 0 43px 0;
+    }
+
+    .sponsor__item-logo5 {
+    margin:0 0 0 -3%;
+    }
+
+    .sponsor__item-logo6 {
+        text-align: right;
+        margin-bottom: 0;
+    }
+    /****PREFOOTER****/
+
+    .prefooter {
+        background-color: #ececec;
+        padding: 100px 0 90px;
+        display: none;
+    }
+
+    .category {
+        margin:0 0 54px 0;
+    }
+
+    .category__title {
+        font-family: "League Gothic Regular", Tahoma, Arial, Sans-Serif;
+        font-size: 24px;
+        font-weight: normal;
+        text-transform: uppercase;
+        color:#454545;
+        margin:0 0 10px 0;
+        text-shadow: 0.5px 0.9px 0 white;
+    }
+
+    .category__text {
+        font-family: "Open Sans Light", Tahoma, Arial, sans-serif;
+        font-size: 16px;
+        color:#787878;
+        text-shadow: 0.5px 0.9px 0 white;
+        max-height: 154px;
+        overflow: hidden;
+    }
+
+    /*	***FOOTER****/
+
+    .footer {
+        height: 200px;
+        background:url(../img/bg_footer.jpg) top center no-repeat;
+        background-size: cover;
+    }
+
+    .menu__footer {
+        display: none;
+    }
+
+    .copyrights {
+        padding-top: 42px;
+        color:#fff;
+        font-size: 12px;
+        font-family: "Open Sans Light", Tahoma, Arial, sans-serif;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+        text-align: center;
+    }
+
+    .copyrights__link {
+        text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
+        color:#fff;
+        font-weight: bold;
+        text-decoration: none;
+    }
