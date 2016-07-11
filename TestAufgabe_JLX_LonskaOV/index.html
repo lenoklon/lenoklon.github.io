@@ -6,9 +6,12 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
-	<header class="header clearfix">
+	<div class="wrap">
+		<header class="header clearfix">
 		<div class="container">
 			<div class="header__cash">
 				<a class="header__cash_link" href="#cash">
@@ -18,20 +21,29 @@
 					<img src="img/anyCash_.png" alt="anyCash_LOGO">
 				</a>
 			</div>
-			<div class="header__nav">
-				<a class="header__nav_link header__nav_link-language" href="#">
-					ru
-				</a>
-				<a class="header__nav_link header__nav_link-support" href="#">
-					поддержка
-				</a>
-				<a class="header__nav_link header__nav_link-settings" href="#">
-					<img src="img/settings.png" alt="setting_icon">
-				</a>
-				<a class="header__nav_link header__nav_link-exit" href="#">
-					выход	
-				</a>
-			</div>
+			<ul class="header__nav">
+				<li class="header__nav_item">
+					<a class="header__nav_link header__nav_link-language" href="#">
+					ru</a>
+				</li>
+				<li class="header__nav_item">
+					<a class="header__nav_link header__nav_link-support" href="#">
+					поддержка</a>
+						<ul class="nav__subnav">
+							<li class="nav__subitem"><a class="nav__sublink" href="#">вопрос/ответ</a></li>
+							<li class="nav__subitem"><a class="nav__sublink" href="#">инструкции</a></li>
+							<li class="nav__subitem"><a class="nav__sublink" href="#">тикеты</a></li>
+						</ul>
+				</li>
+				<li class="header__nav_item">
+					<a class="header__nav_link header__nav_link-settings" href="#">
+					<img src="img/settings.png" alt="setting_icon"></a>
+				</li>
+				<li class="header__nav_item">
+					<a class="header__nav_link header__nav_link-exit" href="#">
+					выход</a>
+				</li>
+			</ul>
 		</div>
 	</header>
 	<div class="separate">
@@ -78,6 +90,31 @@
 			</ul>
 		</div>
 	</section>
+	<section class="exchange">
+		<div class="container">
+			<h2 class="exchange__header">автоматический обмен электронных валют</h2>
+			<div class="actions clearfix">
+				<div class="action action__give">
+					
+
+				</div>
+				<div class="action action__give">
+					
+
+				</div>
+				<div class="action action__give">
+					<a href="#" class="action__result">
+						<span>
+							обменять валюту
+						</span>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	</div>
 </body>
 </html>
 
