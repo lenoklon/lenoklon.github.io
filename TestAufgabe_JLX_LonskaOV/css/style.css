@@ -59,6 +59,8 @@ body {
 
 .wrap {
 	background: #fff;
+	max-width: 2136px
+	width: 100%
 }
 
                     /*****HEADER*****/
