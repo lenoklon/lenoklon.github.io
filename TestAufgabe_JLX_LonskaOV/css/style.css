@@ -736,9 +736,7 @@ body {
 
 .settings__info:last-child {
 	float: right;
-	/*width: 43%;*/
 	margin-right: 0;
-	/*padding:70px 70px 96px 0;*/
 }
 
 .share {
