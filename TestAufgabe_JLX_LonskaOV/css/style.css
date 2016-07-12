@@ -10,7 +10,7 @@
     font-style: normal;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'OpenSansLight';
     src: url('../fonts/opensanslight-webfont.eot');
     src: url('../fonts/opensanslight-webfont.eot?#iefix') format('embedded-opentype'),
@@ -20,6 +20,14 @@
          url('../fonts/opensanslight-webfont.svg#open_sans_lightregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}*/
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 @font-face {
@@ -31,12 +39,20 @@
 
 }
 
+/*@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}*/
 @font-face {
     font-family: 'OpenSansRegular';
     src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
          url('../fonts/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
                     /*****GENERAL*****/
 
@@ -195,11 +211,13 @@ body {
 }
 
 .service__list_title {
-	color: #666;
-	font-family: 'OpenSansBold';
-	font-size: 33px;
-	font-weight: 700;
-	text-transform: uppercase;
+    color: #666;
+    font-family: 'OpenSansBold';
+    font-size: 33px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 99%;
+    padding-top: 42px;
 }
 
 			/****BREADCRUMBS****/
@@ -217,13 +235,19 @@ body {
 	padding:100px 0;
 }
 
+.actions {
+	border:1px solid #1469eb;
+}
+
+.action:last-child {
+	border-right: none;
+}
 
 .action {
 	float: left;
 	width: 33%;
 	height: 170px;
-	border:1px solid #1469eb;
-	border-right: none;
+	/*border-right: 1px solid #1469eb;*/
 	position: relative;
 	text-align: center;
 	vertical-align: middle;
@@ -243,15 +267,24 @@ body {
     left: 9%;
 }
 
+					/****треугольник бордер - 2 вар*****/
+
 .action__give:before {
     content: "отдаете";
 }
 
-.action:last-child {
-	border-right: 1px solid #1469eb;
+.action{
+	background: url('../img/triangle-right.png') 0 center no-repeat;
+
 }
 
-.action:after {
+.action:first-child{
+	background: none;
+}
+
+					/*breadcrumbs*/
+
+/*.action:after {
     content: "";
     width: 0;
     height: 0;
@@ -265,11 +298,10 @@ body {
 }
 
 
-
 .action:last-child:after {
 	display: none;
 }
-
+*/
 .action__content{
 	padding:50px 0 60px 4%;
 	color: rgb(102, 102, 102);
@@ -288,8 +320,10 @@ body {
 .action__content_item a {
 	display: block;
 }
+/*
+			***arrows down****/
 
-.action__content_item:after {
+/*.action__content_item:after {
     content: "";
     background: url('../img/arrow_action_down.png') no-repeat center;
     display: inline-block;
@@ -301,7 +335,23 @@ body {
 
 .action__content_item:first-child:after {
 	display: none;
+}*/
+
+.action__content_item-img:after,
+.action__content_item-usd:after {
+    content: url('../img/arrow_action_down.png');
+    display: inline-block;
+    position: absolute;
+    top: 37%;
+    right: 29%;
+    width: 23px;
+    height: 20px;
 }
+
+.action__content_item-usd:after {
+    right: 4%;
+}
+
 .action__content_item:last-child, 
 .action__content_item:first-child {
 	margin-right: 0px;
@@ -322,6 +372,483 @@ body {
 
 }
 
+.exchange__info {
+	color: rgb(115, 115, 115);
+	font-size: 29px;
+	font-weight: 300;
+	font-family: 'OpenSansLight';
+	padding:43px 0 102px 0;
+	box-sizing: border-box;
 
+}
+
+.exchange__info_privat {
+	font-weight: bold;
+	padding:0 1.8%;
+	position: relative;
+}
+
+.exchange__info_sum {
+	padding:0 1.8%;
+}
+
+.exchange__info_available {
+	float: left;
+	width: 36.43%;
+	padding-left: 2.9%;
+	
+}
+
+.exchange__info_available img,
+.exchange__info_available span {
+	vertical-align: middle;
+}
+
+.exchange__info_available:after {
+    content: url('../img/exchange_info_separate.png');
+    width: 9.7%;
+    position: absolute;
+    display: inline-block;
+    margin-left: 7%;
+}
+
+.exchange__info_inform {
+    float: right;
+    text-align: right;
+    width: 35%;
+    vertical-align: middle;
+}
+
+
+.exchange__info_inform img {
+	padding:0 1.96% 0 3.75%;
+	vertical-align: middle;
+}
+
+				/****PROPOSITIONS****/
+.preposition{
+	padding:88px 0 100px 0;
+	
+	text-align: justify;
+}
+
+.preposition:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 0;
+}
+
+.preposition__contain {
+	width: 33%;
+	display: inline-block;
+	text-align: center;
+
+
+}
+
+.preposition__item {
+	padding-left: 6%;
+	text-decoration: none;
+	color: rgb(115, 115, 115);
+	font-family: 'OpenSansBold';
+	font-size: 37px;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+}
+
+
+.preposition__item:before {
+    content: url('../img/course.png');
+    display: inline-block;
+    left: 0;
+    margin-right: 3%;
+}
+
+.preposition__item-partnership:before {
+	content: url('../img/partnership.png');
+}
+
+.preposition__item-bonuse:before {
+	content: url('../img/bonuse.png');
+}
+
+.preposition__contain_partnership {
+	background: url('../img/line_.png') center repeat-x;
+}
+
+
+			/****MAIN****/
+.project {
+	box-sizing: border-box;
+}
+
+.project__content {
+	float: left;
+	width: 45%;
+	margin-right: 10%;
+
+	padding-bottom: 40px;
+
+}
+
+.project__content:last-child {
+	margin-right: 0;
+}
+
+.project__content_img {
+	float: left;
+	margin-right: 5%; /*30px*/
+}
+
+.project__content_info {
+    float: left;
+    color: rgb(141, 141, 141);
+    font-family: 'OpenSansLight';
+    font-size: 29px;
+    font-weight: 300;
+    line-height: 47px;
+    width: 92%;
+}
+
+.project__content_title {
+	text-align: center;
+	color: rgb(102, 102, 102);
+	font-size: 29px;
+	font-weight: 700;
+	line-height: 37px;
+	text-transform: uppercase;
+	padding: 48px 0 54px 0;
+}
+
+.project__next {
+	float: right;
+	color: rgb(102, 102, 102);
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-right: 144px;
+	position: relative;
+	padding:44px 0;
+}
+
+.project__next:after {
+    position: absolute;
+    display: inline-block;
+    content: url('../img/next_double_arrow.png');
+    top: 41%;
+    right: -62%;
+}
+
+				/*****VARIANTS OF EXCHANGING****/
+
+.variants {
+	margin-top: 88px;
+	font-family: 'OpenSansRegular';
+	margin-bottom: 100px;
+}
+
+.variants .container {
+	position: relative;
+	
+}
+
+.variants__title,
+.settings__header {
+	text-align: center;
+	color: rgb(102, 102, 102);
+	font-size: 33px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.variants__scheme {
+	padding:100px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.variants_perfectM {
+    position: absolute;
+    top: 22%;
+    left: -1%;
+    color: #d6372a;
+    font-size: 75px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.variants_btc {
+    position: absolute;
+    color: rgb(89, 99, 187);
+    font-size: 42px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    top: 50%;
+    left: -1%;
+}
+
+.variants_exmo {
+    position: absolute;
+    text-transform: uppercase;
+    text-decoration: none;
+    top: 65%;
+    left: 10%;
+    color: rgb(69, 184, 255);
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.variants_payeer {
+    position: absolute;
+    text-decoration: none;
+    bottom: 12%;
+    left: -4%;
+    color: rgb(52, 152, 219);
+    font-size: 67px;
+    font-weight: 400;
+}
+
+.variants_W1 {
+    position: absolute;
+    text-transform: uppercase;
+    text-decoration: none;
+    top: 5%;
+    left: 24%;
+    color: #000;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.variants_litecoin {
+    position: absolute;
+    text-decoration: none;
+    top: 7%;
+    left: 44%;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+    font-size: 50px;
+}
+
+.variants_qiwi {
+    position: absolute;
+    text-transform: uppercase;
+    text-decoration: none;
+    top: 22%;
+    left: 62%;
+    color: rgb(246, 143, 30);
+    font-size: 67px;
+    font-weight: 400;
+}
+
+.variants_paymer {
+    position: absolute;
+    text-decoration: none;
+    top: 36%;
+    left: 36%;
+    color: rgb(0, 106, 180);
+    font-size: 75px;
+    font-weight: 400;
+}
+
+.variants_Bitcoin {
+    position: absolute;
+    text-decoration: none;
+    top: 57%;
+    left: 55%;
+    color: rgb(246, 143, 30);
+    font-size: 58px;
+    font-weight: 400;
+}
+
+.variants_yandex {
+    position: absolute;
+    text-decoration: none;
+    top: 74%;
+    left: 33%;
+    color: rgb(221, 87, 27);
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.variants_cash {
+    position: absolute;
+    text-decoration: none;
+    top: 6%;
+    right: -12%;
+    color: rgb(70, 211, 164);
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.variants_privat {
+    position: absolute;
+    text-decoration: none;
+    top: 26%;
+    right: -4%;
+    color: rgb(11, 142, 54);
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.variants_privat span {
+	color:#000;
+}
+
+.variants_ok {
+    position: absolute;
+    text-decoration: none;
+    top: 50%;
+    right: -12%;
+    color: rgb(221, 87, 27);
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.variants_webM {
+    position: absolute;
+    text-decoration: none;
+    top: 69%;
+    right: -11%;
+    color: rgb(0, 106, 180);
+    font-size: 58px;
+    font-weight: 400;
+}
+
+			/*	***SETTINGS - how it works****/
+.settings {
+	font-family: 'OpenSansLight';
+}
+
+.settings_header {
+	text-align: center;
+}
+
+.settings__info {
+	float: left;
+	width: 45%;
+	margin-right: 4.6%;
+	padding:70px 0 96px 0px;
+}
+
+.settings__info:last-child {
+	float: right;
+	/*width: 43%;*/
+	margin-right: 0;
+	/*padding:70px 70px 96px 0;*/
+}
+
+.share {
+	text-align: center;
+	padding:100px 0;
+}
+
+.settings__item {
+	color: rgb(102, 102, 102);
+	font-size: 29px;
+	font-weight: 300;
+	margin-top: 50px;
+	line-height: 45px;
+}
+
+.share__text {
+	color: rgb(102, 102, 102);
+	font-family: 'OpenSansBold';
+	font-size: 33px;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-right: 2%;
+}
+
+.share__btn {
+    display: inline-block;
+    background: url('../img/sprite_social.png') center no-repeat;
+    background-position: 0 0;
+    width: 22px;
+    height: 32px;
+    margin-right: 2%;
+}
+
+.share__btn-fb {
+	background-position: 32% 0;
+}
+
+.share__btn-twitter {
+    width: 33px;
+    background-position: 63% 0;
+}
+
+.share__btn-google {
+    width: 35px;
+    background-position: 100% 0;
+}
+
+		/****FOOTER****/
+.footer {
+	font-family: 'OpenSansBold';
+	height: 500px;
+}
+
+.footer__list {
+	text-align: justify;
+	border: 1px solid #7da3ef;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 8%;
+}
+
+.footer__list:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 0;
+}
+
+.footer__item {
+	display: inline-block;
+	position: relative;
+
+}
+.footer__link {
+	text-decoration: none;
+	display: block;
+	width:100%;
+	color: rgb(115, 115, 115);
+	font-size: 29px;
+	text-transform: uppercase;
+	font-weight: 400;
+	position: relative;
+}
+
+.footer__link:after {
+    display: inline-block;
+    content: url('../img/arrow_up.png');
+    top: 0;
+    left: 166%;
+    position: absolute;
+}
+
+.footer__subitem {
+    width: 128%;
+    text-align: center;
+}
+
+.footer__sublink {
+	text-decoration: none;
+	color: rgb(141, 141, 141);
+	font-size: 25px;
+	line-height: 58px;
+}
+
+.footer__sublist {
+    position: absolute;
+    top: 140%;
+    left: -46%;
+    width: 150%;
+}
 
 
