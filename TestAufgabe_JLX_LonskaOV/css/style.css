@@ -538,6 +538,8 @@ body {
 
 .variants .container {
 	position: relative;
+	max-width: 1080px;
+	width: 100%;
 	
 }
 

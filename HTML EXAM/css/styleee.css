@@ -160,6 +160,10 @@
 	padding: 4px 0 0 15%;
 }
 
+.slider__subtitle_960 {
+    display: none;
+}
+
 .slider__subtitle {
 	color: #edbfff;
 	font-size: 18px;
@@ -170,6 +174,10 @@
 
 .slider__info {
 	display: none;
+}
+
+.slider__arrow_960 {
+    display: none;
 }
 
 .slider__arrow {

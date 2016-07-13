@@ -426,7 +426,7 @@ p.updates__info {
 }
 
 .description {
-    padding: 115px 2.7% 50px 2.7%;
+    padding: 115px 2.7% 36px 2.7%;
 }
 
 .slider--content {
@@ -513,6 +513,269 @@ p.updates__info {
 }
 
 }
+/*
+                        ***960***
+*/
 
 
+@media (min-width: 960px) {
+    
+.wrap {
+    max-width:960px;
+    padding-top:1px; /*иначе отступ появляется*/    
+}
 
+.header {
+    padding: 1px 0 105px 0;
+}
+
+.header .wrap {
+    padding-top: 67px;
+}
+
+
+.logo {
+    float: left;
+    width: 15%;
+    padding:0 0 0 0;
+}
+
+.menu-wrap {
+    width: 85%;
+    float: right;
+    margin-top: 0;
+}
+                       /* ***ПОДВИНУТЬ МЕНЮШКУ ВПРАВО****/
+.menu-wrap .menu {
+    float: right;
+    width:80%;
+    margin-right: 0;
+}
+
+.menu {
+    margin-right: 0;
+}
+
+.menu--mobile .menu__item {
+    margin: 0 40px 0 0;
+}
+
+.menu--mobile .menu__item:last-child {
+    margin-right: 0;
+}
+
+.transparent {
+    top: 277px;
+}
+
+.slider__item {
+    margin: 298px 0 0 -15%;
+    width: 52%;
+}
+
+.slider__titleMain {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0 0 12px 0;
+}
+
+.slider__subtitle {
+    display: none;
+}
+
+.slider__subtitle_960 {
+    color: rgb(237, 191, 255);
+    display: block;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.slider__info {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    max-height: 156px;
+    overflow: hidden;
+    margin: 3px 0 0 0;
+}
+
+.slider__BigIphone {
+    margin: 192px 7.2% 0 0%;
+}
+
+.slider__960_wrap {
+    max-width: 1080px;   /*ПРОПАЛИ СТРЕЛКИ*/
+}
+
+.slider__arrow_960 {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    height: 42px;
+    width: 28px;
+    background: url(../img/slider_arrows.png) 0 0 no-repeat;
+
+}
+
+.slider__arrow {
+    display: none;
+}
+
+.slider__buttons {
+    bottom: -50px;
+    left: 35.7%;
+}/*
+                ***ABOUT****/
+
+.about--setting {
+    padding-left: 7%;
+}
+
+.about--setting:before {
+    left: 4%;
+    top: 4px;
+}
+
+.about {
+    margin: 7px 0 0 0;
+    width: 22%;
+}
+
+.about__text {
+    max-height: 129px;
+    margin: 12px -7% 26px 0;
+}
+
+.about--talk {
+    margin: 7px 0 0 0;
+    padding-left: 13%;
+}
+
+.about--talk:before {
+    left: 18%;
+    top: 1px;
+}
+
+.about--music {
+    padding-left: 13%;
+}
+
+.about--music:before {
+    left: 20%;
+}
+
+                /****DESCRIPTION****/
+
+.slider--content {
+    width: 52%;
+    margin: -15px 0 0 3%;
+}
+
+.slider__title {
+    font-size: 30px;
+    margin: 0px 0 25px -4.5%;
+}
+
+.slider--content .slider__text {
+    margin: 12px 0 0 -11%;
+    width: 102%;
+    max-height: 170px;
+    word-break: break-all;
+}
+
+.slider__title span {
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.updates {
+    width: 45%;
+}
+
+.updates__item {
+    margin: 0 0 23px 0;
+}
+
+.slider__title {
+    font-size: 30px;
+    margin: 8px 0 14px -11%;
+}
+
+.slider--content .slider__buttons {
+    bottom: -9px;
+    left: -1%;
+}
+
+
+.updates__image {
+    margin: -6px 4% 0 -4%;
+}
+
+.updates__title {
+    margin: -1px 0 27px -20px;
+}
+
+.updates__subtitle {
+    padding: 0 0 6px 0;
+}
+
+.updates__link {
+    margin: -5px 4% 0 0;
+}
+
+                /****SPONSORS****/
+
+.sponsors .wrap {
+    padding: 0 21%;
+}
+
+.sponsors .wrap {
+    width: 100%;
+    text-align: center;
+}
+
+.sponsor__item {
+    width: initial;
+    display: inline-block;
+    margin-right: 9%;
+}
+
+.category {
+    width: 28%;
+    margin: 78px 5% 81px 0;
+}
+
+.category__title {
+    font-size: 30px;
+}
+
+.category__title_960 {
+    font-size: 48px;
+}
+
+.category__text {
+    max-height: 146px;
+}
+
+.footer {
+    height:initial;
+}
+
+.footer {
+    padding: 47px 0;
+}
+
+
+.menu__footer {
+    width: 50%;
+    float: left;
+}
+
+.footer .copyrights {
+    float: right;
+    padding: 0;
+}
+
+}
