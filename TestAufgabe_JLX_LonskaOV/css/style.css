@@ -295,7 +295,17 @@ body {
 	display: block;
 }
 
+					/****TABLE_SUBMENU****/
+
+.action__item_submenu-table {
+	position: absolute;
+}
+
 			/****arrows down****/
+
+.action__content_item-img {
+	position: relative;
+}
 
 .action__content_item:after {
     content: "";
