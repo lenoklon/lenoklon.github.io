@@ -1,11 +1,20 @@
-// $(function () {
-// 	$('.header__nav li').hover (
-// 		function () {
-// 			$(this).children('ul').slideDown(150);
-// 		},
-// 		function () {
-// 			$('ul', this).slideUp(150); // или так
-// 		}
+// $(function(){
+// 	$('.header__nav').slicknav();
+// });
 
-// 	);
-// }
+// $(document).ready(function() {
+// 	 $("#owl-carousel").owlCarousel();
+// });
+
+
+
+// $(document).ready(function() {
+// 	$('.slider__wrap').slick({
+// 		dots:false
+// 	});
+// });
+
+
+// $(function () {
+// 	$('.header__menu').slicknav();
+// });
