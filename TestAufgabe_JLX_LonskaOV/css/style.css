@@ -552,28 +552,6 @@ table td {
 	content: url('../img/bonuse.png');
 }
 
-.proposition__contain_partnership:before {
-	content: '';
-    width: 40%;
-    height: 2px;
-    background-color: #8d8d8d;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: -18%;
-}
-
-.proposition__contain_partnership:after {
-	content: '';
-    width: 44%;
-    height: 2px;
-    background-color: #8d8d8d;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    right: -29%;
-}
-
 			/****PREPOSITION****/
 
 .slider__content {
@@ -587,22 +565,6 @@ table td {
     border-radius: 30px;
 
 }
-
-/*
-.slider__content {
-    border-width: 1px;
-   border-style: solid;
-   -webkit-border-image:
-     -webkit-gradient(linear, 0 0, 0 100%, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
-   -webkit-border-image:
-     -webkit-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
-   -moz-border-image:
-     -moz-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
-   -o-border-image:
-     -o-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
-   border-image:
-     linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;
-}*/
 
 .slider__content {
     background: url("../img/border_gradient_horisontal.png") center top repeat-x,
@@ -685,14 +647,13 @@ table td {
 .variants {
 	margin-top: 50px;
 	font-family: 'OpenSansRegular';
-	/*margin-bottom: 50px;*/
 }
 
 .variants .container {
     margin: 0 auto;
     background:url('../img/sceme__contur.png') 0 0 no-repeat;
     max-width: 1028px;
-    height: 415px;
+    height: 420px;
 }
 
 .variants__links {
@@ -701,6 +662,7 @@ table td {
     width: 100%;
     position: relative;
     height: 280px;
+    margin: 0 auto;
 }
 
 .variants__title,
@@ -710,11 +672,10 @@ table td {
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
-    padding: 40px 0;
+    padding: 0 0 40px 0;
 }
 
 .variants__scheme {
-	/*padding:5% 0;*/
 	text-align: center;
 	width: 100%;
 	text-align: center;
@@ -722,8 +683,8 @@ table td {
 
 .variants_perfectM {
    	position: absolute;
-    top: 10%;
-    left: -14%;
+    top: 8%;
+    left: -9%;
     color: #8d8d8d;
     font-size: 36px;
     font-weight: 400;
@@ -742,7 +703,7 @@ table td {
     text-transform: uppercase;
     text-decoration: none;
     top: 44%;
-    left: -10%;
+    left: -6%;
 }
 
 .variants_btc:hover {
@@ -753,8 +714,8 @@ table td {
     position: absolute;
     text-transform: uppercase;
     text-decoration: none;
-    top: 64%;
-    left: 4%;
+    top: 66%;
+    left: 11%;
     color: #8d8d8d;
     font-size: 24px;
     font-weight: 400;
@@ -769,7 +730,7 @@ table td {
     text-decoration: none;
     color: #666;
     bottom: 1%;
-    left: -9%;
+    left: -3%;
     font-size: 32px;
     font-weight: 400;
 }
@@ -782,8 +743,8 @@ table td {
     position: absolute;
     text-transform: uppercase;
     text-decoration: none;
-    top: -6%;
-    left: 19%;
+    top: -5%;
+    left: 26%;
     color: #8d8d8d;
     font-size: 20px;
     font-weight: 400;
@@ -797,7 +758,7 @@ table td {
     position: absolute;
     text-decoration: none;
     top: -4%;
-    left: 32%;
+    left: 40%;
     font-weight: 400;
     color: #8d8d8d;
     font-size: 24px;
@@ -811,8 +772,8 @@ table td {
     position: absolute;
     text-transform: uppercase;
     text-decoration: none;
-    top: 11%;
-    left: 51%;
+    top: 14%;
+    left: 56%;
     color: #8d8d8d;
     font-size: 32px;
     font-weight: 400;
@@ -826,8 +787,8 @@ table td {
 .variants_paymer {
     position: absolute;
     text-decoration: none;
-    top: 34%;
-    left: 28%;
+    top: 30%;
+    left: 36%;
     color: #8d8d8d;
     font-size: 36px;
     font-weight: 400;
@@ -841,7 +802,7 @@ table td {
     position: absolute;
     text-decoration: none;
     top: 56%;
-    left: 45%;
+    left: 56%;
     color: #8d8d8d;
     font-size: 28px;
     font-weight: 400;
@@ -855,7 +816,7 @@ table td {
     position: absolute;
     text-decoration: none;
     top: 78%;
-    left: 26%;
+    left: 34%;
     color: #8d8d8d;
     font-size: 24px;
     font-weight: 400;
@@ -868,8 +829,8 @@ table td {
 .variants_cash {
     position: absolute;
     text-decoration: none;
-    top: 7%;
-    right: -10%;
+    top: -4%;
+    right: -6%;
    	color: #8d8d8d;
     font-size: 24px;
     font-weight: 400;
@@ -882,8 +843,8 @@ table td {
 .variants_privat {
     position: absolute;
     text-decoration: none;
-    top: 26%;
-    right: -4%;
+    top: 22%;
+    right: 3%;
     color: #8d8d8d;
     font-size: 20px;
     font-weight: 400;
@@ -900,8 +861,8 @@ table td {
 .variants_ok {
     position: absolute;
     text-decoration: none;
-    top: 50%;
-    right: -3%;
+    top: 44%;
+    right: -9%;
     color: #8d8d8d;
     font-size: 20px;
     font-weight: 400;
@@ -914,8 +875,8 @@ table td {
 .variants_webM {
     position: absolute;
     text-decoration: none;
-    top: 69%;
-    right: -11%;
+    top: 72%;
+    right: -8%;
     color: #8d8d8d;
     font-size: 28px;
     font-weight: 400;
