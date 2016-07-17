@@ -477,6 +477,17 @@ table td {
     width: 37%;
     vertical-align: middle;
     padding-right: 1.5%;
+    position: relative;
+}
+
+.exchange__info_inform:before {
+    position: absolute;
+    content: '';
+    width: 38%;
+    left: -54%;
+    height: 1px;
+    top: 50%;
+    background: #666;
 }
 
 .action__content_item {
