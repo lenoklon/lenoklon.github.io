@@ -940,8 +940,6 @@ table td {
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
-	display: inline-block;
-	margin-right: 2%;
 }
 
 .share__btn {
