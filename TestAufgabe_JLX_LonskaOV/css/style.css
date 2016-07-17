@@ -890,18 +890,31 @@ table td {
 .settings {
 	color:#666;
 	font-family: 'OpenSansLight';
+    margin: 50px 0 0 0;
+}
+
+.settings .container {
+    background: url('../img/settings__contur.png') 0 0 no-repeat;
+    height: 518px;
+    max-width: 1080px;
 }
 
 .settings__header {
 	font-family: 'OpenSansExtraBold';
 	text-align: center;
+    padding-bottom: 0;
 }
 
 .settings__info {
 	float: left;
 	width: 47%;
 	margin-right: 4.6%;
-	padding:35px 0 48px 0px;
+	padding:35px 0 48px 3.5%;
+}
+
+.settings__info:last-child {
+    padding-left: 0;
+    padding-right: 3.5%;
 }
 
 .settings__info:last-child {
@@ -911,16 +924,17 @@ table td {
 
 .settings__item {
 	color: #666;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 300;
-	margin-bottom: 25px;
-	line-height: 20px;
+	margin-bottom: 15px;
+	line-height: 18px;
 }
 						/*	***SHARE****/
 .share .container {
 	padding:50px 0;
 	vertical-align: middle;
 	text-align: center;
+
 }
 
 .share__text {
