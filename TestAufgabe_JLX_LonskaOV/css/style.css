@@ -89,6 +89,10 @@ body {
     width: 69%;
 }
 
+.header__nav img {
+    vertical-align: sub;
+}
+
 .header__nav_item {
 	display: inline-block;
 	border: 1px solid #666;
