@@ -1137,6 +1137,7 @@ table td {
     /*width: 18%;*/
     margin-right: 4.6%;
     height: 100%;
+    text-align: top;
 }
 
 .footer__sublist_contacts {
@@ -1157,7 +1158,8 @@ table td {
 
 .footer__sublist {
     position: relative;
-    
+    vertical-align: top;
+    padding-top: 27px;
 }
 
 .footer__link_social {
