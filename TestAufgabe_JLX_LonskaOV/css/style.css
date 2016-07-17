@@ -205,18 +205,17 @@ body {
 
 			/****BREADCRUMBS****/
 .exchange .container {
-    border-bottom: 1px solid #666666;
-    padding: 0 2%;
+    padding: 0 2% 2% 2%;
+    background: url('../img/border_gradient.png') 0 0 no-repeat;
 }
 
 .exchange__header {
 	color: rgb(102, 102, 102);
 	font-size: 16px;
 	font-weight: 700;
-	line-height: 37px;
 	text-transform: uppercase;
 	text-align: center;
-	padding:44px 0;
+	padding: 0 0 44px 0;
     /*position: relative;*/
 }
 
@@ -438,7 +437,7 @@ table td {
 	font-size: 14px;
 	font-weight: 300;
 	font-family: 'OpenSansLight';
-	padding:21px 0 51px 0;
+	padding:21px 0 50px 0;
 }
 
 .exchange__info_privat {
@@ -671,10 +670,9 @@ table td {
 .variants .container {
     margin: 0 auto;
     position: relative;
-    /*max-width: 642px;*/ /*картинки*/
-    max-width:744px;
+    max-width:763px;
     width: 100%;
-    background: url(../img/scheme50.png) no-repeat;
+    background: url(../img/scheme1.png) no-repeat;
     height: 280px;
     padding:0 5%;
 }
