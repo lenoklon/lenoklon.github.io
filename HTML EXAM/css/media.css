@@ -520,7 +520,11 @@
 
 
 @media (min-width: 960px) {
-    
+ 
+ * {
+    box-sizing: border-box;
+} 
+   
 .wrap {
     max-width:960px;
     padding-top:1px; /*иначе отступ появляется*/    

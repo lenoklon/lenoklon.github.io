@@ -53,6 +53,7 @@ body {
 .container {
 	max-width: 1080px; /*max*/
 	width: 100%;
+    min-width: 320px;
 	margin: 0 auto;
 
 }
@@ -199,6 +200,11 @@ body {
 }
 
 			/****BREADCRUMBS****/
+.exchange .container {
+    border-bottom: 1px solid #666666;
+    padding: 0 2%;
+}
+
 .exchange__header {
 	color: rgb(102, 102, 102);
 	font-size: 16px;
@@ -320,8 +326,50 @@ body {
 					/****TABLE_SUBMENU****/
 
 .action__item_submenu-table {
-	position: absolute;
+    display: none;
+    position: absolute;
+    font-size: 12px;
+    top: 100%;
+    left: 9%;
 }
+
+.action__content_item:hover .action__item_submenu-table {
+    display: block;
+}
+
+
+.header__nav >li:hover .nav__subnav{
+    display: block;
+}
+
+
+table td {
+    border:1px solid #666;
+    max-width: 17%;
+    width: 100%;
+   
+    
+}
+
+.action__subitem {
+    width: 180px;
+}
+
+.action__sublink {
+    font-size: 12px;
+    font-family: 'OpenSansLight';
+    text-decoration: none;
+    width: 100%;
+    color: rgb(32, 32, 32);
+    font-weight: 400; 
+    background: #fff;
+    vertical-align: middle;
+    display: inline-block;
+     padding: 0 1% 0 7.87%;
+     height: 50px;
+     line-height: 50px;
+}
+
 
 			/****arrows down****/
 
@@ -355,8 +403,8 @@ body {
 }
 
 .action__content_item-usd:after {
-    top: 42%;
-    right: 6%;
+    top: 2%;
+    right: -59%;
 }
 
 .action__content_item:last-child,
@@ -377,7 +425,9 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
 
-}						/****EXCHANGE INFO****/
+}	
+
+				/****EXCHANGE INFO****/
 
 .exchange__info {
 	color: rgb(115, 115, 115);
@@ -420,9 +470,19 @@ body {
 .exchange__info_inform {
     float: right;
     text-align: right;
-    width: 35%;
+    width: 37%;
     vertical-align: middle;
     padding-right: 1.5%;
+}
+
+.action__content_item {
+    position: relative;
+}
+
+.action__item_submenu-table {
+    position: absolute;
+    font-size: 12px;
+    font-family: OpenSans;
 }
 
 
@@ -430,6 +490,10 @@ body {
 	padding:0 1.96% 0 3.75%;
 	vertical-align: middle;
 }
+
+                    /*SUBMENU*/
+
+
 
 				/****PROPOSITIONS****/
 .preposition{
@@ -601,12 +665,14 @@ body {
 }
 
 .variants .container {
+    margin: 0 auto;
     position: relative;
     /*max-width: 642px;*/ /*картинки*/
-    max-width:800px;
+    max-width:744px;
     width: 100%;
     background: url(../img/scheme50.png) no-repeat;
-    /*height: 280px;*/
+    height: 280px;
+    padding:0 5%;
 }
 
 .variants__title,
@@ -628,8 +694,8 @@ body {
 
 .variants_perfectM {
    	position: absolute;
-    top: 20%;
-    left: -9%;
+    top: 10%;
+    left: -14%;
     color: #8d8d8d;
     font-size: 36px;
     font-weight: 400;
@@ -647,8 +713,8 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
-    top: 50%;
-    left: -9%;
+    top: 44%;
+    left: -10%;
 }
 
 .variants_btc:hover {
@@ -659,8 +725,8 @@ body {
     position: absolute;
     text-transform: uppercase;
     text-decoration: none;
-    top: 62%;
-    left: 7%;
+    top: 64%;
+    left: 4%;
     color: #8d8d8d;
     font-size: 24px;
     font-weight: 400;
@@ -674,8 +740,8 @@ body {
     position: absolute;
     text-decoration: none;
     color: #666;
-    bottom: 15%;
-    left: -4%;
+    bottom: 1%;
+    left: -9%;
     font-size: 32px;
     font-weight: 400;
 }
@@ -688,8 +754,8 @@ body {
     position: absolute;
     text-transform: uppercase;
     text-decoration: none;
-    top: 5%;
-    left: 24%;
+    top: -6%;
+    left: 19%;
     color: #8d8d8d;
     font-size: 20px;
     font-weight: 400;
@@ -702,8 +768,8 @@ body {
 .variants_litecoin {
     position: absolute;
     text-decoration: none;
-    top: 7%;
-    left: 44%;
+    top: -4%;
+    left: 32%;
     font-weight: 400;
     color: #8d8d8d;
     font-size: 24px;
@@ -717,8 +783,8 @@ body {
     position: absolute;
     text-transform: uppercase;
     text-decoration: none;
-    top: 22%;
-    left: 67%;
+    top: 11%;
+    left: 51%;
     color: #8d8d8d;
     font-size: 32px;
     font-weight: 400;
@@ -732,8 +798,8 @@ body {
 .variants_paymer {
     position: absolute;
     text-decoration: none;
-    top: 36%;
-    left: 36%;
+    top: 34%;
+    left: 28%;
     color: #8d8d8d;
     font-size: 36px;
     font-weight: 400;
@@ -746,8 +812,8 @@ body {
 .variants_Bitcoin {
     position: absolute;
     text-decoration: none;
-    top: 55%;
-    left: 62%;
+    top: 56%;
+    left: 45%;
     color: #8d8d8d;
     font-size: 28px;
     font-weight: 400;
@@ -760,8 +826,8 @@ body {
 .variants_yandex {
     position: absolute;
     text-decoration: none;
-    top: 72%;
-    left: 31%;
+    top: 78%;
+    left: 26%;
     color: #8d8d8d;
     font-size: 24px;
     font-weight: 400;
@@ -904,7 +970,7 @@ body {
 }
 
 		/****FOOTER****/
-.footer {
+/*.footer {
 	font-family: 'OpenSansBold';
 	height: 250px;
 }
@@ -990,6 +1056,131 @@ body {
 
 .footer__btn-fb {
 	background-position: -7% 38%;
+}
+
+.footer__btn-twitter {
+    width: 32px;
+    background-position: -14% 78%;
+}
+
+.footer__btn-google {
+    width: 20px;
+    background-position: 15% 117%;
+}
+*/
+
+/************************************/
+
+.footer {
+    font-family: 'OpenSansBold';
+    height: 250px;
+}
+
+.footer__list {
+    text-align: justify;
+    border: 1px solid #7da3ef;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 8%;
+}
+
+.footer__list:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+}
+
+.footer__item {
+    display: inline-block;
+
+    position: relative;
+
+}
+.footer__link {
+    text-decoration: none;
+    display: block;
+    width:100%;
+    color: rgb(115, 115, 115);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: relative;
+}
+
+.footer__link:after {
+    display: inline-block;
+    content: url('../img/arrow_up.png');
+    top: 0;
+    left: 142%;
+    position: absolute;
+}
+
+.footer__link_social:after {
+    display: none;
+}
+
+.footer__sub {
+   /* text-align: justify;*/
+    padding:0 9%;
+}
+
+/*.footer__sub:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+}*/
+
+.footer__sublist {
+    display: inline-block;
+    /*width: 18%;*/
+    margin-right: 4.6%;
+    height: 100%;
+}
+
+.footer__sublist_contacts {
+    margin-right: 3%;
+}
+
+.footer__subitem {
+   /* width: 128%;*/
+    text-align: center;
+}
+
+.footer__sublink {
+    text-decoration: none;
+    color: rgb(141, 141, 141);
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.footer__sublist {
+    position: relative;
+    
+}
+
+.footer__link_social {
+    /*position: absolute;*/
+    /*top: 30px;
+    right: 19px;*/
+   /* width: 5%;*/
+    margin-right: 0;
+}
+
+.footer__btn {
+    display: block;
+    background: url('../img/social_sprite.png') center no-repeat;
+    background-position: 0 -2%;
+    width: 14px;
+    height: 30px;
+    margin-right: 2%;
+    margin-top: 1%;
+    vertical-align: middle;
+}
+
+.footer__btn-fb {
+    background-position: -7% 38%;
 }
 
 .footer__btn-twitter {
