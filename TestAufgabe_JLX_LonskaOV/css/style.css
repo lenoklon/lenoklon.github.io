@@ -608,6 +608,26 @@ table td {
     url("../img/border_gradient_horisontal.png") center bottom repeat-x,
     url("../img/border_gradient_vertical.png") left top repeat-y,
     url("../img/border_gradient_vertical.png") right top repeat-y;
+    position: relative;
+}
+
+.slider__content:before {
+    content: url('../img/slider_left-10.png');
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 44%;
+    left: -1.5%;
+}
+
+.slider__content:after {
+    content: url('../img/slider_right-10.png');
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 44%;
+    right: -1.5%;
+    vertical-align: sub;
 }
 
 .slider__content:last-child {
