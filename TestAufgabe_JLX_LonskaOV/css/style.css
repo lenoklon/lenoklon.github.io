@@ -973,106 +973,6 @@ table td {
 }
 
 		/****FOOTER****/
-/*.footer {
-	font-family: 'OpenSansBold';
-	height: 250px;
-}
-
-.footer__list {
-	text-align: justify;
-	border: 1px solid #7da3ef;
-	height: 30px;
-	line-height: 30px;
-	padding: 0 8%;
-}
-
-.footer__list:after {
-	content: "";
-	display: inline-block;
-	width: 100%;
-	height: 0;
-}
-
-.footer__item {
-	display: inline-block;
-	position: relative;
-
-}
-.footer__link {
-	text-decoration: none;
-	display: block;
-	width:100%;
-	color: rgb(115, 115, 115);
-	font-size: 16px;
-	text-transform: uppercase;
-	font-weight: 400;
-	position: relative;
-}
-
-.footer__link:after {
-    display: inline-block;
-    content: url('../img/arrow_up.png');
-    top: 0;
-    left: 142%;
-    position: absolute;
-}
-
-.footer__link_social:after {
-	display: none;
-}
-
-.footer__subitem {
-    width: 128%;
-    text-align: center;
-}
-
-.footer__sublink {
-	text-decoration: none;
-	color: rgb(141, 141, 141);
-	font-size: 12px;
-	line-height: 20px;
-}
-
-.footer__sublist {
-    position: absolute;
-    top: 140%;
-    left: -46%;
-    width: 150%;
-}
-
-.footer__link_social {
-	position: absolute;
-    top: 30px;
-    right: 19px;
-}
-
-.footer__btn {
-    display: block;
-    background: url('../img/social_sprite.png') center no-repeat;
-    background-position: 0 -2%;
-    width: 14px;
-    height: 30px;
-    margin-right: 2%;
-    margin-top: 1%;
-    vertical-align: middle;
-}
-
-.footer__btn-fb {
-	background-position: -7% 38%;
-}
-
-.footer__btn-twitter {
-    width: 32px;
-    background-position: -14% 78%;
-}
-
-.footer__btn-google {
-    width: 20px;
-    background-position: 15% 117%;
-}
-*/
-
-/************************************/
 
 .footer {
     font-family: 'OpenSansBold';
@@ -1082,9 +982,8 @@ table td {
 .footer__list {
     text-align: justify;
     border: 1px solid #7da3ef;
-    height: 30px;
-    line-height: 30px;
-    padding: 0 8%;
+    line-height: 0;
+    padding: 10px 9% 0 9%;
 }
 
 .footer__list:after {
@@ -1096,10 +995,10 @@ table td {
 
 .footer__item {
     display: inline-block;
-
     position: relative;
-
+    padding: 10px 0;
 }
+
 .footer__link {
     text-decoration: none;
     display: block;
@@ -1111,12 +1010,12 @@ table td {
     position: relative;
 }
 
-.footer__link:after {
+.footer__link::after {
     display: inline-block;
     content: url('../img/arrow_up.png');
-    top: 0;
-    left: 142%;
+    top: -5px;
     position: absolute;
+    right: -57%;  /*-3em*/
 }
 
 .footer__link_social:after {
