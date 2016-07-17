@@ -517,9 +517,9 @@ table td {
 	width: 33%;
 	display: inline-block;
 	text-align: center;
-
-
 }
+
+
 
 .proposition__item {
 	padding-left: 6%;
@@ -538,10 +538,31 @@ table td {
     display: inline-block;
     left: 0;
     margin-right: 3%;
+    position: relative;
+    top: 5px;
 }
 
-.proposition__contain_inerpartnership {
+.proposition__contain_partnership {
 	position: relative;
+}
+
+.proposition__contain_partnership:before,
+.proposition__contain_partnership:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 1px;
+    background: #000;
+    top: 60%;
+    width: 38%;
+}
+
+.proposition__contain_partnership:before {
+    left: -15%;
+}
+
+.proposition__contain_partnership:after {
+    right: -20%;
 }
 
 .proposition__item-partnership:before {
