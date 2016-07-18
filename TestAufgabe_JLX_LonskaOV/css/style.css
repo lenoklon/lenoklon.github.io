@@ -649,30 +649,53 @@ tr:last-child td a {
 	font-family: 'OpenSansRegular';
     margin-top: 50px;
 }
-
-.variants .container {
-    background:url('../img/sceme__contur.png') 0 0 no-repeat;
+                    /*вариант через бордер-градиент*/
+.variants .container,
+.settings .container {
+    position: relative;
+    /* background: url('../img/sceme__contur.png') 0 0 no-repeat; */
     height: 438px;
     margin: 0 auto;
     max-width: 1080px;
+    border-top: 2px solid #a5a5a5;
+    border-bottom: 2px solid #a5a5a5;
+    border-radius: 18px;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    background-size: 2px 100%;
+    background-image: linear-gradient(#a5a5a5 0%, transparent 30%, transparent 70%, #a5a5a5 100%), linear-gradient(#a5a5a5 0%, transparent 30%, transparent 70%, #a5a5a5 100%);
 }
 
 .variants__links {
     background: url(../img/scheme1.png) no-repeat;
-    height: 280px;
-    max-width:763px;
+    height: 317px;
+    max-width: 763px;
     margin: 0 auto;
     position: relative;
     width: 100%;
+    margin-top: 5%;
 }
 
-.variants__title,
-.settings__header {
+.variants__title {
+    position: absolute;
+    left: 35%;
+    top: -9px;
+    background: #fff;
+    padding: 0 3%;
 	color: #666;
     text-align: center;
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+
+.settings__header {
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
     padding: 0 0 40px 0;
 }
 
@@ -895,16 +918,22 @@ tr:last-child td a {
 }
 
 .settings .container {
-    background: url('../img/settings__contur.png') 0 0 no-repeat;
-    height: 518px;
+   /* background: url('../img/settings__contur.png') 0 0 no-repeat;*/
+    height: 500px;
     max-width: 1080px;
 }
 
 .settings__header {
-	font-family: 'OpenSansExtraBold';
+    font-family: 'OpenSansExtraBold';
     padding-bottom: 0;
-    text-align: center;
-    font-weight: 400;
+    position: absolute;
+    left: 41%;
+    top: -9px;
+    background: #fff;
+    padding: 0 3%;
+    color: #666;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 .settings__info {
