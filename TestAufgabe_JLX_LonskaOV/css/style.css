@@ -286,53 +286,7 @@ body {
 .action__content_item a {
 	display: block;
 }
-
-					/****TABLE_SUBMENU****/
-
-.action__item_submenu-table {
-    display: none;
-    font-size: 12px;
-    top: 100%;
-    left: 9%;
-    position: absolute;
-}
-
-.action__content_item:hover .action__item_submenu-table {
-    display: block;
-}
-
-
-.header__nav >li:hover .nav__subnav{
-    display: block;
-}
-
-table td {
-    border:1px solid #666;
-    max-width: 17%;
-    width: 100%;
-   
-    
-}
-
-.action__subitem {
-    width: 180px;
-}
-
-.action__sublink {
-    background: #fff;
-    color: rgb(32, 32, 32);
-    display: inline-block;
-    font-size: 12px;
-    font-family: 'OpenSansLight';
-    font-weight: 400; 
-    height: 50px;
-    line-height: 50px;
-    padding: 0 1% 0 7.87%;
-    text-decoration: none;
-    vertical-align: middle;
-    width: 100%;
-}
-
+		
 
 			/****arrows down****/
 
@@ -504,7 +458,7 @@ table td {
 .proposition__contain_partnership:before,
 .proposition__contain_partnership:after {
     content: '';
-    background: #000;
+    background: #666;
     display: inline-block;
     height: 1px;
     position: absolute;
