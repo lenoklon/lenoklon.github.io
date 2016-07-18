@@ -288,7 +288,77 @@ body {
 .action__content_item a {
 	display: block;
 }
-		
+
+
+                        /****TABLE_SUBMENU****/
+
+.action__item_submenu-table {
+    display: none;
+    font-size: 12px;
+    font-family: OpenSans;
+    position: absolute;
+    bottom: -18.7em;
+    right: -19.6em;
+    border: 1px solid #7da3ef;
+    border-top: none;
+    z-index: 10;
+}
+
+table img {
+    vertical-align: sub;
+}
+.action__content_item:hover .action__item_submenu-table {
+    display: block;
+}
+
+.action__content_item a {
+    width: 150px;
+    display: inline-block;
+    text-align: left;
+    border-bottom: 1px dashed #666;
+    border-left: 1px dashed #666;
+    padding-left: 15%;
+}
+
+tr:last-child .action__content_item a {
+    border-bottom: none;
+}
+
+tr td:first-child a {
+    border-left: none;
+}
+
+tr:last-child td a {
+    border-bottom: none;
+}
+
+
+.header__nav >li:hover .nav__subnav{
+    display: block;
+}
+
+.action__subitem {
+    padding: 0 0;
+}
+
+.action__subitem span {
+    display: inline-block;
+}
+
+.action__sublink {
+    background: #fff;
+    color: rgb(32, 32, 32);
+    display: inline-block;
+    font-size: 12px;
+    font-family: 'OpenSansLight';
+    font-weight: 400;
+    line-height: 50px;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 100%;
+}
+
+                     /*****END OF SUBTABLE****/
 
 			/****arrows down****/
 
