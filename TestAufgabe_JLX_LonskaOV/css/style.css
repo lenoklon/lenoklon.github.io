@@ -97,7 +97,7 @@ body {
 	border: 1px solid #666;
     display: inline-block;
 	height: 31px;
-	line-height: 31px;
+	line-height: 26px;
     margin-right: 1.48% ;
 	position: relative;
 }
@@ -115,6 +115,7 @@ body {
     top: 30px;
     width: 102%;
     font-size: 12px;
+    background: #fff;
 }
 
 .header__nav >li:hover .nav__subnav{
@@ -125,19 +126,21 @@ body {
     background-color: #fff;
 }
 
-.nav__subnav >li:hover .nav__sublink {
-	background-color: #1469eb;
+.nav__subitem {
+	color: #1469eb;
+    padding-left: 11%;
+}
+
+.nav__nav_item>a:hover .nav__sublink {
+    background-color: #1469eb;
     color:#fff;
 }
 
-.nav__subitem {
-	color: #1469eb;
-}
 
 .header__nav_link,
 .nav__sublink {
 	color: #666;
-    display: block;
+    display: inline-block;
     font-size: 12px;
     text-transform: uppercase;
     text-decoration: none;
@@ -147,7 +150,6 @@ body {
 
 .nav__sublink {
     padding: 0;
-    padding-left: 10px;
 }
 
 .header__nav_link:hover {
