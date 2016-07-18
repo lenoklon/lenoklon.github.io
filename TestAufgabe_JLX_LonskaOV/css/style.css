@@ -103,7 +103,6 @@ body {
 }
 
 .nav__subnav {
-    /*background-color: #fff;*/
     border: 1px solid #666;
     border-top: none;
     display: none;
@@ -140,10 +139,10 @@ body {
 	color: #666;
     display: block;
     font-size: 12px;
-    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     padding:0 39px 0 15px; /*(3% i 1% right i left)*/
+    letter-spacing: 1px;
 }
 
 .nav__sublink {
@@ -205,10 +204,11 @@ body {
     color: #666;
     font-family: 'OpenSansBold';
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     padding-top: 21px;
     width: 98%;
+    letter-spacing: 1px;
 }
 
 			/****BREADCRUMBS****/
@@ -220,10 +220,11 @@ body {
 .exchange__header {
 	color: rgb(102, 102, 102);
 	font-size: 16px;
-	font-weight: 700;
+	font-weight: 400;
 	text-transform: uppercase;
 	text-align: center;
 	padding: 0 0 44px 0;
+    letter-spacing: 1px;
 }
 
 .actions {
@@ -281,6 +282,7 @@ body {
     margin-right: 35px;
     text-decoration: none;
 	vertical-align: middle;
+    font-weight: 400;
 }
 
 .action__content_item a {
@@ -325,7 +327,7 @@ body {
     color: rgb(20, 105, 235);
     display: block;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     left: 50%;
     top: 50%;
@@ -333,6 +335,7 @@ body {
     position: absolute;
     transform: translate(-50%,-50%);
 	width: 100%;
+    letter-spacing: 1px;
 
 }	
 
@@ -436,10 +439,11 @@ body {
 	display: block;
     font-family: 'OpenSansBold';
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     padding-left: 6%;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .proposition__item:before {
@@ -516,7 +520,6 @@ body {
     position: absolute;
     right: -1.5%;
     top: 44%;
-    vertical-align: sub;
     width: 21px;
 }
 
@@ -542,18 +545,19 @@ body {
 .slider__content_title {
 	color: rgb(102, 102, 102);
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 37px;
 	padding: 24px 0 27px 0;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .slider__next {
 	color: rgb(102, 102, 102);
     float: right;
 	font-size: 12px;
-	font-weight: 700;
+	font-weight: 400;
 	text-transform: uppercase;
 	text-decoration: none;
 	margin-right: 13%;
@@ -594,7 +598,7 @@ body {
 
 .variants__title,
 .settings__header {
-	color: #8d8d8d;
+	color: #666;
     text-align: center;
 	font-size: 16px;
 	font-weight: 700;
@@ -654,7 +658,7 @@ body {
 
 .variants_payeer {
     bottom: 1%;
-    color: #666;
+    color: #8d8d8d;
     left: -3%;
     font-size: 32px;
     font-weight: 400;
@@ -830,6 +834,7 @@ body {
 	font-family: 'OpenSansExtraBold';
     padding-bottom: 0;
     text-align: center;
+    font-weight: 400;
 }
 
 .settings__info {
@@ -869,7 +874,7 @@ body {
 	display: inline-block;
     font-family: 'OpenSansBold';
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
 	margin-right: 2%;
     text-transform: uppercase;
 }
