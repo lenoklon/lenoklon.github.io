@@ -32,10 +32,79 @@
 	    width: 46%;
 	    margin-bottom: 1%;
 	}
+
+	.footer__block {
+	    width: 48%;
+	    margin-right: 4%;
+	    margin-bottom: 8%;
+	}
+
+	.footer__block:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	.footer {
+   	 padding: 69px 0 0;
+	}
 }
 
 @media screen and (max-width:768px) and (min-width:480px)  {   /*телефоны  в горизонтальном положении*/
+	.container {
+		width: 100%; /*что б на моб устройствах расстянулось на всю шир*/
+		padding: 0 15px;
+	}
 
+	.functions__item {
+	    width: 100%;
+	    margin-bottom: 1%;
+	}
+
+	.projects__content {
+	    width: 100%;
+	}
+
+	.functions__item-border {
+	    height: 100%;
+	    padding: 28px 15px;
+}
+
+	.footer__block {
+	    width: 100%;
+	    margin-bottom: 8%;
+	}
+
+	.footer {
+	   	 padding: 69px 0 0;
+	}
+
+	.header {
+		height:auto;
+	}
+
+	.header__logo {
+    	text-align: center;
+    	 float: none; 
+	}
+
+	.header__menu {
+     	float: none; 
+	    margin-top: 5%;
+	}
+
+	.header__menu-item {
+	    float: left;
+	    margin-left: 4%;
+	    padding-bottom: 4%;
+	}
+
+	.header img {
+		width: 60px;
+	}
+
+	.greeting__info {
+	    text-align: center;
+	    font-size: 22px;
+	}
 }
 
 @media screen and (max-width:479px) and (min-width:320px)   {    /*телефоны  в вертикальном положении*/
