@@ -1,20 +1,36 @@
 /*это как рамки в которых будут наши стили работать*/
 /*разрешения под которые мы булем верстать*/
 
-@media screen and (max-width:1201px) and (min-width: 993px) {    /*ПК и многие планшеты в гор положении*/
+@media screen and (max-width:1200px) and (min-width: 993px) {    /*ПК и многие планшеты в гор положении*/
 	.container {
 		max-width: 970px; /*по бутстрапу*/
+		padding: 0 15px;
+	}
+
+	.functions__item-border {
+	    padding: 24px 19px;
+	}
+
+	.project__content-wrap {
+	    padding: 0 2%;
+	}
+
+	.project__content_info-text {
+	    padding: 22px 17%;
 	}
 }
 
-@media screen and (min-width: 769px) and (max-width:992px) {     /*планшеты*/
+@media screen and (max-width:992px) and (min-width: 769px)  {     /*планшеты*/
+	.container {
+		max-width: 750px;
+		padding: 0 15px;
+	}
+}
+
+@media screen and (max-width:768px) and (min-width:480px)  {   /*телефоны  в горизонтальном положении*/
 
 }
 
-@media screen and (min-width:480px) and (max-width:768px) {   /*телефоны  в горизонтальном положении*/
-
-}
-
-@media screen and (min-width:320px) and (max-width:479px) {    /*телефоны  в вертикальном положении*/
+@media screen and (max-width:479px) and (min-width:320px)   {    /*телефоны  в вертикальном положении*/
 
 }
