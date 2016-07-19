@@ -122,7 +122,7 @@ body {
 .slick-prev {
     width: 45px;
     height: 45px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .slick-next {
@@ -132,7 +132,7 @@ body {
 
 .slick-next:before,
 .slick-prev:before {
-    content: '';
+    content:none;
 }
 
 .slick-prev {
@@ -329,6 +329,10 @@ body {
   .projects__content a {
     display: block;
   }
+
+  img.project__content-pic {
+        width: 100%;
+    }   
 
 
                    /* ***FEEDBACK****/

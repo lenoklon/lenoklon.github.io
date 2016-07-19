@@ -1,6 +1,8 @@
 /*это как рамки в которых будут наши стили работать*/
 /*разрешения под которые мы булем верстать*/
 
+/*width:100% - что б ширина изображения подстраивалась под блок*/
+
 @media screen and (max-width:1200px) and (min-width: 993px) {    /*ПК и многие планшеты в гор положении*/
 	.container {
 		max-width: 970px; /*по бутстрапу*/
@@ -24,6 +26,11 @@
 	.container {
 		max-width: 750px;
 		padding: 0 15px;
+	}
+
+	.functions__item {
+	    width: 46%;
+	    margin-bottom: 1%;
 	}
 }
 

@@ -122,10 +122,6 @@ body {
 	display: block;
 }
 
-.nav__sublink {
-    background-color: #fff;
-}
-
 .nav__subitem:hover,
 .nav__sublink:hover {
     background:  #1469eb;
@@ -305,7 +301,7 @@ body {
     font-size: 12px;
     font-family: OpenSans;
     position: absolute;
-    bottom: -18.7em;
+    bottom: -17.4em;
     right: -19.6em;
     border: 1px solid #7da3ef;
     border-top: none;
@@ -320,12 +316,13 @@ table img {
 }
 
 .action__content_item a {
-    width: 150px;
+    width: 12em;
+    padding-left: 14%;
+    /*width: 150px;*/
     display: inline-block;
     text-align: left;
     border-bottom: 1px dashed #666;
     border-left: 1px dashed #666;
-    padding-left: 15%;
 }
 
 tr:last-child .action__content_item a {
