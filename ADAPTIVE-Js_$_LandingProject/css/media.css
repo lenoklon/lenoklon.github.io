@@ -128,7 +128,8 @@
 	    border-radius: 5px;
 	    display: block;
 	    width: 100%;
-	    background: rgb(202, 202, 202);
+	    /*background: rgb(202, 202, 202);*/
+	    background: transparent;
 	}
 
 	.slicknav_nav a {
@@ -151,7 +152,7 @@
 	}
 
 	.slicknav_btn {
-	    background: transparent;
+	    background: rgb(202, 202, 202);
 	    display: block;
 	    width: 100%;
 	} 
@@ -193,6 +194,10 @@
 
 	.slider__content {
 	    width: 60%;
+	}
+
+	.feedback__content {
+   	 font-size: 15px;
 	}
 }
 
