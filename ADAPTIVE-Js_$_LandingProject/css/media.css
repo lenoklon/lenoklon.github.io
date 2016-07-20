@@ -33,6 +33,10 @@
 	    margin-bottom: 1%;
 	}
 
+	.slider__content {
+	    bottom: 26px;
+	}
+
 	.footer__block {
 	    width: 48%;
 	    margin-right: 4%;
@@ -84,6 +88,7 @@
 	.header__logo {
     	text-align: center;
     	 float: none; 
+    	 padding:25px;
 	}
 
 	.header__menu {
@@ -101,12 +106,253 @@
 		width: 60px;
 	}
 
+	.header__menu {
+	    width: initial;
+	    margin: 5% auto;
+	}
+
 	.greeting__info {
 	    text-align: center;
 	    font-size: 22px;
 	}
+
+	img.project__content-pic {
+	    width: 58%;
+	}
+
+	.greeting__header {
+   		 text-align: center;
+	}
+
+	.slicknav_menu {
+	    border-radius: 5px;
+	    display: block;
+	    width: 100%;
+	    background: rgb(202, 202, 202);
+	}
+
+	.slicknav_nav a {
+		color:#666;
+	}
+
+	.header__menu-item_active a {
+	    color: rgb(26, 187, 156);
+	}
+
+	.header__menu {
+		display: none;
+	}
+
+	.header__menu-item {
+		width: 33%;
+		text-align: center;
+		margin:0;
+		padding:10px 0;
+	}
+
+	.slicknav_btn {
+	    background: transparent;
+	    display: block;
+	    width: 100%;
+	} 
+
+	.slicknav_menu .slicknav_menutxt {
+	    color: rgb(122, 122, 122);
+	     text-shadow: none; 
+	     float: left;
+	}
+
+	.slicknav_menu .slicknav_icon {
+	    display: none;
+
+	}
+
+	.fa {
+		float: right;
+	    color: #555;
+	    margin:1px 0 0 5px;
+	 }
+
+	 .slicknav__nav .fa {
+	    float: right;
+
+	 }
+
+	 .slider__content {
+	    bottom: 23px;
+	    left: 76px;
+	}
+
+	.slider__head {
+	    font-size: 0.7em;
+	}
+
+	.slider__info {
+	    font-size: 0.7em;
+	}
+
+	.slider__content {
+	    width: 60%;
+	}
 }
 
 @media screen and (max-width:479px) and (min-width:320px)   {    /*телефоны  в вертикальном положении*/
+	.slider{
+	    display: none;
+	}
+
+	.container {
+		width: 100%; /*что б на моб устройствах расстянулось на всю шир*/
+		padding: 0 15px;
+	}
+
+	.functions__item {
+	    width: 100%;
+	    margin-bottom: 1%;
+	}
+
+	.projects__content {
+	    width: 100%;
+	}
+
+	.functions__item-border {
+	    height: 100%;
+	    padding: 28px 15px;
+}
+
+	.footer__block {
+	    width: 100%;
+	    margin-bottom: 8%;
+	}
+
+	.footer {
+	   	 padding: 69px 0 0;
+	}
+
+	.header {
+		height:auto;
+	}
+
+	.header__logo {
+    	text-align: center;
+    	 float: none; 
+    	 padding:25px;
+	}
+
+	.header__menu {
+     	float: none; 
+	    margin-top: 5%;
+	}
+
+	.header__menu-item {
+	    float: left;
+	    margin-left: 4%;
+	    padding-bottom: 4%;
+	}
+
+	.header img {
+		width: 60px;
+	}
+
+	.header__menu {
+	    width: initial;
+	    margin: 5% auto;
+	}
+
+	.greeting__info {
+	    text-align: center;
+	    font-size: 22px;
+	}
+
+	img.project__content-pic {
+	    width: 58%;
+	}
+
+	.greeting__header {
+   		 text-align: center;
+	}
+
+	.slicknav_menu {
+    border-radius: 5px;
+    display: block;
+    width: 73%;
+    margin: 0 auto;
+    background: rgb(202, 202, 202);
+}
+
+	.slicknav_nav a {
+		color:#666;
+	}
+
+	.header__menu-item_active a {
+	    color: rgb(26, 187, 156);
+	}
+
+	.header__menu {
+		display: none;
+	}
+
+	.header__menu-item {
+		width: 33%;
+		text-align: center;
+		margin:0;
+		padding:10px 0;
+	}
+
+	.slicknav_btn {
+	    background: transparent;
+	    display: block;
+	    width: 100%;
+	} 
+
+	.slicknav_menu .slicknav_menutxt {
+	    color: rgb(122, 122, 122);
+	     text-shadow: none; 
+	     float: left;
+	}
+
+	.slicknav_menu .slicknav_icon {
+	    display: none;
+
+	}
+
+	.fa {
+		float: right;
+	    color: #555;
+	    margin:1px 0 0 5px;
+	 }
+
+	 .slicknav__nav .fa {
+	    float: right;
+
+	 }
+
+	 .slicknav_nav li {
+	    width: 100%;
+	    border-top: 1px solid;
+	}
+
+	.functions__header:before, 
+	.functions__header:after, 
+	.process__header:before,
+	 .process__header:after, 
+	 .projects__header:before,
+	  .projects__header:after, 
+	  .feedback__header:before, 
+	  .feedback__header:after {
+	    display: none;
+		}
+
+	.functions {
+		padding-top: 0;
+	}
+
+	.feedback__content {
+	    padding: 6% 6%;
+	}
+
+	.header__menu-item {
+	    padding: 5px 0;
+	}
 
 }

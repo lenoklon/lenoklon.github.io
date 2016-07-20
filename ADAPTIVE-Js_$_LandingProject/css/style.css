@@ -65,6 +65,10 @@ body {
     width: 100%;
 }
 
+.slicknav_menu {
+    display: none;
+}
+
 .bg_top {
     height: 3px;
     background: #414141;
