@@ -25,11 +25,11 @@
     font-weight: normal;
     font-style: normal;
 }
-
+/*
 body {
     width: 100%;
     overflow-x:hidden;
-}
+}*/
 
 .clearfix:after {
     content:'';
@@ -207,10 +207,10 @@ body {
 
 .slider__buttons {
     bottom: -98px;
-    left: 9%;
+    left: 7.4em;
     position: absolute;
     text-align: center;
-    width: 85%;
+    /* width: 85%; */
 }
 
 .slider__buttons li {
@@ -357,7 +357,7 @@ body {
     }
 
     .slider--content .slider__buttons {
-        position: relative;
+       /* position: relative;*/
         bottom: auto;
         margin-top: 23px;
         left: 15%;

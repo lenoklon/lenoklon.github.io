@@ -117,7 +117,7 @@
 
 .slider--content .slider__item {
     margin: 0 0 16px 24px;
-    padding: 24px 12% 6% 36px;
+    padding: 24px 9% 6% 9px;
 }
 
 
@@ -368,7 +368,7 @@ p.updates__info {
 
 .slider__buttons {
     bottom: 0px;
-    left: 33%;
+    left: 35em;
 }
 
 .header {
@@ -624,10 +624,11 @@ p.updates__info {
 }
 
 .slider__buttons {
-    bottom: -50px;
-    left: 35.7%;
-}/*
-                ***ABOUT****/
+    bottom: -1px;
+    left: 41em;
+    position: absolute;
+}
+               /***ABOUT****/
 
 .about--setting {
     padding-left: 7%;
@@ -727,9 +728,9 @@ p.updates__info {
 
                 /****SPONSORS****/
 
-.sponsors .wrap {
+/*.sponsors .wrap {
     padding: 0 21%;
-}
+}*/
 
 .sponsors .wrap {
     width: 100%;
