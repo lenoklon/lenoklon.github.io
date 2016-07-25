@@ -924,7 +924,7 @@ tr:last-child td a {
 
 .settings .container {
    /* background: url('../img/settings__contur.png') 0 0 no-repeat;*/
-    height: 500px;
+    height: auto;
     max-width: 1080px;
 }
 
