@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Snowboarding</title>
-    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/reset.css">
     <!-- <link rel="stylesheet" href="css/bootstrap-theme.css"> -->
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
 </head>
@@ -45,16 +46,16 @@
             </div>
         </div>
         <div class="slider">
-            <div class="container container__slider">
+            <div class="container-fluid container__slider p0">
                 <div class="slide__item">
-                    <img src="img/slide2.png" alt="slide1">
+                    <img src="img/slide2.png" alt="slide1" class="img-responsive">
                     <h1 class="slide__header slide__header-second">Run over everything</h1>
                     <a href="#" class="slide__btn">see details</a>
                     <a href="#" class="btn_arrow btn_arrow-left"></a>
                     <a href="#" class="btn_arrow btn_arrow-right"></a>
                 </div>
                 <div class="slide__item">
-                    <img src="img/slide1.png" alt="slide1">
+                    <img src="img/slide1.png" alt="slide1" class="img-responsive">
                     <h1 class="slide__header slide__header-first">Run over everything</h1>
                     <a href="#" class="slide__btn">see details</a>
                 </div>
@@ -106,7 +107,43 @@
         </section>
         <section class="features">
             <div class="container">
-                <div class="wrap">
+                <div class="row">
+                    <div class="features__top">
+                         <h1 class="main__header features_header">features</h1>
+                        <a href="#" class="features_cross">
+                            <img src="img/x.png" alt="cross">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-2">
+                        <div class="features__item">
+                             <a href="#"><img src="img/thumb 1.png" alt="" class="img-responsive"></a>
+                             <p class="feautures__paragraph">Born Identity: Bringing Burton Hardgoods to Life</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-2">
+                        <div class="features__item">
+                         <a href="#"><img src="img/thumb 2.png" alt="" class="img-responsive"></a>
+                         <p class="feautures__paragraph">Jeremy Jones: On That Street Grind</p>
+                     </div>
+                    </div>
+                    <div class="col-md-3 col-sm-2">
+                        <div class="features__item">
+                         <a href="#"><img src="img/thumb 3.png" alt="" class="img-responsive"></a>
+                         <p class="feautures__paragraph">Burton’s Tokyo Rail Days Recap</p>
+                     </div>
+                    </div>
+                    <div class="col-md-3 col-sm-2">
+                        <div class="features__item">
+                        <a href="#"><img src="img/thumb 4.png" alt="" class="img-responsive"></a>
+                         <p class="feautures__paragraph">Burton’s Tokyo Rail Days Preview</p>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="features">
+            <div class="container">
+                    <div class="wrap">
                      <h1 class="main__header features_header">features</h1>
                     <a href="#" class="features_cross">
                         <img src="img/x.png" alt="cross">
@@ -130,8 +167,8 @@
                      </div>
                  </div>
                  </div>
-            </div>
-        </section>
+                </div>
+        </section> -->
         <div class="prefooter">
             <div class="container">
                 <div class="wrap prefooter__wrap clearfix">
@@ -188,14 +225,16 @@
         </div>
         <footer class="footer">
             <div class="container">
-                <div class="wrap footer__wrap clearfix">
-                    <div class="footer__autor">
-                        <span><i class="fa fa-copyright" aria-hidden="true"></i></span>
-                        <span>2016 Mountains Snowboard</span>
-                    </div>
-                    <div class="footer__location">
-                        <a class="footer__item" href="#"><span><img src="img/flag.png" alt=""></span></a>
-                        <span class="footer__item">Change region</span>
+                <div class="row">
+                    <div class="wrap footer__wrap clearfix">
+                        <div class="footer__autor">
+                            <span><i class="fa fa-copyright" aria-hidden="true"></i></span>
+                            <span>2016 Mountains Snowboard</span>
+                        </div>
+                        <div class="footer__location">
+                            <a class="footer__item" href="#"><span><img src="img/flag.png" alt=""></span></a>
+                            <span class="footer__item">Change region</span>
+                        </div>
                     </div>
                 </div>
             </div>

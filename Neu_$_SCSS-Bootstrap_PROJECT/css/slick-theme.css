@@ -10,16 +10,22 @@
 {
     font-size: 0;
     line-height: 0;
+
     position: absolute;
-    /* top: 50%; */
+    top: 50%;
+
     display: none;
-    width: 122px;
-    height: 170px;
+
+    width: 51px;
+    height: 61px;
+    background-color: #e8645a;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
+
     cursor: pointer;
+
     color: transparent;
     border: none;
     outline: none;
