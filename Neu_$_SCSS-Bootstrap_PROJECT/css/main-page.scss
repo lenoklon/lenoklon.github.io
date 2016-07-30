@@ -19,8 +19,15 @@ $main_color_second-sub:#e2534b;
     font-style: normal;
 }
 body {
-	 /*font-family: 'OpenSansLight';*/
+	 background-color: #f3f3f3;
 	 font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+	color: rgb(127, 140, 140);
+	font-size: 16px;
+	font-weight: 700;
+	margin:0;
 }
 
 
@@ -177,29 +184,254 @@ body {
     border-bottom: 3px solid $main_color_second-sub;
 }
 
+.slider_content {
+	position: absolute;
+	top:38%;
+	left:25%;
+	text-align: center;
+}
+
 
 .slider__header {
-	position: absolute;
 	background-color: $main_color_second;
 	padding: 5px;
 	border-radius: 10px;
+	margin:0 auto;
 	margin-bottom: 10px;
 	color: white;
 	font-size: 50px;
 	font-weight: 700;
-	top:36%;
-	left:38em;
+	width: 60%;
 }
 
 .slider__paragraph {
-	position: absolute;
+	/*position: absolute;*/
 	background-color: #3f4646;
 	padding: 15px 39px;
 	border-radius: 10px;
-	top:54%;
-	left:105em;
+	/*top:54%;
+	left:105em;*/
 	color: white;
 	font-size: 16px;
 	font-weight: 400;
 	text-align: center;
 }
+
+.slick-dots li {
+	vertical-align: top;
+}
+
+
+.slick-dots li button
+{
+   display: block;
+   width: 60px;
+   height: 5px;
+   background: #b0b8b9;
+   margin:0 3px;
+   outline: none;
+   vertical-align: top;
+}
+
+.slick-dots .slick-active button {
+    background: $main_color_second;
+
+}
+
+
+/**********CLIENTS*************/
+.clients {
+	margin-top: 55px;
+}
+
+
+.clients__header {
+	h3{
+		width: 167px;
+		float: left;
+		margin-top: 9px;
+	}
+}
+
+.clients__header_control {
+	width: 120px;
+	float: right;
+	text-align: right;
+	button {
+		width: 40px;
+		height: 37px;
+		background-color: $main_color_second;
+		border-radius: 5px;
+		margin-right: 5px;
+		text-align: center;
+		color:#fff;
+		padding: 0;
+		border: none;
+		border-bottom: 3px solid #e2534b;
+		outline: none;
+		&:hover {
+			background-color: #98a3a3;
+			border-color: #7f8c8c;
+		}
+	}
+}
+
+.clients__header_line {
+	height: 2px;
+	background: rgb(225, 226, 226);
+	margin: 18px 120px 0 167px;
+	position: relative;
+	width: calc(100%-287px);
+	&:before {
+		content:'';
+		display:block;
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		background-color: #e1e2e2;
+		top:-3px;
+		left: 0;
+		position: absolute;
+	}
+
+}
+
+.clients__slider {
+	margin-top: 37px;
+
+	.slick-slide {
+		outline: none;
+	}
+}
+
+/************ABOUT**************/
+.about {
+	margin-top: 50px;
+}
+
+.about__choose_list {
+	margin-top: 32px;
+	padding-top: 6px;
+		i {
+			color:$main_color_second;
+			margin-right: 5px;
+		}
+}	
+
+
+.about__choose_item {
+	color: rgb(119, 119, 119);
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+.about__rate_text {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 25px;
+	color: rgb(119, 119, 119);	
+		a {
+			color:$main_color_second;
+			text-decoration: underline;
+		}
+}
+
+
+/***********GRAPHS****************/
+.about__rate {
+	.model-2 {
+		.graph {
+			span {
+				color:#7f8c8c;
+			}
+			&:after {
+				border-color: $main_color_first;
+			}
+		    &:before {
+				border-color: $main_color_second;
+			}
+		}
+	    
+	}
+}
+
+.about__rate_charts-wrap {
+	margin-top: 50px;
+	
+}
+
+section.model-2:first-child .graph{
+	&:before {
+		transform: rotate(90deg);
+	}
+}
+
+
+
+section.model-2:nth-child(2) .graph{
+	&:before {
+		transform: rotate(120deg);
+	}
+}
+
+section.model-2:nth-child(3) .graph{
+	&:before {
+		transform: rotate(150deg);
+	}
+}
+
+section.model-2:last-child .graph{
+	&:before {
+		transform: rotate(180deg);
+	}
+}
+
+.about__rate_charts {
+	position: relative;
+}
+
+.about__rate_charts-descript {
+
+	position: absolute;
+	bottom: -30px;
+	color: rgb(127, 140, 140);
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	width: 120px;
+	text-align: center;
+}
+
+.about__say{
+	p{
+		color: rgb(127, 140, 140);
+		font-size: 16px;
+		font-weight: 700;
+		margin: 13px 0 0 60px;
+	}
+}
+
+.about__say_comment {
+	position: relative;
+	background-color: #f8f8f8;
+	color: rgb(119, 119, 119);
+	font-size: 13px;
+	line-height: 25px;
+	margin-top: 36px;
+	font-style: italic;
+	&:after {
+		content:'';
+		display: inline-block;
+		background-image: url('../img/triangle.png');
+		position: absolute;
+		bottom: -23px;
+		left: 20px;
+		height: 23px;
+		width: 24px;
+	}
+}
+
+
+
+

@@ -102,36 +102,21 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
-
+    bottom: -21px;
     display: none;
-
     width: 100%;
     padding: 0;
     margin: 0;
-
     list-style: none;
-
     text-align: center;
+    font-size: 0;
 }
 .slick-dots li
 {
     position: relative;
 
     display: inline-block;
-
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
     padding: 0;
-
+    font-size: 0;
     cursor: pointer;
 }
-.slick-dots li button
-{
-   display: block;
-   width: 60px;
-   height: 5px;
-   background: #b0b8b9;
-}
-
