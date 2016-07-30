@@ -263,6 +263,10 @@ body {
     padding-top: 60px;
 }
 
+.slick-prev, .slick-next {
+    width: 93px;
+}
+
 /*------------------MOUNTAINS-----------------*/
 
 .mountains {
@@ -391,7 +395,7 @@ body {
 }
 
 .prefooter__submit {
-    padding: 0.48em;
+    padding: 0.39em;
     background: #c7c7c7;
     color:#000;
     text-transform: uppercase;
