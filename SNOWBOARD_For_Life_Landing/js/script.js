@@ -5,4 +5,10 @@ $(document).ready(function () {
 		slidesToShow: 4,
 	  slidesToScroll: 1
 	});
+
+
+	$('.header__list').slicknav({
+		prependTo:'.header__mobile_menu'
+	});
+
 });

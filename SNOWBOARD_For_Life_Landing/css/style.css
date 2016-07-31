@@ -21,9 +21,6 @@
     font-style: normal;
 }
 
-
-
-
 @font-face {
     font-family: 'proximaExtrabold';
     src: url('../fonts/proximanova-extrabold-webfont.woff2') format('woff2'),
@@ -32,7 +29,6 @@
     font-style: normal;
 
 }
-
 
 * {
   box-sizing:border-box;
@@ -93,6 +89,10 @@ body {
 
 }
 
+.slicknav_menu {
+    display:none;
+}
+
 .header__list {
     height: 109px;
     line-height: 109px;
@@ -114,7 +114,7 @@ body {
 }
 
 .header__link:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .header__icons {
@@ -168,6 +168,7 @@ body {
 }
 
 .slide__btn {
+    border-radius: 5px;
     position: absolute;
     display: block;
     padding: 1%;
@@ -182,6 +183,7 @@ body {
 
 .slide__btn:hover {
     opacity: 0.5;
+    text-decoration: none;
 }
 
 .slick-prev:before,

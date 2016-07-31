@@ -13,10 +13,7 @@
     margin-right: 40px; }
 
   .slide__btn {
-    border-radius: 5px;
     left: 50em; }
-    .slide__btn:hover {
-      text-decoration: none; }
 
   .slick-next {
     right: 0px;
@@ -100,7 +97,7 @@
 
   .mountains__content {
     padding: 0 0 0 20px;
-    width: 61%; }
+    width: 65%; }
 
   .mountains__content_title {
     padding-bottom: 15px; }
@@ -131,19 +128,56 @@
     width: 100%; }
 
   .container__header {
-    padding: 0; }
+    padding: 0 20px; }
 
   .slide__header {
-    font-size: 67px; }
+    font-size: 40px;
+    top: 29%;
+    left: 21%; }
 
   .header__logo {
-    margin-right: 40px; }
+    margin-right: 20%; }
+
+  .slicknav_nav {
+    background: black;
+    border-radius: 10px;
+    z-index: 1;
+    width: 100%;
+    top: 100%;
+    position: absolute;
+    color: #fff; }
+    .slicknav_nav a {
+      display: block;
+      padding: 5px 10px;
+      margin: 2px 5px; }
+      .slicknav_nav a:hover {
+        border-radius: 10px;
+        background: blue;
+        color: #fff; }
+
+  .header__list {
+    display: none; }
+
+  .header__item {
+    text-align: center; }
+
+  .header__mobile_menu {
+    float: left;
+    width: 40%; }
+
+  .slicknav_menu {
+    position: relative;
+    display: block;
+    padding: 0;
+    background: none; }
+
+  .slicknav_menu {
+    margin-top: 38px; }
 
   .slide__btn {
+    left: 17em;
     border-radius: 5px;
-    left: 50em; }
-    .slide__btn:hover {
-      text-decoration: none; }
+    top: 76%; }
 
   .slick-next {
     right: 0px;
@@ -156,7 +190,23 @@
     background: url("../img/arrow_left.png") no-repeat; }
 
   .slick-prev, .slick-next {
-    width: 45px; }
+    width: 45px;
+    height: 45px; }
+
+  .main .wrap {
+    padding-bottom: 0; }
+  .main .slick-next,
+  .main .slick-prev {
+    background: url("../img/arrow_right.png") no-repeat; }
+
+  .mountains {
+    padding-top: 0; }
+    .mountains .mountains__content {
+      width: 71%; }
+    .mountains .mountains__content_title {
+      margin-top: 74px;
+      font-size: 34px;
+      padding-bottom: 0; }
 
   .footer {
     padding: 0 10px; }
@@ -177,6 +227,12 @@
 
   .header__logo {
     margin-right: 40px; }
+
+  .slicknav_menu {
+    display: block; }
+
+  .header__list {
+    display: none; }
 
   .slide__btn {
     border-radius: 5px;
