@@ -12,6 +12,12 @@
   .header__logo {
     margin-right: 40px; }
 
+  .slider .slick-prev,
+  .slider .slick-next {
+    top: 50%;
+    width: 45px;
+    height: 45px; }
+
   .slide__btn {
     left: 50em; }
 
