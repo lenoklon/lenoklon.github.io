@@ -217,7 +217,8 @@
       padding-bottom: 0; }
 
   .footer {
-    padding: 0 10px; }
+    padding: 0 10px;
+    padding-bottom: 62px; }
 
   .prefooter__item {
     width: 47%;
@@ -312,8 +313,16 @@
   .features_header {
     padding: 0 0 40px 0; }
 
+  .form_wrap {
+    text-align: center; }
+
   .footer {
-    padding: 0 10px; }
+    padding: 0 10px;
+    padding-bottom: 62px; }
+
+  .prefooter form {
+    overflow: hidden;
+    margin: 0 auto; }
 
   .prefooter__item {
     text-align: center;
@@ -323,7 +332,8 @@
   .prefooter__link {
     font-size: 18px; }
     .prefooter__link:last-child {
-      border-bottom: 2px dashed #4cdef1; }
+      border-bottom: 1px solid #fff;
+      }
 
   .prefooter__link_title {
     font-size: 22px;

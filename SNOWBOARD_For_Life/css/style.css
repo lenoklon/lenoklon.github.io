@@ -160,6 +160,7 @@ body {
 .main .slick-slide img {
     width: 70%;
     display: block;
+    margin: 0 auto;
 }
 
 .slick-slide img {
@@ -347,6 +348,10 @@ body {
     padding:79px 0 61px 0;
 }
 
+.prefooter form {
+        display: inline-block;
+   }
+
 .prefooter__item {
     width:21%;
     float: left;
@@ -356,6 +361,10 @@ body {
 .prefooter__item:last-child {
     margin-right: 0;
     float: right;
+}
+
+.prefooter__icons li:last-child {
+    margin-right: 0;
 }
 
 

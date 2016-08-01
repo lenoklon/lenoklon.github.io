@@ -306,6 +306,7 @@
      
     .footer {
       padding: 0 10px;
+      padding-bottom: 62px;
     }
 
     .prefooter__item {
@@ -446,10 +447,18 @@
     padding: 0 0 40px 0;
 }
 
-
+    .form_wrap {
+      text-align: center;
+    }
      
     .footer {
       padding: 0 10px;
+      padding-bottom: 62px;
+    }
+
+    .prefooter form {
+      overflow: hidden;
+      margin:0 auto;
     }
 
     .prefooter__item {
