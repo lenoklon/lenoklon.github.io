@@ -1,0 +1,449 @@
+ /*--------------Global Styles---------------*/
+
+
+ /*----------------Fonts-----------------*/
+
+
+@font-face {
+    font-family: 'proximaNovaSemibold';
+    src: url('../fonts/proximanova-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'proximaNovaRegular';
+    src: url('../fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximaExtrabold';
+    src: url('../fonts/proximanova-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+  box-sizing:border-box;
+  
+}
+
+.p0 {
+    padding:0;
+}
+
+
+body {
+     font-family: 'proximaNovaSemibold';
+}
+
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrap {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*-------------------HEADER-------------------*/
+
+.header {
+  width: 100%;
+  background: #000;
+  height: 109px;
+}
+
+.container__header {
+    padding:0 6.79% 0 6.14%;
+}
+
+.header__logo {
+      float: left;
+      width: 9%;
+      padding-top: 19px;
+      padding-bottom: 30px;
+}
+
+.header__nav {
+    float: left;
+    width: 50%;
+
+}
+
+.slicknav_menu {
+    display:none;
+}
+
+.header__list {
+    height: 109px;
+    line-height: 109px;
+}
+
+.header__item {
+    display: inline-block;
+    margin-right: 2.42%;
+    vertical-align: middle;
+}
+
+.header__link  {
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: sans-serif, arial;
+
+}
+
+.header__link:hover {
+    text-decoration: none;
+}
+
+.header__icons {
+    float: right;
+    width: initial;
+    padding-top: 47px;
+}
+
+.icons__item {
+    display: inline-block;
+    color:#fff;
+    margin-right: 12px;
+}
+
+.icons__item-euro {
+    margin-right: 0;
+    font-size: 13px;
+}
+
+
+            /*----------------------SLIDER-------------------*/
+
+.slide__item {
+    position: relative;
+}
+
+.slide__header {
+    position: absolute;
+    font-size: 80px;
+    color: #000;
+    top: 47%;
+    left: 27%;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 45%;
+    line-height: 1.2;
+}
+
+.slide__header-second {
+    color:#fff;
+}
+
+.main .slick-slide img {
+    width: 70%;
+    display: block;
+}
+
+.slick-slide img {
+    width: 100%;
+    display: block;
+}
+
+.slide__btn {
+    border-radius: 5px;
+    position: absolute;
+    display: block;
+    padding: 1%;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    top: 82%;
+    left: 48em;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.slide__btn:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: '';
+};
+
+.slick-next,
+.slick-prev {
+    width: 92px;
+    height: 170px;
+    z-index: 10;
+}
+
+.main .slick-next {
+    right: 0px;
+    top: 56%;
+    background: url('../img/next.png') no-repeat;
+}
+
+.main .slick-prev {
+    top: 56%;
+    left: 0px;
+    background: url('../img/prev.png') no-repeat;
+}
+
+.slick-next {
+    right: 0px;
+    top: 50%;
+    background: url('../img/next.png') no-repeat;
+}
+
+.slick-prev {
+    top: 50%;
+    left: 0px;
+    background: url('../img/prev.png') no-repeat;
+}
+
+.slick-prev button {
+    display: none;
+}
+
+.btn_arrow {
+    position: absolute;
+    background:url('../img/prev.png') 0 0 no-repeat;
+    display: block;
+    height: 227px;
+    width: 122px;
+}
+
+
+        /*-------------------------MAIN-------------------*/
+
+.main .wrap {
+    text-align: center;
+    padding: 100px 0 150px 0;
+}
+
+.main__header {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main__subtitle {
+    font-family: 'proximaNovaRegular', sans-serif;
+    font-size: 15px;
+    padding-top: 38px;
+    padding-bottom: 30px;
+}
+
+.slider_main {
+    padding:126px 0 50px 0;
+}
+
+.main_subtitle-after {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+
+.slick-prev, .slick-next {
+    width: 93px;
+}
+
+/*------------------MOUNTAINS-----------------*/
+
+.mountains {
+    width: 100%;
+   /* height:954px;*/
+    background:url('../img/snowboarding_bg.png') center no-repeat;
+    padding-top: 100px;
+    background-size: cover;
+}
+
+.mountains__content {
+    width:67%;
+    color:#fff;
+
+}
+
+.mountains__content_title {
+    font-size: 48px;
+    text-transform: uppercase;
+    padding-bottom: 85px;
+}
+
+.mountains__content_info {
+    font-size: 15px;
+    font-family: 'proximaNovaRegular';
+    line-height: 30px;
+    padding-bottom: 55px;
+}
+
+
+/*----------------------FEATURES--------------------*/
+
+.features {
+    text-align: center;
+     padding-bottom: 121px; 
+}
+
+.features_header {
+    padding:60px 0 40px 0;
+}
+
+.features_cross{
+    padding: 0 0 84px 0;
+}
+
+.features__content {
+    padding: 88px 0 137px 0;
+}
+
+.features__item {
+    text-align: center;
+}
+
+.features__item a {
+    display: inline-block;
+}
+
+.feautures__paragraph {
+    padding-top: 28px;
+    font-family: 'proximaNovaSemiBold';
+}
+
+.features__top {
+    padding: 75px 0;
+}
+
+.features .row {
+    padding: 0 100px;
+}
+
+
+/*------------PREFOOTER--------------*/
+
+.prefooter {
+    background: #000;
+    padding:79px 0 61px 0;
+}
+
+.prefooter__item {
+    width:21%;
+    float: left;
+    margin-right: 3%;
+}
+
+.prefooter__item:last-child {
+    margin-right: 0;
+    float: right;
+}
+
+
+.prefooter__link_title {
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color:#000;
+    font-weight: bold;
+}
+
+.prefooter__link {
+    font-family: 'proximaNovaRegular';
+    display: block;
+    color: rgb(201, 201, 201);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    text-decoration: none;
+
+}
+
+.prefooter__link:hover {
+    text-shadow: 0 0 0 #4cdef1;
+    text-decoration: none;
+}
+
+.prefooter input {
+    float: left;
+}
+
+.prefooter__mail {
+    padding: 0.35em;
+    background: #fff;
+    width: 73%;
+    color: rgb(108, 108, 108);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.prefooter__submit {
+    padding: 0.39em;
+    background: #c7c7c7;
+    color:#000;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+}
+
+
+.prefooter__icons {
+    padding-top: 6em;
+    display: block;
+}
+
+.prefooter__clear {
+    clear: both;
+}
+
+.prefooter__icons li {
+    display: inline-block;
+    margin-right: 12%;
+}
+
+.prefooter i {
+    color:#fff;
+}
+
+
+/*-----------------FOOTER-----------------*/
+
+.footer {
+    background:#000;
+    padding-bottom: 62px;
+}
+
+.footer__autor {
+    float: left;
+    width: 30%;
+}
+
+.footer__location {
+    float: right;
+    width: 30%;
+    text-align: right;
+}
+
+.footer span {
+    display: inline-block;
+    color:#fff;
+}

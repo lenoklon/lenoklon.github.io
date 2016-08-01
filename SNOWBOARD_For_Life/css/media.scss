@@ -1,0 +1,479 @@
+@media screen and (max-width:1200px) and (min-width: 993px) {  
+  .container {
+    /*max-width: 970px; */
+    width: 100%;
+  }
+
+    .container__header {
+      padding: 0 20px;
+  }
+
+    .slide__header {
+      font-size: 67px;
+  }
+
+    .header__logo {
+      margin-right: 40px;
+  }
+
+  .slider {
+        .slick-prev,
+        .slick-next {
+          top:50%;
+          width: 45px;
+          height: 45px;
+        }
+    }
+
+    .slide__btn {
+      left: 50em;
+    }
+
+    .slick-next {
+      right: 0px;
+      top: 50%;
+      background: url('../img/arrow_right.png') no-repeat;
+    }
+
+    .slick-prev {
+        right: 0px;
+        top: 50%;
+        background: url('../img/arrow_left.png') no-repeat;
+      }
+
+
+       .main .wrap {
+          padding: 30px 0 0 0;
+          .slick-prev, .slick-next {
+                width: 95px;
+            }
+        
+      }
+
+    .mountains__content {
+        padding: 0 0 0 20px;
+        width: 57%;
+    }
+
+    .mountains__content_info {
+      padding-bottom: 20px;
+  }
+
+      .features__top {
+        padding: 0 0 75px 0;
+    }
+
+    .prefooter__link {
+        line-height: 30px;
+    }
+}
+
+
+
+@media screen and (max-width:992px) and (min-width: 769px)  {     
+  .container {
+    /*max-width: 750px; */
+    width: 100%;
+  }
+
+    .container__header {
+      padding: 0 20px;
+
+    }
+
+    .slider {
+        .slick-prev,
+        .slick-next {
+          top:50%;
+          width: 45px;
+          height: 45px;
+        }
+    }
+
+    .slide__btn {
+      left: 80%;
+  } 
+
+  .slide__header {
+    font-size: 4em;
+    top: 31%;
+    left: 17%;
+}
+
+
+  .slick-prev,
+    .slick-next {
+      top:67%;
+    }
+
+    .header__logo {
+      margin-right: 40px;
+  }
+
+    .slide__btn {
+      border-radius: 5px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .slick-next {
+      right: 0px;
+      top: 50%;
+      background: url('../img/arrow_right.png') no-repeat;
+    }
+
+    .slick-prev {
+        right: 0px;
+        top: 50%;
+        background: url('../img/arrow_left.png') no-repeat;
+      }
+
+
+       .main .wrap {
+          padding: 30px 0 0 0;
+          .slick-prev, .slick-next {
+                width: 95px;
+            }
+        
+      }
+
+      .mountains {
+        height: 654px;
+        padding-top: 151px;
+    }
+
+    .mountains__content {
+        padding: 0 0 0 20px;
+        width: 65%;
+    }
+
+    .mountains__content_title {
+         padding-bottom: 15px; 
+    }
+
+    .mountains__content_info {
+      padding-bottom: 20px;
+      line-height: 21px;
+    }
+
+    .features .row {
+      padding: 0;
+    }
+  
+
+      .features__top {
+        padding: 0 0 75px 0;
+    }
+
+    .prefooter__link {
+        line-height: 30px;
+    }
+
+    .prefooter__item:last-child {
+          width: 22%;
+      }
+
+    .prefooter__item:nth-child(3) {
+          width: 23%;
+      }
+
+        
+      .prefooter__icons li {
+        margin-right: 8%;
+    }
+  }
+
+@media screen and (max-width:768px) and (min-width:480px)  {   
+  .container {
+    width: 100%; 
+  }
+
+   .container__header {
+      padding: 0 20px;
+  }
+
+    .slide__header {
+    font-size: 40px;
+    top: 29%;
+    left: 21%;
+  }
+
+    .header__logo {
+      margin-right: 20%;
+  }
+
+      .slicknav_nav {
+          a {
+            display: block;
+            padding: 5px 10px;
+            margin: 2px 5px;
+            &:hover {
+              border-radius:10px;
+              background:blue;
+              color:#fff;
+            }
+          }
+
+          
+               background: black;
+                border-radius: 10px;
+                z-index: 1;
+                width: 100%;
+                top: 100%;
+                position: absolute;
+                color: #fff;
+    }
+
+    .header__list {
+      display: none;
+    }
+
+    .header__item {
+      text-align: center;
+    }
+
+    .header__mobile_menu {
+      float: left;
+      width: 40%;
+    }
+
+    .slicknav_menu {
+      position: relative;
+      display: block;
+        padding: 0;
+        background: none;
+    }
+    .slicknav_menu {
+        margin-top: 38px;
+    }
+
+    .slide__btn {
+    left: 17em;
+    border-radius: 5px;
+    top: 76%;
+    }
+
+    .slick-next {
+      right: 0px;
+      top: 50%;
+      background: url('../img/arrow_right.png') no-repeat;
+    }
+
+  .slick-prev {
+        right: 0px;
+        top: 50%;
+        background: url('../img/arrow_left.png') no-repeat;
+      }
+
+  .slick-prev, .slick-next {
+    width: 45px;
+    height: 45px;
+    }
+
+    .main {
+      .wrap {
+        padding-bottom: 0;
+      }
+      .slick-next,
+      .slick-prev  {
+        background: url('../img/arrow_right.png') no-repeat;
+    }
+    }
+
+
+  .mountains {
+      .mountains__content_info{
+          &:last-child {
+             display:none;
+          }
+      } 
+       
+      padding-top: 0;
+
+    .mountains__content {
+      width: 71%;
+    }
+
+      .mountains__content_title {
+          margin-top: 74px;
+          font-size: 34px;
+           padding-bottom: 0; 
+      }
+    }
+
+
+     
+    .footer {
+      padding: 0 10px;
+    }
+
+    .prefooter__item {
+    width: 47%;
+    margin-right: 3%;
+    margin-bottom: 20px;
+}
+
+}
+
+@media screen and (max-width:479px) and (min-width:320px)   {    
+  
+  .container {
+    width: 100%; 
+  }
+
+   .container__header {
+      padding: 0 20px;
+  }
+
+    .slide__header {
+    font-size: 20px;
+    top: 19%;
+    left: 26%;
+  }
+
+    .header__logo {
+      margin-right: 20%;
+  }
+
+      .slicknav_nav {
+          a {
+            display: block;
+            padding: 5px 10px;
+            margin: 2px 5px;
+            &:hover {
+              border-radius:10px;
+              background:blue;
+              color:#fff;
+            }
+          }
+
+          
+               background: black;
+                border-radius: 10px;
+                z-index: 1;
+                width: 100%;
+                top: 100%;
+                position: absolute;
+                color: #fff;
+    }
+
+    .header__list {
+      display: none;
+    }
+
+    .header__item {
+      text-align: center;
+    }
+
+    .header__mobile_menu {
+      float: left;
+      width: 40%;
+    }
+
+    .slicknav_menu {
+      position: relative;
+      display: block;
+        padding: 0;
+        background: none;
+    }
+    .slicknav_menu {
+        margin-top: 38px;
+    }
+
+    .slide__btn {
+    left: 35%;
+    border-radius: 5px;
+    top: 67%;
+    font-size: 11px;
+    padding: 5px;
+}
+
+ 
+    .slider {
+      .slick-arrow {
+        display: none !important;
+      }
+    }
+  
+
+    .main {
+      .wrap {
+        padding-bottom: 0;
+      }
+      .slick-next,
+      .slick-prev  {
+        background: url('../img/arrow_right.png') no-repeat;
+    }
+
+      .main__header {
+        font-size: 28px;
+      }
+
+          .slider_main {
+        display: none;
+    }
+    }
+
+
+  .mountains {
+      background-size:contain;
+
+      .mountains__content_info{
+          &:last-child {
+             display:none;
+          }
+      } 
+       
+      padding-top: 0;
+
+    .mountains__content {
+      width: 71%;
+    }
+
+      .mountains__content_title {
+          margin-top: 74px;
+          font-size: 17px;
+           padding-bottom: 0; 
+      }
+    }
+
+    .features .row {
+         padding: 0; 
+    }
+
+    .features_header {
+    padding: 0 0 40px 0;
+}
+
+
+     
+    .footer {
+      padding: 0 10px;
+    }
+
+    .prefooter__item {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+
+.prefooter__link {
+    &:last-child {
+      border-bottom: 2px dashed #4cdef1;
+    }
+    font-size: 18px;
+}
+
+.prefooter__link_title {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.footer__autor,
+.footer__location {
+    width: 45%;
+    font-size: 1em;
+}
+
+}
