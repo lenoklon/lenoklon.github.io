@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***************our adaptive**************/
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -361,8 +362,36 @@ section.model-2:last-child .graph:before {
 /**************TABLE********************/
 .table-example {
   padding: 100px 0; }
+  .table-example .border_rd {
+    border-radius: 5px;
+    overflow: hidden;
+    border-bottom: 4px solid #e5e6e6; }
   .table-example table {
-    width: 100%;
-    table-layout: fixed; }
+    width: 100%
+    /*table-layout: fixed; ╨║╨╛╨│╨┤╨░ ╨╜╨╡ ╨┐╨╛╨┤╤Б╤В╤А╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨┐╨╛╨┤ ╨║╨╛╨╜╤В╨╡╨╜╤В*/ }
+    .table-example table th {
+      padding-left: 15px;
+      background-color: #1ed8c8;
+      height: 50px;
+      line-height: 50px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      border-bottom: 3px solid #e5e6e6;
+      border-right: 1px solid #4e948d; }
+    .table-example table td {
+      padding-left: 15px;
+      height: 38px;
+      vertical-align: middle; }
+    .table-example table td:first-child,
+    .table-example table th:first-child {
+      width: 18.3%;
+      border-left: none; }
+    .table-example table td:nth-child(2) {
+      width: 36.6%; }
+    .table-example table td:last-child,
+    .table-example table th:last-child {
+      width: 45%;
+      border-right: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -442,12 +442,54 @@ section.model-2:last-child .graph{
 
 /**************TABLE********************/
 
+
+
 .table-example {
 	padding:100px 0;
+		.border_rd {
+			border-radius: 5px;
+			overflow: hidden;
+			border-bottom: 4px solid #e5e6e6;
+		}
 		table {
 			width: 100%;
-			table-layout: fixed;
+			/*table-layout: fixed; когда не подстраивается под контент*/ 
+			th {
+				padding-left: 15px;
+				background-color: $main_color_first;
+				height: 50px;
+				line-height: 50px;
+				color: #fff;
+				font-size: 16px;
+				font-weight: 700;
+				border-bottom: 3px solid #e5e6e6;
+				border-right: 1px solid #4e948d;
+			}
+
+			td {
+				padding-left: 15px;
+				height: 38px;
+				vertical-align: middle;
+			}
+
+			td:first-child,
+			th:first-child {
+				width: 18.3%;
+				border-left: none;
+			}
+
+			td:nth-child(2) {
+				width: 36.6%;
+			}
+
+
+			td:last-child,
+			th:last-child {
+				width: 45%;
+				border-right: none;
+			}
 		}
+
 }
 
 
