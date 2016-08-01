@@ -20,6 +20,11 @@ $(document).ready(function () {
 	$('.clients__next').click(function(){
 		$('.clients__slider').slick('slickNext');
 	});
+
+	$(function() {
+    $('#dg-container').gallery();
+});
+
 });
 
 /*спросить по поводу центрирования блоков контента в слайдере....есть ли какие-то логичные методы, а не методом тыка*/

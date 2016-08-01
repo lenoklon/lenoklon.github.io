@@ -183,12 +183,9 @@ h3 {
   width: 60%; }
 
 .slider__paragraph {
-  /*position: absolute;*/
   background-color: #3f4646;
   padding: 15px 39px;
   border-radius: 10px;
-  /*top:54%;
-  left:105em;*/
   color: white;
   font-size: 16px;
   font-weight: 400;
@@ -256,7 +253,7 @@ h3 {
     position: absolute; }
 
 .clients__slider {
-  margin-top: 37px; }
+  margin: 37px -13px 0; }
   .clients__slider .slick-slide {
     outline: none; }
 
@@ -353,5 +350,19 @@ section.model-2:last-child .graph:before {
     left: 20px;
     height: 23px;
     width: 24px; }
+
+/*************END-ABOUT********************/
+/**************SLIDER-3D********************/
+.slider-3d {
+  overflow: hidden;
+  margin-top: 50px; }
+
+/**************END SLIDER-3D********************/
+/**************TABLE********************/
+.table-example {
+  padding: 100px 0; }
+  .table-example table {
+    width: 100%;
+    table-layout: fixed; }
 
 /*# sourceMappingURL=style.css.map */

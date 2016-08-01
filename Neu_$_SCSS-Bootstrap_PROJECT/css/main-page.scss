@@ -205,12 +205,9 @@ h3 {
 }
 
 .slider__paragraph {
-	/*position: absolute;*/
 	background-color: #3f4646;
 	padding: 15px 39px;
 	border-radius: 10px;
-	/*top:54%;
-	left:105em;*/
 	color: white;
 	font-size: 16px;
 	font-weight: 400;
@@ -297,7 +294,7 @@ h3 {
 }
 
 .clients__slider {
-	margin-top: 37px;
+	margin: 37px -13px 0;
 
 	.slick-slide {
 		outline: none;
@@ -432,6 +429,25 @@ section.model-2:last-child .graph{
 	}
 }
 
+/*************END-ABOUT********************/
 
+/**************SLIDER-3D********************/
+
+.slider-3d {
+	overflow: hidden;
+	margin-top: 50px;
+}
+
+/**************END SLIDER-3D********************/
+
+/**************TABLE********************/
+
+.table-example {
+	padding:100px 0;
+		table {
+			width: 100%;
+			table-layout: fixed;
+		}
+}
 
 
