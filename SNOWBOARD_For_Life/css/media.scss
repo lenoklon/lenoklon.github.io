@@ -227,15 +227,14 @@
               color:#fff;
             }
           }
-
+           background: black;
+            border-radius: 10px;
+            z-index: 1;
+            width: 100%;
+            top: 100%;
+            position: absolute;
+            color: #fff;
           
-               background: black;
-                border-radius: 10px;
-                z-index: 1;
-                width: 100%;
-                top: 100%;
-                position: absolute;
-                color: #fff;
     }
 
     .header__list {
@@ -256,9 +255,16 @@
       display: block;
         padding: 0;
         background: none;
-    }
-    .slicknav_menu {
         margin-top: 38px;
+        text-align: center;
+    }
+
+   
+    .slicknav_btn {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+         float: none; 
     }
 
     .slide__btn {
@@ -305,7 +311,7 @@
       padding-top: 0;
 
     .mountains__content {
-      width: 71%;
+      width: 63%;
     }
 
       .mountains__content_title {
@@ -314,8 +320,6 @@
            padding-bottom: 0; 
       }
     }
-
-
      
     .footer {
       padding: 0 10px;
@@ -327,6 +331,11 @@
     margin-right: 3%;
     margin-bottom: 20px;
 }
+
+    .footer__autor,
+    .footer__location {
+        width: 50%;
+    }
 
 }
 
@@ -393,6 +402,14 @@
     }
     .slicknav_menu {
         margin-top: 38px;
+        text-align: center;
+    }
+
+    .slicknav_btn {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+         float: none; 
     }
 
     .slide__btn {
@@ -515,10 +532,15 @@
   font-weight: bolder;
 }
 
+.footer__location {
+  margin-top: -45px;
+}
+
 .footer__autor,
 .footer__location {
-    width: 45%;
-    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    float: none;
 }
 
 }
