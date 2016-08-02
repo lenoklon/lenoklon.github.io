@@ -184,6 +184,11 @@ h3 {
 .clients {
   margin-top: 55px; }
 
+.clients .slick-slide img {
+  padding: 0 15px;
+  display: block;
+  width: 100%; }
+
 .clients__header h3 {
   width: 167px;
   float: left;
@@ -334,7 +339,7 @@ section.model-2:last-child .graph:before {
 /**************END SLIDER-3D********************/
 /**************TABLE********************/
 .table-example {
-  padding: 100px 0; }
+  padding: 100px 15px; }
   .table-example .border_rd {
     border-radius: 5px;
     overflow: hidden;

@@ -2,6 +2,15 @@
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .header__logo {
+    text-align: center; }
+
+  .header__nav_link {
+    padding: 0 12px; }
+
+  .header__nav {
+    padding: 5px 0 25px 0; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   /*Disable Animation on Mobile Devices*/

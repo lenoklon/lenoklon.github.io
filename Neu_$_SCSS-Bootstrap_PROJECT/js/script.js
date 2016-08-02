@@ -10,7 +10,16 @@ $(document).ready(function () {
 	  infinite: true,
 	  speed: 300,
 	  slidesToShow: 6,
-	  slidesToScroll: 1
+	  slidesToScroll: 1,
+	  responsive:[
+	  	{
+	  		breakpoint:1200,
+	  		settings: {
+	  			slidesToShow:5
+	  		}
+	  	},
+	  	
+	  ]
 	});
 
 	$('.clients__prev').click(function(){

@@ -241,6 +241,12 @@ h3 {
 	margin-top: 55px;
 }
 
+	.clients .slick-slide img {
+	    padding: 0 15px;
+	    display: block;
+	    width: 100%;
+	}
+
 
 .clients__header {
 	h3{
@@ -300,6 +306,8 @@ h3 {
 		outline: none;
 	}
 }
+
+
 
 /************ABOUT**************/
 .about {
@@ -445,7 +453,7 @@ section.model-2:last-child .graph{
 
 
 .table-example {
-	padding:100px 0;
+	padding:100px 15px;
 		.border_rd {
 			border-radius: 5px;
 			overflow: hidden;

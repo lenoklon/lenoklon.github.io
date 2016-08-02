@@ -3,6 +3,15 @@
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .header__logo {
+    text-align: center; }
+
+  .header__nav_link {
+    padding: 0 12px; }
+
+  .header__nav {
+    padding: 5px 0 25px 0; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   /*Disable Animation on Mobile Devices*/
@@ -211,6 +220,11 @@ h3 {
 .clients {
   margin-top: 55px; }
 
+.clients .slick-slide img {
+  padding: 0 15px;
+  display: block;
+  width: 100%; }
+
 .clients__header h3 {
   width: 167px;
   float: left;
@@ -361,7 +375,7 @@ section.model-2:last-child .graph:before {
 /**************END SLIDER-3D********************/
 /**************TABLE********************/
 .table-example {
-  padding: 100px 0; }
+  padding: 100px 15px; }
   .table-example .border_rd {
     border-radius: 5px;
     overflow: hidden;
