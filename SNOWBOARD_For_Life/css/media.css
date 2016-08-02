@@ -53,6 +53,12 @@
     /*max-width: 750px; */
     width: 100%; }
 
+  .header__logo {
+    margin-right: 110px; }
+
+  .header__nav {
+    width: 56%; }
+
   .container__header {
     padding: 0 20px; }
 
@@ -73,9 +79,6 @@
   .slick-prev,
   .slick-next {
     top: 67%; }
-
-  .header__logo {
-    margin-right: 40px; }
 
   .slide__btn {
     border-radius: 5px; }
@@ -110,7 +113,7 @@
 
   .mountains__content_info {
     padding-bottom: 20px;
-    line-height: 21px; }
+    line-height: 24px; }
 
   .features .row {
     padding: 0; }
@@ -128,7 +131,14 @@
     width: 23%; }
 
   .prefooter__icons li {
-    margin-right: 8%; } }
+    margin-right: 8%; }
+
+  .footer__wrap {
+    padding: 0 20px; }
+
+  .footer__autor {
+    float: left;
+    width: 45%; } }
 @media screen and (max-width: 768px) and (min-width: 480px) {
   .container {
     width: 100%; }
@@ -285,15 +295,28 @@
   .slider .slick-arrow {
     display: none !important; }
 
-  .main .wrap {
-    padding-bottom: 0; }
-  .main .slick-next,
-  .main .slick-prev {
-    background: url("../img/arrow_right.png") no-repeat; }
-  .main .main__header {
-    font-size: 28px; }
-  .main .slider_main {
-    display: none; }
+  .main {
+    padding: 20px 0 50px 0
+     /* .slider_main {
+    display: none;
+}*/ }
+    .main .wrap {
+      padding-bottom: 0; }
+    .main .slick-next {
+      right: 0px;
+      top: 50%;
+      background: url("../img/arrow_right.png") no-repeat; }
+    .main .slick-prev {
+      right: 0px;
+      top: 50%;
+      background: url("../img/arrow_left.png") no-repeat; }
+    .main .slick-prev, .main .slick-next {
+      width: 45px;
+      height: 45px; }
+    .main .main__header {
+      font-size: 25px; }
+    .main .main_subtitle-after {
+      font-size: 19px; }
 
   .mountains {
     background-size: contain;
@@ -311,7 +334,11 @@
     padding: 0; }
 
   .features_header {
-    padding: 0 0 40px 0; }
+    padding: 0 0 40px 0;
+    font-size: 41px; }
+
+  .features__top {
+    padding: 0 0 75px 0; }
 
   .form_wrap {
     text-align: center; }
@@ -332,8 +359,7 @@
   .prefooter__link {
     font-size: 18px; }
     .prefooter__link:last-child {
-      border-bottom: 1px solid #fff;
-      }
+      border-bottom: 1px dashed #4cdef1; }
 
   .prefooter__link_title {
     font-size: 22px;
