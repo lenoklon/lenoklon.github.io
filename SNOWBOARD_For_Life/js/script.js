@@ -11,6 +11,13 @@ $(document).ready(function () {
 	  			slidesToShow:2
 	  		}
 	  	},
+
+	  	{
+	  		breakpoint:700,
+	  		settings: {
+	  			slidesToShow:3
+	  		}
+	  	}
 	  	
 	  ]
 	});

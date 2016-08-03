@@ -299,6 +299,10 @@ body {
     padding-bottom: 55px;
 }
 
+.mountains__content_info_mobile {
+    display: none;
+}
+
 
 /*----------------------FEATURES--------------------*/
 
