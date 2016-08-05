@@ -3,10 +3,14 @@
 
 /*==========  Desktop First Method  ==========*/
 
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) and (min-width: 993px){
+    .slicknav_menu {
+        display: none;
+    }
 
-}
+   }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) and (min-width: 769px) {
@@ -14,19 +18,151 @@
         text-align: center;
     }
 
+
+
     .header__nav_link {
-        padding: 0 12px;
+        padding: 0 14px;
     }
 
     .header__nav {
         padding: 5px 0 25px 0;
     }
+
+    .about__rate_charts-wrap {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about__rate_charts {
+        margin-bottom: 50px;
+    }
+
+
+    .about__rate_charts-descript {
+        width: 100%;
+    }
+
+    .about__choose_list {
+        margin-bottom: 20px;
+    }
+
+     .slicknav_menu {
+        display: none;
+    }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 768px) and (min-width: 481px) {
+        
+    .header__logo {
+        text-align: center;
+    }
+
+    .header__nav_link {
+        padding: 0 14px;
+    }
+
+    .header__nav {
+        padding: 0;
+    }
+
+    .header__search {
+        text-align: center;
+        padding: 0;
+        i {
+            font-size: 25px;
+            padding:5px 0;
+        }
+    }
+
+    .slider__header {
+        font-size: 20px;
+        width: 60%;
+    }
+
+    .dg-wrapper a img {
+        display: block;
+        margin: 46px 5px 0px 5px;
+        border-radius: 7px;
+        width: 496px;
+        height: 286px;
+    }
+
+    .about__rate_charts-descript {
+     position: static !important; 
+    bottom: -30px;
+    color: #7f8c8c;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 120px;
+    text-align: center;
+    margin: 20px auto !important;
+}
+
+.slider_content {
+    display: none;
+}
+
+    .about__rate_charts-wrap {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about__rate_charts {
+        margin-bottom: 50px;
+    }
 
 
+    .about__rate_charts-descript {
+        width: 100%;
+    }
+
+    .about__choose_list {
+        margin-bottom: 20px;
+    }
+     .slicknav_menu {
+        display: block;
+    }
+
+    .header__nav_list {
+        display: none;
+    }
+
+    .header__nav_item {
+        width: 100%;
+         float: none; 
+    }
+
+    .slicknav_nav a:hover {
+        background: #e2534b;
+         color: #fff; 
+    }
+
+    .slicknav_menu {
+        background: none; 
+    }
+
+    .slicknav_btn {
+        color:#fff;
+        margin:10px 0;
+        padding: 15px 20px;
+        background: #387e7a;
+        width: 100%;
+    }
+
+    .slicknav_menu .slicknav_icon {
+        float: right;
+    }
+
+    .header__nav_item:hover .header__nav_sub-wrap {
+        position: static;
+        display: block;
+    }
+
+    .header__nav_sub-wrap {
+        display: block;
+    }
 
 /*Disable Animation on Mobile Devices*/
   .animated {
@@ -57,6 +193,128 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
   
+   .slicknav_menu {
+        display: block;
+    }
+
+     .header__nav_list {
+        display: none;
+    }
+
+     .header__nav_item {
+        width: 100%;
+         float: none; 
+    }
+
+    .header__logo {
+        text-align: center;
+    }
+
+    .header__nav_link {
+        padding: 0 14px;
+    }
+
+    .header__nav {
+        padding: 0;
+    }
+
+    .header__search {
+        text-align: center;
+        padding: 0;
+        i {
+            font-size: 25px;
+            padding:5px 0;
+        }
+    }
+
+    .slider__header {
+        font-size: 20px;
+        width: 60%;
+    }
+
+    .dg-wrapper a img {
+        display: block;
+        margin: 46px 5px 0px 5px;
+        border-radius: 7px;
+        width: 496px;
+        height: 286px;
+    }
+
+    .about__rate_charts-descript {
+     position: static !important; 
+    bottom: -30px;
+    color: #7f8c8c;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 120px;
+    text-align: center;
+    margin: 20px auto !important;
+}
+
+.slider, .slider-3d {
+    display: none;
+}
+
+    .about__rate_charts-wrap {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about__rate_charts {
+        margin-bottom: 50px;
+    }
+
+
+    .about__rate_charts-descript {
+        width: 100%;
+    }
+
+    .about__choose_list {
+        margin-bottom: 20px;
+    }
+     .slicknav_menu {
+        display: block;
+    }
+
+    .header__nav_list {
+        display: none;
+    }
+
+    .header__nav_item {
+        width: 100%;
+         float: none; 
+    }
+
+    .slicknav_nav a:hover {
+        background: #e2534b;
+         color: #fff; 
+    }
+
+    .slicknav_menu {
+        background: none; 
+    }
+
+    .slicknav_btn {
+        color:#fff;
+        margin:10px 0;
+        padding: 15px 20px;
+        background: #387e7a;
+        width: 100%;
+    }
+
+    .slicknav_menu .slicknav_icon {
+        float: right;
+    }
+
+    .header__nav_item:hover .header__nav_sub-wrap {
+        position: static;
+        display: block;
+    }
+
+    .header__nav_sub-wrap {
+        display: block;
+    }
   
 }
 

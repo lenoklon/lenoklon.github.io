@@ -22,6 +22,9 @@ h3 {
   padding-bottom: 6px;
   background: #1ed8c8 url("../img/stripe.png") bottom repeat-x; }
 
+.slicknav_arrow {
+  display: none; }
+
 .header__logo_link {
   color: #fff;
   display: block;
@@ -41,6 +44,9 @@ h3 {
 .header__nav {
   padding-top: 22px; }
 
+/*.slicknav_menu {
+    display: none;
+}*/
 .header__nav_list {
   float: right; }
 
