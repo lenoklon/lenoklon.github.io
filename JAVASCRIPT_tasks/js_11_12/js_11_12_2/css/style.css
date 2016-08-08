@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: lightskyblue;
+  box-sizing: border-box;
+  font-family: cursive; }
+
+.aus__wrap {
+  width: 700px;
+  margin: 0 auto;
+  background: lime;
+  text-align: center;
+  display: table;
+  height: 100%; }
+  .aus__wrap h1 {
+    font-size: 30px;
+    margin-bottom: 20px; }
+  .aus__wrap li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px; }
+    .aus__wrap li:last-child {
+      margin-right: 0; }
+  .aus__wrap img {
+    width: 200px;
+    height: 130px; }
+  .aus__wrap .reasons h3 {
+    margin-top: 20px; }
+  .aus__wrap .reasons li {
+    display: block;
+    text-align: center; }
+  .aus__wrap .reasons ol {
+    list-style-type: decimal;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    margin-bottom: 20px; }
+  .aus__wrap .links {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+/*# sourceMappingURL=style.css.map */
