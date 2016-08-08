@@ -51,8 +51,14 @@
   src: local("тШ║"), url("../fonts/raavi.woff") format("woff"), url("fonts/raavi.ttf") format("truetype"), url("fonts/raavi.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'ralewaymedium';
+  src: url("../fonts/raleway-medium-webfont.woff2") format("woff2"), url("../fonts/raleway-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  /* overflow-x:hidden;*/ }
 
 /********************HEADER**************************/
 header {
@@ -60,10 +66,23 @@ header {
   background: url("../img/header_bg.png") top center no-repeat;
   background-size: cover;
   font-family: 'Raleway-Bold';
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
+  header .header__menu {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer; }
   header .header__top_nav {
     margin-top: 40px;
-    float: left; }
+    float: left;
+    position: relative; }
+    header .header__top_nav .header__top_nav-list {
+      display: none;
+      position: absolute;
+      left: 9%;
+      top: -11px;
+      background-color: rgba(46, 109, 164, 0.6);
+      padding: 15px 10px; }
     header .header__top_nav .header__top_nav-item {
       float: left;
       margin-right: 55px; }
@@ -78,12 +97,28 @@ header {
   header .header__top_search {
     float: right;
     font-size: 23px;
-    margin-top: 40px; }
+    margin-top: 40px;
+    text-align: right;
+    position: relative; }
     header .header__top_search a {
       text-decoration: none;
       color: #fff; }
       header .header__top_search a:hover {
         color: #0054FF; }
+    header .header__top_search form {
+      position: absolute;
+      top: -9px;
+      right: 60px;
+      font-size: 20px;
+      background: transparent;
+      display: none; }
+      header .header__top_search form input {
+        padding: 10px;
+        background: #ccc;
+        border: none; }
+        header .header__top_search form input:focus {
+          outline: none;
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
 
 .header__content {
   margin-top: 298px; }
@@ -122,9 +157,10 @@ header {
       float: right; }
 
 .header__phone {
-  position: absolute;
+  /*position: absolute;
   left: 56%;
-  top: 25.3%; }
+  top: 25.3%;*/
+  margin-top: 12%; }
 
 /**************************CHECKOUT***********************/
 .checkout {
@@ -147,9 +183,11 @@ header {
 .login {
   font-family: 'Raleway-Bold';
   color: #566473;
-  padding-top: 95px; }
+  padding-top: 95px;
+  overflow: hidden; }
   .login .login__phone {
-    text-align: right; }
+    text-align: right;
+    margin-bottom: -110px; }
   .login .login__text {
     text-align: right; }
     .login .login__text .login__text_title {
@@ -166,9 +204,11 @@ header {
   font-family: 'Raleway-Bold';
   background-color: #eff3f3;
   color: #566473;
-  padding-top: 95px; }
+  padding-top: 95px;
+  overflow: hidden; }
   .menu .menu__phone {
-    text-align: right; }
+    text-align: right;
+    margin-bottom: -110px; }
   .menu .menu__text {
     text-align: left; }
     .menu .menu__text .menu__text_title {
@@ -188,12 +228,164 @@ header {
 
 /***********FEEDBACK***************/
 .feedback {
-  padding: 50px 0; }
+  padding: 50px 0;
+  background: #eff3f3; }
+  .feedback .feedback__slide_wrap {
+    position: relative; }
   .feedback .feedback__item {
     float: left; }
   .feedback .feedback__item_pic {
     width: 30%; }
   .feedback .feedback__item_info {
-    width: 70%; }
+    margin-top: 4%;
+    /*position: absolute;
+    transform: translate(44%,21%);*/
+    width: 70%;
+    color: #566473; }
+    .feedback .feedback__item_info h4 {
+      font-size: 26px;
+      font-weight: 500; }
+    .feedback .feedback__item_info p {
+      font-size: 13px;
+      line-height: 21px; }
+
+.slide__left, .slide__right {
+  position: absolute;
+  top: 39%;
+  left: -73px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #3498db; }
+
+.slide__right {
+  left: unset;
+  right: -73px; }
+
+.slick-prev, .slick-next {
+  display: none; }
+
+.slick-prev:before {
+  content: '\f053';
+  color: #0054FF; }
+
+.slick-next:before {
+  content: '\f054';
+  color: #0054FF; }
+
+/****************SIGN_UP***********/
+.signUp {
+  background: url("../img/bgprefooter.png") 0 0 no-repeat;
+  background-size: cover;
+  height: 447px;
+  padding: 134px 0 93px 0; }
+  .signUp .signUp__content {
+    color: #eff3f3;
+    text-align: right;
+    padding-right: 91px; }
+    .signUp .signUp__content .signUp__content_title {
+      font-size: 30px;
+      font-weight: 600; }
+    .signUp .signUp__content .signUp__content_text {
+      font-size: 20px;
+      font-weight: 400; }
+  .signUp .signUp__control {
+    text-align: center; }
+    .signUp .signUp__control .sign__input {
+      background-color: rgba(239, 243, 243, 0.1);
+      border: 2px solid rgba(239, 243, 243, 0.7);
+      color: #eff3f3;
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 400;
+      height: 43px;
+      padding-left: 20px;
+      width: 179px;
+      margin-right: 20px; }
+      .signUp .signUp__control .sign__input:focus {
+        outline: none; }
+      .signUp .signUp__control .sign__input:last-child {
+        margin-right: 0; }
+    .signUp .signUp__control .sign_input_last {
+      /*?????*/
+      margin-right: 0; }
+    .signUp .signUp__control .sign__input:-moz-placeholder {
+      color: #fff; }
+    .signUp .signUp__control .sign__input::-moz-placeholder {
+      color: #fff; }
+    .signUp .signUp__control .sign__input::-webkit-input-placeholder {
+      color: #fff; }
+    .signUp .signUp__control .sign__btn {
+      display: block;
+      background-color: #3498db;
+      color: #fff;
+      padding: 15px 42px;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      width: 180px;
+      margin: 18px auto; }
+      .signUp .signUp__control .sign__btn:hover {
+        background-color: rgba(52, 152, 219, 0.5); }
+
+/*********FOOTER**********/
+.footer {
+  background-color: #1b1e20;
+  text-align: center; }
+  .footer .footer__content {
+    padding: 77px 0 65px 0; }
+    .footer .footer__content .footer__content_download {
+      vertical-align: middle; }
+      .footer .footer__content .footer__content_download p {
+        display: inline-block;
+        color: #dddfe1;
+        font-size: 30px;
+        margin-right: 20px;
+        margin-bottom: 0;
+        vertical-align: middle; }
+      .footer .footer__content .footer__content_download .footer__content_btn {
+        display: inline-block;
+        background-color: #eff3f3;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #1b1e20;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 18px 53px; }
+        .footer .footer__content .footer__content_download .footer__content_btn:hover {
+          background-color: #44ccf6; }
+    .footer .footer__content .footer__content_icons-item {
+      display: inline-block; }
+    .footer .footer__content .footer__content_icons {
+      margin: 33px 0; }
+      .footer .footer__content .footer__content_icons .footer__icons_link {
+        display: inline-block;
+        width: 33px;
+        height: 33px;
+        line-height: 33px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 30px;
+        vertical-align: middle;
+        margin-right: 20px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 5px; }
+        .footer .footer__content .footer__content_icons .footer__icons_link:last-child {
+          margin-right: 0; }
+      .footer .footer__content .footer__content_icons .footer__icons_fb {
+        background-color: #3b5998; }
+      .footer .footer__content .footer__content_icons .footer__icons_tw {
+        background-color: #44ccf6; }
+      .footer .footer__content .footer__content_icons .footer__icons_p {
+        background-color: #cb2027; }
+      .footer .footer__content .footer__content_icons .footer__icons_you {
+        background-color: #ce332d; }
+      .footer .footer__content .footer__content_icons .footer__icons_vm {
+        background-color: #86c9ef; }
+    .footer .footer__content .footer__content_copyright {
+      color: #dddfe1;
+      font-size: 16px;
+      font-weight: 400; }
 
 /*# sourceMappingURL=style.css.map */

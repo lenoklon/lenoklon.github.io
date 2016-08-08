@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Hamburger</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.css">
@@ -16,12 +16,14 @@
 </head>
 
 <body>
+	<!-- ----------------HEADER----------------------- -->
 	<header>
 		<div class="container">
 			<div class="row">
 				<div class="header__top">
-					<div class="header__top_nav">
-							<ul class="header__top_nav-list clearfix"> 
+					<div class="header__top_nav col-md-8">
+							<i class="fa fa-bars header__menu"></i>
+							<ul class="header__top_nav-list clearfix">
 								<li class="header__top_nav-item"><a href="#" class="header__top_nav-link">Home</a></li>
 								<li class="header__top_nav-item"><a href="#" class="header__top_nav-link">Shop</a></li>
 								<li class="header__top_nav-item"><a href="#" class="header__top_nav-link">Brands</a></li>
@@ -30,11 +32,14 @@
 								<li class="header__top_nav-item"><a href="#" class="header__top_nav-link">Contact</a></li>
 							</ul>
 					</div>
-					<div class="header__top_search">
+					<div class="header__top_search col-lg-4 col-md-4">
 						<a href="#"><i class="fa fa-search"></i></a href="#">
+							<form>
+								<input type="text" placeholder="Frag Mich">
+							</form>
 					</div>
 				</div>
-				<div class="header__content col-md-6 col-sm-6">
+				<div class="header__content col-lg-6 col-md-6 col-sm-6">
 					<h1 class="header__content_title">A & W</h1>
 					<p class="header__content_text">
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse.
@@ -44,35 +49,39 @@
 						<a href="#" class="header__btn header__btns_learn">Learn More</a>
 					</div>
 				</div>
-				<div class="header__phone">
+				<div class="header__phone col-lg-6 col-md-6 col-sm-6">
 					<img class="img-responsive" src="img/white-phone.png" alt="header_phone">
 				</div>
-				
+
 			</div>
 		</div>
-		
 	</header>
+	<!-- -------------END of HEADER-------------------- -->
+
+	<!-- --------------------CHECKOUT---------------------- -->
 	<section class="checkout">
 		<div class="container">
 			<div class="row">
 				<div class="checkout__content">
-					<h1 class="checkout__title">
+					<h2 class="checkout__title">
 						Check out the superb features
-					</h1>
+					</h2>
 					<p class="checkout__text">
-						
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
 						aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
 					</p>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<!-- --------------------LOGIN-------------------------- -->
 	<section class="login">
 		<div class="container">
 			<div class="row">
 				<div class="login__phone col-md-5 col-sm-5">
-					<img src="img/black-phone.png" alt="2d">
+					<img src="img/black-phone2.png" alt="2d">
 				</div>
 				<div class="login__text col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1">
 					<h2 class="login__text_title">
@@ -85,6 +94,9 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- ----------------------MENU------------------------ -->
+
 	<section class="menu">
 		<div class="container">
 			<div class="row">
@@ -106,19 +118,33 @@
 		<div class="container">
 			<div class="row">
 
-				
+
 			</div>
 		</div>
 	</section>
+
+	<!-- -----------------------FEEDBACK-------------------------- -->
+	
 	<section class="feedback">
 		<div class="container">
 			<div class="row">
-				<div class="feedback__slide col-md-8 col-md-offset-2">
-					<div>
-						<div class="feedback__item feedback__item_pic">
+				<div class="feedback__slide_wrap col-md-8 col-md-offset-2">
+					<div class="clearfix">
+						<div class="feedback__item feedback__item_pic col-md-3 col-sm-3">
 							<img class="img-responsive feedback__av" src="img/face.png" alt="">
 						</div>
-						<div class="feedback__item feedback__item_info">
+						<div class="feedback__item feedback__item_info col-md-9 col-sm-9">
+							<h4>Alif noor</h4>
+							<p class="feedback__content">
+							Love this app! Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
+							</p>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="feedback__item feedback__item_pic col-md-3 col-sm-3">
+							<img class="img-responsive feedback__av" src="img/face.png" alt="">
+						</div>
+						<div class="feedback__item feedback__item_info col-md-9 col-sm-9">
 							<h4>Alif noor</h4>
 							<p class="feedback__content">
 							Love this app! Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
@@ -129,12 +155,67 @@
 			</div>
 		</div>
 	</section>
+	<section class="signUp">
+		<div class="container">
+			<div class="row">
+				<div class="signUp__content col-lg-6 col-md-6 col-sm-6">
+					<h3 class="signUp__content_title">
+						Sign up to our Newsletter
+					</h3>
+					<p class="signUp__content_text">
+						Stay on par with our News and Updates
+					</p>
+				</div>
+				<div class="signUp__control col-lg-6 col-md-6 col-sm-6">
+					<form action="#">
+						<input class="sign__input"type="text" placeholder="email">
+						<input class="sign__input sign_input_last"type="text" placeholder="name">
+						<a href="#" class="sign__btn">
+							Subscribe
+						</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer__content col-md-4 col-md-offset-4">
+					<div class="footer__content_download">
+						<p>A&W APP</p>
+						<a href="#" class="footer__content_btn">Download</a>
+					</div>
+					<div class="footer__content_icons">
+						<a href="#" class="footer__icons_link footer__icons_fb">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="#" class="footer__icons_link footer__icons_tw">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a href="#" class="footer__icons_link footer__icons_p">
+							<i class="fa fa-pinterest-p"></i>
+						</a>
+						<a href="#" class="footer__icons_link footer__icons_you">
+							<i class="fa fa-youtube"></i>
+						</a>
+						<a href="#" class="footer__icons_link footer__icons_vm">
+							<i class="fa fa-vimeo"></i>
+						</a>
+					</div>
+					<p class="footer__content_copyright">
+						&copy; A&WAPP. All rights reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<script src="js/jquery-1.9.1.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/jquery.slicknav.js"></script>
 	<script src="js/script.js"></script>
-	
+
 </body>
 </html>
