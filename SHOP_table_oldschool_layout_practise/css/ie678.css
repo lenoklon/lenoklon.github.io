@@ -1,0 +1,8 @@
+.search div input {
+	height: 20px;
+	padding-top: 5px;
+}
+
+.pagination table {
+	padding: 0;
+}

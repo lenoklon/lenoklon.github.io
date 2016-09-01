@@ -321,21 +321,35 @@ input[type="submit"] {
 }
 
 .separator {
-	border-top: 1px dashed #b6c6dd;
-	height: 1px;
-	margin-top: 20px;
-	width: 100%;
+    border-top: 1px dashed #b6c6dd;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 		/***********PRODUCTS****************/
 
-.products table {
+.products>table {
 	width: 100%;
 }
 
 .products table table {
-	width: auto; /*по умолчанию*/
+	width: auto; /*что б не расстягивались*/
 }
+
+.products .image {
+	border:1px solid #cde1f1;
+	text-align: center;
+}
+
+.products .image img {
+	width: 370px;
+	height: 370px;
+	margin-bottom: -4px;
+}
+
+
 
 .products .title {
 	font-size: 18px;
@@ -344,10 +358,11 @@ input[type="submit"] {
 	margin-bottom: 10px;
 }
 
-.products .price p{
-	font-size: 18px;
-	font-weight: 700;
-	color:#464646;
+.products .price p {
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #464646;
 }
 
 .products .price span{
@@ -356,21 +371,87 @@ input[type="submit"] {
 	color:#90aa75
 }
 
-/*.products .left{
-	float: left;
-}*/
-
 .products .center table{
 	margin:0 auto;
 }
 
-.products table tr:last-child .title {
-	margin-top: 20px;
+
+td.right {
+	text-align: right;
 }
-/*.products .right{
-	float: right;
+
+
+td.right table{
+	display: inline;
 	text-align: left;
-}*/
+
+}
+
+/******PAGINATION***********/
+
+.pagination table {
+	background: #e2ecf4;
+	margin: 30px 0;
+	width: 100%;
+}
+
+
+
+.pagination table a {
+	background: #538bc5;
+	color:#fff;
+	/*display: block;*/
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+
+.pagination .prev a:hover,
+.pagination .next a:hover {
+	background: #acbece;
+}
+
+.pagination .pages a:hover {
+	background: #375c84;
+}
+
+.pagination .prev {
+	text-align: left;
+	padding-left: 20px;
+	width: 20%;
+}
+
+.pagination .pages {
+    text-align: center;
+    width: 3%;
+}
+
+.pagination .next {
+	text-align: right;
+	padding-right: 20px;
+	width: 20%;
+}
+
+/***********FOOTER*************/
+
+footer p {
+	color:#628488;
+	font-size: 13px;
+	text-align: center;
+	margin:30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
  
 /*.clear {
 	clear: both;

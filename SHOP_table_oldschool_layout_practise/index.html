@@ -5,6 +5,15 @@
 	<title>Shop_table</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<!--[if 1te IE 8]>  меньше или равно 
+		<link rel="stylesheet" href="css/i678.css">
+	<![endif]-->
+	<!--[if 1te IE 7]>
+		<link rel="stylesheet" href="css/ie67.css">
+	<![endif]-->
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="css/ie6.css">
+	<![endif]-->
 </head>
 <body>
 	<div class="container">
@@ -60,14 +69,8 @@
 					</a>
 			</div>
 		</nav>
-		<!-- <section class="top clearfix">
-			<div class="top__content">
-				<h1 class="top__content_title">Welcome to Mostra!</h1>
-				<p class="top__content_text">Quality Products - Great Prices!</p>
-				<a href="#" class="top__content_btn">Check It Out!</a>
-			</div>
-		</section> -->
-							<!-- *************TOP**************** -->
+		
+				<!-- *************TOP**************** -->
 
 		<section class="top">
 			<img src="img/bg.png" alt="bg">
@@ -115,7 +118,7 @@
 
 				<tr>
 					<td class="left">
-						<table>
+						<table cellpadding="0" cellspacing="0">
 							<tr>
 								<td colspan="2">
 									<p class="title">
@@ -124,8 +127,10 @@
 								</td>
 							</tr>
 							<tr>
-								<td colspan="2">
-									<img src="img/tshirt1.jpg" alt="shirt1">
+								<td colspan="2" class="image">
+									<div>
+										<img src="img/tshirt1.jpg" alt="shirt1">
+									</div>
 								</td>
 							</tr>
 							<tr class="price">
@@ -144,8 +149,10 @@
 								</td>
 							</tr>
 							<tr>
-								<td colspan="2">
-									<img src="img/tshirt2.jpg" alt="shirt2">
+								<td colspan="2" class="image">
+									<div >
+										<img src="img/tshirt2.jpg" alt="shirt2">
+									</div>
 								</td>
 							</tr>
 							<tr class="price">
@@ -164,8 +171,10 @@
 								</td>
 							</tr>
 							<tr>
-								<td colspan="2">
-									<img src="img/tshirt3.jpg" alt="shirt3">
+								<td colspan="2" class="image">
+									<div >
+										<img src="img/tshirt3.jpg" alt="shirt3">
+									</div>
 								</td>
 							</tr>
 							<tr class="price">
@@ -174,9 +183,13 @@
 							</tr>
 						</table>
 					</td>
-					<!-- <div class="separator clear"></div> -->
 				</tr>
 								<!-- 2 -->
+				<tr>
+					<td colspan="3">
+						<div class="separator"></div>
+					</td>
+				</tr>
 
 				<tr>
 					<td class="left">
@@ -189,8 +202,10 @@
 								</td>
 							</tr>
 							<tr>
-								<td colspan="2">
-									<img src="img/tshirt4.jpg" alt="shirt4">
+								<td colspan="2" class="image">
+									<div >
+										<img src="img/tshirt4.jpg" alt="shirt4">
+									</div>
 								</td>
 							</tr>
 							<tr class="price">
@@ -209,8 +224,10 @@
 								</td>
 							</tr>
 							<tr>
-								<td colspan="2">
-									<img src="img/tshirt5.jpg" alt="shirt5">
+								<td colspan="2" class="image">
+									<div>
+										<img src="img/tshirt5.jpg" alt="shirt5">
+									</div>
 								</td>
 							</tr>
 							<tr class="price">
@@ -229,8 +246,10 @@
 								</td>
 							</tr>
 							<tr>
-								<td colspan="2">
-									<img src="img/tshirt6.png" alt="shirt6">
+								<td colspan="2" class="image">
+									<div>
+										<img src="img/tshirt6.png" alt="shirt6">
+									</div>
 								</td>
 							</tr>
 							<tr class="price">
@@ -243,6 +262,39 @@
 			</table>
 		</section>
 						<!-- ********End of PRODUCts********** -->
+
+						<!-- ********PAGINATION********** -->
+		<section class="pagination">
+			<div class="separator"></div>
+			<table>
+				<tr>
+					<td class="prev">
+						<a href="#">
+							<span>&#171;Previous</span>
+						</a>
+					</td>
+					<td class="pages">
+						<table>
+							<tr>
+								<td><a href="#"><span>1</span></a></td>
+								<td ><a href="#"><span>2</span></a></td>
+								<td ><a href="#"><span>3</span></a></td>
+							</tr>
+						</table>
+					</td>
+					<td class="next">
+						<a href="#">
+							<span>Next&#187;</span>
+						</a>
+					</td>
+				</tr>
+			</table>
+			<div class="separator"></div>
+		</section>
+		<footer>
+				<p>Copyright ©2010 Me Mostra. All Rights Reserved.<br>
+					Website Designed and Developed by Dellustrations</p>
+		</footer>
 	</div>
 </body>
 </html>
