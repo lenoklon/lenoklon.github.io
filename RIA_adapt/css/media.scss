@@ -1,0 +1,175 @@
+@media screen and (max-width:900px)  {   
+	.diametr__list {
+	    margin: 18px 0 0 49px;
+	}
+
+	.diametr__wrapper .autotitle:before {
+	    background: url("../img/step2.png") no-repeat center;
+	    top: -18%;
+	}
+
+	.descr__size {
+		width: 50%;
+	}
+
+	.descr__price {
+		border:1px solid #e2eee0;
+		background: #e7f6e5;
+    	width: 100%;
+    	text-align: center;
+    	padding: 10px 0;
+	}
+
+	
+	.buy__more {
+	    width: 100%;
+	    text-align: center;
+	    margin: 10px 0;
+	}
+
+	.buy__submit {
+		width: 100%;
+		text-align: center;
+	}
+	
+
+	.help__service_img {
+	    margin-right: 10px;
+	}
+
+	.param__wrapper .param__info {
+	    width: 100%;
+	}
+
+}
+
+@media screen and (max-width:800px)  {   
+	.header__logo {
+		margin-bottom: 15px;
+	    text-align: center;
+	    float: none;
+	    width: 100%;
+	}
+
+	.header__contacts {
+	    width: 50%;
+	}
+
+}
+
+@media screen and (max-width:768px)  {   
+	.autoclass__collection_item {
+	    width: 42%;
+	}
+
+	.diametr__wrapper {
+	    text-align: center;
+	}
+
+	.param__wrapper {
+	    text-align: center;
+	}
+
+	.catalog__list_item {
+	    width: 43%;
+	}
+
+	.awards__list_item {
+	    width: 45%;
+	}
+
+	.help__list_item {
+	    margin-bottom: 15px;
+	    width: 50%;
+	}
+
+	.banner_buy {
+	    font-size: 41px;
+	}
+
+	.banner_click {
+	    font-size: 28px;
+	}
+
+}
+
+@media screen and (max-width:573px)  {   
+	.header__contacts {
+	    width: 58%;
+	}
+
+	.diametr__list_item {
+	    width: 35%;
+	}
+
+	.help__list_item {
+	    margin-bottom: 15px;
+	    width: 80%;
+	    margin-top: 20px;
+	}
+
+	.catalog__info {
+	    margin-top: 69px;
+	    width: 78%;
+	    margin: 0 auto;
+	    padding-top: 30px;
+	}
+
+	.catalog__list_item {
+	    width: 80%;
+	}
+}
+
+@media screen and (max-width:480px)  {   
+	.header__contacts,
+	.header__support {
+	    width: 100%;
+	    margin-bottom: 10px;
+	    float: none;
+	    text-align: center;
+
+	    p {
+	    	text-align: center;
+	    }
+	}
+
+
+	.banner_buy {
+	    font-size: 33px;
+	}
+
+	.banner_click {
+	    font-size: 24px;
+	}
+
+	.autoclass__collection_item {
+	    width: 70%;
+	}
+
+	.adac {
+		display: none;
+	}
+
+	.descr__price {
+	    font-size: 14px;
+	}
+
+	.awards__list_item {
+	    width: 71%;
+	}
+
+
+}
+
+@media screen and (max-width:320px)  {   
+	.banner {
+	    display: none;
+	}
+
+	.autoclass__collection_item {
+	    width: 70%;
+	}
+}
+
+
+
