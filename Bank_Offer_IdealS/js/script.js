@@ -5,9 +5,10 @@
 	
 	$('.main__left_list_item').click(function(e) {
 	
-		$('.transfer_hide').fadeToggle(400);
+		$(this).children('.transfer_hide').fadeToggle(400);
 
 	});
+
 
 	// $('.card_hide').hide();
 	
