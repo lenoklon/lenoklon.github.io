@@ -1,0 +1,157 @@
+@media screen and (max-width:976px)  {  
+
+	.header__uhr {
+	    padding-left: 7%;
+	} 
+
+	 .central__list_item_title {
+	    text-align: center;
+	}
+
+	.central__list_item_title p {
+	    display: block;
+	     float: none; 
+	}
+
+	.central__list_item_title img {
+	    display: block;
+	   	float: none;
+	    text-align: center;
+	    margin: 11px auto;
+	}
+
+	.right__support_help p {
+	    font-size: 0.8em;
+	    top: 30px;
+	    left: 51%;
+	}
+
+	.central__item li {
+	    font-size: 9px;
+	}
+
+	.central__definition {
+	    font-size: 9px;
+	}
+
+	.supoort__List_item {
+	    font-size: 0.8em;
+	}
+
+	.right__secure_title {
+	    text-align: center;
+	}
+
+	.tothetop {
+	    margin-top: 4%;
+	    display: block;
+	     float: none; 
+	}
+
+	.sponsors__signs li {
+	    width: 10%;
+	    margin-right: 0; 
+	}
+
+	.sponsors__racebets, footer p {
+	    margin-top: 28px;
+	    font-size: 10px;
+	    padding: 0 20px;
+	}
+
+	footer p {
+	     float: none; 
+	    text-align: center;
+	    width: 100%;
+	}
+
+}
+
+@media screen and (max-width:768px)  {
+	.central__list_item_content {
+	    padding: 5px 0 6px 10px;
+	} 
+
+	.central__definition {
+	    padding-right: 33%;
+	} 
+
+	.GmbH {
+		padding-right: 5%;
+	}
+
+	.central__item {
+	    width: 35%;
+	}
+
+	.GmbH {
+	    width: 60%;
+	}
+
+	.book {
+	     margin-bottom: 20px; 
+	}
+
+	.img {
+	    text-align: center;
+	    width: 100%;
+	}
+
+	.book_text {
+	    width: 100%;
+	    text-align: center;
+	    padding: 20px;
+	}
+
+	.right__secure_lock p {
+	    font-size: 0.9em;
+	}
+
+	.button {
+	    display: none;
+	}
+
+	.sponsors__nav_item {
+	    width: 25%;
+	    margin-top: 2%;
+	}
+
+	.tothetop {
+	    width: 20%;
+	    display: block;
+	    float: none;
+	    margin: 4% auto;
+	    padding-top: 3%;
+	}
+}
+
+@media screen and (max-width:976px)  {
+	.header__uhr {
+	    text-align: center;
+	    float: none;
+	}
+
+	.header__logo p {
+	    text-align: center;
+	}
+
+	.right__support_help p {
+		display: none;
+	}
+
+	.main__content_left {
+	    width: 100%;
+	}
+
+	.main__content_central {
+	    width: 100%;
+	}
+
+	.main__content_right {
+	     width: 80%;
+	}
+
+	footer p {
+	    display: none;
+	}
+}
