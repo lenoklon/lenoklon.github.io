@@ -157,6 +157,9 @@ nav>div {
 }
 
 						/*MAIN*/
+.main__wrapper {
+	overflow: hidden;
+}
 
 .main__top {
 	padding: 16px 22px;
@@ -182,7 +185,7 @@ nav>div {
 				/*MAIN_CONTENT*/
 
 .main__content {
-	overflow: hidden;
+	
 	border: 1px solid #d8d8d8;
 }
 

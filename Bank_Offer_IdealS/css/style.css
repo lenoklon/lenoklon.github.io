@@ -107,6 +107,9 @@ nav > div {
     background: #333; }
 
 /*MAIN*/
+.main__wrapper {
+  overflow: hidden; }
+
 .main__top {
   padding: 16px 22px;
   background: url("../img/main_top.png") top center no-repeat;
@@ -127,7 +130,6 @@ nav > div {
 
 /*MAIN_CONTENT*/
 .main__content {
-  overflow: hidden;
   border: 1px solid #d8d8d8; }
 
 .main__content_left {
