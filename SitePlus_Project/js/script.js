@@ -21,7 +21,16 @@
 	 $('.sponsors__list').slick({
 	 		slidesToShow: 6,
 	  		slidesToScroll:4,
-	  		arrows:false
+	  		arrows:false,
+	  		responsive:[
+	  	{
+	  		breakpoint:769,
+	  		settings: {
+	  			slidesToShow:3
+	  		}
+	  	}
+	  	
+	  ]
 	 });
 
 
@@ -39,11 +48,15 @@
 		$('.gallery__slider').slick('slickNext');
 	});
 
-			/*Removing of blocks*/
-	// var w = $(window).width();
-
-	// if (w <=768) {
-		
-	// }
+	$(window).resize(function(){
+		var winwidth = $(window).innerWidth();
+		if(winwidth < 768){
+			$(".pagination").css("display", "none");
+			$('.gallery__slider_text:last-child').css("display", "none");
+		}
+		// if(winwidth > 992){
+		// 	$(".main-list").css("display", "inline-block")
+		// }
+});
 	
 });

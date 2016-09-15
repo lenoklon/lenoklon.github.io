@@ -4,11 +4,11 @@ body {
   font-family: 'Arial';
   overflow-x: hidden; }
 
-/*.wrapper {
-	max-width: 1140px;
-	margin: 0 auto;
-	width: 100%;
-}*/
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%; }
+
 header {
   background: url("../img/header_bg.png") top center no-repeat;
   background-size: cover;
@@ -301,6 +301,9 @@ header {
 
 .command__list_item {
   margin-bottom: 50px; }
+
+.same_height {
+  height: 335px; }
 
 /*SPONSORS*/
 .sponsors__list {

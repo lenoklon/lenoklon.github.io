@@ -1,9 +1,7 @@
 /*tablets*/
 @media screen and (max-width: 1200px) {
-  .wrapper {
-    max-width: 970px;
-    margin: 0 auto;
-    width: 100%; } }
+  .social__tablet {
+    display: none; } }
 @media screen and (max-width: 1024px) {
   .wrapper {
     max-width: 807px;
@@ -78,5 +76,72 @@
 
   p.team__title.command__title {
     padding: 40px; } }
+@media screen and (max-width: 768px) {
+  a.header__content_btn.btn {
+    font-size: 20px; }
+
+  p.header__content__title {
+    display: none; }
+
+  .team__title {
+    font-size: 40px; }
+
+  .team__title_text {
+    width: 82%; }
+
+  p.team__content_title {
+    text-align: center; }
+
+  p.team__content_text {
+    text-align: center;
+    padding: 0 25px; }
+
+  .header__top_nav_list {
+    right: -4%;
+    top: 37px;
+    text-align: center; }
+    .header__top_nav_list li {
+      display: block;
+      margin-bottom: 2%; }
+
+  .header__top_nav_list a {
+    margin-right: 0; }
+
+  .team__content {
+    padding: 0 25px; }
+
+  .same_height {
+    width: 100%;
+    height: initial; }
+
+  .footer__settings {
+    text-align: left;
+    margin-bottom: 5%; }
+
+  .footer__list {
+    margin-bottom: 5%; }
+
+  footer {
+    padding: 10% 5%; }
+
+  .social__tablet {
+    text-align: left;
+    margin-top: 5%; }
+
+  .journal {
+    background: none;
+    text-align: center; }
+
+  .journal__contain {
+    position: static; }
+
+  .journal__title team__title {
+    text-align: center; }
+
+  .img-responsive {
+    width: 100%; }
+
+  p.team__content_text {
+    padding: 10%; } }
 
 /*# sourceMappingURL=media.css.map */
