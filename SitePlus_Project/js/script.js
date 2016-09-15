@@ -38,5 +38,12 @@
 	$('.gal_next').click(function(){
 		$('.gallery__slider').slick('slickNext');
 	});
+
+			/*Removing of blocks*/
+	// var w = $(window).width();
+
+	// if (w <=768) {
+		
+	// }
 	
 });

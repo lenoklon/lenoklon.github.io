@@ -1,3 +1,82 @@
+/*tablets*/
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    max-width: 970px;
+    margin: 0 auto;
+    width: 100%; } }
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 807px;
+    margin: 0 auto;
+    width: 100%; }
 
+  .btn {
+    font-size: 24px; }
+
+  .header__content {
+    top: 47%; }
+
+  .team__title_text {
+    width: 39%; }
+
+  .team__title,
+  .team__content_title,
+  .gallery__title,
+  .gallery__slider_title {
+    padding: 84px 0 121px 0; }
+
+  .team__content_info {
+    padding: 0; }
+
+  .team__content_title {
+    padding: 0; }
+
+  .team__content_info:last-child {
+    padding: 30px 43px; }
+
+  .team__row .team__content_text {
+    padding: 25px 25px 0 0; }
+    .team__row .team__content_text:last-child {
+      padding-left: 0; }
+
+  .team__content_btn {
+    font-size: 14px; }
+
+  .gallery__title_info {
+    width: 67%;
+    padding-top: 25px; }
+
+  .gallery__slider {
+    margin-top: 67%; }
+
+  .gallery__slider_title {
+    padding: 0; }
+
+  .journal {
+    height: 523px;
+    margin-top: 50px;
+    background-size: contain; }
+
+  .command__list_item_social, .social__tablet {
+    display: none; }
+
+  .social__tablet {
+    display: block;
+    text-align: center;
+    margin-top: 2%; }
+
+  .command__list_item_social a, .social__tablet a {
+    color: #999;
+    margin-right: 2%; }
+
+  p.journal__title.team__title {
+    padding: 0;
+    margin: 20px 0; }
+
+  .command {
+    padding: 0 0 100px 0; }
+
+  p.team__title.command__title {
+    padding: 40px; } }
 
 /*# sourceMappingURL=media.css.map */

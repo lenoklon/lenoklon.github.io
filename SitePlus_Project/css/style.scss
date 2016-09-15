@@ -17,11 +17,11 @@ body {
 	overflow-x:hidden;
 }
 
-.wrapper {
+/*.wrapper {
 	max-width: 1140px;
 	margin: 0 auto;
 	width: 100%;
-}
+}*/
 
 header {
 	background: url('../img/header_bg.png') top center no-repeat;
@@ -363,7 +363,8 @@ header {
 		margin-bottom: 52px;
 		text-align: center;
 	}
-}
+} 
+
 
 .command__list_item_title {
 	color: $titels;
@@ -396,7 +397,7 @@ header {
 	text-align: left;
 
 	a {
-		color: $text;
+		color: #999;
 		display: inline-block;
 		font-size: 14px;
 		margin-right: 2%;
@@ -455,7 +456,7 @@ footer {
 	color:$bg;
 	display: block;
 	font-size: 13px;
-	line-height: 40px;
+	margin-bottom: 16px;
 	text-decoration: none;
 	&:hover {
 		text-decoration: none;
@@ -466,6 +467,7 @@ footer {
 	color: $bg;
 	p {
 		font-size: 12px;
+		line-height: 19px;
 	}
 
 	input {
@@ -484,6 +486,10 @@ footer {
 .footer__form_title {
 	font-size: 14px;
 	text-transform: uppercase;
+}
+
+.social__tablet {
+	display: none;
 }
 
 /*
