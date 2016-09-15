@@ -37,16 +37,20 @@
 	 $('.gallery__slider').slick({
 	 	slidesToShow: 2,
   		slidesToScroll:2,
-  		arrows:false
+  		arrows:false,
+  		responsive:[
+	  	{
+	  		breakpoint:769,
+	  		settings: {
+	  			slidesToShow:0
+	  		}
+	  	}
+	  	
+	  ]
+	  	
   	 });
 
-  	 $('.gal_prev').click(function(){
-		$('.gallery__slider').slick('slickPrev');
-	});
-
-	$('.gal_next').click(function(){
-		$('.gallery__slider').slick('slickNext');
-	});
+  	
 
 	$(window).resize(function(){
 		var winwidth = $(window).innerWidth();

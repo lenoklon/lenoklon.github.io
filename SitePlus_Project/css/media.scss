@@ -197,5 +197,12 @@
 
 	p.team__content_text {
 		padding: 10%;
+		text-align: center;
 	}
+
+	.team__content_info:first-child p {
+	     text-align: center; 
+	}
+
+
 }
