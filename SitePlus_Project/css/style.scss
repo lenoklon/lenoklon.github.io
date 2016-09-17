@@ -494,22 +494,27 @@ footer {
 	display: none;
 }
 
-/*
-		input:-moz-placeholder {
+		*::-webkit-input-placeholder {
+			color:#666;	
+			opacity: 1;	
+		}
+
+		*:-moz-placeholder {
+			color:#666;	
+			opacity: 1;	
+		}
+
+		*::-moz-placeholder {
 			color:$bg;	
 			opacity: 1;	
 		}
 
-		input::-moz-placeholder {
+		*:ms-input-placeholder {
 			color:$bg;	
 			opacity: 1;	
 		}
 
-		input::-webkit-input-placeholder {
-			color:$bg;	
-			opacity: 1;	
-		}
-*/
+
 
 
     

@@ -365,21 +365,20 @@ footer {
 .social__tablet {
   display: none; }
 
-/*
-		input:-moz-placeholder {
-			color:$bg;	
-			opacity: 1;	
-		}
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1; }
 
-		input::-moz-placeholder {
-			color:$bg;	
-			opacity: 1;	
-		}
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1; }
 
-		input::-webkit-input-placeholder {
-			color:$bg;	
-			opacity: 1;	
-		}
-*/
+*::-moz-placeholder {
+  color: #fff;
+  opacity: 1; }
+
+*:ms-input-placeholder {
+  color: #fff;
+  opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
