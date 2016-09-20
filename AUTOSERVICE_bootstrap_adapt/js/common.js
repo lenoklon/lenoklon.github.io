@@ -48,7 +48,7 @@ $(document).ready(function() {
 			url: "mail.php",
 			data: $("form").serialize()
 		}).done(function() {
-			alert("Спасибо за заявку!");
+			alert("Danke für Ihre Bewerbung!");
 			setTimeout(function() {
 				$.fancybox.close();
 			}, 1000);
