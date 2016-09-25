@@ -18,12 +18,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	.cat_wrap {
-		text-align: left;
-	}
-
-	.categories .cat_img, .categories .cat_descr {
-		display: inline-block;
+	.cat_img, .cat_descr {
+		display: block;
 	}
 }
 
