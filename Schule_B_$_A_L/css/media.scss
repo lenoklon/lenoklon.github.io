@@ -21,6 +21,15 @@
 	.cat_img, .cat_descr {
 		display: block;
 	}
+
+	.profi form {
+		margin: 0 auto;
+		padding: 15px 30px;
+		width: 50%;
+		label p {
+			padding: 2px 0;
+		}
+	}
 }
 
 /* Small Devices, Tablets */
@@ -41,6 +50,21 @@
 		display: inline-block;
 		vertical-align: middle;
 	}
+
+	.cat_wrap {
+		text-align: left;
+		padding-left: 10%;
+	}
+
+	.profi {
+		text-align: center;
+	}
+
+	.profi_item {
+		padding: 2% 0;
+	}
+
+
 }
 
 @media only screen and (max-width : 600px) {
@@ -71,6 +95,10 @@
 		h1{
 			font-size: 49px;
 		}
+	}
+
+	.profi form {
+		width: 85%;
 	}
 
 	

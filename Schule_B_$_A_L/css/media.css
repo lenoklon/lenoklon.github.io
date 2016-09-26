@@ -13,7 +13,14 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .cat_img, .cat_descr {
-    display: block; } }
+    display: block; }
+
+  .profi form {
+    margin: 0 auto;
+    padding: 15px 30px;
+    width: 50%; }
+    .profi form label p {
+      padding: 2px 0; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .logo, .top_phone {
@@ -27,7 +34,17 @@
 
   .categories .cat_img, .categories .cat_descr {
     display: inline-block;
-    vertical-align: middle; } }
+    vertical-align: middle; }
+
+  .cat_wrap {
+    text-align: left;
+    padding-left: 10%; }
+
+  .profi {
+    text-align: center; }
+
+  .profi_item {
+    padding: 2% 0; } }
 @media only screen and (max-width: 600px) {
   .tabs_header .tab {
     width: 100%;
@@ -46,7 +63,10 @@
     margin-top: 41px;
     text-align: center; }
     .top_content h1 {
-      font-size: 49px; } }
+      font-size: 49px; }
+
+  .profi form {
+    width: 85%; } }
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
