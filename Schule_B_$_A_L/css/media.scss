@@ -67,6 +67,12 @@
 
 }
 
+@media only screen and (max-width:660px) {
+	/*.tabs_header .tab_content {
+		height: 247px;
+	}*/
+}
+
 @media only screen and (max-width : 600px) {
 	.tabs_header .tab {
 		width: 100%;
@@ -80,6 +86,9 @@
 	.tabs_header .tab_item {
 		text-align: center;
 	}
+	/*.tabs_header .tab_content {
+		height: 247px;
+	}*/
 	
 }
 
@@ -100,6 +109,10 @@
 	.profi form {
 		width: 85%;
 	}
+
+	/*.tabs_header .tab_content {
+		height: 254px;
+	}*/
 
 	
 }

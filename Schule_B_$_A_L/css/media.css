@@ -45,6 +45,10 @@
 
   .profi_item {
     padding: 2% 0; } }
+@media only screen and (max-width: 660px) {
+  /*.tabs_header .tab_content {
+  	height: 247px;
+  }*/ }
 @media only screen and (max-width: 600px) {
   .tabs_header .tab {
     width: 100%;
@@ -53,7 +57,11 @@
       margin: 15px 0; }
 
   .tabs_header .tab_item {
-    text-align: center; } }
+    text-align: center; }
+
+  /*.tabs_header .tab_content {
+  	height: 247px;
+  }*/ }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .top_phone .tab_item {
@@ -66,7 +74,11 @@
       font-size: 49px; }
 
   .profi form {
-    width: 85%; } }
+    width: 85%; }
+
+  /*.tabs_header .tab_content {
+  	height: 254px;
+  }*/ }
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */

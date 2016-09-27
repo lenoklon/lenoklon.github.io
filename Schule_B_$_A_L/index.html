@@ -29,10 +29,10 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
 	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
-	<!-- <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
-	<link rel="stylesheet" href="libs/magnific/magnific-popup.css" />
+	<link rel="stylesheet" href="libs/owl/assets/owl.carousel.css" />
+	<!-- <link rel="stylesheet" href="libs/magnific/magnific-popup.css" />
 	<link rel="stylesheet" href="libs/animate/animate.min.css" />
-	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" /> --> <!-- таймер обратного отсчета -->
+	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />  --><!-- таймер обратного отсчета -->
 	<!-- <link rel="stylesheet" href="libs/myFonts/stylesheet.css" /> -->
 
 	<!-- Custom CSS -->
@@ -43,7 +43,7 @@
 	<!-- Google Map API -->
 	<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcuU0NUm1-OJKC75lw7lzTZgzciD49mt8&amp;sensor=false"></script> -->
 
-	<!-- <script src="libs/modernizr/modernizr.js"></script> -->
+	<script src="libs/modernizr/modernizr.js"></script>
 </head>
 <body>
 	<!-- ***ИКОНКИ*** -->
@@ -266,21 +266,75 @@
 		</div>
 	</section>
 	<!-- ***FEEDBACKS - PARALLAX***	 -->
-	<section class="feedback">
+	<section class="feedback" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Feedbacks von unseren Studenten</h2>
+
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<!-- CAROUSEL -->
+					<div class="carousel">
+						<div class="feedback_item">
+							<div class="img_wrap">
+								<img src="img/feed_item1.jpg" alt="ava1">
+							</div>
+							<h4>Steffi Neuer</h4>
+							<div class="separate"></div>
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2">
+									<p class="descr">Ich möchte Nina und ProKurs insgesamt durchführte danken. Diese Lehren haben mir geholfen, die Schwierigkeiten zu überwinden. Der Unterricht fand in einer freundlichen und ungezwungenen Atmosphäre statt, die auf die gute Aufnahme des Materials und motiviert für weitere Studien beigetragen. Nina fand immer interessante Themen zur Diskussion.</p>
+								</div>
+							</div>
+						</div>
+						<div class="feedback_item">
+							<div class="img_wrap">
+								<img src="img/feed_item2.jpg" alt="ava1">
+							</div>
+							<h4>Markus Schulz</h4>
+							<div class="separate"></div>
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2">
+									<p class="descr">Ich möchte Nina und ProKurs insgesamt durchführte danken. Diese Lehren haben mir geholfen, die Schwierigkeiten zu überwinden. Der Unterricht fand in einer freundlichen und ungezwungenen Atmosphäre statt, die auf die gute Aufnahme des Materials und motiviert für weitere Studien beigetragen. Nina fand immer interessante Themen zur Diskussion.</p>
+								</div>
+							</div>
+						</div>
+						<div class="feedback_item">
+							<div class="img_wrap">
+								<img src="img/feed_item3.jpg" alt="ava1">
+							</div>
+							<h4>Anetti Meier</h4>
+							<div class="separate"></div>
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2">
+									<p class="descr">Ich wuerde gerne Nina und ProKurs insgesamt durchführte danken. Diese Lehren haben mir geholfen, die Schwierigkeiten zu überwinden. Der Unterricht fand in einer freundlichen und ungezwungenen Atmosphäre statt, die auf die gute Aufnahme des Materials und motiviert für weitere Studien beigetragen. Nina fand immer interessante Themen zur Diskussion.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+	<section>
 		
-	</section>		
+	</section>	
 
 	
 	<div class="hidden">
 		<form id="callback" class="pop_form">
-			<h3>Verbinden Sie uns</h3>
+			<h3>wir rufen sie sofort an</h3>
 			<label><p>Ihre Name:</p>
 				<input type="text" name="name" required>
 			</label>
 			<label><p>Ihre Nummer:</p>
 				<input type="text" name="phone" required>
 			</label>
-			<label><p>Ihre Stadt:</p>
+			<label><p>Wahlen Sie Stadt:</p>
 				<select name="stadt">
 					<option selected="">Berlin</option>
 					<option>Zürich</option>
@@ -304,11 +358,13 @@
 
 
 	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
-	<!-- 	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script> -->
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="libs/stellar/jquery.stellar.min.js"></script>
+	<script src="libs/owl/owl.carousel.min.js"></script>
+	<script src="js/common.js"></script>
+	<!-- 	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script> -->
 	<!--<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
 	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
-	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
 	<script src="libs/countdown/jquery.plugin.js"></script>
 	<script src="libs/countdown/jquery.countdown.min.js"></script>
 	<script src="libs/countdown/jquery.countdown-ru.js"></script>
@@ -317,12 +373,10 @@
 	<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
 	<script src="libs/equalheight/jquery.equalheight.js"></script>
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script> --> <!-- Stellar Parallax Plugin -->
-	<!-- <script src="libs/stellar/jquery.stellar.min.js"></script> -->
 	<!-- <script src="libs/retina/retina.min.js"></script> --> <!-- Retina.js Plugin -->
 	<!-- <script src="libs/magnific/jquery.magnific-popup.min.js"></script> --> <!-- Magnific Popup Plugin -->
 	<!-- <script src="libs/waypoints/waypoints.min.js"></script> --> <!-- WayPoints Plugin -->
 	<!-- <script src="libs/animate/animate-css.js"></script>  --><!-- AnimateCSS JS Plugin -->
-	<script src="js/common.js"></script>
 	<!-- <script src="js/template_settings.js"></script> --><!-- Custom Scripts -->
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter33238768 = new Ya.Metrika({id:33238768, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/33238768" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->

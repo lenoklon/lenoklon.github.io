@@ -29,10 +29,28 @@ $(document).ready(function() {
 
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
-	 $(".fancybox").fancybox();
+	$(".fancybox").fancybox();
 
+	 //Stellar - Parallax-Background
+	//Документация: https://github.com/markdalgleish/stellar.js
+	//HTML: <div class="parallax" data-stellar-background-ratio="0.5"></div>
+	$.stellar({
+		responsive:true,
+		horizontalOffset: 60
+	});
 
-	
+	//Каруселька
+	//Документация: http://owlgraphic.com/owlcarousel/
+	$(".carousel").owlCarousel({
+		loop:true,
+		responsive : {
+			0 : {
+				items : 1,
+				nav : true
+			}
+		},
+		navText : ""
+	});
 });
 	//Цели для Яндекс.Метрики и Google Analytics
 	// $(".count_element").on("click", (function() {
@@ -70,14 +88,7 @@ $(document).ready(function() {
 	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
 	// $(".fancybox").fancybox();
 
-	//Stellar - Parallax Plugin
-	//Документация: https://github.com/markdalgleish/stellar.js
-	//HTML: <div class="parallax" data-stellar-background-ratio="0.5"></div>
-	// $.stellar({
-	// 	horizontalScrolling: false,
-	// 	verticalOffset: 40
-	// });
-
+	
 	//equalheight - одинаковая высота колонок
 	//Пример списка элементов:
 	//var eqElement = ".cat_container > div, .home_news > div"
