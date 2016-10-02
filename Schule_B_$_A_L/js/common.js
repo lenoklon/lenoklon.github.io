@@ -51,6 +51,11 @@ $(document).ready(function() {
 		},
 		navText : ""
 	});
+
+	//Magnific Popup Plugin
+	//Documentation: http://dimsemenov.com/plugins/magnific-popup
+	$(".popup").magnificPopup({type:"image"});
+	// $(".popup_c").magnificPopup();
 });
 	//Цели для Яндекс.Метрики и Google Analytics
 	// $(".count_element").on("click", (function() {
@@ -70,10 +75,7 @@ $(document).ready(function() {
 
 
 
-	//Magnific Popup Plugin
-	//Documentation: http://dimsemenov.com/plugins/magnific-popup
-	// $(".popup").magnificPopup({type:"image"});
-	// $(".popup_c").magnificPopup();
+	
 
 	//Stellar Plugin
 	//Documentation: https://github.com/markdalgleish/stellar.js

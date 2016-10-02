@@ -48,7 +48,7 @@
 @media only screen and (max-width: 660px) {
   /*.tabs_header .tab_content {
   	height: 247px;
-  }*/ }
+  	}*/ }
 @media only screen and (max-width: 600px) {
   .tabs_header .tab {
     width: 100%;
@@ -61,7 +61,7 @@
 
   /*.tabs_header .tab_content {
   	height: 247px;
-  }*/ }
+  	}*/ }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .top_phone .tab_item {
@@ -76,9 +76,9 @@
   .profi form {
     width: 85%; }
 
-  /*.tabs_header .tab_content {
-  	height: 254px;
-  }*/ }
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    top: 17%; } }
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
