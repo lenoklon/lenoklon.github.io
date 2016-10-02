@@ -429,7 +429,7 @@ header {
 
 /****FEEDBACK - PARALLAX****/
 .feedback {
-	background: url('../img/middle_bg.jpg') no-repeat;
+	background:#523631 url('../img/middle_bg.jpg') no-repeat;
 	background-size: cover;
 	background-attachment: fixed; /*fixed position during scroll*/
 	color:#fff;
@@ -522,7 +522,26 @@ header {
 	}
 }
 
-
+/*****VERBESSER-SECTION*****/
+.verbesser {
+	background: url('../img/flag.jpg') center no-repeat;
+	background-size: cover;
+	color: #fff;
+	padding: 45px 0;
+	text-align: center;
+	p {
+		padding: 5px;
+		background: rgba(193, 170, 170, 0.2);
+		font-size: 22px;
+		line-height: 32px;
+		text-transform: uppercase;
+	}
+	.button {
+		background-color:#fff;
+		color:#000;
+		margin-top: 25px;
+	}
+}			
 
 /*POP_UP*/
 .pop_form {

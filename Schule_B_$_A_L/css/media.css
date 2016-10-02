@@ -78,7 +78,10 @@
 
   .owl-nav .owl-prev,
   .owl-nav .owl-next {
-    top: 17%; } }
+    top: 17%; }
+
+  .verbesser p {
+    font-size: 15px; } }
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
