@@ -407,6 +407,81 @@ header {
     color: #000;
     margin-top: 25px; }
 
+/****CONTACTS****/
+.contacts_top {
+  text-align: center; }
+  .contacts_top h2 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "CleanvertisingLight";
+    color: #000;
+    display: inline-block;
+    vertical-align: middle; }
+
+.contacts {
+  padding-bottom: 0; }
+  .contacts .tabs {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    font-family: "RobotoBold";
+    background-color: #9b1818;
+    border-radius: 5px;
+    font-size: 0; }
+    .contacts .tabs .tab {
+      font-size: 16px;
+      background-color: #fff;
+      color: #9b1818;
+      cursor: pointer;
+      display: inline-block;
+      line-height: 45px;
+      height: 45px;
+      padding: 0 65px;
+      margin: 5px;
+      text-transform: uppercase; }
+    .contacts .tabs .active {
+      background-color: #9b1818;
+      color: #fff; }
+  .contacts .tab_item {
+    color: #000;
+    display: none;
+    font-size: 18px;
+    font-family: "RobotoRegular";
+    text-align: center;
+    margin-top: 20px; }
+    .contacts .tab_item:first-child {
+      display: block; }
+
+.map {
+  background-color: #e1d6b0;
+  background-size: cover;
+  margin-top: 20px;
+  min-height: 480px; }
+
+/*FOOTER*/
+footer {
+  background-color: #cad8da;
+  font-family: "RobotoRegular", sans-serif;
+  text-align: center;
+  padding-bottom: 100px; }
+  footer h2 {
+    color: black;
+    font-family: "CleanvertisingLight";
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 56px; }
+  footer p {
+    color: #333;
+    font-size: 18px; }
+  footer .footer_phone {
+    text-align: center;
+    color: #9b1818;
+    margin-top: 20px; }
+    footer .footer_phone .tab_item {
+      color: #9b1818; }
+  footer .button {
+    margin-top: 20px; }
+
 /*POP_UP*/
 .pop_form {
   background-color: #f7f7f7;
