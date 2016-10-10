@@ -100,6 +100,7 @@ p {
 	min-height: 201px;
 	/*position: relative;*/
 	text-align: center;
+	margin: 0 auto;
 
 }
 
@@ -109,6 +110,10 @@ p {
 	float: left;
 }
 
+.headertop__btn {
+	float: right;
+}
+
 .headertop__menu {
 	display: inline-block;
 	list-style: none;
@@ -116,7 +121,7 @@ p {
 	padding: 63px 0 0 3%;
 	text-align: center;
 	margin: 0 auto;
-	width: 60%;
+	/*width: 60%;*/
 }
 
 .headertop__menu li {

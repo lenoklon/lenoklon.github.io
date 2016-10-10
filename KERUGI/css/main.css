@@ -80,12 +80,16 @@ p {
   background-size: cover;
   min-height: 201px;
   /*position: relative;*/
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
 
 .headertop__logo,
 .headertop__menu,
 .headertop__btn {
   float: left; }
+
+.headertop__btn {
+  float: right; }
 
 .headertop__menu {
   display: inline-block;
@@ -93,8 +97,8 @@ p {
   font-size: 0;
   padding: 63px 0 0 3%;
   text-align: center;
-  margin: 0 auto;
-  width: 60%; }
+  margin: 0 auto
+  /*width: 60%;*/ }
 
 .headertop__menu li {
   font-family: 'RainTungstenMedium', sans-serif;
