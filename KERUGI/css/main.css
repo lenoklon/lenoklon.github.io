@@ -55,18 +55,6 @@ h2 {
 section {
   padding: 58px 0; }
 
-.button {
-  /*border-radius: 3px;
-  border: none;
-  font-family: "RobotoBold", sans-serif;
-  color:#fff;
-  cursor: pointer;
-  display: inline-block;
-  height: 47px;
-  line-height: 47px;
-  padding: 0 36px;
-  text-transform: uppercase;*/ }
-
 p {
   margin: 0;
   padding: 0; }
@@ -95,9 +83,10 @@ p {
   display: inline-block;
   list-style: none;
   font-size: 0;
-  padding: 63px 0 0 0;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-left: -3%;
+  padding: 63px 0 0 2%; }
 
 .headertop__menu li {
   font-family: 'RainTungstenMedium', sans-serif;
@@ -109,20 +98,45 @@ p {
     font-size: 21px;
     color: #d7ebf5;
     text-transform: uppercase;
+    -webkit-transition: all .25s;
+            transition: all .25s;
     line-height: 1.143; }
+    .headertop__menu li a:hover {
+      color: #fff;
+      text-decoration: underline; }
 
 .headertop__btn {
   background: url("../img/btn_bg.png") no-repeat;
   height: 132px;
   font-size: 36px;
-  font-weight: 500; }
+  font-weight: 500;
+  margin: 1px -40px 0 0; }
   .headertop__btn p {
-    padding-left: 15%; }
+    padding-left: 27%; }
     .headertop__btn p span {
       font-size: 24px; }
-  .headertop__btn a {
+  .headertop__btn .btn_wrap {
+    width: 231px;
+    margin-top: 25px; }
+  .headertop__btn .button {
     color: #fff;
     font-size: 27px;
-    text-align: center; }
+    text-align: center;
+    -webkit-transition: all .5s;
+            transition: all .5s;
+    cursor: pointer; }
+    .headertop__btn .button:hover {
+      color: #008fcf; }
+
+/*sandwich*/
+.main_mnu_button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  display: none;
+  font-size: 26px;
+  text-align: center;
+  outline: none;
+  margin: 20px auto; }
 
 /*# sourceMappingURL=main.css.map */

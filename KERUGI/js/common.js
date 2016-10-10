@@ -1,5 +1,21 @@
 $(document).ready(function() {
 
+	// var w = $(window).width();
+	// if (w<=768) {
+	// 	$('.headertop__menu').insertAfter('.headertop__btn');
+	// }
+	if(window.matchMedia('(max-width: 480px)').matches) {
+		$('.headertop__menu ul').hide();
+	}
+
+	$(".main_mnu_button").click(function() {
+		$(".headertop__menu ul").slideToggle();
+	});
+
+	if(window.matchMedia('(max-width: 768px)').matches) {
+		$('.headertop__menu').insertAfter('.headertop__btn');
+	}
+
 	/*TABS top_header*/
 
 	$(".top_phone .wrapper .tab").click(function() {

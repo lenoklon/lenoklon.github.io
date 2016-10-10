@@ -70,20 +70,6 @@ body {
 		padding: 58px 0;
 	}
 
-	.button {
-	/*border-radius: 3px;
-	border: none;
-	font-family: "RobotoBold", sans-serif;
-	color:#fff;
-	cursor: pointer;
-	display: inline-block;
-	height: 47px;
-	line-height: 47px;
-	padding: 0 36px;
-	text-transform: uppercase;*/
-}
-
-
 p {
 	margin: 0;
 	padding: 0;
@@ -118,9 +104,10 @@ p {
 	display: inline-block;
 	list-style: none;
 	font-size: 0;
-	padding: 63px 0 0 0;
 	text-align: center;
 	margin: 0 auto;
+	margin-left: -3%;
+	padding: 63px 0 0 2%;
 }
 
 .headertop__menu li {
@@ -134,7 +121,12 @@ p {
 		font-size: 21px;
 		color: rgb(215, 235, 245);
 		text-transform: uppercase;
+		transition: all .25s;
 		line-height: 1.143;
+		&:hover {
+			color:#fff;
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -143,17 +135,39 @@ p {
 	height: 132px;
 	font-size: 36px;
 	font-weight: 500;
+	margin:1px -40px 0 0;
 	p{
-		padding-left: 15%;
+		padding-left: 27%;
 		span {
 			font-size: 24px;
 		}
 		
 	}
-	a {
+
+	.btn_wrap {
+		width: 231px;
+		margin-top: 25px;
+	}
+
+	.button {
 		color:#fff;
 		font-size: 27px;
 		text-align: center;
+		transition: all .5s;
+		cursor: pointer;
+		&:hover {
+			color:$blue;
+		}
 	}
 }
-
+		/*sandwich*/
+.main_mnu_button {
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	display: none;
+	font-size: 26px;
+	text-align: center;
+	outline: none;
+	margin: 20px auto;
+}
