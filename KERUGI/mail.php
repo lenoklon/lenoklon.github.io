@@ -4,6 +4,8 @@ $recepient = "mail@el.de";
 $sitename = "Название сайта";
 
 $name = trim($_GET["name"]);
+$UrName = trim($_GET["UrName"]);
+$mail = trim($_GET["mail"]);
 $phone = trim($_GET["phone"]);
 $text = trim($_GET["text"]);
 

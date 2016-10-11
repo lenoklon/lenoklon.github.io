@@ -62,15 +62,15 @@ $(document).ready(function() {
 
 });
 
-$(window).load(function() {
+		$(window).load(function() {
 	//animate-css.js Plugin. Animate Elements on Scroll
 // 	//Example: $(".element").animated("zoomInUp", "zoomOutDown");
-	$(".top_content h1").animated("fadeInDown", "fadeOut");
-	$(".top_content h2").animated("fadeInUp", "fadeOut");
-	$(".tabs_header .wrapper").animated("flipInY", "fadeOut");
-	$(".profi_item").animated("fadeInRight", "fadeOut");
-	$(".profi form").animated("zoomInRight", "fadeOut");
-	$(".verbesser p").animated("fadeInUp", "fadeOut");
-	$("footer").animated("fadeIn", "fadeOut");
-	$("section h2, footer h2, .contacts_top .tabs").animated("fadeInUp", "fadeOut");
+$(".top_content h1").animated("fadeInDown", "fadeOut");
+$(".top_content h2").animated("fadeInUp", "fadeOut");
+$(".tabs_header .wrapper").animated("flipInY", "fadeOut");
+$(".profi_item").animated("fadeInRight", "fadeOut");
+$(".profi form").animated("zoomInRight", "fadeOut");
+$(".verbesser p").animated("fadeInUp", "fadeOut");
+$("footer").animated("fadeIn", "fadeOut");
+$("section h2, footer h2, .contacts_top .tabs").animated("fadeInUp", "fadeOut");
 });
