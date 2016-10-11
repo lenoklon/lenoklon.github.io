@@ -4,7 +4,7 @@ $(document).ready(function() {
 	// if (w<=768) {
 	// 	$('.headertop__menu').insertAfter('.headertop__btn');
 	// }
-	if(window.matchMedia('(max-width: 480px)').matches) {
+	if(window.matchMedia('(max-width: 768px)').matches) {
 		$('.headertop__menu ul').hide();
 	}
 
@@ -14,7 +14,33 @@ $(document).ready(function() {
 
 	if(window.matchMedia('(max-width: 768px)').matches) {
 		$('.headertop__menu').insertAfter('.headertop__btn');
+		// $('.video__bg>video').hide();
+
 	}
+
+	// video.addEventListener('canplay', function(e) {
+	// 	this.volume = 0.4;
+	// 	this.currentTime = 10;
+	// 	this.play();
+	// }, false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	/*TABS top_header*/
 
