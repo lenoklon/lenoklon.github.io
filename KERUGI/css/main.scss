@@ -36,6 +36,26 @@ body textarea:required:valid {
 }
 
 /************GENERAL CSS*************/
+		/****footer to the bottom of the window****/
+html,
+body {
+  height: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/*.content {
+  flex: 1 0 auto;
+}*/
+footer {
+  flex: 0 0 auto;
+}
+
+		/****footer to the bottom of the window****/
+
 body {
 	color:#fff;
 	font-family: 'RainTungstenMedium', sans-serif;
@@ -61,10 +81,6 @@ h2 {
 	line-height: 18px;
 }
 
-section {
-	padding: 58px 0;
-}
-
 p {
 	margin: 0;
 	padding: 0;
@@ -81,7 +97,7 @@ p {
 	top: 0;
 	right: 0;
 	left: 0;
-	background: url(../img/header_top_bg.png) top center no-repeat;
+	background: url(../img/header_top_bg.png) no-repeat;
 	background-size: cover;
 	min-height: 201px;
 	text-align: center;
@@ -203,12 +219,22 @@ p {
 	margin-top: -8%;
 	width: auto;
 	height: auto; 
+	/*background: grey;*/
 }
 
 			/****SECTION****/
 section {
-	background: grey;
-	margin-top: -1%;
+	margin-top: 67px;
+}
+
+.pad_null {
+	padding: 0;
+}
+
+
+.content__awards {
+	background: url('../img/content_bg.png') no-repeat;
+	height: 683px;
 }
 
 /****FOOTER****/

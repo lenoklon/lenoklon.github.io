@@ -25,33 +25,7 @@
 	<script src="libs/modernizr/modernizr.js"></script>
 </head>
 <body>
-
-	<!-- ***HEADER*** -->
-	<!-- <header>
-		<div class="headertop__wrap">
-			<div class="wrap clearfix">
-				<div class="headertop__logo">
-					<img src="img/logo.png" alt="logo">
-				</div>
-				<ul class="headertop__menu clearfix">
-					<li><a href="#">О школе</a></li>
-					<li><a href="#">Адреса центров</a></li>
-					<li><a href="#">Тренеры</a></li>
-					<li><a href="#">Календарь мероприятий</a></li>
-					<li><a href="#">Экипировка</a></li>
-					<li><a href="#">Чемпионы</a></li>
-					<li><a href="#">сообщество</a></li>
-					<li><a href="#">вакансии</a></li>
-				</ul>
-				<div class="headertop__btn">
-					<p><span>+7 (3452)</span> 704-884</p>
-					<a href="#callback" class="button fancybox">Записаться
-						на бесплатное занятие</a>
-					</div>
-				</div>
-			</div>
-		</header> -->
-
+	<div class="wrap">
 		<header>
 			<div class="headertop__wrap">
 				<div class="container">
@@ -90,50 +64,61 @@
 					</div> -->
 					<div class="video__bg">
 						<!-- autoplay="autoplay" -->
-						<video width="100%" height="auto" autoplay="" loop="loop" preload="auto" volume="float:0.0" poster="../img/bg_content.jpg">
-							<source src="video/present MOSCOW.mp4" type="video/mp4"></source>
-							<source src="video/present MOSCOW.webm" type="video/webm"></source>
+						<video width="100%" height="auto" autoplay="autoplay loop="loop" poster="../img/bg_content.jpg">
+							<source src="video/present.mp4" type="video/mp4"></source>
+							<source src="video/present.webm" type="video/webm"></source>
+							<p>ur browser doesn't support it</p>
 						</video>
 						<img class="img-responsive visible-xs" src="img/bg_content.jpg" alt="video_poster">
 					</div>
-					</div>
-				</header>
-				<section class="content">
-
-				</section>
-				<footer>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<p class="footer_rights">Copyright 2015. Керуги - школа олимпийского тхэквондо Все права защищены</p>
-
+				</div>
+			</header>
+			<section class="content">
+				<div class="container-fluid content__bg">
+					<div class="row">
+						<div class="col-md-6 pad_null">
+							<div class="content__awards">
+								
 							</div>
+							
+						</div>
+						<div class="col-md-6"></div>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="footer_rights">Copyright 2015. Керуги - школа олимпийского тхэквондо Все права защищены</p>
 						</div>
 					</div>
-				</footer>
-
-
-
-
-
-				<div class="hidden">
-					<form id="callback" class="pop_form">
-						<h3>wir rufen sie sofort an</h3>
-						<label><p>Ihre Name:</p>
-							<input type="text" name="name" required>
-						</label>
-						<label><p>Ihre Nummer:</p>
-							<input type="text" name="phone" required>
-						</label>
-						<label><p>Wahlen Sie Stadt:</p>
-							<select name="stadt">
-								<option selected="">Berlin</option>
-								<option>Zürich</option>
-							</select>
-						</label>
-						<a href="#" class="button">anmelden</a>
-					</form>
 				</div>
+			</footer>
+
+
+
+
+
+			<div class="hidden">
+				<form id="callback" class="pop_form">
+					<h3>wir rufen sie sofort an</h3>
+					<label><p>Ihre Name:</p>
+						<input type="text" name="name" required>
+					</label>
+					<label><p>Ihre Nummer:</p>
+						<input type="text" name="phone" required>
+					</label>
+					<label><p>Wahlen Sie Stadt:</p>
+						<select name="stadt">
+							<option selected="">Berlin</option>
+							<option>Zürich</option>
+						</select>
+					</label>
+					<a href="#" class="button">anmelden</a>
+				</form>
+			</div>
+		</div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
