@@ -90,37 +90,50 @@
 					</div> -->
 					<div class="video__bg">
 						<!-- autoplay="autoplay" -->
-						<video width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto" volume="float:0.0" poster="../img/bg_content.jpg">
-							<source src="video/present MOSCOW.mp4" type="video/mp4">
-							<!-- <source src="bg/daisy-stock-webm-video.webm" type="video/webm"></source> -->
+						<video width="100%" height="auto" autoplay="" loop="loop" preload="auto" volume="float:0.0" poster="../img/bg_content.jpg">
+							<source src="video/present MOSCOW.mp4" type="video/mp4"></source>
+							<source src="video/present MOSCOW.webm" type="video/webm"></source>
 						</video>
 						<img class="img-responsive visible-xs" src="img/bg_content.jpg" alt="video_poster">
 					</div>
+					</div>
+				</header>
+				<section class="content">
+
+				</section>
+				<footer>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="footer_rights">Copyright 2015. Керуги - школа олимпийского тхэквондо Все права защищены</p>
+
+							</div>
+						</div>
+					</div>
+				</footer>
+
+
+
+
+
+				<div class="hidden">
+					<form id="callback" class="pop_form">
+						<h3>wir rufen sie sofort an</h3>
+						<label><p>Ihre Name:</p>
+							<input type="text" name="name" required>
+						</label>
+						<label><p>Ihre Nummer:</p>
+							<input type="text" name="phone" required>
+						</label>
+						<label><p>Wahlen Sie Stadt:</p>
+							<select name="stadt">
+								<option selected="">Berlin</option>
+								<option>Zürich</option>
+							</select>
+						</label>
+						<a href="#" class="button">anmelden</a>
+					</form>
 				</div>
-			</header>
-
-
-
-
-
-			<div class="hidden">
-				<form id="callback" class="pop_form">
-					<h3>wir rufen sie sofort an</h3>
-					<label><p>Ihre Name:</p>
-						<input type="text" name="name" required>
-					</label>
-					<label><p>Ihre Nummer:</p>
-						<input type="text" name="phone" required>
-					</label>
-					<label><p>Wahlen Sie Stadt:</p>
-						<select name="stadt">
-							<option selected="">Berlin</option>
-							<option>Zürich</option>
-						</select>
-					</label>
-					<a href="#" class="button">anmelden</a>
-				</form>
-			</div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>

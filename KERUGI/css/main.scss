@@ -46,131 +46,131 @@ body {
 }
 
 
-	h1 {
-		color: $blue;
-		font-family: 'RainTungstenMedium', sans-serif;
-		font-size: 72px;
-		font-weight: 500;
-		margin: 0;
+h1 {
+	color: $blue;
+	font-family: 'RainTungstenMedium', sans-serif;
+	font-size: 72px;
+	font-weight: 500;
+	margin: 0;
+}
+
+h2 {
+	color: $blue;
+	font-size: 60px;
+	font-weight: 500;
+	line-height: 18px;
+}
+
+section {
+	padding: 58px 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+/***********HEADER***********/
+.headertop__wrap {
+	position: relative;
+	z-index: 10;
+	top: 0;
+	right: 0;
+	left: 0;
+	background: url(../img/header_top_bg.png) top center no-repeat;
+	background-size: cover;
+	min-height: 201px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.headertop__logo,
+.headertop__menu,
+.headertop__btn {
+	float: left;
+}
+
+.headertop__btn {
+	float: right;
+}
+
+.headertop__menu {
+	display: inline-block;
+	list-style: none;
+	font-size: 0;
+	text-align: center;
+	margin: 0 auto;
+	margin-left: -3%;
+	padding: 63px 0 0 2%;
+}
+
+.headertop__menu li {
+	font-family: 'RainTungstenMedium', sans-serif;
+	display: inline-block;
+	margin-right: 14px;
+	&:last-child {
+		margin-right: 0;
 	}
-
-	h2 {
-		color: $blue;
-		font-size: 60px;
-		font-weight: 500;
-		line-height: 18px;
-	}
-
-	section {
-		padding: 58px 0;
-	}
-
-	p {
-		margin: 0;
-		padding: 0;
-	}
-
-	.hidden {
-		display: none;
-	}
-
-	/***********HEADER***********/
-	.headertop__wrap {
-		position: relative;
-		z-index: 10;
-		top: 0;
-		right: 0;
-		left: 0;
-		background: url(../img/header_top_bg.png) top center no-repeat;
-		background-size: cover;
-		min-height: 201px;
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	.headertop__logo,
-	.headertop__menu,
-	.headertop__btn {
-		float: left;
-	}
-
-	.headertop__btn {
-		float: right;
-	}
-
-	.headertop__menu {
-		display: inline-block;
-		list-style: none;
-		font-size: 0;
-		text-align: center;
-		margin: 0 auto;
-		margin-left: -3%;
-		padding: 63px 0 0 2%;
-	}
-
-	.headertop__menu li {
-		font-family: 'RainTungstenMedium', sans-serif;
-		display: inline-block;
-		margin-right: 14px;
-		&:last-child {
-			margin-right: 0;
-		}
-		a {
-			font-size: 21px;
-			color: rgb(215, 235, 245);
-			text-transform: uppercase;
-			transition: all .25s;
-			line-height: 1.143;
-			&:hover {
-				color:#fff;
-				text-decoration: underline;
-			}
-		}
-	}
-
-	.headertop__btn {
-		background: url('../img/btn_bg.png') no-repeat;
-		height: 132px;
-		font-size: 36px;
-		font-weight: 500;
-		margin:1px -40px 0 0;
-		p{
-			padding-left: 27%;
-			span {
-				font-size: 24px;
-			}
-
-		}
-
-		.btn_wrap {
-			width: 231px;
-			margin-top: 25px;
-		}
-
-		.button {
+	a {
+		font-size: 21px;
+		color: rgb(215, 235, 245);
+		text-transform: uppercase;
+		transition: all .25s;
+		line-height: 1.143;
+		&:hover {
 			color:#fff;
-			font-size: 27px;
-			text-align: center;
-			transition: all .5s;
-			cursor: pointer;
-			&:hover {
-				color:$blue;
-			}
+			text-decoration: underline;
 		}
 	}
-	/*sandwich*/
-	.main_mnu_button {
-		background-color: transparent;
-		border: none;
-		color: #fff;
-		display: none;
-		font-size: 26px;
-		text-align: center;
-		outline: none;
-		margin: 0 auto;
+}
+
+.headertop__btn {
+	background: url('../img/btn_bg.png') no-repeat;
+	height: 132px;
+	font-size: 36px;
+	font-weight: 500;
+	margin:1px -40px 0 0;
+	p{
+		padding-left: 27%;
+		span {
+			font-size: 24px;
+		}
+
 	}
 
-	/****VIDEO_CONTENT****/
+	.btn_wrap {
+		width: 231px;
+		margin-top: 25px;
+	}
+
+	.button {
+		color:#fff;
+		font-size: 27px;
+		text-align: center;
+		transition: all .5s;
+		cursor: pointer;
+		&:hover {
+			color:$blue;
+		}
+	}
+}
+/*sandwich*/
+.main_mnu_button {
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	display: none;
+	font-size: 26px;
+	text-align: center;
+	outline: none;
+	margin: 0 auto;
+}
+
+/****VIDEO_CONTENT****/
 
 .header_videobg {
 	position: relative;;
@@ -195,12 +195,33 @@ body {
 		color: #333;
 	}
 }
-						/*video_bg*/
-	
+/*video_bg*/
+
 .video__bg > video {
 	min-width: 100%; 
 	min-height: 100%;
 	margin-top: -8%;
 	width: auto;
 	height: auto; 
+}
+
+			/****SECTION****/
+section {
+	background: grey;
+	margin-top: -1%;
+}
+
+/****FOOTER****/
+footer {
+	background: #005794;
+	font-family: 'ExoThin';
+	height: 85px;
+	line-height: 85px;
+	text-align: left;
+}
+
+.footer__rights {
+	color: #fff;
+	font-family: Exo2.0;
+	font-size: 16px;
 }
