@@ -14,10 +14,14 @@ $(document).ready(function() {
 		$(".headertop__menu ul").slideToggle();
 	});
 
-	if(window.matchMedia('(max-width: 768px)').matches) {
-		$('.headertop__menu').insertAfter('.headertop__btn');
-		// $('.video__bg>video').hide();
+	// if(window.matchMedia('(max-width: 768px)').matches) {
+	// 	$('.headertop__menu').insertAfter('.headertop__btn');
 
+	// }
+
+	window.onresize = function(){
+		if(document.documentElement.clientWidth < 786) 
+		$('.headertop__menu').insertAfter('.headertop__btn'); 
 	}
 
 	//Попап менеджер FancyBox
