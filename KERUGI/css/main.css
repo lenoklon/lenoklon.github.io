@@ -334,10 +334,12 @@ footer {
     text-transform: uppercase;
     width: 50%; }
 
-.fancybox-inner {
-  width: 260px !important; }
+	/*.pop_form .fancybox-inner {
+		width: 260px!important;
+	}
 
-.fancybox-wrap {
-  width: 276px !important; }
+	.pop_form .fancybox-wrap.fancybox-desktop.fancybox-type-inline.fancybox-opened {
+		width: 276px!important;
+	}*/
 
 /*# sourceMappingURL=main.css.map */
