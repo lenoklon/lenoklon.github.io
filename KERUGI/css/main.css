@@ -200,8 +200,8 @@ section {
     display: inline-block;
     font-size: 72px;
     font-weight: 500;
-    /*line-height: 45px;*/
-    width: 23%; }
+    vertical-align: top;
+    width: 28%; }
   .awards__list p {
     display: inline-block;
     width: 70%; }

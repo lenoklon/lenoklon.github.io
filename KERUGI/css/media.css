@@ -1,6 +1,9 @@
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 64px; }
+
   .headertop__logo,
   .headertop__btn {
     width: 25%; }
@@ -12,7 +15,22 @@
     font-size: 19px; }
 
   .headertop__menu {
-    width: 50%; } }
+    width: 50%; }
+
+  .awards__list {
+    font-size: 20px; }
+    .awards__list span {
+      font-size: 50px; }
+
+  .awards__item {
+    height: 86px; }
+
+  .content__info p {
+    font-size: 13px;
+    line-height: 21px; }
+
+  .content__info p:nth-child(2) {
+    margin: 0; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .headertop__logo,
