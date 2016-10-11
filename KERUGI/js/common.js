@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	$("video").prop("volume", 0);
+
 	// var w = $(window).width();
 	// if (w<=768) {
 	// 	$('.headertop__menu').insertAfter('.headertop__btn');
