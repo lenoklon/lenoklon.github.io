@@ -28,51 +28,17 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	/*TABS top_header*/
-
-	$(".top_phone .wrapper .tab").click(function() {
-		$(".top_phone .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
-		$(".top_phone .wrapper .tab_item").hide().eq($(this).index()).fadeIn()
-	}).eq(0).addClass("active"); 
-
-	/*TABS tabs_header*/
-	$(".tabs_header .wrapper .tab").click(function() {
-		$(".tabs_header .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
-		$(".tabs_header .wrapper .tab_item").hide().eq($(this).index()).fadeIn()
-	}).eq(0).addClass("active"); 
-
-	/*TABS tabs_contacts*/
-	$(".contacts .tab").click(function() {
-		$(".contacts .tab").removeClass("active").eq($(this).index()).addClass("active");
-		$(".contacts .wrapper .tab_item").hide().eq($(this).index()).fadeIn()
-	}).eq(0).addClass("active"); 
-
-	/*TABS footer_phone*/
-	$(".footer_phone .wrapper .tab").click(function() {
-		$(".footer_phone .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
-		$(".footer_phone .wrapper .tab_item").hide().eq($(this).index()).fadeIn()
-	}).eq(0).addClass("active"); 
-
-
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
 	$(".fancybox").fancybox();
+
+	$("a.group").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false
+	});
 
 		//Magnific Popup Plugin
 	//Documentation: http://dimsemenov.com/plugins/magnific-popup

@@ -62,6 +62,10 @@
 		padding: 2% 0 0 0;
 		width: 40%;
 	}
+
+	footer {
+		text-align: center;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -132,6 +136,19 @@
 
 	.video__bg > video {
 		display: none;
+	}
+
+	.awards__list {
+		font-size: 26px;
+	}
+
+	.content__info {
+		padding: 5%;
+	}
+
+	.content__info p {
+		font-size: 17px;
+		line-height: 23px;
 	}
 
 }
