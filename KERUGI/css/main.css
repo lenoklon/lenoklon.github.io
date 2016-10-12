@@ -267,6 +267,9 @@ section {
     float: left; }
   .news .wrap__feed_comment {
     float: right; }
+    .news .wrap__feed_comment a {
+      color: #000;
+      cursor: pointer; }
   .news .feedback__btn {
     color: #008fcf;
     cursor: pointer;

@@ -343,6 +343,10 @@ section {
 
 	.wrap__feed_comment {
 		float: right;
+		a {
+			color:#000;
+			cursor: pointer;
+		}
 	}
 
 	.feedback__btn {
