@@ -2,14 +2,11 @@ $(document).ready(function() {
 
 	$("video").prop("volume", 0);
 
-	// var w = $(window).width();
-	// if (w<=768) {
-	// 	$('.headertop__menu').insertAfter('.headertop__btn');
-	// }
+
 	if(window.matchMedia('(max-width: 768px)').matches) {
 		$('.headertop__menu ul').hide();
 	}
-
+	
 	$(".main_mnu_button").click(function() {
 		$(".headertop__menu ul").slideToggle();
 	});
@@ -20,8 +17,8 @@ $(document).ready(function() {
 	// }
 
 	window.onresize = function(){
-		if(document.documentElement.clientWidth < 786) 
-		$('.headertop__menu').insertAfter('.headertop__btn'); 
+		if(document.documentElement.clientWidth < 768) 
+			$('.headertop__menu').insertAfter('.headertop__btn'); 
 	}
 
 	//Попап менеджер FancyBox
@@ -58,7 +55,7 @@ $(document).ready(function() {
 
 });
 
-		$(window).load(function() {
+$(window).load(function() {
 	//animate-css.js Plugin. Animate Elements on Scroll
 // 	//Example: $(".element").animated("zoomInUp", "zoomOutDown");
 $(".top_content h1").animated("fadeInDown", "fadeOut");
