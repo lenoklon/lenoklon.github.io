@@ -94,6 +94,7 @@
 	}
 
 	.headertop__menu {
+		margin: auto;
 		padding: 0 13%;
 		width: 100%;
 	}
@@ -108,9 +109,6 @@
 		margin: 0 auto;
 	}
 
-	.headertop__menu {
-		margin: auto;
-	}
 	.headertop__menu_list {
 		position: absolute;
 		left: 50%;
@@ -140,8 +138,12 @@
 	}
 
 	.awards__list {
-		font-size: 26px;
+		font-size: 20px;
+		span {
+			font-size: 50px;
+		}
 	}
+
 
 	.content__info {
 		padding: 5%;
@@ -170,19 +172,19 @@
 	}
 
 
-.headertop__btn {
-	background: url(../img/btn_bg.png) center no-repeat;
-	width: 100%;
-	p {
-		text-align: center;
-		padding: 10px 0 0 0;
+	.headertop__btn {
+		background: url(../img/btn_bg.png) center no-repeat;
+		width: 100%;
+		p {
+			text-align: center;
+			padding: 10px 0 0 0;
+		}
+		.btn_wrap {
+			width: 231px;
+			margin: auto;
+			margin-top: 12px;
+		}
 	}
-	.btn_wrap {
-		width: 231px;
-		margin: auto;
-		margin-top: 12px;
-	}
-}
 
 	.main_mnu_button {
 		padding-top: 20px;
@@ -215,6 +217,11 @@
 	footer {
 		line-height: 13px;
 		padding-top: 38px;
+	}
+
+	.awards__list {
+		margin-left: -2%;
+		width: 95%;
 	}
 
 }

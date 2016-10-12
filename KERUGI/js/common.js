@@ -3,23 +3,34 @@ $(document).ready(function() {
 	$("video").prop("volume", 0);
 
 
-	if(window.matchMedia('(max-width: 768px)').matches) {
-		$('.headertop__menu ul').hide();
-	}
-	
+	// if(window.matchMedia('(max-width: 768px)').matches) {
+	// 	$('.headertop__menu ul').hide();
+	// }
+
 	$(".main_mnu_button").click(function() {
 		$(".headertop__menu ul").slideToggle();
 	});
 
-	// if(window.matchMedia('(max-width: 768px)').matches) {
-	// 	$('.headertop__menu').insertAfter('.headertop__btn');
-
+	// window.onresize = function(){
+	// 	if(document.documentElement.clientWidth < 768) 
+	// 		$('.headertop__menu').insertAfter('.headertop__btn'); 
 	// }
 
 	window.onresize = function(){
-		if(document.documentElement.clientWidth < 768) 
+		if(document.documentElement.clientWidth < 768) { 
 			$('.headertop__menu').insertAfter('.headertop__btn'); 
-	}
+			$('.headertop__menu ul').hide(); 
+			} else {
+				$('.headertop__menu ul').show(); 
+			}}
+
+
+
+
+
+
+
+
 
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto

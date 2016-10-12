@@ -238,14 +238,21 @@ section {
 }
 
 .awards__list {
-	font-family: 'RainTungstenMedium';
+	/*font-family: 'RainTungstenMedium';
 	font-size: 24px;
 	font-weight: 500;
 	list-style-type: none;
 	margin-left: 22%;
 	padding-top: 2%;
-	width: 75%;
-	span {
+	width: 75%;*/
+    font-family: 'RainTungstenMedium';
+    font-size: 24px;
+    font-weight: 500;
+    list-style-type: none;
+    margin-left: 14%;
+    padding-top: 2%;
+    width: 82%;
+    span {
 		display: inline-block;
 		font-size: 72px;
 		font-weight: 500;
@@ -365,6 +372,10 @@ section {
 			display:block;
 		}
 	}
+}
+
+.news_right {
+	float: right;
 }
 
 /****FOOTER****/

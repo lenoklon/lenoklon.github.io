@@ -70,6 +70,7 @@
       padding-left: 22%; }
 
   .headertop__menu {
+    margin: auto;
     padding: 0 13%;
     width: 100%; }
 
@@ -80,9 +81,6 @@
     padding-top: 20px;
     display: block;
     margin: 0 auto; }
-
-  .headertop__menu {
-    margin: auto; }
 
   .headertop__menu_list {
     position: absolute;
@@ -111,7 +109,9 @@
     display: none; }
 
   .awards__list {
-    font-size: 26px; }
+    font-size: 20px; }
+    .awards__list span {
+      font-size: 50px; }
 
   .content__info {
     padding: 5%; }
@@ -161,6 +161,10 @@
 
   footer {
     line-height: 13px;
-    padding-top: 38px; } }
+    padding-top: 38px; }
+
+  .awards__list {
+    margin-left: -2%;
+    width: 95%; } }
 
 /*# sourceMappingURL=media.css.map */
