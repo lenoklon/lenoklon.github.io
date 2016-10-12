@@ -71,7 +71,12 @@
 
   .vacancy h2 {
     padding: 17% 0 0 0;
-    text-align: center; } }
+    text-align: center; }
+
+  .train__wrap {
+    margin: auto;
+    margin-bottom: 15%;
+    width: 74%; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .headertop__wrap {
@@ -143,11 +148,21 @@
     line-height: 23px; }
 
   .vacancy h2 {
-    padding: 22% 0 0 0; } }
+    padding: 22% 0 0 0; }
+
+  .train__wrap {
+    width: 39%; }
+
+  .trainers h4 {
+    font-size: 40px;
+    margin-top: 0; } }
 @media only screen and (max-width: 660px) {
   .hr_contacts {
     font-size: 14px;
-    right: 22%; } }
+    right: 22%; }
+
+  .train__wrap {
+    width: 56%; } }
 @media only screen and (max-width: 530px) {
   .hr_descr {
     display: none; }
@@ -157,7 +172,10 @@
     right: 50%; }
 
   .vacancy h2 {
-    padding: 27% 0 0 0; } }
+    padding: 27% 0 0 0; }
+
+  .train__wrap {
+    width: 56%; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .headertop__logo {
@@ -172,7 +190,7 @@
     .headertop__btn .btn_wrap {
       width: 231px;
       margin: auto;
-      margin-top: 12px; }
+      margin-top: 23px; }
 
   .main_mnu_button {
     padding-top: 20px;

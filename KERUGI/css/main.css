@@ -132,10 +132,11 @@ p {
       font-size: 24px; }
   .headertop__btn .btn_wrap {
     width: 231px;
-    margin-top: 25px; }
+    line-height: 22px;
+    margin-top: 33px; }
   .headertop__btn .button {
     color: #fff;
-    font-size: 27px;
+    font-size: 25px;
     text-align: center;
     -webkit-transition: all .5s;
             transition: all .5s;
@@ -423,12 +424,6 @@ footer {
 
 .vacancy__item {
   border-bottom: 2px solid #d61a2c; }
-  .vacancy__item h3 {
-    font-family: 'RainTungstenMedium';
-    font-size: 40px;
-    color: #000;
-    margin: 0;
-    padding: 0 0 43px 0; }
   .vacancy__item ul {
     list-style: none;
     font-weight: bold;
@@ -436,5 +431,55 @@ footer {
     margin: 0; }
   .vacancy__item li {
     font-weight: normal; }
+
+.vacancy__item h3,
+.trainers h3 {
+  font-family: 'RainTungstenMedium';
+  font-size: 40px;
+  color: #000;
+  margin: 0;
+  padding: 0 0 43px 0; }
+
+/*--------------TRAINERS------------------*/
+.trainers {
+  background: url("../img/olympic.png") no-repeat;
+  background-size: cover;
+  font-family: 'RainTungstenMedium';
+  padding-bottom: 50px; }
+  .trainers h3 {
+    font-size: 60px;
+    color: #008fcf;
+    text-align: center;
+    font-weight: normal; }
+  .trainers h4 {
+    color: #000;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center; }
+
+.train__wrap {
+  background-color: #008fcf;
+  position: relative;
+  height: 262px;
+  margin-bottom: 46px; }
+  .train__wrap img {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    z-index: 1; }
+  .train__wrap a {
+    cursor: pointer; }
+  .train__wrap .train__stripe {
+    background: url(../img/trainer_stripe.png) no-repeat;
+    color: #fff;
+    font-size: 24px;
+    line-height: 64px;
+    height: 64px;
+    position: absolute;
+    text-align: center;
+    bottom: 7px;
+    right: -20px;
+    z-index: 10;
+    width: 298px; }
 
 /*# sourceMappingURL=main.css.map */

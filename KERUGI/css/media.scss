@@ -93,6 +93,12 @@
 		padding: 17% 0 0 0;
 		text-align: center;
 	}
+
+	.train__wrap {
+		margin: auto;
+		margin-bottom: 15%;
+		width: 74%;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -185,12 +191,25 @@
 		padding: 22% 0 0 0;
 	}
 
+	.train__wrap {
+		width: 39%;
+	}
+
+	.trainers h4 {
+		font-size: 40px;
+		margin-top:0;
+	}
+
 }
 
 @media only screen and (max-width:660px) {
 	.hr_contacts {
 		font-size: 14px;
 		right: 22%;
+	}
+
+	.train__wrap {
+		width: 56%;
 	}
 }
 
@@ -206,6 +225,10 @@
 
 	.vacancy h2 {
 		padding: 27% 0 0 0;
+	}
+
+	.train__wrap {
+		width: 56%;
 	}
 
 }
@@ -227,7 +250,7 @@
 		.btn_wrap {
 			width: 231px;
 			margin: auto;
-			margin-top: 12px;
+			margin-top: 23px;
 		}
 	}
 
