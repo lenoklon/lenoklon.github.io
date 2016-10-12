@@ -76,7 +76,10 @@
   .train__wrap {
     margin: auto;
     margin-bottom: 15%;
-    width: 74%; } }
+    width: 74%; }
+
+  .news_right {
+    float: none; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .headertop__wrap {
