@@ -36,10 +36,10 @@ body {
   display: table;
   height: 100%; }
 
-footer {
-  display: table-row;
-  height: 100%; }
-
+/*footer{
+	display: table-row;
+	height: 100%;
+}*/
 body {
   color: #fff;
   font-family: 'RainTungstenMedium', sans-serif;
@@ -199,13 +199,6 @@ section {
   height: 683px; }
 
 .awards__list {
-  /*font-family: 'RainTungstenMedium';
-  font-size: 24px;
-  font-weight: 500;
-  list-style-type: none;
-  margin-left: 22%;
-  padding-top: 2%;
-  width: 75%;*/
   font-family: 'RainTungstenMedium';
   font-size: 24px;
   font-weight: 500;
@@ -306,6 +299,14 @@ section {
 .news_right {
   float: right; }
 
+/*.news .row:nth-child(odd) .col-md-6:nth-child(1) { 
+float: right; 
+} 
+
+.news .row:nth-child(even) .col-md-6:nth-child(1) { 
+float: left; 
+}
+.news h3 { display: inline-table }*/
 /****FOOTER****/
 footer {
   background: url("../img/footer.png") bottom center no-repeat;
