@@ -67,7 +67,11 @@
   .hr_contacts {
     line-height: 29px;
     font-size: 14px;
-    right: 33%; } }
+    right: 33%; }
+
+  .vacancy h2 {
+    padding: 17% 0 0 0;
+    text-align: center; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .headertop__wrap {
@@ -136,7 +140,10 @@
 
   .content__info p {
     font-size: 17px;
-    line-height: 23px; } }
+    line-height: 23px; }
+
+  .vacancy h2 {
+    padding: 22% 0 0 0; } }
 @media only screen and (max-width: 660px) {
   .hr_contacts {
     font-size: 14px;
@@ -147,7 +154,10 @@
 
   .hr_contacts {
     font-size: 18px;
-    right: 50%; } }
+    right: 50%; }
+
+  .vacancy h2 {
+    padding: 27% 0 0 0; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .headertop__logo {
@@ -203,6 +213,9 @@
   footer {
     line-height: 30px; }
     footer p {
-      padding: 24px 0 0 0; } }
+      padding: 24px 0 0 0; }
+
+  .vacancy h2 {
+    padding: 34% 0 0 0; } }
 
 /*# sourceMappingURL=media.css.map */

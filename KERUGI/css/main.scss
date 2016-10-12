@@ -401,6 +401,7 @@ footer {
 	height: 85px;
 	line-height: 85px;
 	text-align: left;
+	width: 100%;
 }
 
 .footer__rights {
@@ -456,9 +457,18 @@ footer {
 
 /*------------VACANSIES-------------*/
 .vacancy {
+	background: url('../img/olympic.png') no-repeat;
+	background-size: cover;
 	position: relative;
-	padding: 0;
+	padding: 0 0 40px 0;
 	margin: -37px 0 0 0;
+	h2 {
+		padding: 2% 0 0 0;
+		font-size: 60px;
+		font-weight: normal;
+		font-family: 'RainTungstenMedium';
+		color:$blue;
+	}
 }
 
 .hr {
@@ -466,7 +476,7 @@ footer {
 	top: 0;
 	font-family: 'open_sansregular';
 	color:#fff;
-	background: url('../img/vacans_stripe.jpg') no-repeat;
+	background: url('../img/vacans_stripe.png') no-repeat;
 	height: 157px;
 	width: 100%;
 }
@@ -498,4 +508,36 @@ footer {
 	transform: translate(50%, 50%);
 	right: 25%;
 	top: 28%;
+}
+
+		/****VACANCY_ITEM****/
+.item__wrap {
+	color:#000;
+	font-size: 16px;
+	font-family: 'open_sansregular';
+	line-height: 36px;
+	padding-bottom: 18px;
+}
+.item_border {
+	border-bottom: 2px solid $blue_border;
+}
+.vacancy__item {
+	border-bottom: 2px solid $red_border;
+	h3 {
+		font-family: 'RainTungstenMedium';
+		font-size: 40px;
+		color:#000;
+		margin: 0;
+		padding: 0 0 43px 0;
+	}
+	ul {
+		list-style: none;
+		font-weight: bold;
+		padding-bottom: 42px;
+		margin: 0;
+	}
+
+	li {
+		font-weight: normal;
+	}
 }

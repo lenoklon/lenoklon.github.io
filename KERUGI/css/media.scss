@@ -88,6 +88,11 @@
 		font-size: 14px;
 		right: 33%;
 	}
+
+	.vacancy h2 {
+		padding: 17% 0 0 0;
+		text-align: center;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -176,6 +181,10 @@
 		line-height: 23px;
 	}
 
+	.vacancy h2 {
+		padding: 22% 0 0 0;
+	}
+
 }
 
 @media only screen and (max-width:660px) {
@@ -193,6 +202,10 @@
 	.hr_contacts {
 		font-size: 18px;
 		right: 50%;
+	}
+
+	.vacancy h2 {
+		padding: 27% 0 0 0;
 	}
 
 }
@@ -266,6 +279,10 @@
 		p {
 			padding:24px 0 0 0;
 		}
+	}
+
+	.vacancy h2 {
+		padding: 34% 0 0 0;
 	}
 
 }
