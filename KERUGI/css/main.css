@@ -39,7 +39,7 @@ body {
 /*footer{
 	display: table-row;
 	height: 100%;
-}*/
+	}*/
 body {
   color: #fff;
   font-family: 'RainTungstenMedium', sans-serif;
@@ -72,6 +72,9 @@ p {
 
 .hidden {
   display: none; }
+
+.p_null {
+  padding: 0; }
 
 /***********HEADER***********/
 .headertop__wrap {
@@ -299,14 +302,6 @@ section {
 .news_right {
   float: right; }
 
-/*.news .row:nth-child(odd) .col-md-6:nth-child(1) { 
-float: right; 
-} 
-
-.news .row:nth-child(even) .col-md-6:nth-child(1) { 
-float: left; 
-}
-.news h3 { display: inline-table }*/
 /****FOOTER****/
 footer {
   background: url("../img/footer.png") bottom center no-repeat;
@@ -434,7 +429,8 @@ footer {
     font-weight: normal; }
 
 .vacancy__item h3,
-.trainers h3 {
+.trainers h3,
+.description h3 {
   font-family: 'RainTungstenMedium';
   font-size: 40px;
   color: #000;
@@ -482,5 +478,141 @@ footer {
     right: -20px;
     z-index: 10;
     width: 298px; }
+
+/****DESCRIPTION****/
+.description {
+  background: url("../img/olympic.png") no-repeat;
+  background-size: cover;
+  color: #000;
+  font-size: 16px;
+  font-family: 'open_sansregular';
+  text-align: left; }
+  .description h3 {
+    font-size: 60px;
+    color: #008fcf;
+    text-align: center;
+    font-weight: normal; }
+  .description h4 {
+    font-family: 'RainTungstenMedium';
+    color: #008fcf;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 70px 0; }
+  .description .train__wrap {
+    width: 90%; }
+  .description .train__stripe {
+    font-size: 15px;
+    font-weight: bold; }
+
+.feedback_item {
+  margin-bottom: 55px; }
+
+.feedback_wrap {
+  line-height: 28px;
+  border-bottom: 2px solid #008cce; }
+  .feedback_wrap h4 {
+    color: #000;
+    text-align: left;
+    margin: 0 0 27px 0; }
+
+.feedback_wrap_item {
+  border-bottom: 2px solid #d61a2c;
+  padding: 0 0 28px 0; }
+  .feedback_wrap_item h3 {
+    color: #000; }
+
+.feedback_photo {
+  background: #008fcf; }
+  .feedback_photo img {
+    margin: -10px 0 10px -5px; }
+
+.wrap__feed_date {
+  padding-top: 45px; }
+
+.feed_right {
+  float: right; }
+
+.train__description {
+  background: url("../img/trainer_stripe_bg.png") no-repeat;
+  height: 438px;
+  margin-top: -3%; }
+  .train__description .descr__list {
+    list-style-type: none;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'RainTungstenMedium';
+    padding: 22px 0 0 22px;
+    width: 80%; }
+  .train__description .descr__item {
+    border: 1px solid #73b9db;
+    padding: 13px 0 13px 22px;
+    -webkit-transition: all .5s;
+            transition: all .5s; }
+    .train__description .descr__item:before {
+      background: url("../img/triangle.png") 0 0 no-repeat;
+      content: '';
+      display: inline-block;
+      height: 14px;
+      margin-right: 22px;
+      width: 27px; }
+    .train__description .descr__item:hover {
+      background: #73b9db; }
+
+.trainer_apply form {
+  border: 4px solid #0084c0;
+  margin-bottom: 50px;
+  padding: 28px;
+  position: relative; }
+  .trainer_apply form img {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    z-index: 20; }
+  .trainer_apply form h3 {
+    color: #008fcf;
+    font-size: 48px;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 34px; }
+  .trainer_apply form input, .trainer_apply form .search, .trainer_apply form textarea {
+    font-size: 16px;
+    font-family: 'open_sansregular';
+    border: 3px solid #0084c0;
+    display: inline-block;
+    margin: 0 23px 0 0;
+    outline: none;
+    padding: 15px 0 15px 15px;
+    width: 35%;
+    -webkit-appearance: none; }
+  .trainer_apply form textarea {
+    border: 3px solid #0084c0;
+    display: block;
+    margin: 25px 0;
+    min-height: 82px;
+    width: 90%; }
+  .trainer_apply form .search {
+    height: 54px; }
+  .trainer_apply form input[type="search"] {
+    border: none;
+    vertical-align: middle;
+    padding: 0;
+    width: 68%; }
+  .trainer_apply form input[type="submit"] {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: url("../img/search_icon.png") no-repeat; }
+  .trainer_apply form .submit {
+    background: url("../img/form_btn.png") no-repeat;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: 'RainTungstenMedium';
+    font-size: 27px;
+    height: 77px;
+    line-height: 77px;
+    text-align: center;
+    width: 225px; }
 
 /*# sourceMappingURL=main.css.map */

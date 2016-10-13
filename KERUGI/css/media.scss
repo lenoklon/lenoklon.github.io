@@ -103,6 +103,49 @@
 	.news_right {
 		float:none;
 	}
+
+	.feed_right {
+		float: none;
+	}
+
+	.feedback_photo {
+		background: #008fcf;
+		margin:auto;
+		width: 77%;
+	}
+
+	.feedback_wrap h4 {
+		text-align: center;
+	}
+
+	.train__description {
+		margin-top: -7%;
+	}
+
+	.trainer_apply form{
+		input, .search, textarea {
+			display: block;
+			margin: 10px 23px 0 0;
+			padding: 9px 0 9px 15px;
+			width: 90%;
+		}
+		input[type="submit"] {
+			display: inline-block;
+			float: right;
+
+		}
+
+		input[type="search"] {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.submit {
+			margin: 10px auto;
+		}
+	}
+
+
 }
 
 /* Small Devices, Tablets */
@@ -202,6 +245,10 @@
 	.trainers h4 {
 		font-size: 40px;
 		margin-top:0;
+	}
+
+	.description .train__wrap {
+		width: 42%;
 	}
 
 }
