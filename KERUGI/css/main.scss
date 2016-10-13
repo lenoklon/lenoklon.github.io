@@ -409,90 +409,6 @@ body {
 		font-size: 16px;
 	}
 
-	/****POP_UP - HIDDEN****/
-	.pop_form {
-		text-align: center;
-		h3 {
-			padding-left: 63px;
-			text-align: left;
-			font-size: 24px;
-			color: $blue;
-			margin: 0;
-		}
-		p {
-			font-size: 17px;
-			padding: 0 0 5px 62px;
-			text-align: left;
-		}
-		input, select {
-			border: 2px solid $blue;
-			font-size: 17px;
-			letter-spacing: 0.9px;
-			width: 73%;
-			padding: 2% 2%;
-			margin: 4%;
-			color:#000;
-		}
-		select {
-			color:$blue;
-		}
-		.help {
-			font-weight: 700;
-			text-align: center;
-			padding: 10px 0 5px 0;
-		}
-
-		.button {
-			border-radius: 7px;
-			background: red;
-			color: #fff;
-			font-family: 'open_sansregular';
-			display: block;
-			padding: 9px;
-			margin-bottom: 20px;
-			margin: 0 auto;
-			text-transform: uppercase;
-			width: 50%;
-		}
-		.champion {
-			border: 8px solid #d61a2c;
-			display: block;
-			margin: auto;
-			padding: 10px;
-			width: 73%;
-			p {
-				text-align: center;
-				padding: 0;
-				font-size: 20px;
-				font-weight: bold;
-				text-transform: uppercase;
-			}
-			.submit {
-				opacity: 0.8;
-			}
-			select {
-				width: 82%;
-			}
-		}
-
-		.fancybox-inner {
-			height: 0;
-		}
-
-		.submit {
-			background: url('../img/form_btn.png') no-repeat;
-			color:#fff;
-			cursor: pointer;
-			display: block;
-			font-family: 'RainTungstenMedium';
-			font-size: 23px;
-			height: 77px;
-			line-height: 77px;
-			margin:10px auto;
-			text-align: center;
-			width: 225px;
-		}
-	}
 
 	/*------------VACANSIES-------------*/
 	.vacancy {
@@ -801,3 +717,89 @@ body {
 		}
 	}
 
+	/****POP_UP - HIDDEN****/
+	.fancybox-inner {
+		height: auto !important;
+	}
+	.hidden {
+	}
+	.pop_form {
+		text-align: center;
+		h3 {
+			padding-left: 63px;
+			text-align: left;
+			font-size: 24px;
+			color: $blue;
+			margin: 0;
+		}
+		p {
+			font-size: 17px;
+			padding: 0 0 5px 62px;
+			text-align: left;
+		}
+		input, select {
+			border: 2px solid $blue;
+			font-size: 17px;
+			letter-spacing: 0.9px;
+			width: 73%;
+			padding: 2% 2%;
+			margin: 4%;
+			color:#000;
+		}
+		select {
+			color:$blue;
+		}
+		.help {
+			font-weight: 700;
+			text-align: center;
+			padding: 10px 0 5px 0;
+		}
+
+		.button {
+			border-radius: 7px;
+			background: red;
+			color: #fff;
+			font-family: 'open_sansregular';
+			display: block;
+			padding: 9px;
+			margin-bottom: 20px;
+			margin: 0 auto;
+			text-transform: uppercase;
+			width: 50%;
+		}
+		.champion {
+			border: 8px solid #d61a2c;
+			display: block;
+			margin: auto;
+			padding: 10px;
+			width: 73%;
+			p {
+				text-align: center;
+				padding: 0;
+				font-size: 20px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			.submit {
+				opacity: 0.8;
+			}
+			select {
+				width: 82%;
+			}
+		}
+ 
+
+		.submit {
+			background: url('../img/form_btn.png') no-repeat;
+			color:#fff;
+			cursor: pointer;
+			display: block;
+			font-family: 'RainTungstenMedium';
+			font-size: 23px;
+			height: 77px;
+			line-height: 77px;
+			margin:10px auto;
+			text-align: center;
+			width: 225px;
+		}
+	}

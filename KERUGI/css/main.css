@@ -318,75 +318,6 @@ footer {
   font-family: Exo2 0;
   font-size: 16px; }
 
-/****POP_UP - HIDDEN****/
-.pop_form {
-  text-align: center; }
-  .pop_form h3 {
-    padding-left: 63px;
-    text-align: left;
-    font-size: 24px;
-    color: #008fcf;
-    margin: 0; }
-  .pop_form p {
-    font-size: 17px;
-    padding: 0 0 5px 62px;
-    text-align: left; }
-  .pop_form input, .pop_form select {
-    border: 2px solid #008fcf;
-    font-size: 17px;
-    letter-spacing: 0.9px;
-    width: 73%;
-    padding: 2% 2%;
-    margin: 4%;
-    color: #000; }
-  .pop_form select {
-    color: #008fcf; }
-  .pop_form .help {
-    font-weight: 700;
-    text-align: center;
-    padding: 10px 0 5px 0; }
-  .pop_form .button {
-    border-radius: 7px;
-    background: red;
-    color: #fff;
-    font-family: 'open_sansregular';
-    display: block;
-    padding: 9px;
-    margin-bottom: 20px;
-    margin: 0 auto;
-    text-transform: uppercase;
-    width: 50%; }
-  .pop_form .champion {
-    border: 8px solid #d61a2c;
-    display: block;
-    margin: auto;
-    padding: 10px;
-    width: 73%; }
-    .pop_form .champion p {
-      text-align: center;
-      padding: 0;
-      font-size: 20px;
-      font-weight: bold;
-      text-transform: uppercase; }
-    .pop_form .champion .submit {
-      opacity: 0.8; }
-    .pop_form .champion select {
-      width: 82%; }
-  .pop_form .fancybox-inner {
-    height: 0; }
-  .pop_form .submit {
-    background: url("../img/form_btn.png") no-repeat;
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    font-family: 'RainTungstenMedium';
-    font-size: 23px;
-    height: 77px;
-    line-height: 77px;
-    margin: 10px auto;
-    text-align: center;
-    width: 225px; }
-
 /*------------VACANSIES-------------*/
 .vacancy {
   background: url("../img/olympic.png") no-repeat;
@@ -644,6 +575,76 @@ footer {
     font-size: 27px;
     height: 77px;
     line-height: 77px;
+    text-align: center;
+    width: 225px; }
+
+/****POP_UP - HIDDEN****/
+.fancybox-inner {
+  height: auto !important; }
+
+.pop_form {
+  text-align: center; }
+  .pop_form h3 {
+    padding-left: 63px;
+    text-align: left;
+    font-size: 24px;
+    color: #008fcf;
+    margin: 0; }
+  .pop_form p {
+    font-size: 17px;
+    padding: 0 0 5px 62px;
+    text-align: left; }
+  .pop_form input, .pop_form select {
+    border: 2px solid #008fcf;
+    font-size: 17px;
+    letter-spacing: 0.9px;
+    width: 73%;
+    padding: 2% 2%;
+    margin: 4%;
+    color: #000; }
+  .pop_form select {
+    color: #008fcf; }
+  .pop_form .help {
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0 5px 0; }
+  .pop_form .button {
+    border-radius: 7px;
+    background: red;
+    color: #fff;
+    font-family: 'open_sansregular';
+    display: block;
+    padding: 9px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    width: 50%; }
+  .pop_form .champion {
+    border: 8px solid #d61a2c;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 73%; }
+    .pop_form .champion p {
+      text-align: center;
+      padding: 0;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .pop_form .champion .submit {
+      opacity: 0.8; }
+    .pop_form .champion select {
+      width: 82%; }
+  .pop_form .submit {
+    background: url("../img/form_btn.png") no-repeat;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: 'RainTungstenMedium';
+    font-size: 23px;
+    height: 77px;
+    line-height: 77px;
+    margin: 10px auto;
     text-align: center;
     width: 225px; }
 
