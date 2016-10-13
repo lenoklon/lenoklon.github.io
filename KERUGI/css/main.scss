@@ -717,6 +717,13 @@ body {
 		}
 	}
 
+	/*-------------MAP---------------*/
+	.map {
+		padding: 5% 0 0 0;
+		margin-top: -81px;
+		background: #d4e5ce;
+	}
+
 	/****POP_UP - HIDDEN****/
 	.fancybox-inner {
 		height: auto !important;
@@ -787,7 +794,7 @@ body {
 				width: 82%;
 			}
 		}
- 
+
 
 		.submit {
 			background: url('../img/form_btn.png') no-repeat;
