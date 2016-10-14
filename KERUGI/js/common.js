@@ -20,6 +20,7 @@ $(document).ready(function() {
 
 	window.onresize = function(){
 		if(document.documentElement.clientWidth < 768) { 
+			
 			$('.headertop__menu').insertAfter('.headertop__btn'); 
 			$('.headertop__menu ul').hide(); 
 		} else {
@@ -46,11 +47,6 @@ $(document).ready(function() {
 		'overlayShow'	:	false
 	});
 
-		//Magnific Popup Plugin
-	//Documentation: http://dimsemenov.com/plugins/magnific-popup
-	$(".popup").magnificPopup({type:"image"});
-	// $(".popup_c").magnificPopup();
-
 	// Аякс отправка форм
 	// Документация: http://api.jquery.com/jquery.ajax/
 	$("form").submit(function() {
@@ -74,7 +70,13 @@ $(window).load(function() {
 // $(".content__awards").animated("fadeInUp", "fadeOut");
 // $(".tabs_header .wrapper").animated("flipInY", "fadeOut");
 // $(".profi_item").animated("fadeInRight", "fadeOut");
-
+$("li.awards__item").animated("fadeInRight", "fadeOut");
+$("h2, h3").animated("fadeInRight", "fadeOut");
+$("h1").animated("fadeInUp", "fadeOut");
+$(".content__info p").animated("fadeInRight", "fadeOut");
+$(".descr__item").animated("fadeInRight", "fadeOut");
+$(".trainer_apply form").animated("fadeInRight", "fadeOut");
+$("h4").animated("flipInY", "fadeOut");
 
 // $(".content__info h1").animated("zoomInRight", "fadeOut");
 // $(".verbesser p").animated("fadeInUp", "fadeOut");
