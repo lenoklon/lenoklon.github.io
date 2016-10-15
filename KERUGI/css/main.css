@@ -580,7 +580,6 @@ footer {
 
 /*-------------MAP---------------*/
 .map {
-  display: none;
   padding: 5% 0 0 0;
   margin-top: -81px;
   background: #d4e5ce; }
