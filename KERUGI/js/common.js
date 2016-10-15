@@ -65,21 +65,11 @@ $(document).ready(function() {
 });
 
 $(window).load(function() {
-	//animate-css.js Plugin. Animate Elements on Scroll
-// 	//Example: $(".element").animated("zoomInUp", "zoomOutDown");
-// $(".content__awards").animated("fadeInUp", "fadeOut");
-// $(".tabs_header .wrapper").animated("flipInY", "fadeOut");
-// $(".profi_item").animated("fadeInRight", "fadeOut");
-$("li.awards__item").animated("fadeInRight", "fadeOut");
-$("h2, h3").animated("fadeInRight", "fadeOut");
-$("h1").animated("fadeInUp", "fadeOut");
-$(".content__info p").animated("fadeInRight", "fadeOut");
-$(".descr__item").animated("fadeInRight", "fadeOut");
-$(".trainer_apply form").animated("fadeInRight", "fadeOut");
-$("h4").animated("flipInY", "fadeOut");
-
-// $(".content__info h1").animated("zoomInRight", "fadeOut");
-// $(".verbesser p").animated("fadeInUp", "fadeOut");
-// $("footer").animated("fadeIn", "fadeOut");
-// $("section h2, footer h2, .contacts_top .tabs").animated("fadeInUp", "fadeOut");
+	$("li.awards__item").animated("fadeInRight", "fadeOut");
+	$("h2, h3").animated("fadeInRight", "fadeOut");
+	$("h1").animated("fadeInUp", "fadeOut");
+	$(".content__info p").animated("fadeInRight", "fadeOut");
+	$(".descr__item").animated("fadeInRight", "fadeOut");
+	$(".trainer_apply form").animated("fadeInRight", "fadeOut");
+	$("h4").animated("flipInY", "fadeOut");
 });

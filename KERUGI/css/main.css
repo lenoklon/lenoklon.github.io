@@ -584,6 +584,42 @@ footer {
   margin-top: -81px;
   background: #d4e5ce; }
 
+.map_window .flag {
+  border: none;
+  box-shadow: 9px 9px 9px -5px #b0a0b0;
+  color: #000;
+  margin: 25px auto 50px auto;
+  position: relative;
+  width: 38%; }
+  .map_window .flag .img_stripe {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    z-index: 20; }
+  .map_window .flag .flag__content_logo,
+  .map_window .flag .flag__content_address,
+  .map_window .flag .flag__schedule_item {
+    display: inline-block; }
+  .map_window .flag .flag__content_address {
+    margin-left: 22px;
+    line-height: 21px; }
+  .map_window .flag .flag__schedule {
+    line-height: 21px;
+    margin: 20px 0; }
+  .map_window .flag .flag__schedule_item {
+    margin-right: 43px; }
+    .map_window .flag .flag__schedule_item strong {
+      font-size: 16px; }
+  .map_window .flag .flag__name {
+    color: #008fcf;
+    font-weight: bold; }
+  .map_window .flag .header__btn_flag {
+    text-align: center;
+    margin: 0 0 25px 0;
+    width: 76%; }
+  .map_window .flag .btn_wrap_flag {
+    margin-top: 69px; }
+
 /****POP_UP - HIDDEN****/
 .fancybox-inner {
   height: auto !important; }
