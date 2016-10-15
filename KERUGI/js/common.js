@@ -25,7 +25,8 @@ $(document).ready(function() {
 			$('.headertop__menu ul').hide(); 
 		} else {
 			$('.headertop__menu ul').show(); 
-		}}
+		}
+	}
 
 
 

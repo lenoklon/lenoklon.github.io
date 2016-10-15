@@ -719,6 +719,7 @@ body {
 
 	/*-------------MAP---------------*/
 	.map {
+		display: none;
 		padding: 5% 0 0 0;
 		margin-top: -81px;
 		background: #d4e5ce;
@@ -745,10 +746,23 @@ body {
 			.flag__schedule_item {
 				display: inline-block;
 			}
-
+			.flag__content {
+				position: relative;
+				.close {
+					color: #d31727;
+					cursor: pointer;
+					display: inline-block;
+					font-size: 26px;
+					position: absolute;
+					top: -13px;
+					right: 0px;
+				}
+			}
 			.flag__content_address {
-				margin-left: 22px;
+				font-size: 20px;
 				line-height: 21px;
+				margin-left: 22px;
+
 			}
 
 			.flag__schedule {
