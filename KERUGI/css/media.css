@@ -189,7 +189,10 @@
     margin-top: 0; }
 
   .description .train__wrap {
-    width: 42%; } }
+    width: 42%; }
+
+  .headertop__menu ul {
+    display: none; } }
 @media only screen and (max-width: 660px) {
   .hr_contacts {
     font-size: 14px;

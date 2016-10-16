@@ -2,23 +2,10 @@ $(document).ready(function() {
 
 	$("video").prop("volume", 0);
 
-			/*mobile - menu - hide*/
-	// if(document.documentElement.clientWidth < 768) { 
-	// 	$('.headertop__menu').insertAfter('.headertop__btn'); 
-	// 	$('.headertop__menu ul').hide(); 
-	// } else {
-	// 	$('.headertop__menu ul').show(); 
-	// }
-	
-
 	$(".main_mnu_button").click(function() {
 		$(".headertop__menu ul").slideToggle();
 	});
 
-	// window.onresize = function(){
-	// 	if(document.documentElement.clientWidth < 768) 
-	// 		$('.headertop__menu').insertAfter('.headertop__btn'); 
-	// }
 
 	window.onresize = function(){
 		if(document.documentElement.clientWidth < 768) { 
@@ -65,5 +52,5 @@ $(window).load(function() {
 	$(".content__info p").animated("fadeInRight", "fadeOut");
 	$(".descr__item").animated("fadeInRight", "fadeOut");
 	$(".trainer_apply form").animated("fadeInRight", "fadeOut");
-	$("h4").animated("flipInY", "fadeOut");
+	$(".trainers h4").animated("flipInY", "fadeOut");
 });

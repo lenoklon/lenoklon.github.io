@@ -255,7 +255,8 @@ section {
     color: #008fcf;
     margin-top: 0; }
   .news h3 {
-    font-size: 40px; }
+    font-size: 40px;
+    margin: 18px 0 33px 0; }
   .news .news__content {
     font-family: 'open_sansregular';
     font-size: 16px;
@@ -268,7 +269,7 @@ section {
   .news .wrap__feedback {
     font-size: 16px;
     font-family: 'open_sansregular';
-    padding: 47px 10px 0 10px; }
+    padding: 9px 10px 0 10px; }
   .news .wrap__feed_date {
     float: left; }
   .news .wrap__feed_comment {
@@ -491,7 +492,7 @@ footer {
     margin: -10px 0 10px -5px; }
 
 .wrap__feed_date {
-  padding-top: 45px; }
+  padding-top: 22px; }
 
 .feed_right {
   float: right; }
@@ -582,7 +583,7 @@ footer {
 #map {
   padding: 5% 0 0 0;
   margin-top: -81px;
-  background: #d4e5ce; }
+  background: #f4f0d3; }
 
 .map_window .flag {
   border: none;
