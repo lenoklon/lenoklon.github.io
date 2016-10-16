@@ -604,7 +604,8 @@ footer {
   .map_window .flag .flag__schedule_item {
     display: inline-block; }
   .map_window .flag .flag__content {
-    position: relative; }
+    position: relative;
+    z-index: 2000; }
     .map_window .flag .flag__content .close {
       color: #d31727;
       cursor: pointer;

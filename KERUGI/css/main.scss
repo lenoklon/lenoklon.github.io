@@ -750,6 +750,7 @@ body {
 			}
 			.flag__content {
 				position: relative;
+				z-index: 2000;
 				.close {
 					color: #d31727;
 					cursor: pointer;
