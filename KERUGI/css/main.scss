@@ -718,7 +718,7 @@ body {
 	}
 
 	/*-------------MAP---------------*/
-	.map {
+	#map {
 		padding: 5% 0 0 0;
 		margin-top: -81px;
 		background: #d4e5ce;
@@ -727,12 +727,14 @@ body {
 	.map_window {
 		.flag {
 			border: none;
+			background: #fff;
 			-webkit-box-shadow: 9px 9px 9px -5px rgba(176,160,176,1);
 			-moz-box-shadow: 9px 9px 9px -5px rgba(176,160,176,1);
 			box-shadow: 9px 9px 9px -5px rgba(176,160,176,1);
 			color:#000;
 			margin: 25px auto 50px auto;
 			position: relative;
+			padding: 2px 0 0 20px;
 			width: 400px;
 			.img_stripe {
 				position: absolute;
@@ -755,6 +757,7 @@ body {
 					position: absolute;
 					top: -13px;
 					right: 0px;
+					z-index: 100;
 				}
 			}
 			.flag__content_address {

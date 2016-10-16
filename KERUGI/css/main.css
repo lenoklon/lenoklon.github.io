@@ -579,17 +579,19 @@ footer {
     width: 225px; }
 
 /*-------------MAP---------------*/
-.map {
+#map {
   padding: 5% 0 0 0;
   margin-top: -81px;
   background: #d4e5ce; }
 
 .map_window .flag {
   border: none;
+  background: #fff;
   box-shadow: 9px 9px 9px -5px #b0a0b0;
   color: #000;
   margin: 25px auto 50px auto;
   position: relative;
+  padding: 2px 0 0 20px;
   width: 400px; }
   .map_window .flag .img_stripe {
     position: absolute;
@@ -609,7 +611,8 @@ footer {
       font-size: 26px;
       position: absolute;
       top: -13px;
-      right: 0px; }
+      right: 0px;
+      z-index: 100; }
   .map_window .flag .flag__content_address {
     font-size: 20px;
     line-height: 21px;
