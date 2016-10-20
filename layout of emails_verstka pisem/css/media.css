@@ -1,0 +1,28 @@
+@media only screen and (max-width : 768px) {
+	.email-content {
+		width: 83%;
+	}
+
+	.email-advantage-item {
+		margin: 0 0 40px 0;
+		width: 45%;
+	}
+
+	.email-text {
+		line-height: 23px;
+		padding: 10px;
+	}
+
+	.email-products-item {
+		margin: auto;
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	.email-advantage-item {
+		width: 70%;
+	}
+}
+
+
