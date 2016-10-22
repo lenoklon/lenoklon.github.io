@@ -6,15 +6,15 @@ $(document).ready(function() {
 		$(".headertop__menu ul").slideToggle();
 	});
 
-
-	window.onresize = function(){
-		if(document.documentElement.clientWidth < 768) {
-			$('.headertop__menu').insertAfter('.headertop__btn');
-			$('.headertop__menu ul').hide();
-		} else {
-			$('.headertop__menu ul').show();
-		}
+	if(document.documentElement.clientWidth < 768) {
+		$('.headertop__menu').insertAfter('.headertop__btn');
+		$('.headertop__menu ul').hide();
+	} else {
+		$('.headertop__menu ul').show();
 	}
+	// window.onresize = function(){
+		
+	// }
 
 	$('.train wrap img').click(function() {
 		$('.service_toggle_hidden').fadeToggle(400);
@@ -35,41 +35,49 @@ $(document).ready(function() {
 	//Каруселька
 	//Документация: http://owlgraphic.com/owlcarousel/
 
-	if(document.documentElement.clientWidth <1100) {
-		$(".carousel").owlCarousel({
-		loop:true,
-		responsive : {
-			0 : {
-				items : 3,
-				nav : true
-			}
-		},
-		navText : ""
-	});
-	} else {
-		$(".carousel").owlCarousel({
-			loop:true,
-			responsive : {
-				0 : {
-					items : 4,
-					nav : true
-				}
-			},
-			navText : ""
-		});
-	}
-
-
-	// $(".carousel").owlCarousel({
+	// if(document.documentElement.clientWidth <1100) {
+	// 	$(".carousel").owlCarousel({
 	// 	loop:true,
 	// 	responsive : {
 	// 		0 : {
-	// 			items : 4,
+	// 			items : 3,
 	// 			nav : true
 	// 		}
 	// 	},
 	// 	navText : ""
 	// });
+	// } else {
+	// 	$(".carousel").owlCarousel({
+	// 		loop:true,
+	// 		responsive : {
+	// 			0 : {
+	// 				items : 4,
+	// 				nav : true
+	// 			}
+	// 		},
+	// 		navText : ""
+	// 	});
+	// }
+	
+
+
+	$(".carousel").owlCarousel({
+		loop:true,
+		responsive : {
+			1200 : {
+				items : 4,
+				nav : true
+			},
+			1000 : {
+				items : 3,
+				nav : true
+			},
+			700 : {
+				items : 1,
+				nav : true
+			}
+		navText : ""
+	});
 
 	$(".carousel__feedback").owlCarousel({
 		loop:true,
