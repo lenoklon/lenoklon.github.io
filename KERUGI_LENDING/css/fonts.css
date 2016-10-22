@@ -1,0 +1,26 @@
+/*font-family: 'RainTungstenMedium';*/
+@font-face {
+	font-family: 'RainTungstenMedium';
+	src: url('../fonts/RainTungstenMedium/RainTungstenMedium.eot');
+	src: local('☺'), url('../fonts/RainTungstenMedium/RainTungstenMedium.woff') format('woff'), url('../fonts/RainTungstenMedium/RainTungstenMedium.ttf') format('truetype');
+	font-style: normal;
+}
+
+/*font-family: 'ExoThin';*/
+@font-face {
+	font-family: 'ExoThin';
+	src: url('../fonts/ExoThin/Exo2.0-Thin.eot');
+	src: local('☺'), url('../fonts/ExoThin/Exo2.0-Thin.woff') format('woff'), url('../fonts/ExoThin/Exo2.0-Thin.ttf') format('truetype'), url('../fonts/ExoThin/Exo2.0-Thin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*font-family: 'open_sansregular';*/
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/open_sansregular/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/open_sansregular/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

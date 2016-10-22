@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Meta Info -->
+	<title>KERUGI_MAP</title>
+	<meta content="taekwondo" name="description" /> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta content="telephone=no" name="format-detection">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/animate/animate.min.css" />
+
+	<!-- Custom CSS-->
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/media.css" />
+	<script src="libs/modernizr/modernizr.js"></script>
+</head>
+<body>
+	<!-- ***HEADER*** -->
+		<header>
+			<div class="headertop__wrap">
+				<div class="container">
+					<div class="row">
+						<div class="headertop__logo">
+							<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+						</div>
+						<div class="headertop__menu clearfix">
+							<button class="main_mnu_button hidden-sm hidden-md hidden-lg"><i class="fa fa-bars"></i></button>
+							<ul class="headertop__menu_list">
+								<li><a href="#">О школе</a></li>
+								<li><a href="addresses.html">Адреса центров</a></li>
+								<li><a href="trainers.html">Тренеры</a></li>
+								<li><a href="#">Календарь мероприятий</a></li>
+								<li><a href="#">Экипировка</a></li>
+								<li><a href="#">Чемпионы</a></li>
+								<li><a href="#">сообщество</a></li>
+								<li><a href="vacancies.html">вакансии</a></li>
+							</ul>
+						</div>
+						<div class="headertop__btn">
+							<p><span>+7 (3452)</span> 704-884</p>
+							<div class="btn_wrap">
+								<a href="#callback" class="button fancybox">Записаться
+									на бесплатное занятие</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</header>
+					<!-- MAP -->
+	<section id="map" class="map_window">
+	</section>
+					<!-- ***MAP-WINDOW*** -->
+
+	<!-- <section class="trainer_apply map_window">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="flag clearfix">
+							<div class="flag__content clearfix">
+								<div class="flag__content_logo">
+									<img src="img/logo_map.png" alt="umka_logo">
+								</div>
+								<div class="flag__content_address">
+									<p class="flag__name">ДРЦ "Продленка"</p>
+									<p>ул,Вербовая,4 кв.2</p>
+								</div>
+								<a class="close" href="#"><i class="fa fa-times-circle"></i></a>
+							</div>
+							<div class="flag__schedule">
+								<div class="flag__schedule_item">
+									<strong>Вторник</strong>
+									<p>16:30  3-7 лет</p>
+								</div>
+								<div class="flag__schedule_item">
+									<strong>Вторник</strong>
+									<p>16:30  3-7 лет</p>
+								</div>
+							</div>
+							<div class="headertop__btn header__btn_flag">
+								<div class="btn_wrap btn_wrap_flag">
+									<a href="#callback" class="button fancybox">Записаться
+										на бесплатное занятие</a>
+								</div>
+							</div>
+							<img class="img_stripe" src="img/form_stripe.png" alt="form_stripe">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+	<!-- ***FOOTER*** -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="footer_rights">Copyright 2015. Керуги - школа олимпийского тхэквондо Все права защищены</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="hidden">
+	<form id="callback" class="pop_form">
+		<h3>Быстрая запись на бесплатное<br> пробное занятие</h3>
+		<label>
+			<input type="text" name="name" placeholder="Имя ребенка:" required>
+		</label>
+		<label>
+			<input type="email" placeholder="Email:" name="mail" required>
+		</label>
+		<label>
+			<input type="text" placeholder="Ваше имя:" name="UrName" required>
+		</label>
+		<label>
+			<input type="text" placeholder="Телефон:" name="phone" required>
+		</label>
+		<label><p>Откуда о нас узнали:</p>
+			<select name="variant">
+				<option selected="">интернет</option>
+				<option>TV</option>
+				<option>радио</option>
+			</select>
+		</label>
+		<label class="champion"><p>Центр Чемпионки</p>
+			<select name="champ_center">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<a href="#" class="submit">Посмотреть адреса центров</a>
+		</label>
+		<p class="help">Нужна помощь в выборе центра?<br>
+			Звоните нам мы подскажем!</p>
+			<a href="#" class="submit">Отправить заявку</a>
+		</form>
+	</div>
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+
+	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="js/map.js" defer></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
