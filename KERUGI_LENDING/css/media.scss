@@ -280,6 +280,12 @@
 	footer .footer_nmb {
 		float: none;
 	}
+
+	.hd__content {
+		margin-left: -150px;
+		width: 300px;
+		height: 300px;
+	}
 }
 
 @media only screen and (max-width:660px) {
@@ -308,11 +314,7 @@
 			}
 		}
 
-		.hd__content {
-			margin-left: -150px;
-			width: 300px;
-			height: 300px;
-		}
+		
 
 		.hd__content p {
 			display: inline-block;
