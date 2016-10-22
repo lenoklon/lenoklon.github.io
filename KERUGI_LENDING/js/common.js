@@ -34,16 +34,42 @@ $(document).ready(function() {
 
 	//Каруселька
 	//Документация: http://owlgraphic.com/owlcarousel/
-	$(".carousel").owlCarousel({
+
+	if(document.documentElement.clientWidth <1100) {
+		$(".carousel").owlCarousel({
 		loop:true,
 		responsive : {
 			0 : {
-				items : 4,
+				items : 3,
 				nav : true
 			}
 		},
 		navText : ""
 	});
+	} else {
+		$(".carousel").owlCarousel({
+			loop:true,
+			responsive : {
+				0 : {
+					items : 4,
+					nav : true
+				}
+			},
+			navText : ""
+		});
+	}
+
+
+	// $(".carousel").owlCarousel({
+	// 	loop:true,
+	// 	responsive : {
+	// 		0 : {
+	// 			items : 4,
+	// 			nav : true
+	// 		}
+	// 	},
+	// 	navText : ""
+	// });
 
 	$(".carousel__feedback").owlCarousel({
 		loop:true,
