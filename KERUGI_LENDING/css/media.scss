@@ -248,14 +248,28 @@
 		padding: 22% 0 0 0;
 	}
 
-	.owl-prev {
-		left: -3%;
-	}
+	.owl-nav {
 
-	.owl-next {
-		right: -3%;
-	}
+		.owl-prev {
+			background: url('../img/arrow_left.png') no-repeat;
+			top: 24%;
+			left: -2%;
+			height: 128px;
+			opacity: 0.7;
+			position: absolute;
+			width: 128px;
+		}
 
+		.owl-next {
+			top: 24%;
+			right: -2%;
+			height: 128px;
+			background: url('../img/arrow_right.png') no-repeat;
+			opacity: 0.7;
+			position: absolute;
+			width: 128px;
+		}
+	}
 	.trainers h4 {
 		font-size: 40px;
 		margin-top:0;

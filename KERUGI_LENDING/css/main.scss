@@ -287,7 +287,7 @@ body {
 		.owl-prev {
 			background: url('../img/arrow_left.png') no-repeat;
 			top: 24%;
-			left: -9%;
+			left: -5%;
 			height: 128px;
 			opacity: 0.7;
 			position: absolute;
@@ -296,7 +296,7 @@ body {
 
 		.owl-next {
 			top: 24%;
-			right: -9%;
+			right: -5%;
 			height: 128px;
 			background: url('../img/arrow_right.png') no-repeat;
 			opacity: 0.7;
@@ -770,6 +770,10 @@ body {
 				background: #73b9db;
 			}
 		}
+	}
+
+	.carousel {
+		padding: 50px;	
 	}
 
 	.trainer_apply {
