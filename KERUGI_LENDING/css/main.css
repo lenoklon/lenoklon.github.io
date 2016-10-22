@@ -361,6 +361,14 @@ section {
 .news_right {
   float: right; }
 
+.events h4 {
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  color: #000;
+  margin: 0;
+  padding: 0; }
+
 /****FOOTER****/
 footer {
   background: url("../img/footer.png") bottom center no-repeat;
@@ -525,6 +533,16 @@ footer {
     right: -20px;
     z-index: 10;
     width: 298px; }
+
+.events h4 {
+  padding: 0;
+  margin: 0;
+  padding: 20px 0 0 20px;
+  text-align: left;
+  color: #000;
+  font-size: 25px;
+  font-weight: normal
+  /* text-align: center; */ }
 
 /****DESCRIPTION****/
 .description {
