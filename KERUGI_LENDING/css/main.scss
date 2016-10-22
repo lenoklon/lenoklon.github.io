@@ -619,7 +619,7 @@ body {
 		background-size: cover;
 		font-family: 'RainTungstenMedium';
 		padding-bottom: 50px;
-		
+
 		h3 {
 			font-size: 60px;
 			color:$blue;
@@ -838,6 +838,11 @@ body {
 				width: 225px;
 			}
 		}
+	}
+
+	.events .descr__list {
+		padding: 0 0 0 22px;
+		width: 80%;
 	}
 
 	/*-------------MAP---------------*/

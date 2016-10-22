@@ -72,7 +72,11 @@ $(document).ready(function() {
 				items : 3,
 				nav : true
 			},
-			700 : {
+			480 : {
+				items : 2,
+				nav : true
+			},
+			0 : {
 				items : 1,
 				nav : true
 			}
@@ -84,6 +88,10 @@ $(document).ready(function() {
 		loop:true,
 		responsive : {
 			0 : {
+				items : 1,
+				nav : true
+			},
+			480 : {
 				items : 2,
 				nav : true
 			}

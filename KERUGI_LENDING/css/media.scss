@@ -248,8 +248,12 @@
 		padding: 22% 0 0 0;
 	}
 
-	.train__wrap {
-		width: 39%;
+	.owl-prev {
+		left: -3%;
+	}
+
+	.owl-next {
+		right: -3%;
 	}
 
 	.trainers h4 {
@@ -266,17 +270,16 @@
 	}
 
 	.footer_rights {
-	    float: none;
-	    margin-top: 52%;
-	    color: #fff;
-	    font-family: 'ExoThin';
-	    font-size: 16px;
+		float: none;
+		margin-top: 52%;
+		color: #fff;
+		font-family: 'ExoThin';
+		font-size: 16px;
 	}
 
-	.footer_nmb {
-	    float: none;
+	footer .footer_nmb {
+		float: none;
 	}
-
 }
 
 @media only screen and (max-width:660px) {
@@ -285,113 +288,121 @@
 		right: 22%;
 	}
 
-	.train__wrap {
-		width: 56%;
-	}
-}
-
-@media only screen and (max-width : 530px) {
-	.hr_descr {
-		display: none;
-	}
-
-	.hr_contacts {
-		font-size: 18px;
-		right: 50%;
-	}
-
-	.vacancy h2 {
-		padding: 27% 0 0 0;
-	}
-
-	.train__wrap {
-		width: 56%;
-	}
-
-	.map_window {
-		.flag {
-			width: 300px;
+	@media only screen and (max-width : 530px) {
+		.hr_descr {
+			display: none;
 		}
-	}
 
-}
+		.hr_contacts {
+			font-size: 18px;
+			right: 50%;
+		}
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-	.headertop__logo {
-		width: 100%;
-	}
+		.vacancy h2 {
+			padding: 27% 0 0 0;
+		}
 
+		.map_window {
+			.flag {
+				width: 300px;
+			}
+		}
 
-	.headertop__btn {
-		background: url(../img/btn_bg.png) center no-repeat;
-		width: 100%;
-		p {
+		.hd__content {
+			margin-left: -150px;
+			width: 300px;
+			height: 300px;
+		}
+
+		.hd__content p {
+			display: inline-block;
+			font-size: 34px;
+			font-weight: 700;
+			width: 100%;
+			height: 100%;
+			padding: 37px 0;
+			line-height: 61px;
 			text-align: center;
-			padding: 10px 0 0 0;
+		}
+
+		.news h2 {
+			font-size: 41px;
+		}
+
+		
+
+	}
+
+	/* Extra Small Devices, Phones */
+	@media only screen and (max-width : 480px) {
+		.headertop__logo {
+			width: 100%;
+		}
+
+
+		.headertop__btn {
+			background: url(../img/btn_bg.png) center no-repeat;
+			width: 100%;
+			p {
+				text-align: center;
+				padding: 10px 0 0 0;
+			}
 		}
 		.btn_wrap {
 			width: 231px;
 			margin: auto;
 			margin-top: 23px;
 		}
-	}
 
-	.main_mnu_button {
-		padding-top: 20px;
-		display: block;
-		margin: 0 auto;
-	}
-
-	.headertop__menu {
-		margin: auto;
-	}
-	.headertop__menu_list {
-		margin: 10px auto;
-		border:1px solid #fff;
-		background: rgba(212, 25, 42, .8);
-		text-align: center;
-		padding: 0;
-		display: block;
-	}
-
-	.headertop__menu li {
-		margin:10px auto;
-		display: block;
-		border-bottom: 1px solid grey;
-	} 
-
-	.headertop__wrap{
-		padding-bottom: 20px;
-	}
-
-	footer {
-		line-height: 13px;
-		padding-top: 38px;
-	}
-
-	.awards__list {
-		margin-left: -2%;
-		width: 95%;
-	}
-
-	.hr_contacts {
-		font-size: 14px;
-		right: 44%;
-	}
-
-	footer {
-		line-height: 30px;
-		p {
-			padding:24px 0 0 0;
+		.main_mnu_button {
+			padding-top: 20px;
+			display: block;
+			margin: 0 auto;
 		}
-	}
 
-	.vacancy h2 {
-		padding: 34% 0 0 0;
-	}
+		.headertop__menu {
+			margin: auto;
+		}
+		.headertop__menu_list {
+			margin: 10px auto;
+			border:1px solid #fff;
+			background: rgba(212, 25, 42, .8);
+			text-align: center;
+			padding: 0;
+			display: block;
+		}
 
+		.headertop__menu li {
+			margin:10px auto;
+			display: block;
+			border-bottom: 1px solid grey;
+		} 
+
+		.headertop__wrap{
+			padding-bottom: 20px;
+		}
+		.awards__list {
+			margin-left: -2%;
+			width: 95%;
+		}
+
+		.hr_contacts {
+			font-size: 14px;
+			right: 44%;
+		}
+
+		footer {
+			line-height: 30px;
+			p {
+				padding:24px 0 0 0;
+			}
+		}
+
+		.vacancy h2 {
+			padding: 34% 0 0 0;
+		}
+
+	}
 }
-
 
 

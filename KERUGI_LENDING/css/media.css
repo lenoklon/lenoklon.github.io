@@ -189,8 +189,11 @@
   .vacancy h2 {
     padding: 22% 0 0 0; }
 
-  .train__wrap {
-    width: 39%; }
+  .owl-prev {
+    left: -3%; }
+
+  .owl-next {
+    right: -3%; }
 
   .trainers h4 {
     font-size: 40px;
@@ -209,16 +212,13 @@
     font-family: 'ExoThin';
     font-size: 16px; }
 
-  .footer_nmb {
+  footer .footer_nmb {
     float: none; } }
 @media only screen and (max-width: 660px) {
   .hr_contacts {
     font-size: 14px;
-    right: 22%; }
-
-  .train__wrap {
-    width: 56%; } }
-@media only screen and (max-width: 530px) {
+    right: 22%; } }
+@media only screen and (max-width: 660px) and (max-width: 530px) {
   .hr_descr {
     display: none; }
 
@@ -229,13 +229,29 @@
   .vacancy h2 {
     padding: 27% 0 0 0; }
 
-  .train__wrap {
-    width: 56%; }
-
   .map_window .flag {
-    width: 300px; } }
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
+    width: 300px; }
+
+  .hd__content {
+    margin-left: -150px;
+    width: 300px;
+    height: 300px; }
+
+  .hd__content p {
+    display: inline-block;
+    font-size: 34px;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    padding: 37px 0;
+    line-height: 61px;
+    text-align: center; }
+
+  .news h2 {
+    font-size: 41px; } }
+@media only screen and (max-width: 660px) {
+  /* Extra Small Devices, Phones */ }
+@media only screen and (max-width: 660px) and (max-width: 480px) {
   .headertop__logo {
     width: 100%; }
 
@@ -245,10 +261,11 @@
     .headertop__btn p {
       text-align: center;
       padding: 10px 0 0 0; }
-    .headertop__btn .btn_wrap {
-      width: 231px;
-      margin: auto;
-      margin-top: 23px; }
+
+  .btn_wrap {
+    width: 231px;
+    margin: auto;
+    margin-top: 23px; }
 
   .main_mnu_button {
     padding-top: 20px;
@@ -273,10 +290,6 @@
 
   .headertop__wrap {
     padding-bottom: 20px; }
-
-  footer {
-    line-height: 13px;
-    padding-top: 38px; }
 
   .awards__list {
     margin-left: -2%;
