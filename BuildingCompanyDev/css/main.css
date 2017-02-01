@@ -13,7 +13,6 @@ body {
   box-sizing: border-box; }
 
 header, footer {
-  /*height: 48px;*/
   background: #323232;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5); }
 
@@ -21,9 +20,8 @@ header, footer {
   width: 1080px;
   margin: 0 auto; }
 
-/*.main {
-}*/
 .top-fix {
+  padding: 0 30px;
   text-align: justify; }
   .top-fix .top__logo, .top-fix .top__new, .top-fix .top__address {
     display: inline-block; }
@@ -42,6 +40,8 @@ header, footer {
     font-size: 30px;
     font-weight: 800;
     margin-bottom: 10px; }
+  .top-fix .top__new {
+    margin-left: 5%; }
   .top-fix p {
     color: #fff;
     font-size: 16px;
@@ -61,53 +61,60 @@ header, footer {
 .head__nav {
   margin: 30px 0; }
   .head__nav li {
-    display: inline-block
-    /* margin-right: 30px;*/ }
+    display: inline-block;
+    margin-right: 10px; }
     .head__nav li a {
       color: #63a7f3;
       display: block;
       font-size: 16px;
-      text-decoration: none; }
+      text-decoration: none;
+      font-weight: 700; }
       .head__nav li a:hover {
         text-decoration: underline; }
       .head__nav li a i {
         font-size: 12px;
-        margin-left: 6px;
+        margin-left: 10px;
         font-weight: lighter; }
 
-.dev .dev__left {
-  width: 35%;
-  float: left; }
-  .dev .dev__left h1 {
-    color: #535353;
-    font-size: 35px;
-    font-weight: 800;
-    margin-bottom: 15px;
-    text-transform: uppercase; }
-  .dev .dev__left table {
-    color: #5d5d5d;
-    width: 100%; }
-    .dev .dev__left table th, .dev .dev__left table td {
-      padding: 5px 0;
-      text-align: left; }
-    .dev .dev__left table th, .dev .dev__left table td:nth-child(2) {
-      color: #000; }
-    .dev .dev__left table .tab_title {
-      width: 60%; }
-    .dev .dev__left table td {
-      width: 20%; }
-.dev .dev__right {
-  width: 30%;
-  float: right; }
-  .dev .dev__right a {
-    display: block; }
-    .dev .dev__right a img {
-      width: 100%; }
+nav {
+  padding: 0 30px; }
 
-/*.map {
-   margin: 30px 0;
-   box-shadow: -2px 0 6px rgba(136, 156, 176, 0.4);
-}*/
+.dev {
+  padding: 0 30px; }
+  .dev .dev__left {
+    width: 35%;
+    float: left; }
+    .dev .dev__left h1 {
+      color: #535353;
+      font-size: 35px;
+      font-weight: 800;
+      margin-bottom: 15px;
+      text-transform: uppercase; }
+    .dev .dev__left table {
+      color: #5d5d5d
+      /*width: 100%;*/ }
+      .dev .dev__left table th, .dev .dev__left table td {
+        padding: 5px 0;
+        text-align: left; }
+      .dev .dev__left table th, .dev .dev__left table td:nth-child(2) {
+        font-weight: 700;
+        color: #000; }
+      .dev .dev__left table .tab_title {
+        width: 50%; }
+      .dev .dev__left table td {
+        /*width: 20%;*/ }
+  .dev .dev__right {
+    width: 30%;
+    float: right; }
+    .dev .dev__right a {
+      display: block; }
+      .dev .dev__right a img {
+        width: 100%; }
+
+.map {
+  margin: 30px 0;
+  box-shadow: -2px 0 6px rgba(136, 156, 176, 0.4); }
+
 /************MAP**************/
 /*#map {
     box-sizing: border-box;
@@ -369,6 +376,7 @@ span.icon-calendar {
   background: url(../img/icon-calendar.svg) center no-repeat; }
 
 .plan {
+  padding: 30px;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5); }
   .plan .plan__content {
     float: left;
@@ -403,19 +411,26 @@ span.icon-calendar {
     line-height: 1.6; }
 
 .partners {
+  padding: 30px;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
-  background: #fff;
-  padding: 30px 0; }
+  background: #fff; }
   .partners h2 {
     font-size: 18px;
     color: #000;
     font-weight: 700;
-    padding: 10px; }
-  .partners .partners__list li {
-    width: 25%;
-    display: inline-block; }
-  .partners .partners__list a {
-    display: block; }
+    padding: 20px; }
+  .partners .partners__list {
+    text-align: justify; }
+    .partners .partners__list li {
+      /*width: 25%;*/
+      display: inline-block; }
+    .partners .partners__list a {
+      display: block; }
+  .partners .partners__list:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0; }
 
 .support {
   padding: 30px 0;
