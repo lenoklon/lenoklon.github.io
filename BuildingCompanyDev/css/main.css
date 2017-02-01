@@ -6,8 +6,8 @@
 body {
   background: #fbfbfb;
   font-family: 'Roboto', sans-serif;
-  line-height: 1;
-  min-width: 1024px; }
+  line-height: 1
+  /*min-width: 1024px; */ }
 
 * {
   box-sizing: border-box; }
@@ -82,7 +82,7 @@ nav {
 .dev {
   padding: 0 30px; }
   .dev .dev__left {
-    width: 35%;
+    width: 50%;
     float: left; }
     .dev .dev__left h1 {
       color: #535353;
