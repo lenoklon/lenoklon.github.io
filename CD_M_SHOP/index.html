@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CD_Shop</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style_ui.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/cusel-min-2.5.js"></script>
+	<script>
+		$( function() {
+			$( "#slider-range" ).slider({
+				range: true,
+				min: 0,
+				max: 500,
+				values: [ 75, 300 ],
+				slide: function( event, ui ) {
+					$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+				}
+			});
+			$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+				" - $" + $( "#slider-range" ).slider( "values", 1 ) );
+
+			/* select style */
+			var params = {
+				changedEl: "select",
+				visRows: 5,
+				scrollArrows: true
+			}
+			cuSel(params);
+		} );
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="panel__top">
+			<div class="wrap clearfix">
+				<div class="panel__top_social">
+					<a href="#" class="panel__top_icon fb"><!-- &nbsp; --></a>
+					<a href="#" class="panel__top_icon dribble"><!-- &nbsp; --></a>
+					<a href="#" class="panel__top_icon tw"><!-- &nbsp; --></a>
+					<a href="#" class="panel__top_icon mail"><!-- &nbsp; --></a>
+					<a href="#" class="panel__top_icon vimeo"><!-- &nbsp; --></a>	
+				</div>
+				<div class="panel__bascet">
+					<a href="#">Cart(2)</a>
+				</div>
+				<div class="panel__top_log">
+					<a href="#">Login</a>
+					<span> / </span>
+					<a href="#">Register</a>
+				</div>
+			</div>
+		</div>
+		<div id="home" class="header wrap clearfix">
+			<div class="header__logo">
+				<a href="#">
+					<img src="img/logo.png" alt="" class="header__logo_img">
+					<span class="header__logo_text">Store</span>
+				</a>
+			</div>
+			<ul class="header__nav">
+				<li class="active"><a href="#">HOME</a></li>
+				<li><a href="#">CD’s</a></li>
+				<li><a href="#">DVD’s</a></li>
+				<li><a href="#">NEWS</a></li>
+				<li><a href="#">PORTFOLIO</a></li>
+				<li><a href="#">CONTACT US</a></li>
+			</ul>
+		</div>
+		<div class="home">
+			<div class="home__bg">
+				<div class="wrap">
+					<a href="#" class="link__home"></a>
+					<h2 class="home__title">SHOP - SIDEBAR ON THE RIGHT</h2>
+					<ul class="breadcrumbs clearfix">
+						<li class="home__list__item"><a href="#">Home <span class="sp">&raquo;</span></a></li>
+						<li class="home__list__item"><a href="#">Shop <span class="sp">&raquo;</span></a></li>
+						<li class="home__list__item"><span>Sidebar on the right</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- ***SORT*** -->
+		<div class="sort wrap clearfix">
+			<ul class="sort__category">
+				<li><a href="#">ALL</a></li>
+				<li><a href="#" class="active">ROCK</a></li>
+				<li><a href="#">POP</a></li>
+				<li><a href="#">METAL</a></li>
+				<li><a href="#">DANCE</a></li>
+				<li><a href="#">CLASSICAL</a></li>
+			</ul>
+			<div class="sort__list">
+				<a href="#" class="left_icon">&nbsp;</a>
+				<a href="#" class="right_icon">&nbsp;</a>
+			</div>
+			<div class="sort__select">
+				<span>Sort by:</span>
+				<select name="" id="">
+					<option value="Alphabetically">Alphabetically</option>
+					<option value="Alphabetically">Alphabetically</option>
+					<option value="Alphabetically">Alphabetically</option>
+				</select>
+			</div>
+		</div>
+		<!-- ***CONTENT*** -->
+		<div class="content wrap clearfix">
+							<!-- SIDEBAR -->
+			<div class="content__sidebar">
+				<h3 class="side__title">PRICE FILTER<span class="side__br"></span></h3>
+
+				<div id="slider-range"></div>
+				<p>
+					<label for="amount">Price range:</label>
+					<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+				</p>
+ 
+				<h3 class="side__title">BEST SELLERS<span class="side__br"></span></h3>
+				<div class="side__products">
+					<div class="side__product_item clearfix">
+						<div class="side__pr_img"><a href="#"><img src="img/1side_pr.png" alt=""></a></div>
+						<div class="side__pr_rate">
+							<h6><a href="#">Awaken </a><span> by Hero</span></h6>
+							<div class="gallery__item__rate">	
+								<div style="width: 80%"></div>
+							</div>
+							<span class="comments"><i class="comment"></i>12 comments</span>
+						</div>
+					</div>
+					<div class="side__product_item clearfix">
+						<div class="side__pr_img"><a href="#"><img src="img/2side_pr.png" alt=""></a></div>
+						<div class="side__pr_rate">
+							<h6><a href="#">Awaken </a><span> by Hero</span></h6>
+							<div class="gallery__item__rate">	
+								<div style="width: 80%"></div>
+							</div>
+							<span class="comments"><i class="comment"></i>12 comments</span>
+						</div>
+					</div>
+				</div>
+				<h3 class="side__title">OUR CATEGORIES<span class="side__br"></span></h3>
+				<ul class="side__categories">
+					<li><a href="#">Rock & Roll<span> (5)</span></a></li>
+					<li><a href="#">Hardcore & Metal<span> (3)</span></a></li>
+					<li><a href="#">Dance & Pop <span>(8)</span></a></li>
+					<li><a href="#">Classical Music <span>(12)</span></a></li>
+					<li><a href="#">Jazz<span>(7)</span></a></li>
+					<li><a href="#">Country<span> (15)</span></a></li>
+				</ul>
+				<h3 class="side__title">SEARCH OUR ALBUMS<span class="side__br"></span></h3>
+			
+					<form class="side__form clearfix" action="#">
+						<input type="text" placeholder="search">
+						<input type="submit" value="">
+					</form>
+			</div>
+						<!-- CONTENT__GALLERY -->
+			<div class="content__gallery">
+				<div class="gallery__catalog clearfix">
+					<div class="gallery__item">
+						<div class="gallery__item_img">
+							<a href="#"><img src="img/1item.png" alt="1item"></a>
+							<span class="sale"></span>
+						</div>
+						<div class="item__pad">
+							<h6><a href="#">Aqualung </a><span> by Artist</span></h6>
+							<div class="gallery__item__rate">	
+								<div style="width: 80%"></div>
+							</div>
+
+							<p class="gallery__item_par">
+								<span>Lorem ipsum </span>dolor sit amet an
+								adipiscing elit, sed diam nonu. 
+							</p>
+							<div class="item__price clearfix">
+								<span>$14.99</span>
+								<span>$8.99</span>
+								<a href="#">add to cart</a>
+							</div>
+						</div>
+					</div>
+					<div class="gallery__item">
+						<div class="gallery__item_img">
+							<a href="#"><img src="img/2item.png" alt="1item"></a>
+							<!-- <span class="sale"></span> -->
+						</div>
+						<div class="item__pad">
+							<h6><a href="#">Aqualung </a><span> by Artist</span></h6>
+							<div class="gallery__item__rate">	
+								<div style="width: 60%"></div>
+							</div>
+							<p class="gallery__item_par">
+								<span>Lorem ipsum </span>dolor sit amet an
+								adipiscing elit, sed diam nonu. 
+							</p>
+							<div class="item__price clearfix">
+								<span>$14.99</span>
+								<span>$8.99</span>
+								<a href="#">add to cart</a>
+							</div>
+						</div>
+					</div>
+					<div class="gallery__item">
+						<div class="gallery__item_img">
+							<a href="#"><img src="img/3item.png" alt="1item"></a>
+							<span class="sale"></span>
+						</div>
+						<div class="item__pad">
+							<h6><a href="#">Aqualung </a><span> by Artist</span></h6>
+							<div class="gallery__item__rate">	
+								<div style="width: 100%"></div>
+							</div>
+							<p class="gallery__item_par">
+								<span>Lorem ipsum </span>dolor sit amet an
+								adipiscing elit, sed diam nonu. 
+							</p>
+							<div class="item__price clearfix">
+								<span>$14.99</span>
+								<span>$8.99</span>
+								<a href="#">add to cart</a>
+							</div>
+						</div>
+					</div>
+					<div class="gallery__item">
+						<div class="gallery__item_img">
+							<a href="#"><img src="img/9item.png" alt="1item"></a>
+							<!-- <span class="sale"></span> -->
+						</div>
+						<div class="item__pad">
+							<h6><a href="#">Aqualung </a><span> by Artist</span></h6>
+							<div class="gallery__item__rate">	
+								<div style="width: 80%"></div>
+							</div>
+							<p class="gallery__item_par">
+								<span>Lorem ipsum </span>dolor sit amet an
+								adipiscing elit, sed diam nonu. 
+							</p>
+							<div class="item__price clearfix">
+								<span>$14.99</span>
+								<span>$8.99</span>
+								<a href="#">add to cart</a>
+							</div>
+						</div>
+					</div>
+					<div class="gallery__item">
+						<div class="gallery__item_img">
+							<a href="#"><img src="img/5item.png" alt="1item"></a>
+							<!-- <span class="sale"></span> -->
+						</div>
+						<div class="item__pad">
+							<h6><a href="#">Aqualung </a><span> by Artist</span></h6>
+							<div class="gallery__item__rate">	
+								<div style="width: 60%"></div>
+							</div>
+							<p class="gallery__item_par">
+								<span>Lorem ipsum </span>dolor sit amet an
+								adipiscing elit, sed diam nonu. 
+							</p>
+							<div class="item__price clearfix">
+								<span>$14.99</span>
+								<span>$8.99</span>
+								<a href="#">add to cart</a>
+							</div>
+						</div>
+					</div>
+					<div class="gallery__item">
+						<div class="gallery__item_img">
+							<a href="#"><img src="img/6item.png" alt="1item"></a>
+							<span class="sale"></span>
+						</div>
+						<div class="item__pad">
+							<h6><a href="#">Aqualung </a><span> by Artist</span></h6>
+							<div class="gallery__item__rate">							</div>
+							<p class="gallery__item_par">
+								<span>Lorem ipsum </span>dolor sit amet an
+								adipiscing elit, sed diam nonu. 
+							</p>
+							<div class="item__price clearfix">
+								<span>$14.99</span>
+								<span>$8.99</span>
+								<a href="#">add to cart</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product__catalog -->
+				<div class="gallery__pagination">
+					<ul class="clearfix">
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li class="active"><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li class="last"><a href="#">&raquo;</a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+
+		</div>
+			<footer>
+				<a href="#home" class="home__link"></a>
+				<div class="wrap clearfix f__cont">
+					<div class="f__about">
+						<h5 class="f__title">Little about us</h5>
+						<p class="f__text"><span>Sed posuere </span>consectetur  est at. 
+							Nulla vitae elit libero, a pharetra. 
+							Lorem ipsum <span>dolor sit </span>amet, conse
+							ctetuer adipiscing elit.</p>
+						<h5 class="f__title">Socialize with us</h5>
+						<div class="panel__top_social">
+							<a href="#" class="panel__top_icon fb"><!-- &nbsp; --></a>
+							<a href="#" class="panel__top_icon dribble"><!-- &nbsp; --></a>
+							<a href="#" class="panel__top_icon tw"><!-- &nbsp; --></a>
+							<a href="#" class="panel__top_icon mail"><!-- &nbsp; --></a>
+							<a href="#" class="panel__top_icon vimeo"><!-- &nbsp; -->
+							</a>	
+						</div>
+					</div>
+					<div class="f__archives">
+						<h5 class="f__title">Our Archives</h5>
+						<ul class="f__list">
+							<li><a href="#">March 2012</a></li>
+							<li><a href="#">March 2012</a></li>
+							<li><a href="#">March 2012</a></li>
+							<li><a href="#">March 2012</a></li>
+						</ul>
+					</div>
+					<div class="f__posts">
+						<h5 class="f__title">Popular Posts</h5>
+						<div class="side__products">
+							<div class="side__product_item clearfix">
+								<div class="side__pr_img"><a href="#"><img src="img/1side_pr.png" alt=""></a></div>
+								<div class="side__pr_rate">
+									<h6><a href="#">Awaken </a><span> by Hero</span></h6>
+									<div class="gallery__item__rate">	
+										<div style="width: 80%"></div>
+									</div>
+									<span class="comments"><i class="comment"></i>12 comments</span>
+								</div>
+							</div>
+							<div class="side__product_item clearfix">
+								<div class="side__pr_img"><a href="#"><img src="img/2side_pr.png" alt=""></a></div>
+								<div class="side__pr_rate">
+									<h6><a href="#">Awaken </a><span> by Hero</span></h6>
+									<div class="gallery__item__rate">	
+										<div style="width: 80%"></div>
+									</div>
+									<span class="comments"><i class="comment"></i>12 comments</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="f__search">
+						<h5 class="f__title">Search our Site</h5>
+						<form class="side__form clearfix" action="#">
+							<input type="text" placeholder="search">
+							<input type="submit" value="">
+						</form>
+					</div>
+				</div>
+			</footer>
+	</body>
+	</html>
+
+
+
