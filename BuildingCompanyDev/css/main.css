@@ -6,7 +6,8 @@
 body {
   background: #fbfbfb;
   font-family: 'Roboto', sans-serif;
-  line-height: 1
+  line-height: 1;
+  overflow-x: hidden
   /*min-width: 1024px; */ }
 
 * {
@@ -92,7 +93,10 @@ nav {
       text-transform: uppercase; }
     .dev .dev__left table {
       color: #5d5d5d
-      /*width: 100%;*/ }
+      /*width: 100%;*/
+      /* td:nth-child(3) {
+          text-align: right;
+       }*/ }
       .dev .dev__left table th, .dev .dev__left table td {
         padding: 5px 0;
         text-align: left; }
@@ -101,8 +105,6 @@ nav {
         color: #000; }
       .dev .dev__left table .tab_title {
         width: 50%; }
-      .dev .dev__left table td {
-        /*width: 20%;*/ }
   .dev .dev__right {
     width: 30%;
     float: right; }
@@ -183,7 +185,7 @@ nav {
   width: 100%;
   text-align: center;
   margin-bottom: 0;
-}*/
+  }*/
 /*************END of MAP*************/
 .in_process {
   text-align: center;
@@ -453,5 +455,142 @@ footer .top-fix .top__logo {
 
 .top__new a:hover {
   text-decoration: underline; }
+
+h2 {
+  margin: 10px 0 20px 0;
+  text-align: center; }
+
+.catalog {
+  background: #fff;
+  text-align: center;
+  color: #000;
+  margin: 0 auto;
+  padding: 10px 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: 70%;
+  border-radius: 2px;
+  margin: 0 auto;
+  margin-bottom: 30px; }
+  .catalog .catalog__title {
+    float: left;
+    margin-right: 6%;
+    text-align: left;
+    width: 26%; }
+    .catalog .catalog__title a {
+      font-size: 16px;
+      font-weight: 700;
+      color: #2196F3;
+      padding: 5px 0 5px 15px;
+      display: block; }
+    .catalog .catalog__title li {
+      font-size: 12px;
+      line-height: 1.2;
+      font-weight: 500;
+      color: #757575;
+      overflow: hidden;
+      padding: 0 0 7px 12px; }
+      .catalog .catalog__title li .icon {
+        float: left;
+        margin-top: 12px; }
+      .catalog .catalog__title li p {
+        display: block;
+        margin-left: 30px;
+        padding-top: 7px;
+        border-top: 1px solid #e0e0e0;
+        line-height: 1.3; }
+  .catalog .catalog__img {
+    float: left;
+    margin-top: 15px;
+    position: relative; }
+    .catalog .catalog__img img {
+      display: block;
+      width: 192px;
+      height: 125px; }
+    .catalog .catalog__img span {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px;
+      color: #fff;
+      font-weight: 700;
+      background: rgba(255, 109, 0, 0.8);
+      width: 100%; }
+  .catalog .catalog__param {
+    float: right;
+    width: 36%;
+    font-weight: 500;
+    color: #757575;
+    text-align: center; }
+    .catalog .catalog__param th {
+      vertical-align: top;
+      height: 26px;
+      font-size: 10px; }
+    .catalog .catalog__param td {
+      vertical-align: middle;
+      height: 25px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 12px; }
+
+.active td {
+  color: #212121; }
+
+.disabled {
+  color: #bdbdbd; }
+
+.catalog__param tr:nth-child(2)
+td:first-child {
+  font-size: 10px; }
+
+.count {
+  width: 20%; }
+
+.area {
+  width: 45%; }
+
+.price {
+  width: 35%; }
+
+.catalog:hover {
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
+  top: -1px; }
+
+@media only screen and (max-width: 960px) {
+  .catalog {
+    width: 90%; }
+    .catalog .catalog__title {
+      margin-right: 3%;
+      width: 28%; }
+      .catalog .catalog__title li {
+        font-size: 11px; } }
+@media only screen and (max-width: 800px) {
+  .catalog {
+    width: 95%; } }
+@media only screen and (max-width: 760px) {
+  .support h1,
+  .support .phone {
+    font-size: 26px; }
+
+  .support p.phone {
+    font-weight: 700;
+    font-size: 34px; }
+
+  .support p {
+    color: #626161;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 14px 20px; }
+
+  footer .top-fix {
+    padding: 15px;
+    text-align: center; }
+
+  .top-fix {
+    padding: 15px;
+    text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */

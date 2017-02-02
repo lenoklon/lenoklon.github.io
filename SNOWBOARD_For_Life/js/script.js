@@ -2,8 +2,8 @@
 $(document).ready(function () {
 	$('.container__slider').slick();
 	$('.slider_main').slick({
-		slidesToShow: 4,
-	  slidesToScroll: 1,
+		slidesToShow: 3,
+	  slidesToScroll: 2,
 	  responsive:[
 	  	{
 	  		breakpoint:489,
