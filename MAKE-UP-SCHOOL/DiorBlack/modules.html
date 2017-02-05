@@ -15,7 +15,8 @@
     <link href="css/bootstrap-reset.css" rel="stylesheet">
 
     <!--Animation css-->
-    <link href="css/animate.css" rel="stylesheet">
+      <!-- <link href="css/animate.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="custom/animate.min.css" />
 
     <!--Icon-fonts css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
@@ -55,10 +56,11 @@
 <aside class="left-panel">
 
     <!-- brand -->
-    <div class="logo">
+     <div class="logo">
         <a href="index.html" class="logo-expanded">
-            <img src="img/icon_yourLogo.png" alt="Logo">
-            <span class="nav-label">Your Logo</span>
+            <!-- <img src="img/icon_yourLogo.png" alt="Logo">
+            <span class="nav-label">Your Logo</span> -->
+            <a href="#"><img src="img/dior.png" alt=""></a>
         </a>
     </div>
     <!-- / brand -->
@@ -342,16 +344,20 @@
     <!-- ================== -->
 
 
-    <div class="wraper container-fluid">
+    <div id="lessons" class="wraper container-fluid">
+        <div  class="row">
+            <div id="mod__bg" class="col-lg-12">
+                <img src="img/module_bg.jpg" alt="">
+                <div id="mod__bg_title" class="page-title_module">
+                    <h1 class="module_title">Базовый курс по макияжу</h1>
+                    <p class="module_subtitle">Вы изучите основы цветометрии и научитесь безошибочно определять цветотип
+                        клиента,
+                        разберете принципы моделирования овала и деталей.</p>
+                </div>
+            </div>
+        </div>
 
         <div class="module">
-
-            <div class="page-title_module">
-                <h1 class="module_title">Базовый курс по макияжу</h1>
-                <p class="module_subtitle">Вы изучите основы цветометрии и научитесь безошибочно определять цветотип
-                    клиента,
-                    разберете принципы моделирования овала и деталей.</p>
-            </div>
 
             <div class="page-title m-b-5 m-t-25">
                 <h3 class="title p-b-10">Выберите тему</h3>
@@ -449,7 +455,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="portlet portlet-module-notavailable">
+                    <div id="module__bg" class="portlet portlet-module-notavailable">
                         <div class="portlet-heading">
                             <h3 class="modules__title portlet-title text-white">
                                 Недоступен. Дата открытия 18.01.2017
@@ -461,17 +467,18 @@
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        <div class="panel-collapse collapse in">
-                            <div class="portlet-body text-center bg-image">
-                                <h4 class="text-sm text-white text-bold">Базовый курс по макияжу</h4>
-                                <p class="text-italic text-white">
-                                    Вы изучите основы цветометрии и научитесь безошибочно определять цветотип клиента,
-                                    разберете принципы моделирования овала и деталей лица, научитесь творить красоту.
-                                    подчеркивая все лучшее и скрывая недостатки лица своих.
-                                </p>
-                                <a href="#" class="btn btn-module-notavailable btn-sm m-t-10 m-b-15">Изучить тему
+                        <div class="cont__mod">
+                            <img src="img/background_portlet.jpg" alt="">
+                        <!--<div class="slider-overlay br-radius"></div>-->
+                            <div class="panel-body">
+                                <h4><a href="#" class="text-white"><b>Базовый курс по макияжу</b></a></h4>
+                                <p class="text-white"><em>Вы изучите основы цветометрии и научитесь безошибочно
+                                    определять цветотип клиента, разберете принципы моделирования овала и деталей
+                                    лица, научитесь творить красоту, подчеркивая все лучшее и скрывая недостатки
+                                    лица своих. </em></p>
+                                <button class="btn btn-courses btn-sm">Изучить тему
                                     <i class="zmdi zmdi-chevron-right m-l-5"></i>
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -535,7 +542,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  <!-- module -->
 
     </div>
     <!-- Page Content Ends -->
@@ -555,6 +562,7 @@
 
 <!-- js placed at the end of the document so the pages load faster -->
 <script src="js/jquery.js"></script>
+<script src="custom/animate-css.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/modernizr.min.js"></script>
 <script src="js/pace.min.js"></script>
@@ -611,6 +619,16 @@
         icons.play();
     }
     ;
+     $(window).load(function() {
+    $(".portlet").animated("zoomIn", "zoomIn");
+  
+    $("h3, ol").animated("fadeInRight", "fadeOut");
+    // $("h2, h3").animated("fadeInRight", "fadeOut");
+    // $(".content__info p").animated("fadeInRight", "fadeOut");
+    // $(".descr__item").animated("fadeInRight", "fadeOut");
+    // $(".trainer_apply form").animated("fadeInRight", "fadeOut");
+    // $(".trainers h4").animated("flipInY", "fadeOut");
+});
 </script>
 
 

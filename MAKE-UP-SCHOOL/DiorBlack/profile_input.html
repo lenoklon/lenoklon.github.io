@@ -15,7 +15,8 @@
     <link href="css/bootstrap-reset.css" rel="stylesheet">
 
     <!--Animation css-->
-    <link href="css/animate.css" rel="stylesheet">
+     <!-- <link href="css/animate.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="custom/animate.min.css" />
 
     <!--Icon-fonts css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
@@ -66,7 +67,7 @@
     <!-- brand -->
      <div class="logo">
         <a href="index.html" class="logo-expanded">
-            <!-- <img src="img/icon_yourLogo.png" alt="Logo">
+           <!--  <img src="img/icon_yourLogo.png" alt="Logo">
             <span class="nav-label">Your Logo</span> -->
             <a href="#"><img src="img/dior.png" alt=""></a>
         </a>
@@ -100,14 +101,6 @@
                     <span class="nav-label">Рейтинг</span>
                     <!--<span class="badge bg-warning">Рейтинги</span>-->
                 </a>
-                <!--<ul class="list-unstyled">-->
-                <!--<li><a href="components-grid.html">Grid</a></li>-->
-                <!--<li><a href="components-portlets.html">Portlets</a></li>-->
-                <!--<li><a href="components-widgets.html">Widgets</a></li>-->
-                <!--<li><a href="components-nestable-list.html">Nesteble</a></li>-->
-                <!--<li><a href="components-calendar.html">Calendar</a></li>-->
-                <!--<li><a href="components-sliders.html">Range Slider</a></li>-->
-                <!--</ul>-->
             </li>
             <li class="has-submenu">
                 <a href="courses.html">
@@ -129,12 +122,6 @@
                     <span class="nav-label">Чемпионаты</span>
                     <!--<span class="menu-arrow"></span>-->
                 </a>
-                <!--<ul class="list-unstyled">-->
-                <!--<li><a href="tables.html">Basic Tables</a></li>-->
-                <!--<li><a href="tables-datatable.html">Data Table</a></li>-->
-                <!--<li><a href="tables-editable.html">Editable Table</a></li>-->
-                <!--<li><a href="tables-responsive.html">Responsive Table</a></li>-->
-                <!--</ul>-->
             </li>
             <li class="has-submenu">
                 <a href="#">
@@ -142,15 +129,6 @@
                     <span class="nav-label">События</span>
                     <!--<span class="menu-arrow"></span>-->
                 </a>
-                <!--<ul class="list-unstyled">-->
-                <!--<li><a href="charts-morris.html">Morris Chart</a></li>-->
-                <!--<li><a href="charts-chartjs.html">Chartjs</a></li>-->
-                <!--<li><a href="charts-flot.html">Flot Chart</a></li>-->
-                <!--<li><a href="charts-rickshaw.html">Rickshaw Chart</a></li>-->
-                <!--<li><a href="charts-peity.html">Peity Chart</a></li>-->
-                <!--<li><a href="charts-c3.html">C3 Chart</a></li>-->
-                <!--<li><a href="charts-other.html">Other Chart</a></li>-->
-                <!--</ul>-->
             </li>
 
             <li class="has-submenu active">
@@ -159,12 +137,6 @@
                     <span class="nav-label">База знаний</span>
                     <!--<span class="badge bg-success">7</span>-->
                 </a>
-                <!--<ul class="list-unstyled">-->
-                <!--<li><a href="email-inbox.html">Inbox</a></li>-->
-                <!--<li><a href="email-compose.html">Compose Mail</a></li>-->
-                <!--<li><a href="email-read.html">View Mail</a></li>-->
-                <!--<li><a href="email-templates.html">Email Templates</a></li>-->
-                <!--</ul>-->
             </li>
 
             <li class="has-submenu">
@@ -173,10 +145,6 @@
                     <span class="nav-label">Сообщество</span>
                     <!--<span class="menu-arrow"></span>-->
                 </a>
-                <!--<ul class="list-unstyled">-->
-                <!--<li><a href="maps-google.html"> Google Map</a></li>-->
-                <!--<li><a href="maps-vector.html"> Vector Map</a></li>-->
-                <!--</ul>-->
             </li>
             <li class="has-submenu last-sabmenu">
                 <a href="#">
@@ -185,23 +153,6 @@
                     <!--<span class="menu-arrow"></span>-->
                 </a>
             </li>
-            <!--<li class="has-submenu"><a href="#"><i class="zmdi zmdi-collection-item"></i> <span-->
-            <!--class="nav-label">Pages</span><span class="menu-arrow"></span></a>-->
-            <!--<ul class="list-unstyled">-->
-            <!--<li><a href="pages-profile.html">Profile</a></li>-->
-            <!--<li><a href="pages-timeline.html">Timeline</a></li>-->
-            <!--<li><a href="pages-invoice.html">Invoice</a></li>-->
-            <!--<li><a href="pages-contact.html">Contact-list</a></li>-->
-            <!--<li><a href="pages-login.html">Login</a></li>-->
-            <!--<li><a href="pages-register.html">Register</a></li>-->
-            <!--<li><a href="pages-recoverpw.html">Recover Password</a></li>-->
-            <!--<li><a href="pages-lock-screen.html">Lock Screen</a></li>-->
-            <!--<li><a href="pages-blank.html">Blank Page</a></li>-->
-            <!--<li><a href="pages-404.html">404 Error</a></li>-->
-            <!--<li><a href="pages-404_alt.html">404 alt</a></li>-->
-            <!--<li><a href="pages-500.html">500 Error</a></li>-->
-            <!--</ul>-->
-            <!--</li>-->
         </ul>
     </nav>
 
@@ -360,7 +311,12 @@
                     <span class="username text-white text-sm">Алексей Иванов</span>
                 </a>
                 <a href="#" class="page-title_profile_btn text-white pull-right">Изменить обложку <i
-                        class="fa fa-pencil"></i></a>
+                        class="fa fa-pencil"></i>
+                </a>
+                <form>
+                   <input type="file" name="f">
+                   <input type="submit" value="Отправить">
+               </form> 
             </div>
 
 
@@ -394,6 +350,7 @@
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="about">
+                        <form action="#">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <p class="tab-pane-title">Личные данные</p>
@@ -403,7 +360,9 @@
                                         <tbody>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_1 text-left text-bold text-main_color">Имя</td>
-                                            <td class="text-main_color text-left">Алексей</td>
+                                            <td class="text-main_color text-left">
+                                                <input type="text" placeholder="Ваше имя:">
+                                            </td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -414,7 +373,9 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_1 text-left text-bold text-main_color">Фамилия</td>
-                                            <td class="text-main_color text-left">Иванов</td>
+                                            <td class="text-main_color text-left">
+                                                <input type="text" placeholder="Ваша фамилия:">
+                                            </td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -425,7 +386,12 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_1 text-left text-bold text-main_color">Пол</td>
-                                            <td class="text-main_color text-left">Мужской</td>
+                                            <td class="text-main_color text-left">
+                                                <select name="sex">
+                                                    <option>мужской</option>
+                                                    <option>женский</option>
+                                                </select>
+                                            </td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -436,7 +402,9 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_1 text-left text-bold text-main_color">Год Рождения</td>
-                                            <td class="text-main_color text-left">1988год</td>
+                                            <td class="text-main_color text-left">
+                                                <input type="text" placeholder="Ваш год рождения:">
+                                            </td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -447,7 +415,9 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_1 text-left text-bold text-main_color">Месяц Рождения</td>
-                                            <td class="text-main_color text-left">Июль</td>
+                                            <td class="text-main_color text-left">
+                                                <input type="text" placeholder="Ваш месяц рождения:">
+                                            </td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -458,7 +428,9 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_1 text-left text-bold text-main_color">День Рождения</td>
-                                            <td class="text-main_color text-left">25</td>
+                                            <td class="text-main_color text-left">
+                                                <input type="text" placeholder="Ваш день рождения:">
+                                            </td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -469,7 +441,9 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_1 text-left text-bold text-main_color">Страна Проживания</td>
-                                            <td class="text-main_color text-left">Россия</td>
+                                            <td class="text-main_color text-left">
+                                                <input type="text" placeholder="Страна проживания:">
+                                            </td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -480,7 +454,9 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_1 text-left text-bold text-main_color">Регион Проживания</td>
-                                            <td class="text-main_color text-left">Московская обл.</td>
+                                            <td class="text-main_color text-left">
+                                                <input type="text" placeholder="Регион:">
+                                            </td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -491,7 +467,9 @@
                                         </tr>
                                         <tr class="gradeA odd b-0" role="row">
                                             <td class="sorting_1 text-left text-bold text-main_color">Город Проживания</td>
-                                            <td class="text-main_color text-left">Москва</td>
+                                            <td class="text-main_color text-left">
+                                                <input type="text" placeholder="Город:">
+                                            </td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -509,7 +487,8 @@
                                         <tbody>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_1 text-left text-bold text-main_color">Номер телефона</td>
-                                            <td class="text-main_color text-left">+7 (256) 265 45 96</td>
+                                            <td class="text-main_color text-left">
+                                              <input type="text" placeholder="+7 (256) 265 45 96"></td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -520,7 +499,8 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_1 text-left text-bold text-main_color">Основной email</td>
-                                            <td class="text-main_color text-left">info@mail.ru</td>
+                                            <td class="text-main_color text-left">
+                                             <input type="text" placeholder="info@mail.ru"></td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -532,7 +512,7 @@
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_1 text-left text-bold text-main_color">Дополнительный email
                                             </td>
-                                            <td class="text-main_color text-left">info2@mail.ru</td>
+                                            <td class="text-main_color text-left">  <input type="text" placeholder="info2@mail.ru"></td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -549,7 +529,8 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_2 text-left" style="padding-left: 30px;">Вконтакте</td>
-                                            <td class="text-main_color text-left">https://vk.com</td>
+                                            <td class="text-main_color text-left">
+                                              <input type="text" placeholder="https://vk.com"></td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -560,7 +541,8 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_2 text-left" style="padding-left: 30px;">Facebook</td>
-                                            <td class="text-main_color text-left">https://facebook.com</td>
+                                            <td class="text-main_color text-left">
+                                             <input type="text" placeholder="https://facebook.com"></td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -571,7 +553,7 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_2 text-left" style="padding-left: 30px;">Одноклассники</td>
-                                            <td class="text-main_color text-left">https://odnoklassniki.com</td>
+                                            <td class="text-main_color text-left"><input type="text" placeholder="https://odnoklassniki.com"></td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -582,7 +564,7 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_2 text-left" style="padding-left: 30px;">Instagram</td>
-                                            <td class="text-main_color text-left">https://instagram.com</td>
+                                            <td class="text-main_color text-left"><input type="text" placeholder="https://instagram.com"></td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -593,7 +575,7 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_2 text-left" style="padding-left: 30px;">LinkedIn</td>
-                                            <td class="text-main_color text-left">https://linkedIn.com</td>
+                                            <td class="text-main_color text-left"><input type="text" placeholder="https://linkedIn.com"></td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -604,7 +586,7 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_2 text-left" style="padding-left: 30px;">Twitter</td>
-                                            <td class="text-main_color text-left">https://twitter.com</td>
+                                            <td class="text-main_color text-left"><input type="text" placeholder="https://twitter.com"></td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -615,7 +597,7 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_2 text-left" style="padding-left: 30px;">Pinterest</td>
-                                            <td class="text-main_color text-left">https://pinterest.com</td>
+                                            <td class="text-main_color text-left"><input type="text" placeholder="https://pinterest.com"></td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -626,7 +608,7 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_2 text-left" style="padding-left: 30px;">Google+</td>
-                                            <td class="text-main_color text-left">https://google.com</td>
+                                            <td class="text-main_color text-left"><input type="text" placeholder="https://google.com"></td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -637,7 +619,7 @@
                                         </tr>
                                         <tr class="gradeA odd" role="row">
                                             <td class="sorting_2 text-left" style="padding-left: 30px;">Skype+</td>
-                                            <td class="text-main_color text-left">https://skype.com</td>
+                                            <td class="text-main_color text-left"><input type="text" placeholder="https://skype.com"></td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
                                                         class="fa fa-save"></i></a>
@@ -648,7 +630,7 @@
                                         </tr>
                                         <tr class="gradeA odd b-0" role="row">
                                             <td class="sorting_1 text-left text-bold text-main_color">Мой сайт</td>
-                                            <td class="text-main_color text-left">Мой блог: http://www.lili.blog
+                                            <td class="text-main_color text-left"><input type="text" placeholder="Мой блог: http://www.lili.blog">
                                             </td>
                                             <td class="actions text-right">
                                                 <a href="#" class="hidden on-editing save-row"><i
@@ -663,80 +645,12 @@
                                     <p class="tab-pane-title p-t-15">О себе</p>
                                     <div class="tab-pane-content clearfix">
                                         <p class="tab-pane-subtitle text-main_color fz15 text-bold">Личный заголовок </p>
-                                        <p>Частотой, имеется разница в xvi веке о пределах добра и т.д смысловую.
-                                            Который планируется использовать при запуске проекта такое текст-рыба широко
-                                            используемый. Специальные генераторы, создающие собственные варианты текста
-                                            сыграет. Чему появляется возможность получить более длинный. Более того,
-                                            нечитабельность текста исключительно демонстрационная. Проектах,
-                                            ориентированных на руку при запуске проекта оценке качества восприятия
-                                            макета чему. Длине наиболее распространенных слов вариантов lorem. Никакого
-                                            отношения к обитателям водоемов применили в длине наиболее распространенных
-                                            слов появляется. Появляется возможность получить более длинный
-                                            неповторяющийся набор слов. в длине наиболее распространенных слов
-                                            появляется. Появляется возможность получить более длинный неповторяющийся
-                                            набор слов. такого текста сыграет. Варианты текста на основе оригинального
-                                            трактата, благодаря чему. Качестве рыбы текст этот, несмотря на латыни и
-                                            по.
-                                            <a href="#" class="on-default edit-row pull-right"><i
-                                                    class="fa fa-pencil"></i></a>
-                                        </p>
+                                        <textarea placeholder="Личный заголовок" ></textarea>
                                     </div>
                                     <div class="tab-pane-content clearfix">
                                         <p class="tab-pane-subtitle text-main_color fz15 text-bold">О себе</p>
-                                        <p>Частотой, имеется разница в xvi веке о пределах добра и т.д смысловую.
-                                            Который планируется использовать при запуске проекта такое текст-рыба широко
-                                            используемый. Специальные генераторы, создающие собственные варианты текста
-                                            сыграет. Чему появляется возможность получить более длинный. Более того,
-                                            нечитабельность текста исключительно демонстрационная. Проектах,
-                                            ориентированных на руку при запуске проекта оценке качества восприятия
-                                            макета чему. Длине наиболее распространенных слов вариантов lorem. Никакого
-                                            отношения к обитателям водоемов применили в длине наиболее распространенных
-                                            слов появляется. Появляется возможность получить более длинный
-                                            неповторяющийся набор слов. в длине наиболее распространенных слов
-                                            появляется. Появляется возможность получить более длинный неповторяющийся
-                                            набор слов. такого текста сыграет. Варианты текста на основе оригинального
-                                            трактата, благодаря чему. Качестве рыбы текст этот, несмотря на латыни и
-                                            по.
-                                        </p>
-                                        <blockquote>
-                                            <p>Частотой, имеется разница в xvi веке о пределах добра и т.д смысловую.
-                                                Который планируется использовать при запуске проекта такое текст-рыба
-                                                широко
-                                                используемый. Специальные генераторы, создающие собственные варианты
-                                                текста
-                                                сыграет. Чему появляется возможность получить более длинный. Более того,
-                                                нечитабельность текста исключительно демонстрационная. Проектах,
-                                                ориентированных на руку при запуске проекта оценке качества восприятия
-                                                макета чему. Длине наиболее распространенных слов вариантов lorem.
-                                                Никакого
-                                                отношения к обитателям водоемов применили в длине наиболее
-                                                распространенных
-                                                слов появляется. Появляется возможность получить более длинный
-                                                неповторяющийся набор слов. в длине наиболее распространенных слов
-                                                появляется. Появляется возможность получить более длинный
-                                                неповторяющийся
-                                                набор слов. такого текста сыграет. Варианты текста на основе
-                                                оригинального
-                                                трактата, благодаря чему. Качестве рыбы текст этот, несмотря на латыни и
-                                                по.</p>
-                                        </blockquote>
-                                        <p>Частотой, имеется разница в xvi веке о пределах добра и т.д смысловую.
-                                            Который планируется использовать при запуске проекта такое текст-рыба широко
-                                            используемый. Специальные генераторы, создающие собственные варианты текста
-                                            сыграет. Чему появляется возможность получить более длинный. Более того,
-                                            нечитабельность текста исключительно демонстрационная. Проектах,
-                                            ориентированных на руку при запуске проекта оценке качества восприятия
-                                            макета чему. Длине наиболее распространенных слов вариантов lorem. Никакого
-                                            отношения к обитателям водоемов применили в длине наиболее распространенных
-                                            слов появляется. Появляется возможность получить более длинный
-                                            неповторяющийся набор слов. в длине наиболее распространенных слов
-                                            появляется. Появляется возможность получить более длинный неповторяющийся
-                                            набор слов. такого текста сыграет. Варианты текста на основе оригинального
-                                            трактата, благодаря чему. Качестве рыбы текст этот, несмотря на латыни и
-                                            по.
-                                            <a href="#" class="on-default edit-row pull-right"><i
-                                                    class="fa fa-pencil"></i></a>
-                                        </p>
+                                        <textarea placeholder="Напишите о себе" ></textarea>
+                                       
                                     </div>
                                     <div class="tab-pane-content clearfix">
                                         <p class="tab-pane-subtitle text-main_color fz15 text-bold pull-left">Изменить
@@ -754,40 +668,157 @@
                             </div>
                         </div>
                         <div class="tab-pane" id="active">
-                            <p>Fulfilled direction use continual set him propriety continued. Saw met applauded
-                                favourite deficient engrossed concealed and her. Concluded boy perpetual old supposing.
-                                Farther related bed and passage comfort civilly. Dashwoods see frankness objection
-                                abilities the. As hastened oh produced prospect formerly up am. Placing forming nay
-                                looking old married few has. Margaret disposed add screened rendered six say his
-                                striking confined. </p>
-                            <p>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled
-                                court. Sister others marked fat missed did out use. Alteration possession dispatched
-                                collecting instrument travelling he or on. Snug give made at spot or late that mr. </p>
+                            <ul class="set__block">
+                                <li><span class="set__time">25 минут назад </span>Просмотрен урок <span>"Базовый макияж" </span></li>
+                                <li><span class="set__time">25 минут назад </span>Просмотрен урок <span>"Базовый макияж" </span></li>
+                                <li><span class="set__time">25 минут назад </span>Просмотрен урок <span>"Базовый макияж" </span></li>
+                               
+                            </ul>
                         </div>
                         <div class="tab-pane" id="settings">
-                            <p>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled
-                                court. Sister others marked fat missed did out use. Alteration possession dispatched
-                                collecting instrument travelling he or on. Snug give made at spot or late that mr. </p>
-                            <p>Carriage quitting securing be appetite it declared. High eyes kept so busy feel call in.
-                                Would day nor ask walls known. But preserved advantage are but and certainty earnestly
-                                enjoyment. Passage weather as up am exposed. And natural related man subject. Eagerness
-                                get situation his was delighted. </p>
+                            <p class="tab-pane-title p-t-15">Установки безопасности</p>
+                            <table class="table table-striped dataTable no-footer"
+                                           id="datatable-editable1" role="grid"
+                                           aria-describedby="datatable-editable1_info">
+                                        <tbody>
+                                        <tr class="gradeA odd" role="row">
+                                            <td class="sorting_1 text-left text-bold text-main_color">Возможно Вы хотите сменить пароль</td>
+                                            <td class="text-main_color text-left">
+                                                <input type="password" placeholder="Пароль:">
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA odd" role="row">
+                                            <td class="sorting_1 text-left text-bold text-main_color">Приватность номера</td>
+                                            <td class="text-main_color text-left">
+                                             <select>
+                                                <option value="">не показывать никому</option>
+                                                <option value="">не показывать никому</option>
+                                            </select>
+                                            </td>
+                                        </tr>
+                                        <tr class="gradeA odd" role="row">
+                                            <td class="sorting_1 text-left text-bold text-main_color">Приватность email</td>
+                                            <td class="text-main_color text-left">
+                                                <select>
+                                                    <option value="">не показывать никому</option>
+                                                    <option value="">не показывать никому</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr class="gradeA odd" role="row">
+                                            <td class="sorting_1 text-left text-bold text-main_color">
+                                                <a href="#" class="next">Сохранить <img src="img/ar_right.png" alt=""></a></td>
+                                            <td class="text-main_color text-left">
+                                                <a href="#">Отмена</a>
+                                            </td>
+                                        </tr>
+                                    
+                                                              
+                                        </tbody>
+                                    </table>
                         </div>
                         <div class="tab-pane" id="courses">
-                            <p>Luckily friends do ashamed to do suppose. Tried meant mr smile so. Exquisite behaviour as
-                                to middleton perfectly. Chicken no wishing waiting am. Say concerns dwelling graceful
-                                six humoured. Whether mr up savings talking an. Active mutual nor father mother exeter
-                                change six did all. </p>
-                            <p>Carriage quitting securing be appetite it declared. High eyes kept so busy feel call in.
-                                Would day nor ask walls known. But preserved advantage are but and certainty earnestly
-                                enjoyment. Passage weather as up am exposed. And natural related man subject. Eagerness
-                                get situation his was delighted. </p>
+                            <p class="tab-pane-title p-t-15">Список курсов</p>
+                            <table class="table table-striped dataTable no-footer"
+                                           id="datatable-editable1" role="grid"
+                                           aria-describedby="datatable-editable1_info">
+                                        <tbody>
+                                        <tr id="tab_tit" class="gradeA odd" role="row">
+                                            <td class="text-left text-bold text-main_color">№</td>
+                                            <td class="text-main_color text-left">
+                                               Название курса
+                                            </td>
+                                            <td class="text-main_color text-left">
+                                               Статус
+                                            </td>
+                                            <td class="text-main_color text-left">
+                                               Время обучения
+                                            </td>
+                                             <td class="sorting_1 text-main_color text-left">
+                                               Процент прохождения
+                                                <a href="#" class="next">Перейти <img src="img/ar_right.png" alt=""></a>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA odd" role="row">
+                                            <td class="text-left text-bold text-main_color">1</td>
+                                            <td class="text-main_color text-left">
+                                               Название курса
+                                            </td>
+                                            <td class="text-main_color text-left">
+                                               Статус
+                                            </td>
+                                            <td class="text-main_color text-left">
+                                               Время обучения
+                                            </td>
+                                             <td class="sorting_1  text-main_color text-left">
+                                               Процент прохождения
+                                                <a href="#" class="next">Перейти <img src="img/ar_right.png" alt=""></a>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA odd" role="row">
+                                            <td class="text-left text-bold text-main_color">2</td>
+                                            <td class="text-main_color text-left">
+                                               Название курса
+                                            </td>
+                                            <td class="text-main_color text-left">
+                                               Статус
+                                            </td>
+                                            <td class="text-main_color text-left">
+                                               Время обучения
+                                            </td>
+                                             <td class="sorting_1  text-main_color text-left">
+                                               Процент прохождения
+                                                <a href="#" class="next">Перейти <img src="img/ar_right.png" alt=""></a>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA odd" role="row">
+                                            <td class="text-left text-bold text-main_color">3</td>
+                                            <td class="text-main_color text-left">
+                                               Название курса
+                                            </td>
+                                            <td class="text-main_color text-left">
+                                               Статус
+                                            </td>
+                                            <td class="text-main_color text-left">
+                                               Время обучения
+                                            </td>
+                                             <td class="sorting_1 text-main_color text-left">
+                                               Процент прохождения
+                                                <a href="#" class="next">Перейти <img src="img/ar_right.png" alt=""></a>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA odd" role="row">
+                                            <td class="text-left text-bold text-main_color">4</td>
+                                            <td class="text-main_color text-left">
+                                               Название курса
+                                            </td>
+                                            <td class="text-main_color text-left">
+                                               Статус
+                                            </td>
+                                            <td class="text-main_color text-left">
+                                               Время обучения
+                                            </td>
+                                             <td class="sorting_1 text-main_color text-left">
+                                               Процент прохождения
+                                                 <a href="#" class="next">Перейти <img src="img/ar_right.png" alt=""></a>
+                                            </td>
+                                            
+                                        </tr>
+                                    
+                                                              
+                                        </tbody>
+                                    </table>
                         </div>
                     </div>
+                </form>
                 </div>
             </div>
-
-
+           <!--  <a style="margin-right: 40px;" href="#" class="next">Сохранить <img src="img/ar_right.png" alt=""></a> -->
         </div>
     </div>
 
@@ -805,6 +836,7 @@
 
 <!-- js placed at the end of the document so the pages load faster -->
 <script src="js/jquery.js"></script>
+<script src="custom/animate-css.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/modernizr.min.js"></script>
 <script src="js/pace.min.js"></script>
@@ -843,6 +875,9 @@
             delay: 100,
             time: 1200
         });
+         $('.page-title_profile>a').click(function() {
+        $('.page-title_profile form').fadeToggle(400);
+    });
     });
     /* BEGIN SVG WEATHER ICON */
     if (typeof Skycons !== 'undefined') {
@@ -862,6 +897,16 @@
         icons.play();
     }
     ;
+    $(window).load(function() {
+    $("table").animated("fadeInRight", "fadeOut");
+  
+    // $("li.awards__item").animated("fadeInRight", "fadeOut");
+    // $("h2, h3").animated("fadeInRight", "fadeOut");
+    // $(".content__info p").animated("fadeInRight", "fadeOut");
+    // $(".descr__item").animated("fadeInRight", "fadeOut");
+    // $(".trainer_apply form").animated("fadeInRight", "fadeOut");
+    // $(".trainers h4").animated("flipInY", "fadeOut");
+});
 </script>
 
 

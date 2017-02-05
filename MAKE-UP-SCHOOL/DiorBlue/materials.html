@@ -15,7 +15,8 @@
     <link href="css/bootstrap-reset.css" rel="stylesheet">
 
     <!--Animation css-->
-    <link href="css/animate.css" rel="stylesheet">
+    <!-- <link href="css/animate.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="custom/animate.min.css" />
 
     <!--Icon-fonts css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
@@ -64,12 +65,13 @@
     <aside class="left-panel">
 
         <!-- brand -->
-        <div class="logo">
-            <a href="index.html" class="logo-expanded">
-                <img src="img/icon_yourLogo.png" alt="Logo">
-                <span class="nav-label">Your Logo</span>
-            </a>
-        </div>
+         <div class="logo">
+        <a href="index.html" class="logo-expanded">
+            <img src="img/icon_yourLogo.png" alt="Logo">
+            <span class="nav-label">Your Logo</span>
+            <!-- <a href="#"><img src="img/dior.png" alt=""></a> -->
+        </a>
+    </div>
         <!-- / brand -->
 
         <!-- Navbar Start -->
@@ -232,18 +234,6 @@
 
             <!-- Left navbar -->
             <nav class=" navbar-default" role="navigation">
-                <!--<ul class="nav navbar-nav hidden-xs">-->
-                <!--<li class="dropdown">-->
-                <!--<a data-toggle="dropdown" class="dropdown-toggle" href="#">English <span class="caret"></span></a>-->
-                <!--<ul role="menu" class="dropdown-menu">-->
-                <!--<li><a href="#">German</a></li>-->
-                <!--<li><a href="#">French</a></li>-->
-                <!--<li><a href="#">Italian</a></li>-->
-                <!--<li><a href="#">Spanish</a></li>-->
-                <!--</ul>-->
-                <!--</li>-->
-                <!--<li><a href="#">Files</a></li>-->
-                <!--</ul>-->
 
                 <!-- Right navbar -->
                 <ul class="nav navbar-nav navbar-right top-menu top-right-menu">
@@ -352,9 +342,14 @@
 
     <div class="wraper container-fluid">
         <div class="materials knowledgebase">
-
+            <div class="bg__header"><div class="page-title_lesson">
+                <h1 class="lesson_title">Базовый курс по макияжу</h1>
+                <p class="lesson_subtitle">Вы изучите основы цветометрии и научитесь безошибочно определять цветотип
+                    клиента,
+                    разберете принципы моделирования овала и деталей.</p>
+            </div></div>
             <div class="materials page-title_knowledge clearfix">
-                <a href="#">
+                <a style="display: none;" href="#">
                     <img alt="" src="img/avatar-10.jpg" class="profile-img thumb-default thumb-mid">
                     <span class="username text-white text-sm">Алексей Иванов</span>
                 </a>
@@ -455,14 +450,14 @@
     <div class="row">
         <h2 class="mat__title">Следующий шаг</h2>
         <div class="mat__basic make__basic first_basic col-lg-6 col-md-6">
+            <a href="#">
             <div>
                 <div class="img"><img src="img/3_make.png" alt=""></div>
                 <ul class="mat__descr make__descr">
                     <li><i class="fa fa-user"></i> Яна Шульман</li>
                     <li>Янв 22, 2017 - <span>Красота, Макияж </span></li>
-                    <li><i class="fa fa-video-camera"></i> Видео урок</li>
                 </ul>
-                <p class="make__basic_descr">
+                <p style="padding-top: 10px;" class="make__basic_descr">
                     Базовый курс по макияжу. Часть первая. Знакомство. Инструменты визажиста. Декоративная косметика. 
                 </p>
                 <p class="make__basic_adv">
@@ -477,23 +472,27 @@
                     </div>
                 </div>
             </div>
+            </a>
         </div>
 
-        <div class="col-md-6">
-            <div class="panel panel-default text-center text-white slider-bg">
-                <!--<div class="slider-overlay br-radius"></div>-->
-                <div class="panel-body p-20">
-                    <h4><a href="#" class="text-white"><b>Базовый курс по макияжу</b></a></h4>
-                    <p class="m-t-30 text-white"><em>Вы изучите основы цветометрии и научитесь безошибочно
-                        определять цветотип клиента, разберете принципы моделирования овала и деталей
-                        лица, научитесь творить красоту, подчеркивая все лучшее и скрывая недостатки
-                        лица своих. </em></p>
-                        <button class="btn btn-courses btn-sm m-t-40">Перейти к курсу
-                            <i class="zmdi zmdi-chevron-right m-l-5"></i>
-                        </button>
-                    </div>
-                </div><!-- Panel -->
-            </div> <!-- col-->
+      <div class="col-md-6 p-null">
+          <div id="imageblock" class="panel panel-default text-center text-white slider-bg">
+             <img src="img/background_portlet.jpg" alt=""> 
+             <!--<div class="slider-overlay br-radius"></div>-->
+             <a href="#"><div class="panel-body p-20">
+                <h4><a href="#" class="text-white"><b>Базовый курс по макияжу</b></a></h4>
+                  <a href="#"><p class="m-t-30 text-white"><em>Вы изучите основы цветометрии и научитесь безошибочно
+                    определять цветотип клиента, разберете принципы моделирования овала и деталей
+                    лица, научитесь творить красоту, подчеркивая все лучшее и скрывая недостатки
+                    лица своих. </em></p> </a>
+                    <button class="btn btn-courses btn-sm m-t-40">Перейти к курсу
+                        <i class="zmdi zmdi-chevron-right m-l-5"></i>
+                    </button>
+                </div></a>
+            </div><!-- Panel -->
+        
+    </div> <!-- col-->
+
         </div>
 
 
@@ -519,6 +518,7 @@
 <!-- js placed at the end of the document so the pages load faster -->
 <!-- <script src="js/jquery.js"></script> -->
 <script src="js/jquery-1.9.1.js"></script>
+<script src="custom/animate-css.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/modernizr.min.js"></script>
 <script src="js/pace.min.js"></script>
@@ -557,7 +557,64 @@
             delay: 100,
             time: 1200
         });
+
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 4,
+            paginationClickable: true,
+            speed: 300,
+            slidesOffsetAfter: 17,
+            slidesOffsetBefore: 17,
+            nextButton: '.swiper-button-next2',
+            prevButton: '.swiper-button-prev2',
+            spaceBetween: 30,
+//        centeredSlides: true,
+            loop: true,
+            breakpoints: {
+                1980: {
+                    slidesPerView: 4,
+                    slidesOffsetBefore: 30,
+                    centeredSlides: false
+                },
+                1439: {
+                    slidesPerView: 3,
+                    slidesOffsetBefore: 30,
+                    centeredSlides: true
+                },
+                1200: {
+                    slidesPerView: 2,
+                    slidesOffsetBefore: 30
+                    , centeredSlides: false
+                },
+                991: {
+                    slidesPerView: 3,
+                    slidesOffsetBefore: 30,
+                    centeredSlides: false
+                },
+                426: {
+                    slidesPerView: 2,
+                    slidesOffsetBefore: 12,
+                    centeredSlides: false
+                },
+                376: {
+                    slidesPerView: 1,
+                    slidesOffsetBefore: 10,
+                    centeredSlides: true
+                }
+            }
+        });
     });
+     $(window).load(function() {
+     $(".portlet, .col-lg-4 img, .materials__slide img, .mat__basic, iframe").animated("zoomIn", "zoomIn");
+    $(".tab-pane-content, .materials__page_title").animated("fadeInRight", "fadeOut");
+  
+    // $("li.awards__item").animated("fadeInRight", "fadeOut");
+    // $("h2, h3").animated("fadeInRight", "fadeOut");
+    // $(".content__info p").animated("fadeInRight", "fadeOut");
+    // $(".descr__item").animated("fadeInRight", "fadeOut");
+    // $(".trainer_apply form").animated("fadeInRight", "fadeOut");
+    // $(".trainers h4").animated("flipInY", "fadeOut");
+});
     /* BEGIN SVG WEATHER ICON */
     // if (typeof Skycons !== 'undefined') {
     //     var icons = new Skycons(

@@ -33,22 +33,24 @@ aside.left-panel {
 	text-transform: none;
 }
 
-header .navbar-default .navbar-nav>li>a:hover {
-	color: #ffffff;
+header .navbar-default .navbar-nav > li > a:hover,
+header .navbar-default .navbar-nav > li > a:focus {
+	color: #878787;
 }
 
-.navigation > ul > li.has-submenu:hover {
-	background: #40505f;
+.navigation > ul > li.has-submenu:hover,
+.navigation > ul > li.has-submenu:focus {
+	background: rgba(255, 255, 255, .1);
 }
 
 .navigation > ul > li.active.has-submenu {
-	background: #2dc0e8;
+	background: rgba(255, 255, 255, .1);
 }
 
 .navigation > ul > li > a {
 	display: block;
 	padding: 12px 25px;
-	color: #d4d4d4; /* prev value was #838F9A;*/
+	color: #fff; /* prev value was #838F9A;*/
 	font-size: 15px;
 	text-decoration: none;
 	transition: all 0.4s;
@@ -61,9 +63,17 @@ header .navbar-default .navbar-nav>li>a:hover {
 
 .navigation > ul > li:hover > a,
 .navigation > ul > li.active:hover > a,
-.navigation > ul > li.active > a {
+.navigation > ul > li.active > a,
+.navigation > ul > li:focus > a,
+.navigation > ul > li.active:focus > a {
 	color: #fff; /*prev. value was #2F353F; */
 	background: transparent; /*prev. value was #E6EBEC;*/
+}
+
+.navigation ul li ul li a:hover,
+.navigation ul li ul li a:focus {
+	color: #ffffff;
+	background: rgba(255, 255, 255, .1);
 }
 
 .navigation ul li ul li a {
@@ -107,7 +117,7 @@ header .navbar-default .navbar-nav > li > a {
 
 .last-sabmenu {
 	position: absolute !important;
-	bottom: 0 !important;
+	/*bottom: 0 !important;*/
 	width: 100%;
 }
 
@@ -115,6 +125,10 @@ header .navbar-default .navbar-nav > li > a {
 	margin: 0px;
 	font-size: 18px; /* 20px;*/
 	color: #4f5f6f;
+}
+
+i.fa.fa-pencil {
+    display: none;
 }
 
 .footer {
@@ -187,15 +201,54 @@ header .navbar-default .navbar-nav > li > a {
 	border-bottom-left-radius: 5px;
 }
 
-.slider-bg {
+/*.slider-bg {
 	background: url(../img/background_portlet.jpg) center;
 	background-size: cover;
 	position: relative;
+}*/
+
+.p-null #imageblock {
+	position: relative;
+	width: 100%;
+	padding: 0 !important;
+}
+
+#imageblock img {
+	width: 100%;
+	height: 300px;
+}
+#imageblock .panel-body {
+	position: absolute;
+	width: 90%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 
 .panel-body-bg {
 	background: url(../img/panel-bg.jpg) no-repeat center center;
 	min-height: 281px;
+}
+
+.bg__header {
+	position: relative;
+}
+
+.bg__header+.wraper {
+	padding-top: 0;
+}
+
+.bg__header>img {
+	width: 100%;
+	height: 180px;
+}
+
+.bg__header .page-title_lesson{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
 }
 
 /*==============================================================================*/
@@ -250,6 +303,36 @@ header .navbar-default .navbar-nav > li > a {
 .portlet-image_avatar {
 	cursor: pointer;
 	margin-bottom: 59px;
+}
+.portlet-image_avatar form {
+	border-radius: 10px;
+	position: absolute;
+	right: 0;
+	display: none;
+	background: #2dc0e8;
+    z-index: 10;
+    padding: 20px;
+}
+
+
+.portlet-image_avatar form input {
+    width: 50%;
+    float: left;
+}
+
+.page-title_profile form {
+	border-radius: 10px;
+	position: absolute;
+	right: 0;
+	display: none;
+	background: #2dc0e8;
+    z-index: 10;
+    padding: 20px;
+}
+
+.page-title_profile form input {
+    width: 50%;
+    float: left;
 }
 
 .portlet-image_avatar:hover .portlet-image_change {
@@ -529,12 +612,12 @@ header .navbar-default .navbar-nav > li > a {
 }
 
 /*===============================Modules==============================*/
-.page-title_module {
+/*.page-title_module {
 	background: url("../img/module_bg.jpg") no-repeat center;
 	background-size: cover;
 	margin: -20px -20px 0;
 	padding: 32px 26px 37px;
-}
+}*/
 
 .module_title {
 	font-size: 18px;
@@ -678,10 +761,10 @@ header .navbar-default .navbar-nav > li > a {
 
 /*===============================lessions==============================*/
 .page-title_lesson {
-	background: url("../img/bg_6.jpg") no-repeat center;
-	background-size: cover;
-	margin: -20px -20px 0;
-	padding: 32px 26px 37px;
+	/*background: url("../img/bg_6.jpg") no-repeat center;
+	background-size: cover;*/
+	/*margin: -20px -20px 0;
+	padding: 32px 26px 37px;*/
 }
 
 .lesson_title {
@@ -1702,11 +1785,11 @@ label.data__subcategory {
 }
 
 .materials__page_title h3 {
-	float: left;
+    float: none;
 }
 
 .materials__page_title ol {
-	float: right;
+	float: none;
 }
 
 .materials__content {
@@ -1794,6 +1877,41 @@ label.data__subcategory {
 	height: initial !important;
 }
 
+#mod__bg {
+	position: relative;
+}
+
+#mod__bg img{
+	width: 100%;
+}
+
+#module__bg .cont__mod {
+    position: relative;
+}
+
+#module__bg .cont__mod img {
+    width: 100%;
+    height: 212px;
+}
+
+#module__bg .cont__mod .panel-body {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#mod__bg_title {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
 textarea {
     padding: 30px;
     width: 100%;
@@ -1863,7 +1981,77 @@ textarea {
 	}
 }
 
+div#lessons {
+	padding: 0;
+	padding-top: 62px;
+}
 
+div#lessons .lesson,
+div#lessons .module {
+	padding: 0 30px 80px 30px;
+}
+
+.materials__slide>div >.swiper-slide img {
+    width: 87%;
+}
+
+.materials .bg__header .page-title_lesson {
+    margin-top: 58px;
+}
+
+#active {
+	margin-top: 0;
+}
+
+ul.set__block {
+	padding: 30px;
+	width: 100%;
+	background: #f6f6f6 url(../img/2profile_bg.png) 7px 25px no-repeat;
+	list-style: none;
+	margin: 0 30px;
+}
+
+ul.set__block li{
+    line-height: 25px;
+    margin: 0 0 20px 0;
+}
+.set__block span {
+	color: #2dc0e8;
+}
+span.set__time {
+    font-size: 12px;
+    color: darkgray;
+    display: block;
+}
+
+a.save {
+	display: block;
+	text-align: center;
+	background: #2dc0e8;
+	padding: 10px 20px;
+	text-decoration: none;
+	color:#fff;
+}
+
+#settings .next {
+	margin-top: 3px;
+    /* margin-right: 45%; */
+    float: right;
+    /* margin-top: 30px; */
+    color: #fff;
+    clear: both;
+    background-color:#2dc0e8;
+    border: 1px solid #2dc0e8;
+}
+
+#courses .sorting_1 {
+	padding: 10px 0 0 0;
+}
+
+#courses .sorting_1 .next{
+	margin: 0;
+	margin-bottom:10px;
+}
 
 
 @media only screen and (max-width: 660px) {

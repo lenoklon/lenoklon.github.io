@@ -15,7 +15,8 @@
     <link href="css/bootstrap-reset.css" rel="stylesheet">
 
     <!--Animation css-->
-    <link href="css/animate.css" rel="stylesheet">
+    <!-- <link href="css/animate.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="custom/animate.min.css" />
 
     <!--Icon-fonts css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
@@ -58,8 +59,9 @@
     <!-- brand -->
     <div class="logo">
         <a href="index.html" class="logo-expanded">
-            <img src="img/icon_yourLogo.png" alt="Logo">
-            <span class="nav-label">Your Logo</span>
+            <!-- <img src="img/icon_yourLogo.png" alt="Logo">
+            <span class="nav-label">Your Logo</span> -->
+            <a href="#"><img src="img/dior.png" alt=""></a>
         </a>
     </div>
     <!-- / brand -->
@@ -224,18 +226,6 @@
 
         <!-- Left navbar -->
         <nav class=" navbar-default" role="navigation">
-            <!--<ul class="nav navbar-nav hidden-xs">-->
-            <!--<li class="dropdown">-->
-            <!--<a data-toggle="dropdown" class="dropdown-toggle" href="#">English <span class="caret"></span></a>-->
-            <!--<ul role="menu" class="dropdown-menu">-->
-            <!--<li><a href="#">German</a></li>-->
-            <!--<li><a href="#">French</a></li>-->
-            <!--<li><a href="#">Italian</a></li>-->
-            <!--<li><a href="#">Spanish</a></li>-->
-            <!--</ul>-->
-            <!--</li>-->
-            <!--<li><a href="#">Files</a></li>-->
-            <!--</ul>-->
 
             <!-- Right navbar -->
             <ul class="nav navbar-nav navbar-right top-menu top-right-menu">
@@ -343,18 +333,20 @@
     <!-- ================== -->
 
 
-    <div class="wraper container-fluid">
-
-        <div class="lesson">
+    <div id="lessons" id="bg_pad-0" class="wraper container-fluid">
+        <div class="bg__header">
+             <img src="img/background_portlet.jpg" alt="">
             <div class="page-title_lesson">
                 <h1 class="lesson_title">Базовый курс по макияжу</h1>
                 <p class="lesson_subtitle">Вы изучите основы цветометрии и научитесь безошибочно определять цветотип
                     клиента,
                     разберете принципы моделирования овала и деталей.</p>
             </div>
+        </div>
+
+        <div class="lesson">
 
             <div class="page-title m-b-5 m-t-25">
-                <h3 class="title p-b-10">Выберите тему</h3>
                 <ol class="breadcrumbs">
                     <li><a href="index.html" class="title">Обучение</a></li>
                     <li class="active"><a href="courses.html" class="title">Курсы</a></li>
@@ -540,6 +532,7 @@
 
 <!-- js placed at the end of the document so the pages load faster -->
 <script src="js/jquery.js"></script>
+<script src="custom/animate-css.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/modernizr.min.js"></script>
 <script src="js/pace.min.js"></script>
@@ -596,6 +589,19 @@
         icons.play();
     }
     ;
+      $(window).load(function() {
+     // $(".panel").animated("fadeInRight", "fadeOut");
+     $(".portlet").animated("zoomIn", "zoomIn");
+    $(".page-title").animated("fadeInRight", "fadeOut");
+    $(".panel").animated("fadeInUp", "fadeOut");
+  
+    // $("li.awards__item").animated("fadeInRight", "fadeOut");
+    // $("h2, h3").animated("fadeInRight", "fadeOut");
+    // $(".content__info p").animated("fadeInRight", "fadeOut");
+    // $(".descr__item").animated("fadeInRight", "fadeOut");
+    // $(".trainer_apply form").animated("fadeInRight", "fadeOut");
+    // $(".trainers h4").animated("flipInY", "fadeOut");
+});
 </script>
 
 <script src="custom/custom.js"></script>

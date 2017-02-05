@@ -15,7 +15,8 @@
     <link href="css/bootstrap-reset.css" rel="stylesheet">
 
     <!--Animation css-->
-    <link href="css/animate.css" rel="stylesheet">
+    <!-- <link href="css/animate.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="custom/animate.min.css" />
 
     <!--Icon-fonts css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
@@ -66,8 +67,9 @@
     <!-- brand -->
     <div class="logo">
         <a href="index.html" class="logo-expanded">
-            <img src="img/icon_yourLogo.png" alt="Logo">
-            <span class="nav-label">Your Logo</span>
+            <!-- <img src="img/icon_yourLogo.png" alt="Logo">
+            <span class="nav-label">Your Logo</span> -->
+            <a href="#"><img src="img/dior.png" alt=""></a>
         </a>
     </div>
     <!-- / brand -->
@@ -362,7 +364,6 @@
             </div>
 
             <div class="page-title m-b-5 m-t-25">
-                <h3 class="title p-b-10">Выберите тему</h3>
                 <ol class="breadcrumbs">
                     <li><a href="index.html" class="title">База знаний</a></li>
                     <li class="active"><a href="courses.html" class="title">Курсы</a></li>
@@ -857,6 +858,7 @@
 <!-- js placed at the end of the document so the pages load faster -->
 <!-- <script src="js/jquery.js"></script> -->
 <script src="js/jquery-1.9.1.js"></script>
+<script src="custom/animate-css.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/modernizr.min.js"></script>
 <script src="js/pace.min.js"></script>
@@ -893,7 +895,53 @@
         /* Counter Up */
         $('.counter').counterUp({
             delay: 100,
-            time: 1200
+            time: 100
+        });
+
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 4,
+            paginationClickable: true,
+            speed: 300,
+            slidesOffsetAfter: 17,
+            slidesOffsetBefore: 17,
+            nextButton: '.swiper-button-next2',
+            prevButton: '.swiper-button-prev2',
+            spaceBetween: 5,
+//        centeredSlides: true,
+            loop: true,
+            breakpoints: {
+                1980: {
+                    slidesPerView: 4,
+                    slidesOffsetBefore: 30,
+                    centeredSlides: false
+                },
+                1439: {
+                    slidesPerView: 3,
+                    slidesOffsetBefore: 30,
+                    centeredSlides: true
+                },
+                1200: {
+                    slidesPerView: 2,
+                    slidesOffsetBefore: 30
+                    , centeredSlides: false
+                },
+                991: {
+                    slidesPerView: 3,
+                    slidesOffsetBefore: 30,
+                    centeredSlides: false
+                },
+                426: {
+                    slidesPerView: 2,
+                    slidesOffsetBefore: 12,
+                    centeredSlides: false
+                },
+                376: {
+                    slidesPerView: 1,
+                    slidesOffsetBefore: 10,
+                    centeredSlides: true
+                }
+            }
         });
     });
     /* BEGIN SVG WEATHER ICON */
@@ -914,6 +962,11 @@
         icons.play();
     }
     ;
+    $(window).load(function() {
+     $(".block-video").animated("zoomIn", "zoomIn");
+    $("h2, h3, h4, .block-description, .portlet").animated("zoomIn", "fadeOut");
+    $(".panel-group").animated("fadeInUp", "fadeOut");
+});
 </script>
 
 
