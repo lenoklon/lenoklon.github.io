@@ -1,0 +1,46 @@
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	  viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
+<g id="Layer_1_1_">
+	<g>
+		<circle fill="#FFFFFF" cx="10.5" cy="54.75" r="3"/>
+	</g>
+	<g>
+		<rect x="8" y="54" fill="#FFFFFF" width="54" height="2"/>
+	</g>
+</g>
+<g id="Layer_2">
+	<g enable-background="new    ">
+		<path fill="#FFFFFF" d="M20.993,38.324H14.44l-1.472,4.093h-2.127l5.973-15.641h1.805l5.983,15.641h-2.116L20.993,38.324z
+			 M15.063,36.638h5.317l-2.664-7.315L15.063,36.638z"/>
+		<path fill="#FFFFFF" d="M56.679,42.417v-6.091h-3.609l-3.233,6.091h-2.202l3.631-6.66c-2.02-0.795-3.029-2.217-3.029-4.265
+			c0-1.489,0.489-2.647,1.466-3.476c0.979-0.826,2.337-1.24,4.077-1.24h4.974v15.641H56.679z M50.298,31.486
+			c0,0.947,0.296,1.708,0.886,2.281c0.592,0.574,1.413,0.865,2.466,0.872h3.029v-6.177h-2.933c-1.117,0-1.971,0.266-2.563,0.797
+			C50.594,29.79,50.298,30.532,50.298,31.486z"/>
+	</g>
+</g>
+<g id="Layer_1_copy">
+	<g>
+		<circle fill="#FFFFFF" cx="60.329" cy="14.25" r="3"/>
+	</g>
+	<g>
+		<rect x="9" y="13" fill="#FFFFFF" width="54" height="2"/>
+	</g>
+	<g>
+		
+			<rect x="6.791" y="14.539" transform="matrix(0.707 0.7072 -0.7072 0.707 14.2153 -2.7844)" fill="#FFFFFF" width="7.355" height="2.452"/>
+	</g>
+	<g>
+		
+			<rect x="6.791" y="10.861" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 26.4178 13.2317)" fill="#FFFFFF" width="7.355" height="2.453"/>
+	</g>
+	<g>
+		
+			<rect x="57.281" y="52" transform="matrix(-0.707 -0.7072 0.7072 -0.707 66.3284 133.8899)" fill="#FFFFFF" width="7.233" height="2.412"/>
+	</g>
+	<g>
+		
+			<rect x="57.284" y="55.617" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -22.3428 59.7062)" fill="#FFFFFF" width="7.233" height="2.413"/>
+	</g>
+</g>
+</svg>

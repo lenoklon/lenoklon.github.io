@@ -57,7 +57,8 @@
         <a href="index.html" class="logo-expanded">
             <!-- <img src="img/icon_yourLogo.png" alt="Logo">
             <span class="nav-label">Your Logo</span> -->
-            <a href="#"><img src="img/dior.png" alt=""></a>
+            <a href="#" class="hidden-sm"><img src="img/dior.png" alt=""></a> 
+            <a href="#" class="visible-sm"><img src="img/logo-mob.png" alt=""></a>
         </a>
     </div>
     <!-- / brand -->
@@ -474,7 +475,7 @@
     ;
     $(window).load(function() {
      $(".panel").animated("zoomIn", "zoomIn");
-    $("h2, h3, h4").animated("fadeInRight", "fadeOut");
+    $("h2, h3").animated("fadeInRight", "fadeInRight");
     $(".page-title").animated("fadeInUp", "fadeOut");
 });
 </script>
