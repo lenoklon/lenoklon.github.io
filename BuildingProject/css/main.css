@@ -336,7 +336,8 @@ input[type="submit"] {
     box-shadow: 0 10px 20px #e2e2e2;
     margin-right: 10px;
     text-align: center;
-    transition: all .5s; }
+    -webkit-transition: all .5s;
+            transition: all .5s; }
     .catalog__item .catalog__wrap:hover {
       box-shadow: 0 5px 20px #9d8d8d; }
   .catalog__item img {
@@ -407,6 +408,97 @@ input[type="submit"] {
     color: #333; }
   .service__lists a:hover {
     color: #00a5ea; }
+
+.price h1 {
+  text-align: left;
+  text-transform: none; }
+.price h2 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 35px 0 25px 0; }
+.price table {
+  width: 100%; }
+  .price table tr {
+    display: block;
+    text-align: center;
+    padding: 20px 0 25px 0; }
+    .price table tr td:first-child {
+      text-align: left;
+      padding: 0; }
+    .price table tr th:first-child {
+      width: 70%;
+      text-align: center; }
+    .price table tr th:nth-child(2) {
+      width: 15%;
+      text-align: center; }
+    .price table tr th:last-child {
+      width: 15%;
+      text-align: center; }
+  .price table .table__title {
+    background: #00a5ea;
+    color: #fff; }
+  .price table .tr_title {
+    padding: 25px 0; }
+
+.price__list {
+  background-color: #f4f8fa;
+  padding: 0 30px;
+  padding-bottom: 40px; }
+  .price__list a {
+    display: block;
+    color: #6b808a;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 1px dashed #6b808a;
+    padding: 12px 0; }
+    .price__list a:hover {
+      color: #333;
+      border-bottom: 1px dashed #333; }
+  .price__list .price__list_title a {
+    border-bottom: 1px dashed #333;
+    color: #333;
+    font-size: 20px;
+    font-weight: 700; }
+  .price__list .separate {
+    margin: 20px 0; }
+    .price__list .separate a {
+      padding: 0;
+      border: none;
+      background: #00a5ea;
+      height: 2px; }
+  .price__list .service {
+    position: relative; }
+    .price__list .service a {
+      margin-left: 33px; }
+  .price__list .service:before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url("../img/icon-calc.png") no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    left: 0; }
+  .price__list .call:before {
+    background: url("../img/call.png") no-repeat; }
+  .price__list .email:before {
+    background: url("../img/e-mail-b.png") no-repeat; }
+
+.info td {
+  background: url("../img/attention.png") 0 25px no-repeat;
+  padding: 30px 40px !important; }
+.info p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 25px; }
+
+td.p0 {
+  padding-left: 0; }
 
 .partners .partn__wrap {
   padding: 20px 0; }
