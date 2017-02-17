@@ -500,6 +500,38 @@ input[type="submit"] {
 td.p0 {
   padding-left: 0; }
 
+.article__content {
+  text-align: right;
+  margin-bottom: 90px; }
+  .article__content h3 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "RobotoBold";
+    text-align: left; }
+  .article__content img {
+    margin: 20px 0; }
+  .article__content p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-top: 20px;
+    text-align: left; }
+  .article__content .btn {
+    margin: 20px 0; }
+
+.article .sublist {
+  margin-left: 20px;
+  display: none; }
+  .article .sublist a {
+    color: #6b808a;
+    border-bottom: 1px dashed #6b808a; }
+    .article .sublist a:hover {
+      color: #333; }
+.article .price__list li:hover .sublist {
+  display: block; }
+
 .partners .partn__wrap {
   padding: 20px 0; }
   .partners .partn__wrap .pl {

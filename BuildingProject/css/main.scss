@@ -648,7 +648,48 @@ td.p0 {
 	padding-left:0;
 }
 
-
+// **********ARTICLES*******************
+.article__content {
+	text-align: right;
+	margin-bottom: 90px;
+	h3 {
+		color: #333;
+		font-size: 20px;
+		font-weight: 400;
+		font-family: "RobotoBold";
+		text-align:left;
+	}
+	img {
+		margin: 20px 0;
+	}
+	p {
+		color: #333;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 26px;
+		margin-top: 20px;
+		text-align:left;
+	}
+	.btn {
+		margin: 20px 0;
+	}
+}
+.article {
+	.sublist {
+		margin-left: 20px;
+		display:none;
+		a {
+			color:$greyHover;
+			border-bottom: 1px dashed $greyHover;
+			&:hover {
+				color:#333;
+			}
+		}
+	}
+	.price__list li:hover .sublist {
+		display: block;
+	}
+}
 
 
 // ************PARTNERS***************
