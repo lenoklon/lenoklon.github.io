@@ -149,6 +149,8 @@ input[type="submit"] {
   color: #fff;
   font-size: 17px;
   font-weight: 500; }
+  .btn:hover {
+    opacity: .78; }
 
 .header__menu_contact {
   font-family: "RobotoRegular";
@@ -522,6 +524,30 @@ input[type="submit"] {
 .materials .price__list a {
   display: inline-block; }
 
+.material__list {
+  color: #333; }
+  .material__list .mat__content h3 {
+    font-family: "RobotoBold";
+    font-size: 20px;
+    font-weight: 700; }
+  .material__list .mat__content h4 {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    margin: 12px 0 25px 0; }
+  .material__list .mat__content p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px; }
+  .material__list .mat__content .mat__btn .mat__price {
+    float: left;
+    color: #00a5ea;
+    font-size: 16px; }
+    .material__list .mat__content .mat__btn .mat__price span {
+      font-size: 20px; }
+  .material__list .mat__content .mat__btn .btn {
+    float: right; }
+
 .price h1 {
   text-align: left;
   text-transform: none; }
@@ -636,26 +662,29 @@ td.p0 {
   .article__content .btn {
     margin: 20px 0; }
 
-.article .sublist {
+.article .sublist, .material__list .sublist {
   margin-left: 20px;
   display: none; }
-  .article .sublist a {
+  .article .sublist a, .material__list .sublist a {
     color: #6b808a;
     border-bottom: 1px dashed #6b808a; }
-    .article .sublist a:hover {
+    .article .sublist a:hover, .material__list .sublist a:hover {
       color: #333; }
-.article .price__list li:hover .sublist {
+.article .price__list li:hover .sublist, .material__list .price__list li:hover .sublist {
   display: block; }
-.article .pagination {
+.article .pagination, .material__list .pagination {
   border: none; }
-  .article .pagination a {
+  .article .pagination a, .material__list .pagination a {
     padding: 2px 6px; }
-  .article .pagination a:hover {
+  .article .pagination a:hover, .material__list .pagination a:hover {
     background: #00a5ea;
     color: #fff;
     border-radius: 100%;
     display: block;
     padding: 2px 6px; }
+
+.bg_blue {
+  background: #f4f8fa; }
 
 .partners .partn__wrap {
   padding: 20px 0; }

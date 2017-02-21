@@ -136,8 +136,6 @@ input[type="submit"] {
 }
 
 .header__menu_logo {
-	// width: 35%;
-    // float: left;
     font-family: "RobotoMedium";
     padding: 0;
 	img {
@@ -155,9 +153,6 @@ input[type="submit"] {
 }
 
 .btn_shadow {
-	// width: 17%;
- //    float: left;
-    // margin-right: 4%;
 	font-family: "RobotoLight";
 	padding: 0;
 	border: 2px solid #f4f8fa;
@@ -198,6 +193,9 @@ input[type="submit"] {
 	color:#fff;
 	font-size: 17px;
 	font-weight: 500;
+	&:hover {
+		opacity:.78;
+	}
 }
 
 .header__menu_contact {
@@ -675,6 +673,44 @@ input[type="submit"] {
 
 }
 
+// ***************MATERIAL__LIST***********
+.material__list {
+	color: #333;
+	.mat__content {
+		h3 {
+			font-family: "RobotoBold";
+			font-size: 20px;
+			font-weight: 700;
+		}
+		h4 {
+			font-size: 14px;
+			font-weight: 400;
+			text-align:left;
+			margin: 12px 0 25px 0;
+		}
+
+		p {
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 22px;
+		}
+		.mat__btn {
+			.mat__price {
+				float: left;
+				color:$blue;
+				font-size: 16px;
+				span {
+					font-size: 20px;
+				}
+			}
+			.btn {
+				float: right;
+			}
+		}
+	}
+}
+
+
 // *************PRICE***************
 .price {
 	h1 {
@@ -826,7 +862,7 @@ td.p0 {
 		margin: 20px 0;
 	}
 }
-.article {
+.article, .material__list {
 	.sublist {
 		margin-left: 20px;
 		display:none;
@@ -853,14 +889,12 @@ td.p0 {
 			display:block;
 			padding: 2px 6px;
 		}
-		// .none:hover {
-		// 	background: none;
-		// 	color:#333;
-		// 	border-radius: none;
-		// }
+	
 	}
 }
-
+.bg_blue {
+	background:#f4f8fa;
+}
 
 // ************PARTNERS***************
 .partners {
