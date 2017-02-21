@@ -676,6 +676,15 @@ input[type="submit"] {
 // ***************MATERIAL__LIST***********
 .material__list {
 	color: #333;
+	.service__lists {
+		padding: 20px 0;
+		h4 {
+			font-family: "RobotoBold";
+		}
+		ul {
+			padding: 0 15px;
+		}
+	}
 	.mat__content {
 		h3 {
 			font-family: "RobotoBold";
@@ -687,6 +696,7 @@ input[type="submit"] {
 			font-weight: 400;
 			text-align:left;
 			margin: 12px 0 25px 0;
+			margin-bottom: 0;
 		}
 
 		p {
@@ -705,11 +715,49 @@ input[type="submit"] {
 			}
 			.btn {
 				float: right;
+				margin: 10px 0 !important;
+			}
+			.mat__size {
+				float: left;
+				span {
+					font-family: "RobotoBold";
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 22px;
+				}
+			}
+			.mat__pr {
+				float: right;
+				color:$blue;
+				span {
+					color:#333;
+					font-family: "RobotoBold";
+				}
 			}
 		}
+
 	}
 }
+// ************FOTORAMA**************
+.fotorama__thumb {
+    background-color: #fff;
+}
+.fotorama__thumb-border {
+    border:none;
+    background:none;
+    opacity:.9;
+  }
 
+// ************MATERIAL__PAGE***************
+.mat__page_btn {
+	p.mat__price {
+		color:#333 !important;
+		font-family: "RobotoBold";
+	}
+	.btn {
+		margin: 10px 0 !important;
+	}
+}
 
 // *************PRICE***************
 .price {

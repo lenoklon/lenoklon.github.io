@@ -1,4 +1,15 @@
 $(document).ready(function() {
+	// $('.fotorama').fotorama({ 
+	// 	navposition: 'bottom', 
+	// 	navwidth: '100%', 
+	// 	nav: 'thumbs', 
+	// 	width: '100%', 
+	// 	maxheight: '300', 
+	// 	allowfullscreen: true, 
+	// 	loop: true, 
+	// 	keyboard: true, 
+	// 	thumbmargin: 5 
+	// });
 	$(".carousel").owlCarousel({
 		loop:true,
 		autoplay:true,
@@ -10,6 +21,9 @@ $(document).ready(function() {
 		},
 		navText : ""
 	});
+	// $(function () {
+	// 	$('.fotorama').fotorama();
+	// });
 	$(".sp__slider").owlCarousel({
 		loop:true,
 		responsive : {

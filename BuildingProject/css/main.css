@@ -526,6 +526,12 @@ input[type="submit"] {
 
 .material__list {
   color: #333; }
+  .material__list .service__lists {
+    padding: 20px 0; }
+    .material__list .service__lists h4 {
+      font-family: "RobotoBold"; }
+    .material__list .service__lists ul {
+      padding: 0 15px; }
   .material__list .mat__content h3 {
     font-family: "RobotoBold";
     font-size: 20px;
@@ -534,7 +540,8 @@ input[type="submit"] {
     font-size: 14px;
     font-weight: 400;
     text-align: left;
-    margin: 12px 0 25px 0; }
+    margin: 12px 0 25px 0;
+    margin-bottom: 0; }
   .material__list .mat__content p {
     font-size: 16px;
     font-weight: 300;
@@ -546,7 +553,35 @@ input[type="submit"] {
     .material__list .mat__content .mat__btn .mat__price span {
       font-size: 20px; }
   .material__list .mat__content .mat__btn .btn {
-    float: right; }
+    float: right;
+    margin: 10px 0 !important; }
+  .material__list .mat__content .mat__btn .mat__size {
+    float: left; }
+    .material__list .mat__content .mat__btn .mat__size span {
+      font-family: "RobotoBold";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px; }
+  .material__list .mat__content .mat__btn .mat__pr {
+    float: right;
+    color: #00a5ea; }
+    .material__list .mat__content .mat__btn .mat__pr span {
+      color: #333;
+      font-family: "RobotoBold"; }
+
+.fotorama__thumb {
+  background-color: #fff; }
+
+.fotorama__thumb-border {
+  border: none;
+  background: none;
+  opacity: .9; }
+
+.mat__page_btn p.mat__price {
+  color: #333 !important;
+  font-family: "RobotoBold"; }
+.mat__page_btn .btn {
+  margin: 10px 0 !important; }
 
 .price h1 {
   text-align: left;
