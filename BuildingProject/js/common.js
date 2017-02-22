@@ -21,9 +21,7 @@ $(document).ready(function() {
 		},
 		navText : ""
 	});
-	// $(function () {
-	// 	$('.fotorama').fotorama();
-	// });
+	
 	$(".sp__slider").owlCarousel({
 		loop:true,
 		responsive : {
@@ -53,22 +51,8 @@ $(document).ready(function() {
 	        $(tab).fadeIn(400);
 	 });
 
-	//Цели для Яндекс.Метрики и Google Analytics
-	// $(".count_element").on("click", (function() {
-	// 	ga("send", "event", "goal", "goal");
-	// 	yaCounterXXXXXXXX.reachGoal("goal");
-	// 	return true;
-	// }));
-
-
-	//Tabs Elements
-	// $(".tab:first-child").addClass("active");
-	// $(".tab").click(function() {
-	// 	var dt = $(this).data("tabs");
-	// 	$(".tab[data-tabs=" + dt + "]").removeClass("active").eq($(this).index()).addClass("active");
-	// 	$(".tab_item[data-tabs=" + dt + "]").hide().eq($(this).index()).show()
-	// }).eq(0).addClass("active");
-
+	//Попап менеджер FancyBox
+	$(".fancybox").fancybox();
 
 
 	//Magnific Popup Plugin
@@ -109,12 +93,7 @@ $(document).ready(function() {
 	var austDay = new Date($(".countdown").attr("date-time"));
 	$(".countdown").countdown({until: austDay, format: 'yowdHMS'});
 
-	//Попап менеджер FancyBox
-	//Документация: http://fancybox.net/howto
-	//<a class="fancybox"><img src="image.jpg" /></a>
-	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
-	$(".fancybox").fancybox();
-
+	
 	//Навигация по Landing Page
 	//$(".top_mnu") - это верхняя панель со ссылками.
 	//Ссылки вида <a href="#contacts">Контакты</a>

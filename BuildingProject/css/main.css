@@ -963,4 +963,148 @@ footer {
       footer .foot_logo .f_logo a img {
         vertical-align: middle; }
 
+.fancybox-inner {
+  height: auto !important; }
+
+.pop_form {
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-bottom: 30px; }
+  .pop_form h1 {
+    text-align: center;
+    color: #00a5ea;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "RobotoBold";
+    text-transform: uppercase; }
+  .pop_form .btn {
+    border-radius: 20px;
+    display: inline-block;
+    background: #00a5ea;
+    padding: 10px 65px;
+    margin-bottom: 30px; }
+    .pop_form .btn:hover {
+      background-color: #a7a9ac;
+      color: #fff; }
+  .pop_form .sizes {
+    float: left;
+    text-align: right;
+    margin-left: 70px; }
+    .pop_form .sizes p span {
+      text-align: left; }
+    .pop_form .sizes input {
+      width: 100px;
+      border: 1px solid #00a5ea;
+      margin-left: 10px;
+      margin-bottom: 10px; }
+  .pop_form .materials {
+    text-align: left;
+    margin-left: 20px;
+    font-family: "RobotoBold"; }
+    .pop_form .materials li {
+      color: #00a5ea;
+      line-height: 26px; }
+    .pop_form .materials a {
+      color: #00a5ea;
+      font-family: "RobotoRegular"; }
+  .pop_form .result {
+    padding: 23px 50px;
+    background: #f4f8fa; }
+  .pop_form .level {
+    text-align: left; }
+    .pop_form .level input {
+      margin-bottom: 10px; }
+  .pop_form .description {
+    text-align: left; }
+    .pop_form .description h3 {
+      color: #333;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px; }
+    .pop_form .description p {
+      line-height: 26px; }
+    .pop_form .description .insolation {
+      font-family: "RobotoRegular"; }
+      .pop_form .description .insolation p {
+        font-size: 18px; }
+        .pop_form .description .insolation p span {
+          color: #00a5ea; }
+
+.pop_form2 {
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-bottom: 30px; }
+  .pop_form2 h1 {
+    text-align: center;
+    color: #00a5ea;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "RobotoBold";
+    text-transform: uppercase; }
+  .pop_form2 .btn {
+    border-radius: 20px;
+    display: inline-block;
+    background: #00a5ea;
+    padding: 10px 65px;
+    margin-bottom: 30px; }
+    .pop_form2 .btn:hover {
+      background-color: #a7a9ac;
+      color: #fff; }
+  .pop_form2 .descr {
+    background: url("../img/bg_calc.png") no-repeat;
+    text-align: left;
+    padding: 27px 21px; }
+    .pop_form2 .descr p {
+      color: #333;
+      font-family: "RobotoRegular";
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 15px; }
+  .pop_form2 .content {
+    float: left;
+    margin-left: 70px; }
+  .pop_form2 .sizes {
+    float: left;
+    text-align: right;
+    margin-left: 70px; }
+    .pop_form2 .sizes p span {
+      text-align: left; }
+    .pop_form2 .sizes input {
+      width: 100px;
+      border: 1px solid #00a5ea;
+      margin-left: 10px;
+      margin-bottom: 10px; }
+  .pop_form2 .materials {
+    text-align: left;
+    margin-left: 20px;
+    font-family: "RobotoBold"; }
+    .pop_form2 .materials li {
+      color: #00a5ea;
+      line-height: 26px; }
+    .pop_form2 .materials a {
+      color: #00a5ea;
+      font-family: "RobotoRegular"; }
+  .pop_form2 .result {
+    padding: 23px 50px;
+    background: #f4f8fa; }
+  .pop_form2 .level {
+    text-align: left; }
+    .pop_form2 .level input {
+      margin-bottom: 10px; }
+  .pop_form2 .description {
+    text-align: left; }
+    .pop_form2 .description h3 {
+      color: #333;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px; }
+    .pop_form2 .description p {
+      line-height: 26px; }
+    .pop_form2 .description .insolation {
+      font-family: "RobotoRegular"; }
+      .pop_form2 .description .insolation p {
+        font-size: 18px; }
+        .pop_form2 .description .insolation p span {
+          color: #00a5ea; }
+
 /*# sourceMappingURL=main.css.map */
