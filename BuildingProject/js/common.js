@@ -60,111 +60,7 @@ $(document).ready(function() {
 	//Попап менеджер FancyBox
 	$(".fancybox").fancybox();
 
-
-	//Magnific Popup Plugin
-	//Documentation: http://dimsemenov.com/plugins/magnific-popup
-	// $(".popup").magnificPopup({type:"image"});
-	// $(".popup_c").magnificPopup();
-
-	//Stellar Plugin
-	//Documentation: https://github.com/markdalgleish/stellar.js
-	// $.stellar({
-	// 	responsive: true,
-	// 	horizontalOffset: 60
-	// });
-
-
-
-	//Stellar - Parallax Plugin
-	//Документация: https://github.com/markdalgleish/stellar.js
-	//HTML: <div class="parallax" data-stellar-background-ratio="0.5"></div>
-	// $.stellar({
-	// 	horizontalScrolling: false,
-	// 	verticalOffset: 40
-	// });
-
-	//equalheight - одинаковая высота колонок
-	//Пример списка элементов:
-	//var eqElement = ".cat_container > div, .home_news > div"
-	var eqElement = ".element";
-	$(window).load(function(){equalheight(eqElement);}).resize(function(){equalheight(eqElement);});
-
-	//Masked Input Plugin
-	//Документация: http://digitalbush.com/projects/masked-input-plugin/
-	//$("#date").mask("99/99/9999", {placeholder : "mm/dd/yyyy"});
-
-	//Таймер обратного отсчета
-	//Документация: http://keith-wood.name/countdown.html
-	//<div class="countdown" date-time="2015-01-07"></div>
-	var austDay = new Date($(".countdown").attr("date-time"));
-	$(".countdown").countdown({until: austDay, format: 'yowdHMS'});
-
 	
-	//Навигация по Landing Page
-	//$(".top_mnu") - это верхняя панель со ссылками.
-	//Ссылки вида <a href="#contacts">Контакты</a>
-	$(".top_mnu").navigation();
-
-	//Добавляет классы дочерним блокам .block для анимации
-	//Документация: http://imakewebthings.com/jquery-waypoints/
-	$(".block").waypoint(function(direction) {
-		if (direction === "down") {
-			$(".class").addClass("active");
-		} else if (direction === "up") {
-			$(".class").removeClass("deactive");
-		};
-	}, {offset: 100});
-
-	//Плавный скролл до блока .div по клику на .scroll
-	//Документация: https://github.com/flesler/jquery.scrollTo
-	$("a.scroll").click(function() {
-		$.scrollTo($(".div"), 800, {
-			offset: -90
-		});
-	});
-	//Скролл до id, указанного в hash URL
-	var elem = window.location.hash;
-	if(elem) {
-		$.scrollTo(elem, 800, {
-			offset: -90
-		});
-	};
-
-	//Каруселька
-	//Документация: http://owlgraphic.com/owlcarousel/
-	// function carousel_1() {
-	// 	var owl = $(".carousel");
-	// 	owl.owlCarousel({
-	// 		items : 1,
-	// 		loop : true,
-	// 		autoHeight : true,
-	// 		dots : true,
-	// 		singleItem : true
-	// 	});
-	// 	owl.on("mousewheel", ".owl-wrapper", function (e) {
-	// 		if (e.deltaY > 0) {
-	// 			owl.trigger("owl.prev");
-	// 		} else {
-	// 			owl.trigger("owl.next");
-	// 		}
-	// 		e.preventDefault();
-	// 	});
-	// 	$(".next_button").click(function() {
-	// 		owl.trigger("owl.next");
-	// 	});
-	// 	$(".prev_button").click(function() {
-	// 		owl.trigger("owl.prev");
-	// 	});
-	// 	owl.on("resized.owl.carousel", function(event) {
-	// 		var $this = $(this);
-	// 		$this.find(".owl-height").css("height", $this.find(".owl-item.active").height());
-	// 	});
-	// 	setTimeout(function() {
-	// 		owl.find(".owl-height").css("height", owl.find(".owl-item.active").height());
-	// 	}, 5000);
-	// };
-	// carousel_1();
-
 
 	//Кнопка "Наверх"
 	//Документация:
@@ -195,33 +91,7 @@ $(document).ready(function() {
 	
 });
 
-//Ajax Forms
-	//Documentation: http://api.jquery.com/jquery.ajax/
-	//$("form").submit(function(e) {
-		//var ths = $(this);
-		//e.preventDefault;
-		//$.ajax({
-		//	type: "POST",
-		//	url: "mail.php",
-		//	data: $(this).serialize()
-	//	}).done(function() {
-		//	alert("Thank You!");
-		//	setTimeout(function() {
-		//		var magnificPopup = $.magnificPopup.instance; 
-		//		magnificPopup.close();
-		//		ths.trigger("reset");
-		//	}, 1000);
-	//	});
-	//	return false;
-	//});
 
-
-
-	$(".s_contacts .tab").click(function() {
-		init();
-	});
-
-	//End Google Maps settings
 
 	//Header Window Full Size
 	function wResize() {
@@ -240,59 +110,18 @@ $(document).ready(function() {
 
 	
 
-
-//Chrome Smooth Scroll
-	try {
-		$.browserSelector();
-		if($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch(err) {
-
-	};
-
-	$(".profi_item .row").hover(function() {
-		$(this).addClass("hover");
-	}, function() {
-		$(this).removeClass("hover");
-	});
-
-
 $(window).load(function() {
-
-	//Preloader
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
 
 	//animate-css.js Plugin. Animate Elements on Scroll
 	//Example: $(".element").animated("zoomInUp", "zoomOutDown");
-	$(".top_header h1").animated("fadeInDown", "fadeOut");
-	$(".top_header h2").animated("fadeInUp", "fadeOut");
-	$(".tabs_header .wrapper").animated("flipInY", "fadeOut");
-	$(".profi_item").animated("fadeInRight", "fadeOut");
-	$(".s_pofi form").animated("zoomInRight", "fadeOut");
-	$(".s_back h3").animated("fadeInUp", "fadeOut");
-	$(".other_langs").animated("fadeIn", "fadeOut");
-	$("section h2, footer h2, .contacts_top .tabs").animated("fadeInUp", "fadeOut");
+	$("h1").animated("fadeInUp", "fadeInUp");
+	$(".profi_item, h3").animated("fadeInRight", "fadeInRight");
+	$(".adv__item, .catalog__wrap").animated("zoomInUp", "zoomInUp");
+	$("p").animated("fadeIn", "fadeIn");
+	$("footer,  .con-padding").animated("pulse", "pulse");
 
 });
 
-// Адаптивные скрипты, которые срабатывают только при определенном разрешении экрана
-// Документация: https://github.com/maciej-gurban/responsive-bootstrap-toolkit
-(function($, document, window, viewport) {
-	function resizeWindow() {
-		// $("a").click(function() {
-		// 	if (viewport.is("lg")) {
-		// 		return false;
-		// 	};
-		// });
-};
 $(document).ready(function() {
 	resizeWindow();
 });
-$(window).bind("resize", function() {
-	viewport.changed(function(){
-		resizeWindow();
-	});
-});
-})(jQuery, document, window, ResponsiveBootstrapToolkit);

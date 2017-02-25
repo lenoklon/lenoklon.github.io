@@ -22,8 +22,9 @@
     <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
     <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="libs/owl/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="libs/magnific/magnific-popup.css" />
     <link rel="stylesheet" href="libs/animate/animate.min.css" />
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/reset.css" />
@@ -55,7 +56,7 @@
             <div class="container">
                 <div class="row">
                     <div class="header__menu_logo col-lg-4 col-md-5 col-sm-12">
-                        <a href="#" class="clearfix">
+                        <a href="index.html" class="clearfix">
                             <img src="img/logo.png" alt="logo" class="img-responsive">
                             <p>Зваукоизоляция и акустическое<br>
                             оформление помещений</p>
@@ -95,7 +96,7 @@
                         <li><a href="services.html">УСЛУГИ</a></li>
                         <li><a href="materials.html">МАТЕРИАЛЫ</a></li>
                         <li><a href="projects.html">ПРОЕКТЫ</a></li>
-                        <li><a href="#">СТАТЬИ</a></li>
+                        <li><a href="articles.html">СТАТЬИ</a></li>
                         <li><a href="partners.html">ПАРТНЁРЫ</a></li>
                         <li><a href="contacts.html">КОНТАКТЫ</a></li>
                     </ul>
@@ -108,14 +109,14 @@
             <div class="row">
                 <ul class="service__menu wrap_serv">
                     <li class="service__item"><a href="index.html">Главная</a></li>
-                    <li class="service__item"><a class="active" href="#">О нас</a></li>
+                    <li class="service__item"><a class="active" href="about.html">О нас</a></li>
                 </ul>
             </div>  
         </div>
     </section>
     <div class="content">
         <div class="container">
-            <div class="col-md-9 col-sm-9 col-xs-9">
+            <div class="col-md-9 col-sm-9">
                 <h2>О компании "Techno building"</h2>
                 <div class="post-text">
                     <p>
@@ -150,7 +151,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-3 sidebar">
+            <div class="col-md-3 col-sm-3 sidebar">
                 <div class="sidebar-color child-sidebar">
                     <h3>ООО «Техно Билдинг»</h3>
                     <h3>8 (800) 777-00-00</h3>
@@ -159,11 +160,12 @@
                 <div class="sidebar-adress child-sidebar">
                     <div class="sidebar-font">Санкт-Петербург,</div>
                     <div class="">
-                        <p class="sidebar-color">
+                        <!-- <p class="sidebar-color">
                             Рижский проспект, д. 41,
                             <br>(Бизнес-центр «Калинкинъ»),
                             <br> оф. 310
-                        </p>
+                        </p> -->
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=sKoUczNN1WQuPIcHVrlTK1oiu0Cm9QfY&amp;width=100%25&amp;height=240&amp;lang=en_US&amp;sourceType=constructor&amp;scroll=true"></script>
                     </div>
                 </div>
                 <div class="child-sidebar">
@@ -303,17 +305,17 @@
             <div class="col-md-3 footer-menu col-sm-6 col-xs-12">
                 <p>МЕНЮ</p>
                 <ul>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Партнеры</a></li>
-                    <li><a href="#">Материалы</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="partners.html">Партнеры</a></li>
+                    <li><a href="materials.html">Материалы</a></li>
                 </ul>
             </div>
             <div class="col-md-3 recomendation col-sm-6 col-xs-12">
                 <ul>
                     <li><a href="#">Рекомендации</a></li>
-                    <li><a href="#">Проэкты</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="projects.html">Проэкты</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
                 </ul>
             </div>
             <div class="col-md-3 back-call col-sm-6 col-xs-12">
@@ -341,16 +343,21 @@
     <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
     <script src="libs/respond/respond.min.js"></script>
     <![endif]-->
-        <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+   <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+    <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
     <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
     <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
     <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
     <script src="libs/owl/owl.carousel.min.js"></script>
-    <script src="libs/countdown/jquery.plugin.js"></script>
-    <script src="libs/countdown/jquery.countdown.min.js"></script>
-    <script src="libs/countdown/jquery.countdown-ru.js"></script>
     <script src="libs/landing-nav/navigation.js"></script>
     <script src="libs/bootstrap-toolkit/bootstrap-toolkit.min.js"></script>
+    <script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+    <script src="libs/equalheight/jquery.equalheight.js"></script>
+    <script src="libs/plugins-scroll/plugins-scroll.js"></script> <!-- Stellar Parallax Plugin -->
+    <script src="libs/stellar/jquery.stellar.min.js"></script>
+    <script src="libs/retina/retina.min.js"></script> <!-- Retina.js Plugin -->
+    <script src="libs/magnific/jquery.magnific-popup.min.js"></script> <!-- Magnific Popup Plugin -->
+    <script src="libs/waypoints/waypoints.min.js"></script> <!-- WayPoints Plugin -->
     <script src="libs/animate/animate-css.js"></script> <!-- AnimateCSS JS Plugin -->
     <script src="js/common.js"></script>
 
