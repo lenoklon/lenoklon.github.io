@@ -21,6 +21,12 @@ $(document).ready(function() {
 		},
 		navText : ""
 	});
+
+	$(".toggle-mnu").click(function() {
+		$(this).toggleClass("on");
+		$(".header__nav ul").slideToggle();
+		return false;
+	});
 	
 	$(".sp__slider").owlCarousel({
 		loop:true,

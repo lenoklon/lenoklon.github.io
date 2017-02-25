@@ -1,0 +1,111 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.header__menu_calc p, .header__menu_price p {
+		float:none;
+		margin-left: 40px;
+	}
+	.top-line-ckeckpoint {
+		text-align: center;
+		p {
+			line-height: 18px;
+		}
+	}
+	.back-call-img img {
+		margin: 0;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	
+	.col-md-3.text-right.padding20.col-sm-12 {
+		text-align: center;
+	}
+	.header__nav ul {
+		background-color:#00a5ea;
+		display: none;
+		position: absolute;
+		left: 35%;
+		width: 100%;
+	}
+	.header__nav ul li {
+		display: block;
+	}
+
+	.header__menu_logo {
+		text-align: center;
+		display: inline-block;
+		width: 100%;
+	}
+	ul.header__nav_list {
+		text-align: center;
+		width: 30%;
+		margin: auto;
+		z-index:20;
+		li {
+			width: 100%;
+			padding: 10px 0;
+			a {
+				color:#fff;
+			}
+		}
+	}
+	
+	.back-call {
+		margin-top: 30px;
+	}
+	.recomendation {
+		float: right;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	ul.header__nav_list {
+		width: 43%;
+	}
+	.header__nav ul {
+		left: 28%;
+	}
+
+	.top_links {
+		background-color: #585d61;
+		display: none;
+		margin-top: 15px;
+		padding: 14px;
+		position: absolute;
+		vertical-align: middle;
+		width: 100%;
+	}
+
+	footer {
+		text-align: center;
+		.col-xs-12 {
+			margin-bottom: 30px;
+			border-bottom: 1px dashed #fff;
+		}
+	}
+
+}
+
+@media only screen and (max-width : 560px) {
+
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	ul.header__nav_list {
+		width: 100%;
+		left: 0;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

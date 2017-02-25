@@ -48,55 +48,48 @@
 </head>
 <body>
 	<header>
-		<div class="header__top clearfix">
-			<div class="container">
-				<div class="row">
-					<div class="header__top">
-						<div class="header__top_location col-lg-5 col-md-5 col-sm-5">
-							<i class="fa fa-map-marker"></i>
-							<span>г. Санкт-Петербург, Рижский проспект, д. 41, оф. 310</span>
-						</div>
-						<div class="header__top_search col-lg-4 col-md-4 col-sm-4">
-							<form class="search__form clearfix" action="#">
-								<input type="text" placeholder="Поиск">
-								<input type="submit" value="">
-							</form>
-						</div>
-						<div class="header__top_mail col-lg-3 col-md-3 col-sm-3">
-							<a href="#"><i class="fa fa-envelope"></i>
-							<span> info@techno-building.ru</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<div class="header-top-line">
+            <div class="container">
+                <div class="col-md-5 padding20 text-left top-line-ckeckpoint col-sm-6">
+                    <p class="img-ckeckpoint"> г. Санкт-Петербург, Рижский проспект, д. 41, оф. 310</p>
+                </div>
+                <div class="col-md-4 text-center padding10 col-sm-6">
+                    <div class="header-search">
+                        <input placeholder="Поиск" class="search-input" type="text">
+                        <img src="img/icon-search.png" class="img-header-search" />
+                    </div>
+                </div>
+                <div class="col-md-3 text-right padding20 col-sm-12">
+                    <p class="top-line-email">info@techno-building.ru</p>
+                </div>
+            </div>
+        </div>
 		<div class="header__menu clearfix">
 			<div class="container">
 				<div class="row">
-					<div class="header__menu_logo col-lg-4">
+					<div class="header__menu_logo col-lg-4 col-md-5 col-sm-12">
 						<a href="#" class="clearfix">
 							<img src="img/logo.png" alt="logo" class="img-responsive">
 							<p>Зваукоизоляция и акустическое<br>
 							оформление помещений</p>
 						</a>
 					</div>
-					<div class="header__menu_calc btn_shadow col-lg-2">
-						<a href="#" class="clearfix">
-							<img src="img/calc.svg" alt="calc">
+					<div class="col-md-2 col-sm-6">
+						<a href="#" class="header__menu_calc btn_shadow  clearfix">
+							<img src="img/calc.svg" alt="calc" class="img-responsive">
 							<p><span>Рассчитать</span>
 							стоимость</p>
 						</a>
 					</div>
-					<div class="col-lg-1"></div>
-
-					<div class="header__menu_price btn_shadow col-lg-2">
-						<a href="prices.html" class="clearfix ">
-							<img src="img/price.svg" alt="price">
+					<div class="space col-lg-1 hidden-md hidden-sm hidden-xs"></div>
+					<div class="col-md-2 col-sm-6">
+						<a href="prices.html" class="header__menu_price btn_shadow  clearfix ">
+							<img src="img/price.svg" alt="price" class="img-responsive">
 							<p><span>Прайс</span>
 							материалов</p>
 						</a>
 					</div>
-					<div class="header__menu_contact col-lg-3">
+					<div class="header__menu_contact col-md-3 col-sm-12 col-xs-12">
 						<span class="contact__phone">8 (800) 777-00-00</span>
 						<span>по будням с 9:30 до 20:30</span>
 						<a href="#" class="btn contact__btn">Заказать звонок</a>
@@ -107,6 +100,9 @@
 		<div class="header__nav">
 			<div class="container-fluid bb">
 				<div class="row wrap">
+					<!-- КНОПКА - ПИРОЖОК -->
+					<!-- <button class="main_mnu_button hidden-md hidden-lg"><i class="fa fa-bars"></i></button> -->
+					<a href="#" class="toggle-mnu hidden-lg hidden-md"><span></span></a>
 					<ul class="header__nav_list col-lg-12">
 						<li><a href="about.html">О НАС</a></li>
 						<li><a href="services.html">УСЛУГИ</a></li>
@@ -238,45 +234,43 @@
    
    
 	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3  col-md-3 col-sm-6 address">
-					<span>Санкт-Петербург</span>
-					<span class="contact__phone">8 (800) 777-00-00</span>
-					<span>г. Санкт-Петербург, Рижский
-						проспект, д. 41, оф. 310</span>
-						<a href="#">info@techno-building.ru</a>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 f_menu">
-					<h3>меню</h3>
-					<ul>
-						<li><a href="about.html">О компании</a></li>
-						<li><a href="services.html">Услуги</a></li>
-						<li><a href="partners.html">Партнёры</a></li>
-						<li><a href="materials.html">Материалы</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 f_menu f_menu_next">
-					<ul>
-						<li><a href="#">рекомендации</a></li>
-						<li><a href="projects.html">проекты</a></li>
-						<li><a href="contacts.html">контакты</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 foot_logo">
-					<a href="#">Заказать обратный звонок</a>
-					<a href="#">Задать вопрос</a>
-					<span>&copy; Техно Билдинг, 2016.
-						Все права защищены.
-					</span>
-					<span class="f_logo">Создание сайта
-					 <a href="#"> <img src="img/foot_logo.png" alt=""></a>
-					</span>
-				</div>
-			</div>
-		</div>
-	</footer>
-
+        <div class="container">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div>
+                    <p>Санкт-Петербург</p>
+                    <p class="font-24 margin20">8 (800) 777-00-00</p>
+                    <p class="margin20">г. Санкт-Петербург, Рижский проспект, д. 41, оф. 310</p>
+                    <p>info@techno-building.ru</p>
+                </div>
+            </div>
+            <div class="col-md-3 footer-menu col-sm-6 col-xs-12">
+                <p>МЕНЮ</p>
+                <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Партнеры</a></li>
+                    <li><a href="#">Материалы</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 recomendation col-sm-6 col-xs-12">
+                <ul>
+                    <li><a href="#">Рекомендации</a></li>
+                    <li><a href="#">Проэкты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 back-call col-sm-6 col-xs-12">
+                <p class="margin20 font-bold"><a href="#">Заказать обратный звонок</a></p>
+                <p class="margin20 font-bold"><a href="#">Задать вопрос</a></p>
+                <p class="margin20">© Техно Билдинг, 2016.
+                    <br> Все права защищены.</p>
+                <p class="back-call-img">
+                     <span>Создание сайта: </span>
+                     <a href="#"><img src=" img/kreado.png" class="img-responsive" alt=""></a>
+                </p>
+            </div>
+        </div>
+    </footer>
 
 	<div class="hidden"></div>
 	<!-- Mandatory for Responsive Bootstrap Toolkit to operate -->
