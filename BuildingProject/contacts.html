@@ -59,8 +59,8 @@
                         <img src="img/icon-search.png" class="img-header-search" />
                     </div>
                 </div>
-                <div class="col-md-3 text-right padding20 col-sm-12">
-                    <p class="top-line-email">info@techno-building.ru</p>
+               <div class="col-md-3 text-right padding20 col-sm-12">
+                	<a href="mailto:info@techno-building.ru" class="top-line-email">info@techno-building.ru</a>
                 </div>
             </div>
         </div>
@@ -92,7 +92,7 @@
 					<div class="header__menu_contact col-md-3 col-sm-12 col-xs-12">
 						<span class="contact__phone">8 (800) 777-00-00</span>
 						<span>по будням с 9:30 до 20:30</span>
-						<a href="#" class="btn contact__btn">Заказать звонок</a>
+						<a href="#callback_phone" class="btn contact__btn fancybox" >Заказать звонок</a>
 					</div>
 				</div>
 			</div>
@@ -130,7 +130,10 @@
 	<section class="address">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=4J_rEcxfg6YUlSbNy_zb0VXCwtkwCOeB&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<h3>ООО "Техно Билдинг"</h3>
 					<p><b><a href="tel:78125555555">+7 812 555-55-55</a></b></p>
 					<p>По будням, с 9:30 до 20:30</p>
@@ -146,9 +149,6 @@
 						<li class="print"><a href="#">Распечатать</a></li>
 						<li class="print download"><a href="#">Скачать</a></li>
 					</ul>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=4J_rEcxfg6YUlSbNy_zb0VXCwtkwCOeB&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
 				</div>
 			</div>
 		</div>
@@ -217,7 +217,15 @@
     </footer>
 
 
-	<div class="hidden"></div>
+	<!-- ****************ОБРАТНЫЙ ЗВОНОК*********************** -->
+	<div class="hidden">
+	<form id="callback_phone" class="pop_form__phone">
+			<h3>Мы Вам перезвоним</h3>
+			<input type="text" name="name" placeholder="Ваше Имя..." required />
+			<input type="text" name="phone" placeholder="Номер Телефона..." required />
+			<button class="button" type="submit">запрос</button>
+		</form>
+	</div>
 	<!-- Mandatory for Responsive Bootstrap Toolkit to operate -->
 	<div class="device-xs visible-xs"></div>
 	<div class="device-sm visible-sm"></div>

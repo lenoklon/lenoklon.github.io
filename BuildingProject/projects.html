@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 text-right padding20 col-sm-12">
-                    <p class="top-line-email">info@techno-building.ru</p>
+                	<a href="mailto:info@techno-building.ru" class="top-line-email">info@techno-building.ru</a>
                 </div>
             </div>
         </div>
@@ -92,7 +92,7 @@
 					<div class="header__menu_contact col-md-3 col-sm-12 col-xs-12">
 						<span class="contact__phone">8 (800) 777-00-00</span>
 						<span>по будням с 9:30 до 20:30</span>
-						<a href="#" class="btn contact__btn">Заказать звонок</a>
+						<a href="#callback_phone" class="btn contact__btn fancybox" >Заказать звонок</a>
 					</div>
 				</div>
 			</div>
@@ -130,15 +130,15 @@
 	
 	<section class="release, projects">
 		<h1 class="h1_title">РЕАЛИЗОВАННЫЕ ПРОЕКТЫ</h1>
-		<div class="container   proj__wrap">
+		<div class="container">
 			<div class="row">
 				<div class="project__slider col-md-12 col-sm-12 col-xs-12">
 					<div class="project__slider_item">
 						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 project_img">
 							<img src="img/reelase.jpg" alt="" class="img-responsive">
 						</div>
-						<div class="col-lg-1 col-md-1 col-sm-0 col-xs-12"></div>
-						<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 projects_content">
+						<div class="col-lg-1 col-md-1 col-sm-12 col-xs-12"></div>
+						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 projects_content">
 							<p>Новая сцена Александринского театра</p>
 							<ul>
 								<li>Корректировка и согласование проектов акустической отделки помещений зала, аппаратных звукозаписи</li>
@@ -152,7 +152,7 @@
 							<span>Сроки: 15.07.2016 - 12.08.2016</span>
 							<a href="#" class="btn">О проекте</a>
 						</div>
-						<div class="col-lg-1 col-md-1 col-sm-0 col-xs-12">
+						<div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
 						</div>
 					</div>
 				</div>
@@ -303,7 +303,15 @@
         </div>
     </footer>
 
-	<div class="hidden"></div>
+    <!-- ****************ОБРАТНЫЙ ЗВОНОК*********************** -->
+    <div class="hidden">
+    	<form id="callback_phone" class="pop_form__phone">
+    		<h3>Мы Вам перезвоним</h3>
+    		<input type="text" name="name" placeholder="Ваше Имя..." required />
+    		<input type="text" name="phone" placeholder="Номер Телефона..." required />
+    		<button class="button" type="submit">запрос</button>
+    	</form>
+    </div>
 	<!-- Mandatory for Responsive Bootstrap Toolkit to operate -->
 	<div class="device-xs visible-xs"></div>
 	<div class="device-sm visible-sm"></div>

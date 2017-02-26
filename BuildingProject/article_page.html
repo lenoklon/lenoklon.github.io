@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 text-right padding20 col-sm-12">
-                    <p class="top-line-email">info@techno-building.ru</p>
+                	<a href="mailto:info@techno-building.ru" class="top-line-email">info@techno-building.ru</a>
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@
 						</a>
 					</div>
 					<div class="col-md-2 col-sm-6">
-						<a href="#" class="header__menu_calc btn_shadow  clearfix">
+						 <a href="#callback2" class="header__menu_calc btn_shadow  clearfix fancybox">
 							<img src="img/calc.svg" alt="calc" class="img-responsive">
 							<p><span>Рассчитать</span>
 							стоимость</p>
@@ -84,7 +84,7 @@
 					<div class="header__menu_contact col-md-3 col-sm-12 col-xs-12">
 						<span class="contact__phone">8 (800) 777-00-00</span>
 						<span>по будням с 9:30 до 20:30</span>
-						<a href="#" class="btn contact__btn">Заказать звонок</a>
+						<a href="#callback_phone" class="btn contact__btn fancybox" >Заказать звонок</a>
 					</div>
 				</div>
 			</div>
@@ -142,7 +142,11 @@
 						<div class="article__page_imgs">
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xs-6">
 								<div class="imgs__wrap_left">
-									<img class="img-responsive" src="img/YouTube-Video preview.jpg" alt="">
+									<!-- <img class="img-responsive" src="img/YouTube-Video preview.jpg" alt=""> -->
+									<div class="videoWrapper embed-responsive embed-responsive-16by9"><video autoplay="autoplay" loop="loop" class="embed-responsive-item">
+										<source src="video/videoplayback.mp4">
+									</video>
+									</div>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -180,9 +184,9 @@
 						монтажных работ</a></li>
 						<li><a href="#">По виброизоляции</a></li>
 						<li class="separate"><a href="#"></a></li>
-						<li class="service pr"><a href="#">Рассчитать стоимость</a></li>
-						<li class="service call"><a href="#">Заказать звонок</a></li>
-						<li class="service email"><a href="#">Задать вопрос</a></li>
+						<li class="service pr"> <a href="#callback2" class="fancybox">Рассчитать стоимость</a></li>
+						<li class="service call"><a href="#callback_phone" class="fancybox">Заказать звонок</a></li>
+						<li class="service email"><a href="#callback_question" class="fancybox">Задать вопрос</a></li>
 					</ul>
 				</div>
 			</div>
@@ -219,7 +223,7 @@
                 </ul>
             </div>
             <div class="col-md-3 back-call col-sm-6 col-xs-12">
-                <p class="margin20 font-bold"><a href="#">Заказать обратный звонок</a></p>
+                <p class="margin20 font-bold"><a href="#callback_phone" class="fancybox">Заказать обратный звонок</a></p>
                 <p class="margin20 font-bold"><a href="#">Задать вопрос</a></p>
                 <p class="margin20">© Техно Билдинг, 2016.
                     <br> Все права защищены.</p>
@@ -231,8 +235,123 @@
         </div>
     </footer>
 
-
-	<div class="hidden"></div>
+	 <div class="hidden">
+    <div id="callback2" class="pop_form2">
+        <div class="container">
+            <h1>Выберите тип изолируемой поверхности:</h1>
+            <div class="row mt30">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="#" class="btn"> Перегородки</a>
+                    <div class="sizes clearfix">
+                        <p><label><span>Длина: </span><input type="text"> м.</label></p>
+                        <p><label><span>Ширина:</span><input type="text"> м.</label></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="#" class="btn"> Облицовка</a>
+                    <div class="sizes">
+                        <p><label><span>Длина: </span><input type="text"> м.</label></p>
+                        <p><label><span>Ширина:</span><input type="text"> м.</label></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="#" class="btn"> Потолок</a>
+                    <div class="sizes">
+                        <p><label><span>Длина: </span><input type="text"> м.</label></p>
+                        <p><label><span>Ширина:</span><input type="text"> м.</label></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt30">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    
+                    <div class="content">
+                        <div class="descr">
+                            <p>Самая распространенная 
+                                и востребованная система 
+                                для разделения двух помещений друг от друга. Применяется 
+                                в многоквартирных жилых домах повышенной комфортности, гостиницах, кабинетах, переговорных и т.п. Обеспечивает помещение акустическим комфортом благодаря защите 
+                                от бытового воздушного шума.  
+                            </p>
+                            <p>Степень звукоизоляции: Rw = 59 дБ    
+                                Толщина, мм:59</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    
+                    <div class="content">
+                        <img src="img/layer_3.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="content">
+                        <img src="img/layer-2.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt30">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="content">
+                        <ul class="materials mt30">Стоимость материалов: 
+                            <li>5 456 руб.</li>
+                        </ul>
+                        <ul class="materials mt30">Стоимость: 
+                            <li>Работы: 3 500 руб.</li>
+                        </ul>
+                        <p class="result mt30"> Всего: 8 956 руб.</p>
+                    <a href="#" class="btn mt30">Заказать</a>
+                </div>
+            </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    
+                    <div class="content">
+                        <ul class="materials mt30">Стоимость материалов: 
+                            <li>5 456 руб.</li>
+                        </ul>
+                        <ul class="materials mt30">Стоимость: 
+                            <li>Работы: 3 500 руб.</li>
+                        </ul>
+                        <p class="result mt30"> Всего: 8 956 руб.</p>
+                    <a href="#" class="btn mt30">Заказать</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="content">
+                        <ul class="materials mt30">Стоимость материалов: 
+                            <li>5 456 руб.</li>
+                        </ul>
+                        <ul class="materials mt30">Стоимость: 
+                            <li>Работы: 3 500 руб.</li>
+                        </ul>
+                        <p class="result mt30"> Всего: 8 956 руб.</p>
+                    <a href="#" class="btn mt30">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div> 
+    </div><!-- callback -->
+</div>
+    <!-- ****************ОБРАТНЫЙ ЗВОНОК*********************** -->
+    <div class="hidden">
+    	<form id="callback_phone" class="pop_form__phone">
+    		<h3>Мы Вам перезвоним</h3>
+    		<input type="text" name="name" placeholder="Ваше Имя..." required />
+    		<input type="text" name="phone" placeholder="Номер Телефона..." required />
+    		<button class="button" type="submit">запрос</button>
+    	</form>
+    </div>
+    <!-- ****************ЗАДАТЬ ВОПРОС*********************** -->
+    <div class="hidden">
+    	<form id="callback_question" class="pop_form__question">
+    		<h3>Рады ответить на Ваш вопрос</h3>
+    		<input type="text" name="name" placeholder="Ваше Имя..." required />
+    		<input type="text" name="phone" placeholder="Ваш email.." required />
+    		<textarea name="" id="" cols="30" rows="10"></textarea>
+    		<button class="button" type="submit">запрос</button>
+    	</form>
+    </div>
 	<!-- Mandatory for Responsive Bootstrap Toolkit to operate -->
 	<div class="device-xs visible-xs"></div>
 	<div class="device-sm visible-sm"></div>

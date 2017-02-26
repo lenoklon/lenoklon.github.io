@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 text-right padding20 col-sm-12">
-                    <p class="top-line-email">info@techno-building.ru</p>
+                	<a href="mailto:info@techno-building.ru" class="top-line-email">info@techno-building.ru</a>
                 </div>
             </div>
         </div>
@@ -92,7 +92,7 @@
 					<div class="header__menu_contact col-md-3 col-sm-12 col-xs-12">
 						<span class="contact__phone">8 (800) 777-00-00</span>
 						<span>по будням с 9:30 до 20:30</span>
-						<a href="#" class="btn contact__btn">Заказать звонок</a>
+						<a href="#callback_phone" class="btn contact__btn fancybox" >Заказать звонок</a>
 					</div>
 				</div>
 			</div>
@@ -334,9 +334,9 @@
 						<li><a href="#">Акустическое проектирование</a></li>
 						<li><a href="#">Виброизоляция</a></li>
 						<li class="separate"><a href="#"></a></li>
-						<li class="service pr"><a href="#">Рассчитать стоимость</a></li>
-						<li class="service call"><a href="#">Заказать звонок</a></li>
-						<li class="service email"><a href="#">Задать вопрос</a></li>
+						<li class="service pr"> <a href="#callback2" class="fancybox">Рассчитать стоимость</a></li>
+						<li class="service call"><a href="#callback_phone" class="fancybox">Заказать звонок</a></li>
+						<li class="service email"><a href="#callback_question" class="fancybox">Задать вопрос</a></li>
 					</ul>
 				</div>
 			</div>
@@ -385,7 +385,25 @@
         </div>
     </footer>
 
-	<div class="hidden"></div>
+     <!-- ****************ОБРАТНЫЙ ЗВОНОК*********************** -->
+    <div class="hidden">
+    	<form id="callback_phone" class="pop_form__phone">
+    		<h3>Мы Вам перезвоним</h3>
+    		<input type="text" name="name" placeholder="Ваше Имя..." required />
+    		<input type="text" name="phone" placeholder="Номер Телефона..." required />
+    		<button class="button" type="submit">запрос</button>
+    	</form>
+    </div>
+    <!-- ****************ЗАДАТЬ ВОПРОС*********************** -->
+    <div class="hidden">
+    	<form id="callback_question" class="pop_form__question">
+    		<h3>Рады ответить на Ваш вопрос</h3>
+    		<input type="text" name="name" placeholder="Ваше Имя..." required />
+    		<input type="text" name="phone" placeholder="Ваш email.." required />
+    		<textarea name="" id="" cols="30" rows="10"></textarea>
+    		<button class="button" type="submit">запрос</button>
+    	</form>
+    </div>
 	<!-- Mandatory for Responsive Bootstrap Toolkit to operate -->
 	<div class="device-xs visible-xs"></div>
 	<div class="device-sm visible-sm"></div>

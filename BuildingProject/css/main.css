@@ -162,6 +162,9 @@ ul.header__nav_list {
 header .space {
   width: 5%; }
 
+.top-line-email {
+  color: #fff; }
+
 .header__menu_contact {
   float: right;
   font-family: "RobotoRegular";
@@ -570,10 +573,14 @@ header .space {
       width: 22px;
       height: 26px; }
 
-.article__page_imgs .imgs__wrap_left {
-  margin-right: 20px; }
+.imgs__wrap_left {
+  margin: 20px 0; }
+
 .article__page_imgs .imgs__wrap_right {
   margin-left: 20px; }
+
+.article__page_imgs .videoWrapper {
+  margin-right: 20px; }
 
 .article__page_imgs > div {
   padding: 0; }
@@ -944,6 +951,7 @@ td.p0 {
   .article__content img {
     margin: 20px 0; }
   .article__content p {
+    clear: both;
     color: #333;
     font-size: 18px;
     font-weight: 300;
@@ -952,6 +960,9 @@ td.p0 {
     text-align: left; }
   .article__content .btn {
     margin: 20px 0; }
+
+video {
+  width: 100%; }
 
 .article .sublist, .material__list .sublist {
   margin-left: 20px;
@@ -1016,6 +1027,25 @@ td.p0 {
   .sponsors .owl-next {
     background: url(../img/arrow-right.svg) no-repeat;
     right: -30px; }
+
+.service__lists h4 {
+  margin-bottom: 15px !important; }
+
+.sponsor__item img:hover {
+  opacity: .5; }
+
+ul.requisites a:hover {
+  border-bottom: 1px dashed #333; }
+
+.materials__content img:hover {
+  background: #00a5ea;
+  opacity: .7; }
+
+.btn_shadow {
+  border: 1px solid transparent; }
+
+.btn_shadow:hover {
+  border: 1px solid #00a5ea; }
 
 .release, .projects {
   padding: 50px 0;
@@ -1301,5 +1331,36 @@ footer li {
         font-size: 18px; }
         .pop_form2 .description .insolation p span {
           color: #00a5ea; }
+
+.pop_form__phone,
+.pop_form__question {
+  text-align: center; }
+
+.pop_form__phone input[type="text"],
+.pop_form__question input[type="text"] {
+  padding: 0 0 0 10px;
+  display: block;
+  line-height: 24px;
+  margin: 0 auto 12px;
+  width: 90%;
+  border: #00a5ea 1px solid; }
+
+.pop_form__phone .button,
+.pop_form__question .button {
+  margin: 20px auto;
+  border: none;
+  background: #00a5ea;
+  color: #fff;
+  padding: 10px 20px; }
+
+.pop_form__phone h3,
+.pop_form__question h3 {
+  margin: 10px auto 15px;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+.pop_form__question textarea {
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */

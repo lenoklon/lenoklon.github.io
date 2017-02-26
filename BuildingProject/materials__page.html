@@ -59,8 +59,8 @@
                         <img src="img/icon-search.png" class="img-header-search" />
                     </div>
                 </div>
-                <div class="col-md-3 text-right padding20 col-sm-12">
-                    <p class="top-line-email">info@techno-building.ru</p>
+                 <div class="col-md-3 text-right padding20 col-sm-12">
+                	<a href="mailto:info@techno-building.ru" class="top-line-email">info@techno-building.ru</a>
                 </div>
             </div>
         </div>
@@ -92,7 +92,7 @@
 					<div class="header__menu_contact col-md-3 col-sm-12 col-xs-12">
 						<span class="contact__phone">8 (800) 777-00-00</span>
 						<span>по будням с 9:30 до 20:30</span>
-						<a href="#" class="btn contact__btn">Заказать звонок</a>
+						<a href="#callback_phone" class="btn contact__btn fancybox" >Заказать звонок</a>
 					</div>
 				</div>
 			</div>
@@ -140,7 +140,7 @@
 						
 						<div class="material__slider row">
 							<!-- ***FOTORAMA*** -->
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mat__fotorama">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mat__fotorama">
 								<div class="fotorama" data-nav="thumbs" data-thumbwidth data-thumbheight>
 									<a href="img/fotorama_big.jpg"><img class="img-responsive" src="img/fotorama_small-1.jpg"></a>
 									<a href="img/fotorama_big.jpg"><img src="img/fotorama_small-2.jpg"></a>
@@ -148,7 +148,7 @@
 									<a href="img/fotorama_big.jpg"><img src="img/fotorama_small-2.jpg"></a>
 								</div>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mat__content_block mt30">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mat__content_block mt30">
 								<p>Тонкая тяжелая звукоизоляционная мембрана (производство Испания). Применяется в звукоизоляционных конструкциях пола, потолка, стен, перегородок в помещениях разного назначения.</p>
 								<div class="clearfix mat__btn">
 									<p class="mat__size"><span>Размер: </span>60 &times; 155</p>
@@ -157,9 +157,9 @@
 								<div class="service__lists">
 									<h4>Назначение:</h4>
 									<ul>
-										<li><a href="#">Каркасная система потолка</a></li>
-										<li><a href="#">Каркасная система стен</a></li>
-										<li><a href="#">Любые подвесные конструкции</a></li>
+										<li>Каркасная система потолка</li>
+										<li>Каркасная система стен</li>
+										<li>Любые подвесные конструкции</li>
 									</ul>
 								</div>
 								<div class="clearfix mat__btn mat__page_btn">
@@ -177,38 +177,21 @@
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt30">
 									<h3>Фото наших работ</h3>
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-4 col-sm-6">
 									<img class="img-responsive" src="img/foto-1.jpg" alt="">
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-4 col-sm-6">
 									<img class="img-responsive" src="img/foto-1.jpg" alt="">
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-4 col-sm-6">
 									<img class="img-responsive" src="img/foto-1.jpg" alt="">
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-4 col-sm-6">
 									<img class="img-responsive" src="img/foto-1.jpg" alt="">
 								</div>
 							</div>
 						</div>
 
-					</div>
-					<div class="pagination">
-						<div class="col-lg-12">
-							<div class="pagination__wrap">
-								<ul class="clearfix">
-									<li class="last"><a href="#"><img src="img/double-left-chevron-g.png" alt=""></a></li>
-									<li><a href="#">1</a></li>
-									<li><a href="#">2</a></li>
-									<li class="active"><a href="#">3</a></li>
-									<li>...</li>
-									<li><a href="#"></a></li>
-									<li><a href="#">10</a></li>
-									<!-- <li class="last"><a href="#">&raquo;</a></li> -->
-									<li class="last"><a href="#"><img src="img/double-right-chevron-g.png" alt=""></a></li>
-								</ul>
-							</div>
-						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-3">
@@ -223,9 +206,9 @@
 						<li><a href="#">Материалы для виброизоляции</a></li>
 						<li><a href="#">Каталоги материалов</a></li>
 						<li class="separate"><a href="#"></a></li>
-						<li class="service pr"><a href="#">Рассчитать стоимость</a></li>
-						<li class="service call"><a href="#">Заказать звонок</a></li>
-						<li class="service email"><a href="#">Задать вопрос</a></li>
+						<li class="service pr"> <a href="#callback2" class="fancybox">Рассчитать стоимость</a></li>
+						<li class="service call"><a href="#callback_phone" class="fancybox">Заказать звонок</a></li>
+						<li class="service email"><a href="#callback_question" class="fancybox">Задать вопрос</a></li>
 					</ul>
 				</div>
 			</div>
@@ -272,7 +255,25 @@
         </div>
     </footer>
 
-	<div class="hidden"></div>
+    <!-- ****************ОБРАТНЫЙ ЗВОНОК*********************** -->
+    <div class="hidden">
+    	<form id="callback_phone" class="pop_form__phone">
+    		<h3>Мы Вам перезвоним</h3>
+    		<input type="text" name="name" placeholder="Ваше Имя..." required />
+    		<input type="text" name="phone" placeholder="Номер Телефона..." required />
+    		<button class="button" type="submit">запрос</button>
+    	</form>
+    </div>
+    <!-- ****************ЗАДАТЬ ВОПРОС*********************** -->
+    <div class="hidden">
+    	<form id="callback_question" class="pop_form__question">
+    		<h3>Рады ответить на Ваш вопрос</h3>
+    		<input type="text" name="name" placeholder="Ваше Имя..." required />
+    		<input type="text" name="phone" placeholder="Ваш email.." required />
+    		<textarea name="" id="" cols="30" rows="10"></textarea>
+    		<button class="button" type="submit">запрос</button>
+    	</form>
+    </div>
 	<!-- Mandatory for Responsive Bootstrap Toolkit to operate -->
 	<div class="device-xs visible-xs"></div>
 	<div class="device-sm visible-sm"></div>

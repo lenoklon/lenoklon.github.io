@@ -60,7 +60,7 @@ $(document).ready(function() {
 	//Попап менеджер FancyBox
 	$(".fancybox").fancybox();
 
-	
+	$("video").prop("volume", 0);
 
 	//Кнопка "Наверх"
 	//Документация:
@@ -111,13 +111,11 @@ $(document).ready(function() {
 	
 
 $(window).load(function() {
-
 	//animate-css.js Plugin. Animate Elements on Scroll
 	//Example: $(".element").animated("zoomInUp", "zoomOutDown");
 	$("h1").animated("fadeInUp", "fadeInUp");
 	$(".profi_item, h3").animated("fadeInRight", "fadeInRight");
 	$(".adv__item, .catalog__wrap").animated("zoomInUp", "zoomInUp");
-	$("p").animated("fadeIn", "fadeIn");
 	$("footer,  .con-padding").animated("pulse", "pulse");
 
 });
