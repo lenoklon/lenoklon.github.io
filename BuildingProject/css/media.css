@@ -196,6 +196,19 @@
     height: initial;
     line-height: 22px;
     position: relative; } }
+.header__nav_list li:nth-child(2) a:before,
+.header__nav_list li:nth-child(3) a:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 6px;
+  background: url("../img/arrow-down.svg") no-repeat;
+  bottom: -10px;
+  left: 50%; }
+
+.header__nav_list .sublist li a:before {
+  display: none; }
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   ul.header__nav_list {
