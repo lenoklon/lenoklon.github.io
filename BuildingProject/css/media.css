@@ -54,7 +54,29 @@
     left: 35%;
     width: 100%; }
 
-  .header__nav ul li {
+  .header__nav ul.sublist {
+    position: static;
+    text-align: center;
+    display: none;
+    width: 100%;
+    left: 0;
+    margin: 0; }
+    .header__nav ul.sublist li {
+      padding: 5px; }
+    .header__nav ul.sublist a {
+      width: 100%;
+      text-align: center;
+      font-size: 13px; }
+
+  .header__nav .sublist {
+    display: none; }
+    .header__nav .sublist a {
+      color: grey;
+      border-bottom: 1px dashed grey; }
+      .header__nav .sublist a:hover {
+        color: #333; }
+
+  .header__nav_list li:hover .sublist {
     display: block; }
 
   .header__menu_logo {

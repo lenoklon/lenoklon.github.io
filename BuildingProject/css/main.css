@@ -199,18 +199,19 @@ header .space {
     .header__nav li a {
       color: #333;
       position: relative;
-      -webkit-transition: all .25s;
-      transition: all .25s; }
-      .header__nav li a:before {
-        content: '';
-        display: none;
-        background: url(../img/arrow-down.svg) no-repeat;
-        color: #000;
-        width: 10px;
-        height: 9px;
-        position: absolute;
-        bottom: -7px;
-        right: 41%; }
+      -webkit-transition: all 1s;
+      transition: all 1s; }
+    .header__nav li a:nth-child(2):before,
+    .header__nav li a:nth-child(3):before {
+      content: '';
+      display: none;
+      background: url(../img/arrow-down.svg) no-repeat;
+      color: #000;
+      width: 10px;
+      height: 9px;
+      position: absolute;
+      bottom: -7px;
+      right: 41%; }
 
 .main_mnu_button {
   background-color: transparent;
@@ -964,21 +965,24 @@ td.p0 {
 video {
   width: 100%; }
 
-.article .sublist, .material__list .sublist {
+.article .sublist, .material__list .sublist, .header__nav .sublist {
   margin-left: 20px;
   display: none; }
-  .article .sublist a, .material__list .sublist a {
+  .article .sublist a, .material__list .sublist a, .header__nav .sublist a {
     color: #6b808a;
     border-bottom: 1px dashed #6b808a; }
-    .article .sublist a:hover, .material__list .sublist a:hover {
+    .article .sublist a:hover, .material__list .sublist a:hover, .header__nav .sublist a:hover {
       color: #333; }
-.article .price__list li:hover .sublist, .material__list .price__list li:hover .sublist {
+.article .price__list li:hover .sublist,
+.article .header__nav_list li:hover .sublist, .material__list .price__list li:hover .sublist,
+.material__list .header__nav_list li:hover .sublist, .header__nav .price__list li:hover .sublist,
+.header__nav .header__nav_list li:hover .sublist {
   display: block; }
-.article .pagination, .material__list .pagination {
+.article .pagination, .material__list .pagination, .header__nav .pagination {
   border: none; }
-  .article .pagination a, .material__list .pagination a {
+  .article .pagination a, .material__list .pagination a, .header__nav .pagination a {
     padding: 2px 6px; }
-  .article .pagination a:hover, .material__list .pagination a:hover {
+  .article .pagination a:hover, .material__list .pagination a:hover, .header__nav .pagination a:hover {
     background: #00a5ea;
     color: #fff;
     border-radius: 100%;
@@ -987,6 +991,25 @@ video {
 
 .bg_blue {
   background: #f4f8fa; }
+
+.header__nav_list li {
+  position: relative; }
+  .header__nav_list li:after {
+    display: none; }
+
+.header__nav_list .sublist {
+  width: 420px;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: -161%;
+  z-index: 30;
+  border-bottom: 1px dashed #00a5ea;
+  border-left: 1px dashed #00a5ea;
+  border-right: 1px dashed #00a5ea; }
+  .header__nav_list .sublist li {
+    display: block;
+    padding: 15px; }
 
 .partners .partn__wrap {
   padding: 20px 0; }

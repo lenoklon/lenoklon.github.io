@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 	$(".toggle-mnu").click(function() {
 		$(this).toggleClass("on");
-		$(".header__nav ul").slideToggle();
+		$(".header__nav .header__nav_list").slideToggle();
 		return false;
 	});
 	

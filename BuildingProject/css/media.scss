@@ -54,6 +54,9 @@
 	.col-md-3.text-right.padding20.col-sm-12 {
 		text-align: center;
 	}
+	.header__nav {
+		// border-bottom: 2px solid #00a5ea;
+	}
 	.header__nav ul {
 		background-color:#00a5ea;
 		display: none;
@@ -61,7 +64,36 @@
 		left: 35%;
 		width: 100%;
 	}
-	.header__nav ul li {
+	.header__nav ul.sublist {
+		position: static;
+		text-align: center;
+		display:none;
+		width: 100%;
+		left: 0;
+		margin: 0;
+		li {
+			padding: 5px;
+		}
+		a {
+			width: 100%;
+			text-align: center;
+			font-size: 13px;
+		}
+	}
+   .header__nav {
+		.sublist {
+			display:none;
+			a {
+				color:grey;
+				border-bottom: 1px dashed grey;
+				&:hover {
+					color:#333;
+				}
+			}
+		}
+		
+	}
+	.header__nav_list li:hover .sublist {
 		display: block;
 	}
 
@@ -179,6 +211,21 @@
 		width: 100%;
 		padding-top: 35px;
 	}
+	// .header__nav_list .sublist {
+	// 	margin-left: 20px;
+	// 	display:none;
+	// 	a {
+	// 		color:#333;
+	// 		border-bottom: 1px dashed #333;
+	// 		&:hover {
+	// 			color:#333;
+	// 		}
+	// 	}
+	// }
+
+	// .header__nav_list li:hover .sublist {
+	// 	display: block;
+	// }
 }
 
 /* Small Devices, Tablets */
