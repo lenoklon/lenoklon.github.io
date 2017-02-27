@@ -46,6 +46,9 @@
 	.release .btn, .projects .btn {
 		width: 57%;
 	}
+	ul.service__menu.wrap_serv {
+		margin-top: 10px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -106,6 +109,7 @@
 		text-align: center;
 		width: 30%;
 		margin: auto;
+		margin-top: 12px;
 		z-index:20;
 		li {
 			width: 100%;
@@ -211,21 +215,11 @@
 		width: 100%;
 		padding-top: 35px;
 	}
-	// .header__nav_list .sublist {
-	// 	margin-left: 20px;
-	// 	display:none;
-	// 	a {
-	// 		color:#333;
-	// 		border-bottom: 1px dashed #333;
-	// 		&:hover {
-	// 			color:#333;
-	// 		}
-	// 	}
-	// }
-
-	// .header__nav_list li:hover .sublist {
-	// 	display: block;
-	// }
+	.header__nav_list li {
+		height: initial;
+		line-height: 22px;
+		position: relative;
+	}
 }
 
 /* Small Devices, Tablets */

@@ -76,8 +76,7 @@ header {
   font-family: "RobotoLight"; }
 
 .header__menu {
-  padding: 23px 0;
-  border-bottom: 2px solid #00a5ea; }
+  padding: 23px 0; }
 
 .header__top_location,
 .header__top_mail {
@@ -183,10 +182,12 @@ header .space {
     font-weight: 500; }
 
 .header__nav {
+  border-top: 2px solid #00a5ea;
+  border-bottom: 2px solid #00a5ea;
+  height: 62px;
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: 300;
-  padding: 18px 0 10px 0; }
+  font-weight: 300; }
   .header__nav ul {
     text-align: justify; }
     .header__nav ul:after {
@@ -229,7 +230,7 @@ header .space {
   width: 28px;
   height: 28px;
   margin: auto;
-  margin-top: -9px; }
+  margin-top: 19px; }
 
 .toggle-mnu span:after, .toggle-mnu span:before {
   content: "";
@@ -973,6 +974,9 @@ video {
     border-bottom: 1px dashed #6b808a; }
     .article .sublist a:hover, .material__list .sublist a:hover, .header__nav .sublist a:hover {
       color: #333; }
+  .article .sublist li, .material__list .sublist li, .header__nav .sublist li {
+    height: initial;
+    line-height: 14px; }
 .article .price__list li:hover .sublist,
 .article .header__nav_list li:hover .sublist, .material__list .price__list li:hover .sublist,
 .material__list .header__nav_list li:hover .sublist, .header__nav .price__list li:hover .sublist,
@@ -987,29 +991,58 @@ video {
     color: #fff;
     border-radius: 100%;
     display: block;
-    padding: 2px 6px; }
+    padding: 2px 6px;
+    font-weight: bold; }
 
 .bg_blue {
   background: #f4f8fa; }
 
 .header__nav_list li {
+  height: 60px;
+  line-height: 62px;
   position: relative; }
   .header__nav_list li:after {
     display: none; }
 
 .header__nav_list .sublist {
-  width: 420px;
+  display: none;
+  width: 300px;
   background: #fff;
   position: absolute;
+  font-size: 16px;
+  font-weight: 300;
   top: 100%;
+  /*210%*/
   left: -161%;
   z-index: 30;
-  border-bottom: 1px dashed #00a5ea;
-  border-left: 1px dashed #00a5ea;
-  border-right: 1px dashed #00a5ea; }
+  margin: 0;
+  text-transform: none; }
+  .header__nav_list .sublist .active {
+    color: #00a5ea; }
   .header__nav_list .sublist li {
     display: block;
-    padding: 15px; }
+    padding: 11px 0 11px 20px;
+    position: relative; }
+  .header__nav_list .sublist li:first-child:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 6px;
+    background: url("../img/icon_up.png") no-repeat;
+    top: 0;
+    left: 50%;
+    margin-left: -21px;
+    margin-top: -6px;
+    position: absolute; }
+  .header__nav_list .sublist a {
+    border-bottom: none; }
+    .header__nav_list .sublist a:hover {
+      color: #00a5ea; }
+
+.header__nav_list .mat__sublist {
+  left: -96%; }
+  .header__nav_list .mat__sublist li:first-child:before {
+    margin-left: -5px; }
 
 .sticky {
   position: -webkit-sticky;

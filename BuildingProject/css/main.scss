@@ -96,7 +96,7 @@ header {
 
 .header__menu {
 	padding: 23px 0;
-	border-bottom:2px solid $blue;
+	// border-bottom:2px solid $blue;
 }
 
 .header__top_location,
@@ -226,10 +226,12 @@ header .space {
 }
 
 .header__nav {
+	border-top:2px solid $blue;
+	border-bottom:2px solid $blue;
+	height: 62px;
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: 300;
-	padding: 18px 0 10px 0;
 	ul {
 		text-align:justify;
 		&:after {
@@ -280,7 +282,7 @@ header .space {
   width: 28px;
   height: 28px;
   margin: auto;
-  margin-top: -9px;
+  margin-top: 19px;
 }
 .toggle-mnu span:after, .toggle-mnu span:before {
   content: "";
@@ -1220,12 +1222,17 @@ video {
 	.sublist {
 		margin-left: 20px;
 		display:none;
+		
 		a {
 			color:$greyHover;
 			border-bottom: 1px dashed $greyHover;
 			&:hover {
 				color:#333;
 			}
+		}
+		li {
+			height: initial;
+			line-height:14px;
 		}
 	}
 	.price__list li:hover .sublist,
@@ -1243,6 +1250,7 @@ video {
 			border-radius: 100%;
 			display:block;
 			padding: 2px 6px;
+			font-weight: bold;
 		}
 	
 	}
@@ -1255,25 +1263,56 @@ video {
 	&:after {
 		display:none;
 	}
+	height: 60px;
+	line-height: 62px;
 	position: relative;
 }
 .header__nav_list .sublist {
-	width: 420px;
+	display:none;
+	width: 300px;
 	background: #fff;
 	position: absolute;
-	top: 100%;
+	font-size: 16px;
+	font-weight: 300;
+	top: 100%;    /*210%*/
 	left: -161%;
 	z-index: 30;
-	border-bottom: 1px dashed $blue;
-	border-left: 1px dashed $blue;
-	border-right: 1px dashed $blue;
+	margin: 0;
+	text-transform: none;
+	.active {
+		color:$blue;
+	}
 	li {
 		display:block;
-		padding: 15px;
+		padding: 11px 0 11px 20px;
+		position: relative;
+	}
+	li:first-child:before {
+		content: '';
+		display:block;
+		width: 10px;
+		height: 6px;
+		background: url('../img/icon_up.png') no-repeat;
+		top: 0;
+		left: 50%;
+		margin-left: -21px;
+		margin-top: -6px;
+		position: absolute;
+	}
+	a {
+		border-bottom: none;
+		&:hover {
+			color:$blue;
+		}
 	}
 
 }
-
+.header__nav_list .mat__sublist{
+	left: -96%;
+	li:first-child:before {
+		margin-left: -5px;
+	}
+}
 .sticky {
 	position:sticky;
 	top: 0;

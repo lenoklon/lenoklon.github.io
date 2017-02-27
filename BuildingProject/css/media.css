@@ -41,7 +41,10 @@
     right: -52px; }
 
   .release .btn, .projects .btn {
-    width: 57%; } }
+    width: 57%; }
+
+  ul.service__menu.wrap_serv {
+    margin-top: 10px; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .col-md-3.text-right.padding20.col-sm-12 {
@@ -88,6 +91,7 @@
     text-align: center;
     width: 30%;
     margin: auto;
+    margin-top: 12px;
     z-index: 20; }
     ul.header__nav_list li {
       width: 100%;
@@ -186,7 +190,12 @@
   .projects_content {
     padding: 35px;
     width: 100%;
-    padding-top: 35px; } }
+    padding-top: 35px; }
+
+  .header__nav_list li {
+    height: initial;
+    line-height: 22px;
+    position: relative; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   ul.header__nav_list {
