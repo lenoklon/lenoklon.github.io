@@ -1,0 +1,169 @@
+// Подключаем стили библиотек
+@import '_libs.styl'
+
+// Подключаем переменные
+@import '_vars.styl'
+
+// Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
+@import '_sprite.styl'
+
+// Подключаем миксины
+@import '_mixins.styl'
+
+html 
+  line-height 1
+  font-size 14px
+
+body
+  font-family mainFont
+  color mainColor
+
+h1,h2,h3,h4,h5,h6
+  margin 0
+
+ul,li
+  margin 0
+  padding 0
+  list-style-type none
+  
+p
+  margin 0
+  
+a
+  text-decoration none
+  color black
+  cursor pointer
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+  vertical-align middle
+  
+textarea
+  resize none
+
+section
+  position relative
+  padding 90px
+
+input,
+select,
+button
+  outline none
+
+*, *:before, *:after
+  box-sizing border-box
+  
+.hide
+  display none
+  
+.show
+  display block
+  
+::-moz-selection 
+  background: #b3d4fc;
+  text-shadow: none;
+  
+::selection 
+  background: #b3d4fc;
+  text-shadow: none;
+  
+.clearfix:before,
+.clearfix:after 
+  content: " ";
+  display: table;
+
+.clearfix:after 
+  clear: both;
+
+.clearfix 
+  *zoom: 1;
+    
+.wrapper
+  overflow hidden
+
+.container
+  max-width 1170px
+  margin 0 auto
+  position relative
+  width 97%
+  
+.title
+    font-family: "SourceSansProBold", Arial, sans-serif
+    font-size: 27px
+    font-weight: 700
+    margin: 20px 0 40px 0
+
+
+.text
+    font-family: "SourceSansProRegular", Arial, sans-serif
+    font-size: 16px
+    line-height: 33px
+    margin: 0 auto
+    width: 70%
+    margin-bottom 20px
+    
+.logo
+  float left
+  font-family boldFont
+  font-size 18px
+  text-transform uppercase
+
+
+
+// Общие стили
+@import '_common_styles.styl'
+
+// Стили шапки
+@import 'modules/_header.styl'
+
+// Стили меню
+@import 'modules/_menu.styl'
+
+// Стили главной страницы
+@import 'page/_index.styl'
+
+// Стили секции главный баннер
+@import 'section/_top_banner.styl'
+
+// Стили секции Who and Why
+@import 'section/_why.styl'
+
+// Стили секции Articles Featured (Slider)
+@import 'section/_articles.styl'
+
+// Стили секции Feature_sprite
+@import 'section/_feature.styl'
+
+// Стили секции Clients
+@import 'section/_clients.styl'
+
+// Стили секции Quotes
+@import 'section/_quote.styl'
+
+// Стили секции Team_Members
+@import 'section/_team.styl'
+
+// Стили секции Facts_Numbers
+@import 'section/_facts.styl'
+
+// Стили секции Portfolio-Filter
+@import 'section/_portfolio.styl'
+
+// Стили секции Catalog
+@import 'section/_catalog.styl'
+
+// Стили секции Article-Slider
+@import 'section/_article-slider.styl'
+
+// Стили секции Twitter
+@import 'section/_twitter.styl'
+
+// Стили футера
+@import 'modules/_footer.styl'
+
+// Стили медиазапросов
+@import '_media.styl'
