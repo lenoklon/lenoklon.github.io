@@ -74,6 +74,7 @@ body {
 .top_header {
 	background-color: #4AAAD2;
 }
+
 .maian_mnu {
 	background-color: #3797bf;
 	color: #fff;
@@ -97,6 +98,45 @@ body {
 	float: left;
 	text-transform: uppercase;
 }
+/******************/
+.toggle-mnu 
+  display: block
+  width: 28px
+  height: 28px
+  margin-top: 14px
+
+  span:after, span:before 
+    content: ""
+    position: absolute
+    left: 0
+    top: 9px
+
+  span:after
+    top: 18px
+
+  span 
+    position: relative
+    display: block
+
+  span, span:after, span:before
+    width: 100%
+    height: 2px
+    background-color: #fff
+    transition: all 0.3s
+    backface-visibility: hidden
+    border-radius: 2px
+
+
+  &.on span 
+    background-color: transparent
+
+  &.on span:before 
+    transform: rotate(45deg) translate(-1px, 0px)
+
+  &.on span:after 
+    transform: rotate(-45deg) translate(6px, -7px)
+ /*********************************/
+
 .top_contacts {
 	background-color: #2787af;
 	float: right;

@@ -22,6 +22,18 @@
 * {
   box-sizing: border-box; }
 
+.pr0 {
+  padding-right: 0; }
+
+.pl0 {
+  padding-left: 0; }
+
+.pr40 {
+  padding-right: 40px; }
+
+.p45 {
+  padding: 45px 0; }
+
 body {
   font-family: "RobotoRegular", sans-serif;
   font-size: 16px;
@@ -459,7 +471,8 @@ header .space {
 .describe {
   padding: 43px 0;
   color: #5b6874;
-  font-size: 19px; }
+  font-size: 19px;
+  font-family: "RobotoLight"; }
   .describe p {
     text-align: justify;
     font-weight: 300;
@@ -523,10 +536,14 @@ header .space {
     font-size: 16px;
     font-weight: 400;
     text-decoration: none; }
-    .proposition .prop__nav a:hover, .proposition .prop__nav a .active {
+    .proposition .prop__nav a:hover, .proposition .prop__nav a:focus {
       border: 2px solid #00a5ea;
       background: #fff;
       color: #00a5ea; }
+  .proposition .prop__nav a.active {
+    border: 2px solid #00a5ea;
+    background: #fff;
+    color: #00a5ea; }
 
 .article_page li:after {
   content: '';
@@ -558,6 +575,8 @@ header .space {
   background-color: white;
   border: 2px solid #f4f8fa;
   padding: 13px 0 0 22px; }
+  .article_page__cont .price__info:hover {
+    border: 1px solid #00a5ea; }
   .article_page__cont .price__info a {
     color: #6b808a;
     font-size: 16px;
@@ -738,6 +757,18 @@ header .space {
 .materials .price__list a {
   display: inline-block; }
 
+.price__info {
+  border-radius: 30px;
+  margin: 20px auto;
+  text-align: center;
+  width: 282px;
+  height: 52px;
+  background-color: white;
+  border: 2px solid #f4f8fa;
+  padding: 13px 0 0 22px; }
+  .price__info:hover {
+    border: 1px solid #00a5ea; }
+
 .material__list {
   color: #333; }
   .material__list .service__lists {
@@ -750,6 +781,8 @@ header .space {
     font-family: "RobotoBold";
     font-size: 20px;
     font-weight: 700; }
+    .material__list .mat__content h3 a {
+      color: #333; }
   .material__list .mat__content h4 {
     font-size: 14px;
     font-weight: 400;
@@ -943,7 +976,11 @@ td.p0 {
 
 .article__content {
   text-align: right;
-  margin-bottom: 90px; }
+  padding-bottom: 50px; }
+  .article__content .h1_title {
+    text-align: left;
+    text-transform: none;
+    padding-bottom: 15px; }
   .article__content h3 {
     color: #333;
     font-size: 20px;
@@ -961,7 +998,7 @@ td.p0 {
     margin-top: 20px;
     text-align: left; }
   .article__content .btn {
-    margin: 20px 0; }
+    margin-top: 50px; }
 
 video {
   width: 100%; }
@@ -985,14 +1022,18 @@ video {
 .article .pagination, .material__list .pagination, .header__nav .pagination {
   border: none; }
   .article .pagination a, .material__list .pagination a, .header__nav .pagination a {
-    padding: 2px 6px; }
+    display: inline-block;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    line-height: 30px; }
   .article .pagination a:hover, .material__list .pagination a:hover, .header__nav .pagination a:hover {
     background: #00a5ea;
     color: #fff;
     border-radius: 100%;
-    display: block;
-    padding: 2px 6px;
     font-weight: bold; }
+  .article .pagination .last a:hover, .article .pagination .first a:hover, .material__list .pagination .last a:hover, .material__list .pagination .first a:hover, .header__nav .pagination .last a:hover, .header__nav .pagination .first a:hover {
+    background: none; }
 
 .bg_blue {
   background: #f4f8fa; }
@@ -1067,7 +1108,8 @@ video {
     width: 70%; }
 
 .sponsors {
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-top: 43px; }
   .sponsors .h1_title {
     margin-bottom: 50px; }
   .sponsors .sp__slider {
@@ -1117,6 +1159,8 @@ ul.requisites a:hover {
     box-shadow: 0 10px 20px #e2e2e2;
     position: relative;
     margin-bottom: 15px; }
+  .release .row, .projects .row {
+    margin-bottom: 30px; }
   .release .h1_title, .projects .h1_title {
     padding-bottom: 50px; }
   .release .release_content,
@@ -1176,10 +1220,10 @@ ul.requisites a:hover {
   padding-top: 35px; }
 
 .pagination {
-  border: 1px solid #eaeaea;
+  border: none;
   background: #fff;
-  margin: 20px 0;
-  padding: 20px 5px;
+  margin-bottom: 50px;
+  padding: 0 5px 20px 5px;
   text-align: center; }
   .pagination li {
     float: left;
@@ -1188,8 +1232,19 @@ ul.requisites a:hover {
     color: #333;
     font-size: 14px;
     font-weight: 700;
-    line-height: 18px;
-    text-decoration: none; }
+    text-decoration: none;
+    display: inline-block;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    line-height: 30px; }
+  .pagination a:hover {
+    background: #00a5ea;
+    color: #fff;
+    border-radius: 100%;
+    font-weight: bold; }
+  .pagination .last a:hover, .pagination .first a:hover {
+    background: none; }
   .pagination ul {
     text-align: center; }
   .pagination .pagination__wrap {
@@ -1393,6 +1448,9 @@ footer li {
         .pop_form2 .description .insolation p span {
           color: #00a5ea; }
 
+.post-text {
+  padding-bottom: 50px; }
+
 .pop_form__phone,
 .pop_form__question {
   text-align: center; }
@@ -1423,5 +1481,107 @@ footer li {
 
 .pop_form__question textarea {
   display: block; }
+
+.pop_form .grey, .pop_form2 .grey {
+  background: #C0C0C0; }
+  .pop_form .grey:hover, .pop_form .grey:focus, .pop_form2 .grey:hover, .pop_form2 .grey:focus {
+    background: #00a5ea; }
+
+.popup_message {
+  width: 100%;
+  max-width: 670px;
+  background-color: white;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  padding: 65px;
+  color: #5b6874;
+  font-family: "RobotoRegular";
+  font-size: 16px;
+  overflow: hidden; }
+  .popup_message form {
+    overflow: hidden; }
+  .popup_message .h1__title {
+    font-family: "RobotoBold";
+    font-size: 30px;
+    font-weight: 700;
+    color: #00a5ea;
+    margin-bottom: 45px;
+    text-align: center;
+    text-transform: uppercase; }
+  .popup_message p {
+    float: left;
+    margin-right: 38px; }
+    .popup_message p:nth-child(2) {
+      margin-right: 0; }
+  .popup_message input {
+    width: 240px;
+    height: 40px;
+    display: block;
+    background-color: #fefefe;
+    border: 1px solid #1e9eda;
+    border-radius: 20px;
+    padding-left: 24px;
+    margin-top: 7px;
+    color: #8d97a3 !important;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic; }
+  .popup_message textarea {
+    border: 1px solid #1e9eda;
+    border-radius: 20px;
+    color: #8d97a3 !important;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    max-width: 520px;
+    height: 130px;
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 7px;
+    padding: 12px 0 0 23px;
+    resize: none;
+    width: 100%; }
+  .popup_message .textarea {
+    margin: 10px 0 20px 0; }
+  .popup_message .btn {
+    background-color: #1e9eda;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 17px;
+    width: 196px;
+    height: 40px; }
+
+.danke,
+.danke_2 {
+  width: 100%;
+  max-width: 670px;
+  background-color: white;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  padding: 65px;
+  color: #5b6874;
+  font-family: "RobotoRegular";
+  font-size: 16px; }
+  .danke p,
+  .danke_2 p {
+    display: block;
+    float: none;
+    line-height: 24px;
+    margin: auto;
+    text-align: center; }
+    .danke p:last-child,
+    .danke_2 p:last-child {
+      margin-top: 40px; }
+
+.anruf_bestellen {
+  overflow: hidden; }
+  .anruf_bestellen p {
+    margin-bottom: 22px; }
+  .anruf_bestellen .btn {
+    margin-top: 52px;
+    clear: both; }
+  .anruf_bestellen div {
+    margin-right: 22px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -111,12 +111,9 @@ $(document).ready(function() {
 	
 
 $(window).load(function() {
-	//animate-css.js Plugin. Animate Elements on Scroll
-	//Example: $(".element").animated("zoomInUp", "zoomOutDown");
-	$("h1").animated("fadeInUp", "fadeInUp");
-	$(".profi_item, h3").animated("fadeInRight", "fadeInRight");
+	$(".profi_item").animated("fadeInRight", "fadeInRight");
 	$(".adv__item, .catalog__wrap").animated("zoomInUp", "zoomInUp");
-	$("footer,  .con-padding").animated("pulse", "pulse");
+	$(".con-padding").animated("pulse", "pulse");
 
 });
 

@@ -517,7 +517,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="image">
+	<!-- <section class="image">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -525,7 +525,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
     <section class="sponsors">
     	<h1 class="h1_title">партнеры</h1>
 		<div class="container">
@@ -658,7 +658,7 @@
             </div>
             <div class="col-md-3 back-call col-sm-6 col-xs-12">
                 <p class="margin20 font-bold"><a href="#">Заказать обратный звонок</a></p>
-                <p class="margin20 font-bold"><a href="#">Задать вопрос</a></p>
+                <p class="margin20 font-bold"><a href="#popup_message" class="fancybox">Задать вопрос</a></p>
                 <p class="margin20">© Техно Билдинг, 2016.
                     <br> Все права защищены.</p>
                 <p class="back-call-img">
@@ -675,7 +675,7 @@
 			<h1>Выберите тип изолируемой поверхности:</h1>
 			<div class="row mt30">
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<a href="#" class="btn"> Перегородки</a>
+					<a href="#" class="btn grey"> Перегородки</a>
 					<div class="sizes">
 						<p><label><span>Длина: </span><input type="text"> м.</label></p>
 						<p><label><span>Ширина:</span><input type="text"> м.</label></p>
@@ -684,10 +684,10 @@
 				<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
 					<div class="row">
 						<div class="col-lg-6 col-xs-12">
-							<a href="#" class="btn"> Облицовка</a>
+							<a href="#" class="btn grey"> Облицовка</a>
 						</div>
 						<div class="col-lg-6 col-xs-12">
-							<a href="#" class="btn"> Потолок</a>
+							<a href="#" class="btn grey"> Потолок</a>
 						</div>
 					</div>
 					<div class="row">
@@ -724,16 +724,16 @@
 							<p>Толщина, мм:<span> 59</span></p>
 						</div>
 						<ul class="materials mt30">Основные материалы
-							<li><a href="#">• Стопзвук</a></li>
-							<li><a href="#">• Тексаунд</a></li>
+							<li>• Стопзвук</li>
+							<li>• Тексаунд</li>
 						</ul>
 						<ul class="materials mt30">Расходные материалы
-							<li><a href="#">• Уплотнительная лента</a></li>
-							<li><a href="#">• Сонетик</a></li>
+							<li>• Уплотнительная лента</li>
+							<li>• Сонетик</li>
 						</ul>
 						<ul class="materials mt30">Общестроительные строительные материалы
-							<li><a href="#">• ГКЛ в два слоя</a></li>
-							<li><a href="#">• Металлический профиль  </a></li>
+							<li>• ГКЛ в два слоя</li>
+							<li>• Металлический профиль  </li>
 						</ul>
 				</div>
 			</div>
@@ -747,21 +747,21 @@
 			<h1>Выберите тип изолируемой поверхности:</h1>
 			<div class="row mt30">
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					<a href="#" class="btn"> Перегородки</a>
+					<a href="#" class="btn grey"> Перегородки</a>
 					<div class="sizes clearfix">
 						<p><label><span>Длина: </span><input type="text"> м.</label></p>
 						<p><label><span>Ширина:</span><input type="text"> м.</label></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					<a href="#" class="btn"> Облицовка</a>
+					<a href="#" class="btn grey"> Облицовка</a>
 					<div class="sizes">
 						<p><label><span>Длина: </span><input type="text"> м.</label></p>
 						<p><label><span>Ширина:</span><input type="text"> м.</label></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					<a href="#" class="btn"> Потолок</a>
+					<a href="#" class="btn grey"> Потолок</a>
 					<div class="sizes">
 						<p><label><span>Длина: </span><input type="text"> м.</label></p>
 						<p><label><span>Ширина:</span><input type="text"> м.</label></p>
@@ -842,12 +842,30 @@
 
 <!-- ****************ОБРАТНЫЙ ЗВОНОК*********************** -->
 <div class="hidden">
-<form id="callback_phone" class="pop_form__phone">
-		<h3>Мы Вам перезвоним</h3>
-		<input type="text" name="name" placeholder="Ваше Имя..." required />
-		<input type="text" name="phone" placeholder="Номер Телефона..." required />
-		<button class="button" type="submit">запрос</button>
-	</form>
+	<div id="callback_phone" class="anruf_bestellen popup_message">
+		<h1 class="h1__title">ПЕРЕЗВОНИМ В ТЕЧЕНИЕ ЧАСА!</h1>
+		<form action="#">
+			<p>Представьтесь, пожалуйста <input type="text" placeholder="Имя" required></p>
+			<p>Укажите вашу почту <input type="email" placeholder="E-mail" required></p>
+			<button class="btn" type="submit">Отправить</button>
+		</form>
+	</div>
+	<div id="callback_danke" class="popup_message anruf_bestellen">
+		<h1 class="h1__title">БЛАГОДАРИМ ЗА ОБРАЩЕНИЕ!</h1>
+		<p>Ваш запрос успешно отправлен. Наши специалисты ответят вам  на указанный e-mail в течение 24 часов.</p>
+		<p>Пожалуйста, ожидайте.</p>
+	</div>
+
+	<div id="popup_message" class="popup_message">
+		<h1 class="h1__title">НАПИШИТЕ НАМ</h1>
+		<form action="#">
+			<p>Представьтесь, пожалуйста <input type="text" placeholder="Имя"></p>
+			<p>Укажите вашу почту <input type="email" placeholder="E-mail"></p>
+			<p class="textarea">Чем мы можем вам помочь?</p>
+			<textarea placeholder="Сообщение"></textarea>
+			<button class="btn" type="submit">Отправить</button>
+		</form>
+	</div>
 </div>
 	<!-- Mandatory for Responsive Bootstrap Toolkit to operate -->
 	<div class="device-xs visible-xs"></div>
