@@ -2024,6 +2024,17 @@ footer li {
 	
 }
 
-.fotorama img {
-	border:1px solid grey!important;
+// .fotorama img {
+// 	border:2px solid #788a93!important;
+// }
+
+.fotorama__stage__shaft,
+.fotorama__thumb {
+   border:1px solid #788a93;
 }
+
+// .mat__fotorama {
+// 	a img {
+// 		border:2px solid #788a93!important;
+// 	}
+// }

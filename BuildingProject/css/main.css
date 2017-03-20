@@ -1584,7 +1584,8 @@ footer li {
   .anruf_bestellen div {
     margin-right: 22px; }
 
-.fotorama img {
-  border: 1px solid grey !important; }
+.fotorama__stage__shaft,
+.fotorama__thumb {
+  border: 1px solid #788a93; }
 
 /*# sourceMappingURL=main.css.map */
