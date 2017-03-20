@@ -401,7 +401,7 @@
         </div>
     </footer>
 
-    <div class="hidden">
+    	<div class="hidden">
 	<div id="callback" class="pop_form">
 		<div class="container">
 			<h1>Выберите тип изолируемой поверхности:</h1>
@@ -424,14 +424,15 @@
 					</div>
 					<div class="row">
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 level">
-							<p><input type="radio" name="class" checked> Premium</p>
-							<p><input type="radio" name="class"> Vip</p>
-							<p><input type="radio" name="class"> Classic</p>
+							<p><input class="radio" value="content_1" type="radio" name="class" checked> Premium</p>
+							<p><input class="radio" value="content_2" type="radio" name="class"> Vip</p>
+							<p><input class="radio" value="content_3" type="radio" name="class"> Classic</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row mt30">
+			<!-- ******************1*********************** -->
+			<div class="row mt30" id="content_1">
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<img src="img/premium.jpg" class="img-responsive" alt="">
 					<ul class="materials mt30">Стоимость материалов: 
@@ -456,16 +457,94 @@
 							<p>Толщина, мм:<span> 59</span></p>
 						</div>
 						<ul class="materials mt30">Основные материалы
-							<li><a href="#">• Стопзвук</a></li>
-							<li><a href="#">• Тексаунд</a></li>
+							<li>• Стопзвук</li>
+							<li>• Тексаунд</li>
 						</ul>
 						<ul class="materials mt30">Расходные материалы
-							<li><a href="#">• Уплотнительная лента</a></li>
-							<li><a href="#">• Сонетик</a></li>
+							<li>• Уплотнительная лента</li>
+							<li>• Сонетик</li>
 						</ul>
 						<ul class="materials mt30">Общестроительные строительные материалы
-							<li><a href="#">• ГКЛ в два слоя</a></li>
-							<li><a href="#">• Металлический профиль  </a></li>
+							<li>• ГКЛ в два слоя</li>
+							<li>• Металлический профиль  </li>
+						</ul>
+				</div>
+			</div>
+			<!-- ******************2*********************** -->
+			<div class="row mt30" id="content_2">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<img src="img/layer-2.jpg" class="img-responsive" alt="">
+					<ul class="materials mt30">Стоимость материалов: 
+						<li>5 456 руб.</li>
+					</ul>
+					<ul class="materials mt30">Стоимость: 
+						<li>Работы: 3 500 руб.</li>
+					</ul>
+					<p class="result mt30"> Всего: 8 956 руб.</p>
+					<a href="#" class="btn mt30">Заказать</a>
+				</div>
+				<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 description">
+					<h3>Vip</h3>
+					<p>Самая распространенная и востребованная система для разделения двух
+						помещений друг от друга. Применяется 
+						в многоквартирных жилых домах повышенной комфортности,
+						гостиницах, кабинетах, переговорных и т.п. Обеспечивает помещение
+						акустическим комфортом благодаря защите 
+						от бытового воздушного шума.  </p>
+						<div class="insolation mt30">
+							<p>Степень звукоизоляции: <span>Rw = 59 дБ </span></p>
+							<p>Толщина, мм:<span> 59</span></p>
+						</div>
+						<ul class="materials mt30">Основные материалы
+							<li>• Стопзвук</li>
+							<li>• Тексаунд</li>
+						</ul>
+						<ul class="materials mt30">Расходные материалы
+							<li>• Уплотнительная лента</li>
+							<li>• Сонетик</li>
+						</ul>
+						<ul class="materials mt30">Общестроительные строительные материалы
+							<li>• ГКЛ в два слоя</li>
+							<li>• Металлический профиль  </li>
+						</ul>
+				</div>
+			</div>
+			<!-- ******************3*********************** -->
+			<div class="row mt30" id="content_3">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<img src="img/layer_3.jpg" class="img-responsive" alt="">
+					<ul class="materials mt30">Стоимость материалов: 
+						<li>5 456 руб.</li>
+					</ul>
+					<ul class="materials mt30">Стоимость: 
+						<li>Работы: 3 500 руб.</li>
+					</ul>
+					<p class="result mt30"> Всего: 8 956 руб.</p>
+					<a href="#" class="btn mt30">Заказать</a>
+				</div>
+				<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 description">
+					<h3>Classic</h3>
+					<p>Самая распространенная и востребованная система для разделения двух
+						помещений друг от друга. Применяется 
+						в многоквартирных жилых домах повышенной комфортности,
+						гостиницах, кабинетах, переговорных и т.п. Обеспечивает помещение
+						акустическим комфортом благодаря защите 
+						от бытового воздушного шума.  </p>
+						<div class="insolation mt30">
+							<p>Степень звукоизоляции: <span>Rw = 59 дБ </span></p>
+							<p>Толщина, мм:<span> 59</span></p>
+						</div>
+						<ul class="materials mt30">Основные материалы
+							<li>• Стопзвук</li>
+							<li>• Тексаунд</li>
+						</ul>
+						<ul class="materials mt30">Расходные материалы
+							<li>• Уплотнительная лента</li>
+							<li>• Сонетик</li>
+						</ul>
+						<ul class="materials mt30">Общестроительные строительные материалы
+							<li>• ГКЛ в два слоя</li>
+							<li>• Металлический профиль  </li>
 						</ul>
 				</div>
 			</div>

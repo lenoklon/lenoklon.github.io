@@ -57,6 +57,11 @@ $(document).ready(function() {
 	        $(tab).fadeIn(400);
 	 });
 
+	 // **************tab-radiobuttons*********
+	 $('.radio').click(function(){
+	 	$('#content_1, #content_2, #content_3').hide();
+	 	$('#'+$(this).val()).show();
+	 });
 	//Попап менеджер FancyBox
 	$(".fancybox").fancybox();
 
