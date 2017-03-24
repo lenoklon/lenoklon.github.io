@@ -421,12 +421,33 @@ header .space {
   outline: none; }
 
 /* ************SLIDER*************** */
-.slider {
-  background: url("../img/slider.jpg") top center no-repeat;
+.slider .container-fluid,
+.slider .row {
+  padding: 0; }
+
+.carousel-wrap {
+  background: url("../img/slider.jpg") center no-repeat;
   background-size: cover;
-  padding: 50px 0; }
+  height: 400px;
+  position: relative; }
+
+.slide-2 {
+  background: url("../img/slider_2.jpg") center no-repeat; }
+
+.slide-3 {
+  background: url("../img/slider_3.jpg") center no-repeat; }
+
+.slide-4 {
+  background: url("../img/slider_4.jpg") center no-repeat; }
+
+.slide-5 {
+  background: url("../img/slider_5.jpg") center no-repeat; }
+
+.carousel {
+  padding-bottom: 30px; }
 
 .carousel__item {
+  margin: 50px 0 0 50px;
   padding: 25px;
   background: #000;
   opacity: .6;
@@ -457,18 +478,24 @@ header .space {
   float: right; }
 
 .owl-dots {
-  margin-top: 30px;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
   text-align: center;
   width: 100%; }
   .owl-dots .owl-dot {
     background-color: #fff;
     border-radius: 50%;
+    border: 3px solid #00a5ea;
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 13px;
+    height: 13px;
     margin: 0 5px; }
     .owl-dots .owl-dot.active {
-      background: #00a5ea; }
+      background: #00a5ea;
+      width: 11px;
+      height: 11px;
+      border: 3px solid #fff; }
 
 .describe {
   padding: 43px 0;
@@ -1266,6 +1293,27 @@ ul.requisites a:hover {
   .goals span {
     font-family: "RobotoBold";
     font-weight: 700; }
+
+.project_2 .project_img {
+  text-align: center; }
+.project_2 .img-responsive {
+  width: 70%;
+  display: inline-block; }
+.project_2 .projects_content {
+  padding: 30px 0 0 50px; }
+  .project_2 .projects_content p {
+    text-align: left; }
+.project_2 .row_bottom {
+  overflow: hidden;
+  margin-bottom: 30px; }
+  .project_2 .row_bottom .date {
+    float: left;
+    margin-top: 10px; }
+  .project_2 .row_bottom .btn {
+    display: inline-block;
+    width: 40%;
+    float: right;
+    margin: 0; }
 
 footer {
   font-size: 16px;
