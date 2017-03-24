@@ -118,6 +118,7 @@ $(document).ready(function() {
 $(window).load(function() {
 	$(".profi_item").animated("fadeInRight", "fadeInRight");
 	$(".adv__item, .catalog__wrap").animated("zoomInUp", "zoomInUp");
+	$(".project__slider_item").animated("zoomInUp", "zoomInUp");
 	$(".con-padding").animated("pulse", "pulse");
 
 });

@@ -1642,11 +1642,31 @@ ul.requisites a:hover {
 }
 
 .project_2{
+	.row {
+		overflow: hidden;
+	}
 	.project_img{
 		text-align: center;
 	}
+
+	.project__slider {
+		box-shadow: none;
+
+	}
+	.project__slider_item {
+		overflow: hidden;
+		width: 95%;
+		margin: auto;
+		box-shadow: 0 10px 20px #e2e2e2;
+		padding-right: 10px;
+		transition: all .5s;
+		&:hover {
+			opacity: .9;
+		}
+	}
+
 	.img-responsive {
-		width: 70%;
+		width: 80%;
 		display: inline-block;
 	}
 	.projects_content {
