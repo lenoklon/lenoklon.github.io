@@ -1,0 +1,90 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.animation_up {
+		margin-bottom: 40px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.s-about .s-content {
+		width: 70%;
+	}
+	.s-about .s-content p {
+		font-size: 1.2em;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.top-wrap .top-wrap__description .top-text h1 {
+		font-size: 2.9em;
+		font-family: 'Raleway';
+	}
+
+	.s-about .s-content p {
+		font-size: 1.1em;
+	}
+
+	.s-skills .animation_left {
+		padding: 0;
+	}
+
+	.skills-list {
+		padding: 0;
+	}
+
+	.skills-list li {
+		margin-right: 0;
+		font-size: 11px;
+	}
+	.s-skills .icons li img {
+		width: 40px;
+		margin-right:0; 
+		margin-bottom: 10px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 360px) {
+	.s-skills .icons li img {
+		width: 35px;
+		margin-right:0; 
+		margin-bottom: 10px;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
