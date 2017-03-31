@@ -44,7 +44,7 @@ $(document).ready(function() {
 	$('.animation_left').animated('fadeInLeft', 'fadeOutLeft');
 	$('.animation_up').animated('fadeInUp', 'fadeOutUp');
 	$('.animation_right').animated('fadeInRight', 'fadeOutRight');
-	$('.work-item').animated('fadeInLeft', 'fadeOutLeft');
+	// $('.work-item').animated('fadeInLeft', 'fadeOutLeft');
 	$('.top-text p').animated('fadeInUp', 'fadeOutDown');
 
 					// ****form validation****

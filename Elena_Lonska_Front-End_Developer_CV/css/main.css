@@ -40,7 +40,8 @@ section {
   section .s-descr p {
     color: #000;
     font-size: 1.5em;
-    font-weight: 700; }
+    font-weight: 700;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .section-sep {
   border-top: 1px solid #05957c;
@@ -243,22 +244,21 @@ section {
         margin-bottom: 8px;
         padding: 4px 35px;
         text-shadow: white -1px 1px 0px;
-        box-shadow: 2px 1px 21px #E8DFDF;
         box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 400px;
         -webkit-animation-delay: 0.8s;
         animation-delay: 0.8s; }
       .top-wrap .top-wrap__description .top-text p {
         font-size: 27px;
-        color: #000;
+        color: #e8dfdf;
         font-weight: 700;
-        text-shadow: white -1px 1px 0px;
+        text-shadow: #000 -1px 3px 0px;
         -webkit-animation-delay: 0.8s;
         animation-delay: 0.8s; }
         .top-wrap .top-wrap__description .top-text p span {
           font-weight: 700;
           text-transform: uppercase;
           font-size: 37px;
-          text-shadow: white -1px 1px 0px; }
+          text-shadow: black 6px 1px 5px; }
 
 .s-about {
   text-align: center; }
