@@ -39,13 +39,15 @@ $(document).ready(function() {
 	});
 
 				// ****animation****
-	$('.top-text h1, .section-header').animated('fadeInDown', 'fadeOutUp');
+	$('.top-text h1, .section-header').animated('fadeInDown', 'fadeInDown');
 	$('.section-header').animated('zoomIn', 'zoomIn');
 	$('.animation_left').animated('fadeInLeft', 'fadeOutLeft');
-	$('.animation_up').animated('fadeInUp', 'fadeOutUp');
+	$('.animation_up').animated('fadeInUp', 'fadeInUp');
 	$('.animation_right').animated('fadeInRight', 'fadeOutRight');
-	// $('.work-item').animated('fadeInLeft', 'fadeOutLeft');
-	$('.top-text p').animated('fadeInUp', 'fadeOutDown');
+	$('.education-wrap .left').animated('fadeInLeft', 'fadeOutLeft');
+	$('.education-wrap .right').animated('fadeInRight', 'fadeOutRight');
+	// $('.work-item').animated('fadeInLeft', 'fadeInLeft');
+	$('.top-text p').animated('fadeInUp', 'fadeInUp');
 
 					// ****form validation****
 	$(" input, textarea").jqBootstrapValidation();

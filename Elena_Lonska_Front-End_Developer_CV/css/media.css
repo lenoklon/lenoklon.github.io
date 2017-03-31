@@ -10,6 +10,12 @@
 	.animation_up {
 		margin-bottom: 40px;
 	}
+
+	.top-text h1 {
+		font-family: 'Vibes';
+	}
+			
+				
 }
 
 /* Small Devices, Tablets */
@@ -25,8 +31,8 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	.top-wrap .top-wrap__description .top-text h1 {
-		font-size: 2.9em;
-		font-family: 'Raleway';
+		/*font-size: 2.9em;*/
+		/*font-family: 'Raleway';*/
 	}
 
 	.s-about .s-content p {
