@@ -44,8 +44,8 @@ $(document).ready(function() {
 	$('.animation_left').animated('fadeInLeft', 'fadeOutLeft');
 	$('.animation_up').animated('fadeInUp', 'fadeInUp');
 	$('.animation_right').animated('fadeInRight', 'fadeOutRight');
-	$('.education-wrap .left').animated('fadeInLeft', 'fadeOutLeft');
-	$('.education-wrap .right').animated('fadeInRight', 'fadeOutRight');
+	$('.education-wrap .left').animated('fadeInLeft', 'fadeInLeft');
+	$('.education-wrap .right').animated('fadeInRight', 'fadeInRight');
 	// $('.work-item').animated('fadeInLeft', 'fadeInLeft');
 	$('.top-text p').animated('fadeInUp', 'fadeInUp');
 
