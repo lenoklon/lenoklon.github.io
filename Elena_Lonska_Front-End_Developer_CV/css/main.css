@@ -393,7 +393,8 @@ section {
 .thumb {
   margin: auto;
   margin-bottom: 110px;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   height: 173px;
   -webkit-perspective: 1000px;
           perspective: 1000px; }
