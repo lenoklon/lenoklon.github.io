@@ -1,7 +1,6 @@
 body {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
-  font-size: 14px;
   min-width: 320px;
   position: relative;
   line-height: 1.42857;
@@ -15,6 +14,9 @@ body textarea:focus:required:invalid {
 body input:required:valid,
 body textarea:required:valid {
   color: #333; }
+
+html {
+  font-size: 12px; }
 
 .hidden {
   display: none; }
@@ -32,14 +34,14 @@ section {
   section h2 {
     color: #000;
     font-weight: 700;
-    font-size: 4em;
+    font-size: 5rem;
     font-family: "Vibes";
     letter-spacing: 2px;
     margin: 0;
     text-shadow: #61859c -1px 1px 0px; }
   section .s-descr p {
     color: #000;
-    font-size: 1.5em;
+    font-size: 2rem;
     font-weight: 700;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
@@ -233,30 +235,28 @@ section {
       display: inline-block
       /******ABOUT***** */ }
       .top-wrap .top-wrap__description .top-text h1 {
-        font-size: 6.143em;
+        font-size: 9.5rem;
         font-family: "Vibes";
         letter-spacing: 7px;
         display: inline-block;
         padding: 12px 40px;
-        border: 6px solid #000;
         margin-bottom: 8px;
         padding: 4px 35px;
-        text-shadow: white -1px 1px 0px;
-        box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 400px;
         -webkit-animation-delay: 0.8s;
-        animation-delay: 0.8s; }
+        animation-delay: 0.8s;
+        color: black;
+        text-shadow: white 2px 0 0; }
       .top-wrap .top-wrap__description .top-text p {
-        font-size: 27px;
+        font-size: 2.5rem;
         color: #e8dfdf;
+        color: black;
         font-weight: 700;
-        text-shadow: #000 -1px 3px 0px;
         -webkit-animation-delay: 0.8s;
         animation-delay: 0.8s; }
         .top-wrap .top-wrap__description .top-text p span {
           font-weight: 700;
           text-transform: uppercase;
-          font-size: 37px;
-          text-shadow: black 6px 1px 5px; }
+          font-size: 3rem; }
 
 .s-about {
   text-align: center; }
