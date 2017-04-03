@@ -252,6 +252,7 @@ section {
         color: #e8dfdf;
         color: black;
         font-weight: 700;
+        text-shadow: white 1px 0 0;
         -webkit-animation-delay: 0.8s;
         animation-delay: 0.8s; }
         .top-wrap .top-wrap__description .top-text p span {

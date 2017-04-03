@@ -59,10 +59,13 @@
 		margin-top: 10px;
 		color: white;
 		text-shadow: #222 2px 0 0;
+		background: rgba(0, 0, 0, .4);
+		padding:10px;
 	}
 
 	.top-wrap .top-wrap__description .top-text p span {
 		font-size: 31px;
+		text-shadow: #222 2px 0 0;
 	}
 
 	.s-about .s-content p {
