@@ -37,12 +37,17 @@
 	.top-wrap .top-wrap__description .top-text h1 {
 		/*font-size: 41px;*/
 		font-family: "Raleway";
+		color: white;
+		text-shadow: #222 2px 0 0;
+		line-height: 75px;
 	}
 
 	.top-wrap .top-wrap__description .top-text p {
 		/*font-size: 24px;*/
 		padding: 0 5px;
 		margin-top: 10px;
+		color: white;
+		text-shadow: #222 2px 0 0;
 	}
 
 	.top-wrap .top-wrap__description .top-text p span {

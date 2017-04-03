@@ -256,7 +256,8 @@ section {
         .top-wrap .top-wrap__description .top-text p span {
           font-weight: 700;
           text-transform: uppercase;
-          font-size: 3rem; }
+          font-size: 3rem;
+          text-shadow: white 2px 0 0; }
 
 .s-about {
   text-align: center; }
