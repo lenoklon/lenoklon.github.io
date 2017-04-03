@@ -245,7 +245,6 @@ section {
         color: black;
         text-shadow: white 2px 0 0;
         background: rgba(238, 238, 238, 0.4);
-        border: 1px solid;
         padding: 10px 43px; }
       .top-wrap .top-wrap__description .top-text p {
         font-size: 2.5rem;
