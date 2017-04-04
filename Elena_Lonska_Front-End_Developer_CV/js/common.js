@@ -41,9 +41,9 @@ $(document).ready(function() {
 				// ****animation****
 	$('.top-text h1, .section-header').animated('fadeInDown', 'fadeInDown');
 	$('.section-header').animated('zoomIn', 'zoomIn');
-	$('.animation_left').animated('fadeInLeft', 'fadeOutLeft');
+	$('.animation_left').animated('fadeInLeft', 'fadeInLeft');
 	$('.animation_up').animated('fadeInUp', 'fadeInUp');
-	$('.animation_right').animated('fadeInRight', 'fadeOutRight');
+	$('.animation_right').animated('fadeInRight', 'fadeInRight');
 	$('.education-wrap .left').animated('fadeInLeft', 'fadeInLeft');
 	$('.education-wrap .right').animated('fadeInRight', 'fadeInRight');
 	// $('.work-item').animated('fadeInLeft', 'fadeInLeft');
