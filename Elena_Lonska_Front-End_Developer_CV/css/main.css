@@ -243,13 +243,13 @@ section {
         -webkit-animation-delay: 0.8s;
         animation-delay: 0.8s;
         color: black;
-        background: rgba(238, 238, 238, 0.4);
-        padding: 10px 43px; }
+        text-shadow: white 2px 0 0; }
       .top-wrap .top-wrap__description .top-text p {
         font-size: 2.5rem;
         color: #e8dfdf;
         color: black;
         font-weight: 700;
+        text-shadow: white 1px 0 0;
         -webkit-animation-delay: 0.8s;
         animation-delay: 0.8s; }
         .top-wrap .top-wrap__description .top-text p span {
