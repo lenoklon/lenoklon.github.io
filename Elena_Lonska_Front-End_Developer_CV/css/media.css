@@ -56,6 +56,7 @@
 
 	.top-wrap .top-wrap__description .top-text p span {
 		font-size: 31px;
+		text-shadow: none;
 	}
 
 	.s-about .s-content p {
