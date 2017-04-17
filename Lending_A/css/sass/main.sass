@@ -1,0 +1,426 @@
+@import "bourbon/bourbon"
+
+body
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	min-width: 320px
+	position: relative
+	-webkit-font-smoothing: antialised
+	overflow-x: hidden
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: #333
+
+html 
+	font-size: 28px
+	color: #000
+
+*
+	box-sizing: border-box
+
+.hidden
+	display: none
+
+.overflow
+	overflow: hidden
+
+section
+	position: relative
+
+section
+	padding: 70px 0 80px
+	text-align: center
+
+h1 
+	font-size: 35px
+	font-weight: 700
+	text-transform: uppercase
+
+.p0
+	padding: 0
+
+.m0 
+	margin: 0
+
+header, footer
+	background: #ebf6e0
+	font-size: 20px
+	font-weight: 700
+	padding: 30px 0
+	.col-md-3
+		padding: 0
+	.header-moto
+		text-transform: uppercase
+		span
+			color: #dc000a
+			display: block
+	
+	.header-numbers__icons,
+	.header-numbers_num
+		float: left
+		padding-top: 25px
+		p
+			font-size: 15px
+			margin: 0
+	.header-numbers__icons
+		margin-right: 10px
+		a 
+			display: inline-block
+	.header-mail
+		padding-top: 23px
+		a 
+			color: #000
+
+.main-content
+	background: url('../img/bg111.png') no-repeat
+	background-size: cover
+	padding: 70px 0 0 30px
+	position: relative
+	h1 
+		color: #fff
+		font-size: 2rem
+		font-weight: 700
+		line-height: 90px
+		text-transform: uppercase
+		margin: 0
+		span
+			color: #f4d300
+			font-size: 3rem
+			font-weight: 700
+	.order
+		min-width: 300px
+		max-width: 424px
+		margin-top: 120px
+		padding: 25px 10px 25px 17px
+		width: 100%
+		height: 297px
+		background-color: #e0e0e0
+		background-image: linear-gradient(to top, #f4ac00 0%, #f4e500 100%)
+		h2
+			font-weight: normal
+			margin: 0
+		input
+			width: 98%
+			display: block
+			margin: 10px 0
+			padding: 5px
+	.polis
+		margin-top: 80px
+		p
+			color: #fff
+			font-size: 31px
+			span
+				text-transform: uppercase
+				font-weight: 700
+			.polis-osago
+				margin-right: 52px
+	.list
+		margin-top: 20px
+		padding-bottom: 120px
+		.police-pluses
+			li 
+				color: #000
+				font-size: 15px
+				margin-bottom: 10px
+				span
+					color: red
+					text-transform: uppercase
+					font-weight: 700
+	.gdun
+		max-width: 470px
+		width: 100%	
+		position: absolute
+		right: 30px
+		bottom: 0
+
+
+.reasons
+	h1
+		font-size: 25px
+		color: #ce0009
+		text-transform: uppercase
+		font-weight: 700
+		span
+			color: #16632f
+	h2
+		color: #16632f
+		font-size: 20px
+		font-weight: 700
+		line-height: 1.4
+		text-transform: uppercase
+	.reason-block
+		text-align: left
+		background: url('../img/location_icon.png') top left no-repeat
+		padding-left: 92px
+		p 
+			color: #000
+			font-size: 16px
+	.reason-block__time
+		background: url('../img/time_icon.png') top left no-repeat
+	.reason-block__best
+		background: url('../img/star_icon.png') top left no-repeat
+	.reason-block__complete
+		background: url('../img/polise_icon.png') top left no-repeat
+	.reason-block__copy
+		background: url('../img/pc_icon.png') top left no-repeat
+	.reason-block__econom
+		background: url('../img/save_icon.png') top left no-repeat
+	.btn 
+		margin: 20px auto
+		max-width: 500px
+		width: 100%
+
+.slider
+	background: url('../img/slider_bg.jpg') no-repeat 
+	background-size: cover
+	.slider-block
+		overflow: hidden
+	h1 
+		color: #fff
+		font-weight: 700
+		line-height: 40px
+		text-transform: uppercase
+		span
+			color: #f4d300
+	.slider-item
+		float: left
+		background: #fff
+		color: #000
+		margin-bottom: 20px
+		padding: 20px
+		margin-right: 20px
+		margin-top: 90px
+		margin-bottom: 120px
+		overflow: hidden
+		width: 90%
+		&:nth-child(2n)
+			margin-right: 0
+		h3 
+			font-size: 18px
+			font-weight: 700
+			color: #da0505
+			position: relative
+			padding-left: 32px
+			margin-bottom: 0
+			&:before
+				content: ''
+				display: block
+				background: url('../img/slider_sms_icon.png') no-repeat
+				width: 24px
+				height: 24px
+				position: absolute
+				left: 0
+				top: 50%
+		.position 
+			margin: 0
+			padding-left: 32px
+		img 
+			float: left
+			margin-top: 20px
+			width: 20%
+	.slider-item__info
+		margin-left: 20px
+		text-align: left
+		width: 70%
+		float: left
+		// position: relative
+		// padding-left: 138px
+		// &:before
+		// 	content: ''
+		// 	display: block
+		// 	background: url('../img/slider_photo.jpg') no-repeat
+		// 	width: 118px
+		// 	height: 149px
+		// 	position: absolute
+		// 	left: 0
+		// 	top: 0
+
+.calculation
+	overflow: hidden
+	padding-bottom: 0
+	h1
+		color: #16632f
+		span
+			color: #ce0009
+	.column-left
+		border: 1px solid rgba(0, 0, 0, 0.3)
+		margin-right: 10px
+		padding-bottom: 20000px
+		margin-bottom: -20000px	
+	.column-right
+		border: 1px solid rgba(0, 0, 0, 0.3)
+		margin-left: 10px
+		padding-bottom: 20000px
+		margin-bottom: -20000px
+	h3
+		color: #16632f
+		font-size: 25px
+		font-weight: 400
+	form
+		background-image: linear-gradient(to top, #f4ac00 0%, #f4e500 100%)
+		padding: 25px
+		text-align: left
+		width: 100%
+		input, select
+			height: 48px
+			background-color: white
+			border: 1px solid rgba(0, 0, 0, 0.5)
+			outline: none
+			padding-left: 10px
+			// width: 338px
+			width: 96%
+		select
+			color: #0d35a9
+			font-size: 13px
+			margin-bottom: 20px
+			text-decoration: underline
+			option
+				text-align: right
+	.transport, .owner, .driver
+		border-bottom: 3px solid #16632f
+		font-weight: 400
+		text-align: right
+		padding: 10px
+		height: 120px
+		p 
+			font-size: 13px
+			text-align: left
+	.owner, .driver
+		opacity: .4
+	.auto_type
+		margin: 40px 0 20px 0
+		position: relative
+		input
+			margin-bottom: 20px
+
+		span
+			display: inline-block
+			font-size: 13px
+			font-weight: 400
+			line-height: 15px
+			text-decoration: underline
+			position: absolute
+			right: 58px
+			bottom: 44px
+			width: 24%
+	.address
+		margin-top: 20px
+		input
+			margin-bottom: 20px
+		.street
+			display: inline-block
+			margin-right: 10px
+			width: 40%
+		.house, .part
+			display: inline-block
+			width: 16%
+			margin-right: 10px
+		.flat
+			display: inline-block
+			width: 12%
+	.drivers
+		margin-top: 20px
+		.check
+			overflow: hidden
+			h4
+				margin: 0 20px 0 0
+				float: left
+			input[type="checkbox"]
+				height: 18px
+				margin-right: 0
+				width: 21px
+		.age
+			margin: 20px 0
+			input
+				width: 45%
+				margin-right: 20px
+				&:last-child
+					margin-right: 0
+
+.remember
+	padding-top: 0
+	h3
+		color: #0c7a3b
+		display: inline-block
+		font-size: 25px
+		font-weight: 700
+		text-transform: uppercase
+		position: relative
+		&:before
+			content: ''
+			display: block
+			background: url('../img/remember.png') no-repeat
+			height: 31px
+			position: absolute
+			width: 29px
+			left: -40px
+			top: 0
+	form
+		background-image: linear-gradient(to top, #f4ac00 0%, #f4e500 100%)
+		padding: 20px
+		text-align: center
+		width: 100%
+		h4
+			margin-top: 0
+		input
+			height: 34px
+			background-color: white
+			border: 1px solid rgba(0, 0, 0, 0.5)
+			outline: none
+			padding-left: 10px
+			width: 100%
+			margin-bottom: 15px
+			&:last-child
+				margin-bottom: 0
+		.phone_wrap
+			overflow: hidden
+			.phone
+				float: left
+				width: 50%
+				margin-right: 20px
+			.time
+				float: left
+				width: 45%
+	.btn
+		margin: 0 auto
+		width: 185px
+		height: 34px
+		line-height: 34px
+
+.map
+	padding-top: 20px
+footer
+	background: #146932
+	color: #fff
+	.header-mail a
+		color: #fff
+	.copyright
+		text-align: right
+		font-size: 12px
+
+
+
+
+
+.btn 
+	background-image: linear-gradient(to top, #185f2d 0%, #185f2d 22%, #048c44 100%)
+	color: #fff
+	cursor: pointer
+	display: block
+	font-size: 25px
+	font-weight: 400
+	height: 47px
+	line-height: 47px
+	text-transform: uppercase
+	text-align: center
+	max-width: 370px
+	width: 100%
+
+
+
+	
+
