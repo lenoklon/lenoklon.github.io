@@ -1,0 +1,62 @@
+body {
+  color: #222;
+  letter-spacing: 1px; }
+
+/*a
+ * color: $color */
+p {
+  color: #888; }
+
+.color_element {
+  color: #FF6347; }
+
+.color_bg {
+  background-color: #FF6347; }
+
+.color_border {
+  border-color: #FF6347; }
+
+.toggle-menu {
+  background-color: #222; }
+
+.top-menu a:hover {
+  color: #FF6347;
+  letter-spacing: 3px;
+  font-weight: 700; }
+
+.bg-light {
+  background-color: #efefef; }
+
+.bg-dark {
+  background-color: #003151;
+  color: #fff; }
+  .bg-dark h2 {
+    color: #efefef;
+    text-shadow: #000 -4px 1px 0px; }
+  .bg-dark .section-sep {
+    background: #fff; }
+
+img.me {
+  box-shadow: 2px 1px 21px #018570; }
+
+.s-portfolio h2 {
+  letter-spacing: 10px; }
+
+.text-danger {
+  color: #018570; }
+
+form input,
+form textarea {
+  border: 2px solid #999; }
+  form input:focus,
+  form textarea:focus {
+    border: 2px solid #018570; }
+form button {
+  background-color: #018570;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s; }
+  form button:hover {
+    background-color: #ff5252; }
+
+/*# sourceMappingURL=tomato.css.map */
