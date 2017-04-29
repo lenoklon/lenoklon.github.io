@@ -26,6 +26,8 @@ $(document).ready(function() {
 					newsItem.croppedText += ' ...';
 				} else {
 					newsItem.croppedText = newsItem.text; /*to avoid deleting info*/
+				} else if (newsItem.text.length < 350) {
+					$('.main-news__block .more').css({"display": "none"});
 				}
 
 				var template = $($('.news-template').html());
