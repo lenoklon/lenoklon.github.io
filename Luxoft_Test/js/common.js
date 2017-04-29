@@ -39,5 +39,24 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+				/*more - hide buttons*/
+	$('.main-news').on('click', '.more', function (e) {
+		e.preventDefault(); // убрать эффект от якорных ссылок
+
+		var isHidden = $(this).text() == 'More >',
+		contentEl = $(this).siblings('.news-text'),
+		croppedText = contentEl.data('croppedText'),
+		text = contentEl.data('text');
+
+		/*news is hidden*/
+		if (isHidden) {
+			$(this).text('Hide >');
+			contentEl.text(text);
+		} else {
+			$(this).text('More >');
+			contentEl.text(croppedText);
+		}
+	});
 	
 });
