@@ -1,6 +1,6 @@
 .test-section {border: 1px solid #ccc;padding:20px;margin-bottom:10px}
 .wrap {overflow:hidden;width:372px}
-.test {width:100px;height:100px;line-height:100px;border:2px solid #eee;margin:10px;text-align:center}
+.test {width:100px;height:100px;line-height:100px;border:2px solid #eee;margin:10px;text-align:center; display:inline-block;}
 .desc {color:#0c0c0c;clear:both; text-align: center;}
 .desc-img {text-align:center}
 
