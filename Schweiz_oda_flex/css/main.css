@@ -220,6 +220,9 @@ header {
     background: rgba(77, 128, 140, 0.21);
     padding: 0;
     border: none; }
+  .wrap-tabs img {
+    max-width: 650px;
+    width: 100%; }
 
 .tabs-anchor {
   border-radius: 5px;
