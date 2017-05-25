@@ -1,0 +1,307 @@
+$main-font: "Open Sans", sans-serif
+$main-color: #333
+$bold: #4d8c6c
+$hover: #2a4c38
+$font-size: 15px
+
+body
+	background: #ddd
+	font-family: $main-font
+	color: $main-color
+	line-height: 1.5
+
+h1
+	font-size: $font-size *2
+h2
+	font-size: $font-size *	1.5
+h3
+	font-size: $font-size * 1.2
+
+@mixin box-shadow($x, $y, $blur, $color)
+	-webkit-box-shadow: $x $y $blur $color
+	-moz-box-shadow: $x $y $blur $color
+	box-shadow: $x $y $blur $color
+
+@mixin transition($property, $duration, $timing, $delay)
+	-moz-transition: $property $duration $timing $delay
+	-o-transition: $property $duration $timing $delay
+	-webkit-transition: $property $duration $timing $delay
+	transition: $property $duration $timing $delay
+
+.wrap
+	background: #fff
+	max-width: 1680px
+	min-width: 320px
+	margin: 0 auto
+	padding-top: 70px
+	@include box-shadow(0, 2px, 5px, #555)
+
+a 
+	color: $main-color
+	text-decoration: none
+	outline: 0
+	&:active, &:focus, &:hover
+		color: $main-color
+		text-decoration: none
+		outline: 0
+
+.hidden-menu, .btn-menu
+	display: none
+
+header
+	background: rgba(255, 255, 255, .9)
+	display: flex
+	flex-flow: row nowrap
+	align-content: stretch
+	justify-content: space-around
+	align-items: center
+	height: 70px
+	position: fixed
+	top: 0
+	max-width: 1680px
+	width: 100%
+	z-index: 100
+
+.top-logo
+	img
+		height: 100px
+
+.top-menu
+	ul
+		li 
+			display: inline-block
+			a 
+				color: $bold
+				display: block
+				margin: 0 10px
+				text-transform: uppercase
+				@include transition(all, 0.35s, ease, 0s)
+				&:hover
+					color: $hover
+
+.btn-menu
+	text-align: center
+	width: 70px
+	height: 70px
+	line-height: 60px
+	background-color: #fff
+	color: $bold
+	position: fixed
+	z-index: 102
+	cursor: pointer
+	right: 0
+	top: 0
+	font-size: $font-size*2
+	@include transition(all, 0.35s, ease, 0s)
+	&:hover
+		color: $hover
+
+.hidden-menu 
+	background-color: rgba(0, 0, 0, .8)
+	height: 100%
+	width: 100%
+	position: fixed
+	z-index: 101
+	top: 0
+	left: 0
+	ul 
+		height: 100%
+		width: 100%
+		text-align: center
+		display: flex
+		flex-flow: column nowrap
+		justify-content: center
+		align-items: stretch
+		align-content: stretch
+		li>a 
+			display: inline-block
+			margin: 20px auto
+			color: #fff 
+
+			/*CONTENT*/
+.content
+	width: 95%
+	max-width: 1200px
+	margin: 0 auto
+
+.line 
+	width: 95%
+	background: #ddd
+	height: 1px
+	margin: auto
+
+.main-title
+	font-size: $font-size*2
+	letter-spacing: 3px
+	padding: 10px 20px
+
+
+.main-img
+	height: 490px
+	background: url('../img/bg/bg.jpg') scroll top no-repeat
+	background-size: cover
+	@include box-shadow(0, 2px, 5px, #555)
+
+
+.carousel-item
+	margin: 3px
+	img
+		display: block
+		width: 100%
+		height: auto
+		@include box-shadow(0, 2px, 5px, #555)
+
+.section-title
+	text-align: center
+	padding: 20px 0
+	font-size: $font-size*1.6
+
+.natur-descr
+	padding: 10px 0 0
+	p 
+		line-height: 25px
+
+.wrap-stadte
+	max-width: 960px
+	width: 100%
+	margin: 0 auto
+	display: flex
+	flex-flow: row wrap /*что б эл переносились*/
+	justify-content: space-around
+	align-items: stretch
+	align-content: stretch
+	.stadte-item
+		width: 28%
+		text-align: center
+		margin: 20px
+		h3
+			padding: 10px
+			color: $bold
+		img
+			width: 200px
+			height: 200px
+			border-radius: 50%
+			@include box-shadow(0, 2px, 5px, #555)
+
+		p
+			line-height: 1.4
+
+.wrap-tabs
+	text-align: center
+	a 
+		display: block
+		padding: 5px 10px
+		border: 1px solid $bold
+		font-size: $font-size*1.2
+		background-color: rgba(77, 140, 108, .6)
+	p 
+		margin: 20px 0
+		line-height: 1.4
+	.img-link
+		background: rgba(77, 128, 140, 0.21)
+		padding: 0
+		border: none
+
+.tabs-anchor
+	border-radius: 5px
+	@include transition(all, 0.35s, ease, 0s)
+	&:hover,
+	&:focus 
+		background-color: #6baad8
+		color: #fff
+
+.skigebiete
+	padding: 50px 0
+
+.gebiet-item
+	margin: 20px 0
+	border: 2px solid $bold
+	padding: 15px
+	border-radius: 5px
+	/*значения flex default*/
+	display: flex
+	flex-flow: row nowrap
+	justify-content: flex-start
+	align-items: center /*центр по верикали*/
+	align-content: stretch
+	img
+		width: 300px
+		border-radius: 3px
+		@include box-shadow(0, 2px, 5px, #555)
+	.item-img
+		margin-right: 20px
+	.item-descr__text
+		padding-top: 10px
+		line-height: 1.4
+	h3
+		font-size: $font-size*1.3
+		color: $bold
+
+.inner-line
+	margin-top: 10px
+	height: 10px
+	background: $bold
+
+.contacts
+	padding: 50px 0
+
+.wrap-contacts
+	display: flex
+	flex-flow: row nowrap
+	justify-content: space-between
+	align-items: stretch
+	align-content: stretch
+
+.wrap-map
+	height: 450px
+	@include box-shadow(0, 2px, 5px, #555)
+	flex: 0 1 48%
+
+.wrap-form
+	flex: 0 1 48%
+	label
+		display: block
+	input
+		display: block
+		width: 100%
+		margin: 10px 0
+		padding: 5px
+		cursor: pointer
+		&[type="submit"]
+			background: $bold
+			width: 30%
+			margin: 10px auto
+			border-radius: 10px
+			@include transition(all, 0.35s, ease, 0s)
+		&:hover
+			color: $hover
+	textarea
+		width: 100%
+		margin: 10px 0
+
+footer
+	color: #fff
+	display: flex
+	justify-content: space-between
+	align-items: center
+	background-color: $bold
+	padding: 10px 30px
+	img
+		height: 60px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
