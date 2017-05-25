@@ -260,7 +260,8 @@ header {
       -ms-flex-line-pack: stretch;
           align-content: stretch; }
   .gebiet-item img {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     border-radius: 3px;
     box-shadow: 0 2px 5px #555; }
   .gebiet-item .item-img {
