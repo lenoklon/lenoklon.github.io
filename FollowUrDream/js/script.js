@@ -4,7 +4,7 @@
 $(document).ready(function () {
 	$('.route__btn').on('click', function() {
 		var text = $(this).siblings('.route__text')[0]; 
-		$(text).find('.route__short, .route__full').toggle('100');
+		$(text).find('.route__short, .route__full').toggle();
 		
 		if ($(this).html() === 'read more') {
 			$(this).html('hide');
