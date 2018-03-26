@@ -8,30 +8,30 @@ p {
   color: #888; }
 
 .color_element {
-  color: #FF6347; }
+  color: #853b60; }
 
 .color_bg {
-  background-color: #FF6347; }
+  background-color: #853b60; }
 
 .color_border {
-  border-color: #FF6347; }
+  border-color: #853b60; }
 
 .toggle-menu {
   background-color: #222; }
 
 .top-menu a:hover {
-  color: #FF6347;
+  color: #853b60;
   letter-spacing: 3px;
   font-weight: 700; }
 
 .bg-light {
-  background-color: #efefef; }
+  background-color: #e4dde1; }
 
 .bg-dark {
   background-color: #003151;
   color: #fff; }
   .bg-dark h2 {
-    color: #efefef;
+    color: #e4dde1;
     text-shadow: #000 -4px 1px 0px; }
   .bg-dark .section-sep {
     background: #fff; }
@@ -60,9 +60,9 @@ form button {
     background-color: #ff5252; }
 
 .honour {
-  text-shadow: #e81515 1px 0px 1px; }
+  text-shadow: #853b60 1px 0px 1px; }
 
 .education-wrap .years, .s-experience .years {
-  background-color: #e81515; }
+  background-color: #853b60; }
 
-/*# sourceMappingURL=tomato.css.map */
+/*# sourceMappingURL=bordo.css.map */

@@ -1,0 +1,376 @@
+@import 'smart-grid.scss';
+
+
+@include reset();  //подкл сброс стилей
+
+/* * {
+	box-sizing: border-box;
+} */
+
+body {
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #fd4f32;
+}
+
+p {
+	color: #8b8b8b;
+}
+
+.header {
+	padding-top: 40px;
+	background: url('../img/aruba5.jpg') center no-repeat;
+	background-size: cover;
+	padding-bottom: 130px;
+	color: #fff;
+}
+
+.container {
+	@include wrapper();
+}
+
+/* .container {
+	@include lg(padding-right, 20px);
+	@include lg(padding-left, 20px);
+}
+ */
+.logo {
+	@include col(); 
+	@include size(2);
+	@include size-sm(12);
+	@include sm(text-align, center);
+	img {
+		width: 100px;
+	}
+}
+
+.a-i-center {
+	align-items: center;
+}
+
+.row {
+	@include row-flex();
+	justify-content: space-between;
+	
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.top__nav {
+	@include col(); 
+	@include size(10);
+	@include size-md(10);
+	@include size-sm(12);
+	@include size-xs(12);
+	@include sm(margin-top, 25px);
+	
+	display: flex;
+	@include xs(display, block);
+	justify-content: flex-end;
+	@include sm(justify-content, center);
+	.nav__menu {
+		@include md(font-size, 14px);
+		@include sm(font-size, 12px);
+		@include xs(display, none);
+		li {
+			display: inline-block;
+			margin-left: 15px;
+			a {
+				text-decoration: none;
+				color: #fee6d0;
+				text-transform: uppercase;
+				&:hover {
+					color:#e0924a;
+				}
+			}
+		}
+		
+	}
+	.hamburger {
+		display: none;
+	 	@include xs(display, block);
+		width: 24px;
+		cursor: pointer;
+		span {
+			display: block;
+			background-color: #fff;
+			height: 2px;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+section {
+	padding: 25px;
+}
+
+.search {
+	margin-top: 170px;
+	text-align: center;
+	&__title {
+		font-size: 52px;
+		font-weight: 300;
+		color: #771c01;
+	}
+}
+
+.search__form {
+	display: flex;
+	font-size: 15px;
+	margin-top: 20px;
+	& input {
+		border: none;
+		outline: none;
+		font-size: 16px;
+		padding: 10px;
+		width: 328px;
+	}
+	button {
+		color: #fff;
+		font-weight: 700;
+		font-size: 16px;
+		text-transform: uppercase;
+		background: #fd4f32;
+		padding: 10px;
+		border: none;
+		outline: none;
+		width: 117px;
+		cursor: pointer;
+		display: block;
+	}
+
+}
+
+.destinations {
+	padding: 35px 0;
+	.container {
+		margin: 0 30px;
+	}
+	background: #70d9d5;
+	.section__descr {
+		@include md(width, 90%);
+		width: 50%;
+		line-height: 25px;
+		font-size: 18px;
+		margin-bottom: 35px;
+	}
+	.section__text {
+		@include md(padding, 20px);
+	}
+
+}
+
+.section__title {
+	font-size: 28px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	span {
+		font-size: 35px;
+		&:hover {
+			color:#fb3615;
+		}
+	}
+}
+
+.route {
+	@include col(); //создаем кол-ку из него
+	@include size(3); //каждый занимает три кол-ки - для desctop
+	@include size-md(6); //каждый занимает три кол-ки - для desctop
+	@include size-xs(12); //каждый занимает три кол-ки - для desctop
+	@include md(margin-bottom, 20px);
+	background: #fff;
+	border-bottom: 2px solid #e1e0d8;
+	padding-bottom: 30px;
+	&__text {
+		/* max-height: 47px; 
+		overflow: hidden; */
+		/* text-overflow: ellipsis;
+		white-space: nowrap; */
+	}
+	&__title {
+		color: #fd4f32;
+		font-weight: 600;
+	}
+
+	&__wrap {
+		text-align: right;
+		margin-right: 15px;
+		p {
+			text-align: justify;
+		}
+	}
+
+	&__btn {
+		padding: 10px;
+		width: 100px;
+		transition: all 1s;
+		border-radius: 5px;
+		padding: 5px;
+		background: #70d9d5;
+		outline: none;
+		&:hover {
+			background: #fff;
+			color: #000;
+		}
+			
+	}
+
+}
+.route {
+	transition: all 1s;
+	border-radius: 10px;
+}
+
+/*for third methode*/
+.route__full {
+	display: none;
+	transition:all 1s;
+    -moz-transition:all 1s;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
+}
+
+.route__short {
+	transition:all 2s;
+}
+
+.route__text, .route__title {
+	padding: 15px;
+
+}
+
+.route__photo {
+	position: relative;;
+	a {
+		display: block;
+		width: 100%;
+		img {
+			display: block;
+			width: 100%;
+			height: 185px;
+			@include xs(height, auto);
+		}
+	}
+	.route__price {
+		font-size: 18px;
+		color: #fd4f32;
+		font-weight: 700;
+		position: absolute;
+		top: 10px;
+		left: 15px;
+	}
+}
+
+.details {
+	.section__title {
+		font-size: 52px;
+		padding-left: 25px;
+		font-weight: 300;
+		
+		@include md(font-size, 40px);
+
+	}
+
+	.tips {
+		padding: 20px;
+		@include md (padding, 0);
+	
+		h3 {
+			font-size: 20px;
+			@include md (font-size, 15px);
+			font-weight: 400;
+			text-transform: uppercase;
+			margin-bottom: 25px;
+			@include xs(margin-bottom, 10px);
+		}
+		@include col(); 
+		@include size(4);
+		@include size-xs(12);
+		@include xs(margin-bottom, 10px);
+	}
+}
+
+.footer {
+	background: #eeeeee;
+	background: #70d9d5;
+	padding: 25px;
+	text-align: center;
+	.footer__copyright {
+		@include col(); 
+		@include size(12);
+	}
+}
+
+/*some media except smart-grid*/
+@media screen and (max-width:560px) and (min-width:320px)  { 
+	.header {
+		.row {
+			display: block;
+			text-align: center;
+		}
+	}
+
+
+	.logo {
+		text-align: center;
+		width: 100%;
+		display: block;
+		margin: 25px 0;
+	}
+
+	.top__nav {
+		position: relative;
+		.hamburger {
+			margin: 10px auto;
+		}
+		.nav__menu {
+			position: absolute;
+			top: 20px;
+			width: 100%;
+			margin: 0;
+			background:rgba(110, 172, 183, 0.7);
+			li {
+				text-align: center;
+				display: block;
+				padding: 10px;
+				font-size: 15px;
+				border: 1px solid #6c9695;
+				margin-left: 0;
+			}
+		}
+	}
+	
+	
+	.search__title {
+		font-size: 38px;
+	}
+	
+	.search__form {
+	
+		display: block;
+		margin: 35px auto;
+		width: 300px;
+		input {
+			box-sizing: border-box;
+			width: 100%;
+		}
+		button {
+			width: 100%;
+		}
+	}
+	.destinations {
+		.section__descr {
+			width: 100%;
+		}
+		.row {
+			margin-left: 0;
+		}
+	}
+}
+

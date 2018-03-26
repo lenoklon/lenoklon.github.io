@@ -23,5 +23,15 @@
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/Vibes/9151.eot?#iefix") format("embedded-opentype"), url("../fonts/Vibes/9151.woff") format("woff"), url("../fonts/Vibes/9151.ttf") format("truetype"); }
+@font-face {
+  font-family: "HumboldtFraktur";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/HumboldtFraktur/HumboldtFraktur.eot?#iefix") format("embedded-opentype"), url("../fonts/HumboldtFraktur/HumboldtFraktur.woff") format("woff"), url("../fonts/HumboldtFraktur/HumboldtFraktur.ttf") format("truetype"); }
+@font-face {
+  font-family: "Shadow";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/TypographerFraktur-Shadow/Shadow.eot?#iefix") format("embedded-opentype"), url("../fonts/TypographerFraktur-Shadow/Shadow.woff") format("woff"), url("../fonts/TypographerFraktur-Shadow/Shadow.ttf") format("truetype"); }
 
 /*# sourceMappingURL=fonts.css.map */

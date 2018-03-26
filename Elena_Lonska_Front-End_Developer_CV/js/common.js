@@ -12,6 +12,8 @@ $(document).ready(function() {
 		heightDetect();
 	});
 
+				/*MENU-Sandwich*/
+
 	$(".sandwich, .menu_item").click(function() {
 		$(".sandwich").toggleClass("active");
 	});

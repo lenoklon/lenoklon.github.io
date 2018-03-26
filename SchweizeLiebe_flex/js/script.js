@@ -30,4 +30,16 @@ $(document).ready(function() {
    		$('#responsiveTabsDemo').responsiveTabs({
    			startCollapsed: 'tabs'
    		});
+
+      /*load pics from json-obj using ajax*/
+  $.get('mock/pics.json', function (data) { 
+    var content = $('.mySlider');
+   
+    
+      for (var i = 0; i<= data.length; i++) {
+         var img = document.createElement('img');
+          img.setAttribute('src', 'data[i]');
+          content.appendChild(img);
+      }
+    });
 });
