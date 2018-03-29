@@ -1,0 +1,151 @@
+@media screen and (max-width: 1920px) {}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1368px) {}
+
+@media screen and (max-width: 1200px) {
+	.header__content-title {
+		width: 472px;
+		margin-left: 63px;
+	}
+
+	.header__content-next {
+		width: 300px;
+		right: 0;
+		font-size: 230px;
+	}
+
+	.services__content .services__index {
+		left:-32px;
+	}
+
+	.services__content-item {
+		padding-left: 0px;	
+		text-align: center;
+	}
+
+	.footer .footer__btn {
+		font-size: 16px;
+		width: 116px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.header__dream {
+		font-size: 14px;
+	}
+
+	.header__content-title {
+		font-size: 36px;
+	}
+	.header__content-next > div {
+		text-align: right;
+	}
+
+	.header__content-next {
+		font-size: 198px;
+	}
+
+	.services__content-item {
+		width: 25%;
+		border: 2px solid #0808a8;
+	}
+
+	.services__content .services__index {
+		left: 10px;
+	}
+
+	.footer .footer__wrap {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.footer .footer__btn {
+		margin: 10px auto;
+		display: block;
+	}
+	.footer__phone {
+		width: 30%;
+		display: inline-block;
+	}
+	.footer__email {
+		width: 30%;
+		display: inline-block;
+	}
+	.footer__hours {
+		display: inline-block;
+	}
+	.footer__up.go__to {
+		margin: auto;
+	}
+}
+@media screen and (max-width: 768px) {
+	.header__content-worth {
+		font-size: 140px;
+	}
+	.header__content-title {
+		text-align-last: auto;
+		width: 100%;
+		margin-left: 63px;
+    	margin-left: 0;
+	}
+	.header__content .header__content-text {
+		text-align: center;
+		width: 100%;
+		margin-left: 20px;
+	}
+	.header__content-next {
+		display: none;
+	}
+
+	.header__content {
+		text-align: center;
+		margin: auto;
+		margin-top: -160px;
+	}
+
+	.content__btn {
+		margin: 20px auto;
+	}
+
+	.services__content {
+		flex-direction: column;
+	}
+	.services__content-item {
+		margin-bottom: 20px;
+		width: 80%;
+		align-self: center;
+	}
+	.footer__phone {
+		width: 45%;
+	}
+	.footer__email {
+		width: 45%;
+	}
+}
+@media screen and (max-width: 480px) {
+	.footer {
+		padding: 40px;
+	}
+	.content__btn {
+		width: 150px;
+	}
+	.header__scroll {
+		padding: 0;	
+	}
+	.header__content-worth {
+		font-size: 100px;
+	}
+
+	.services__title h1 {
+		font-size: 58px;
+	}
+
+	.footer p {
+		width: 100%;
+	}
+}
