@@ -18,6 +18,10 @@
 		font-size: 230px;
 	}
 
+	.header__dream {
+		z-index: 10;
+	}
+
 	.services__content .services__index {
 		left:-32px;
 	}
@@ -36,6 +40,7 @@
 @media screen and (max-width: 960px) {
 	.header__dream {
 		font-size: 14px;
+		
 	}
 
 	.header__content-title {
@@ -88,10 +93,11 @@
 		font-size: 140px;
 	}
 	.header__content-title {
-		text-align-last: auto;
+		text-align: left;
 		width: 100%;
+		width: auto;
 		margin-left: 63px;
-    	margin-left: 0;
+       	margin-top: 38px;
 	}
 	.header__content .header__content-text {
 		text-align: center;
@@ -136,6 +142,11 @@
 	}
 	.header__scroll {
 		padding: 0;	
+		bottom: 50px;
+	}
+
+	.header__content-title {
+		margin-left: 0;
 	}
 	.header__content-worth {
 		font-size: 100px;
