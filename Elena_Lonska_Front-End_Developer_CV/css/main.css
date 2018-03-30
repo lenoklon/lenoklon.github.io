@@ -531,6 +531,10 @@ section {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/portfolio/Main_Project.png");
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/portfolio/Main_Project.png"); }
 
+.work13 {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/portfolio/next.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/portfolio/next.png"); }
+
 .cont {
   position: relative;
   z-index: 40; }
