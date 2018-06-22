@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JS bin</title
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header__logo">CodePlayer</div>
+		<div class="header__buttons">
+			<div class="header__buttons-togglebtn active" id="html">HTML</div>
+			<div class="header__buttons-togglebtn" id="css">CSS</div>
+			<div class="header__buttons-togglebtn" id="js">JavaScript</div>
+			<div class="header__buttons-togglebtn active" id="output">Output</div>
+		</div>
+	</header>
+	<main>
+		<textarea id="htmlPanel" class="panel"><p>Hello there</p></textarea>
+		<textarea id="cssPanel" class="panel hidden">p {color: blue;}</textarea>
+		<textarea id="jsPanel" class="panel hidden">document.querySelector('p').innerHTML = 'Hi Elena:)';</textarea>
+		<iframe id="outputPanel" class="panel"></iframe>
+	</main>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="crossorigin="anonymous"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
